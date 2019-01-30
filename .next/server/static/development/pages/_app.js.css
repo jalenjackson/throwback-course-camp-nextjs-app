@@ -19512,8 +19512,9 @@ button {
 }
 #home-page-value-props-container .company-footer {
   width: 100%;
-  min-height: 70vh;
+  min-height: 40vh;
   padding-bottom: 20px;
+  height: auto;
   margin-top: 150px;
   background: black;
   position: relative;
@@ -19587,18 +19588,7 @@ button {
   opacity: 1;
 }
 #home-page-value-props-container .company-footer .bottom-footer {
-  position: absolute;
-  bottom: 10px;
-}
-@media only screen and (max-width: 992px) {
-  #home-page-value-props-container .company-footer .bottom-footer {
-    position: relative;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
-  #home-page-value-props-container .company-footer .bottom-footer {
-    position: relative;
-  }
+  position: relative;
 }
 #home-page-value-props-container .company-footer .bottom-footer .bottom-footer-divider {
   color: white;
