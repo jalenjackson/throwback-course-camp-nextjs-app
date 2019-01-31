@@ -3,6 +3,7 @@
 @sm-min: 768px;
 @md-min: 992px;
 @lg-min: 1400px;
+@custom-media-for-navbar: 1300px;
 
 @xs-max: (@sm-min - 1);
 @sm-max: (@md-min - 1);
@@ -13,5 +14,6 @@
 @tablet:         ~"only screen and (max-width: @{sm-min})";
 @tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
 @desktop:        ~"only screen and (max-width: @{md-min})";
+@hide-navbar:    ~"only screen and (max-width: @{custom-media-for-navbar})";
 @desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
 @large:          ~"only screen and (max-width: @{lg-min})";

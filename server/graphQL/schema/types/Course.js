@@ -9,5 +9,6 @@ exports.Course = `
     price: Float!
     date: String!
     creator: User!
+    rating: Float!
   }
 `;

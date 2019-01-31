@@ -2,8 +2,20 @@
 
 #navbar {
   display: block;
-  @media @phone {
+  @media @hide-navbar {
     display: none;
+  }
+  .navbar-paper-with-bullets {
+    width: 20px;
+    transform: translateY(0.35rem);
+  }
+  .navbar-money-svg {
+    width: 30px;
+    transform: translateY(0.29em);
+  }
+  .navbar-authenticated-avatar {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -15,7 +27,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   justify-content: center;
   align-items: center;
-  @media @phone {
+  @media @hide-navbar {
     display: flex;
   }
   a {

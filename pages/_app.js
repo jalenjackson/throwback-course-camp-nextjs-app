@@ -15,7 +15,8 @@ export default class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
-    return { pageProps, auth: VerifyAuthentication(ctx) }
+    const auth = await VerifyAuthentication(ctx);
+    return { pageProps, auth }
   }
 
   render () {

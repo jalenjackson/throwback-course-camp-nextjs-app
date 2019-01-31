@@ -8,9 +8,10 @@ import Cookies from 'universal-cookie';
 class NavbarContainer extends Container {
   state = {
     activeLink: '',
-    autoCompleteDataSource: ['course 1', 'course 2', 'course 3'],
+    autoCompleteDataSource: [],
     loginFormVisibility: false,
     registerFormVisibility: false,
+    profileDrawerVisibility: false,
     name: '',
     email: '',
     password: '',
@@ -19,16 +20,39 @@ class NavbarContainer extends Container {
     loginSubmissionInProgress: false,
     registerSubmissionInProgress: false,
     authorizationToken: '',
+    authenticated: false,
   };
 
-  getAutoCompleteDataResults = (value) => {
-    this.setState({
-      dataSource: !value ? [] : [
-        value,
-        value + value,
-        value + value + value,
-      ],
-    });
+  setInitialAuthentication = (authenticated) => {
+    this.setState({ authenticated });
+  };
+
+  getAutoCompleteDataResults = async (term) => {
+    if (term !== '') {
+      try {
+        const queryMainSearch = await GraphQlMutate(GraphQlDevURI, `
+          query {
+            globalAutocomplete(term: "${term}") {
+              title
+            }
+          }
+        `);
+        const queryMainSearchResults = queryMainSearch.data.data.globalAutocomplete;
+        const tmpQueryMainSearchResultsArray = [];
+        if (queryMainSearchResults.length > 0) {
+          queryMainSearch.data.data.globalAutocomplete.map((course) => {
+            tmpQueryMainSearchResultsArray.push(course.title);
+          });
+          this.setState({ autoCompleteDataSource: tmpQueryMainSearchResultsArray });
+        } else {
+          this.setState({ autoCompleteDataSource: [] });
+        }
+      } catch (e) {
+        this.setState({ autoCompleteDataSource: [] });
+      }
+    } else {
+      this.setState({ autoCompleteDataSource: [] });
+    }
   };
 
   setContainerState = (stateName, value) => {
@@ -60,9 +84,10 @@ class NavbarContainer extends Container {
       await this.setState({
         loginErrorMessage: '',
         loginSubmissionInProgress: false,
-        loginFormVisibility: false
+        loginFormVisibility: false,
+        authenticated: true
       });
-      window.location.reload();
+      message.success("You are logged in! Now it's time to learn something new!", 2.5);
     } catch (e) {
       form.resetFields();
       this.setState({
@@ -113,8 +138,10 @@ class NavbarContainer extends Container {
       this.setState({
         registerErrorMessage: '',
         registerSubmissionInProgress: false,
+        registerFormVisibility: false,
+        authenticated: true
       });
-      window.location.reload();
+      message.success("We are so glad you are joining us! Now it's time to learn something new!", 2.5);
     } catch(e) {
       this.setState({
         registerErrorMessage: Localization.NavbarContainer.UnexpectedError,
@@ -125,12 +152,9 @@ class NavbarContainer extends Container {
 
   signUserOut = async () => {
     const userCookie = new Cookies();
-    await message.loading(Localization.NavbarContainer.SignOutQuote, 1);
-    userCookie.set('auth', { authenticated: false });
+    userCookie.set('auth', { authenticated: false }, { path: '/' });
+    this.setState({ authenticated: false, profileDrawerVisibility: false });
     message.success(Localization.NavbarContainer.SignOutFinished, 2.5);
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
   }
 }
 

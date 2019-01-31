@@ -15,6 +15,7 @@ exports.createCourse = async (args, req) => {
       color: args.courseInput.color,
       price: +args.courseInput.price,
       date: new Date(args.courseInput.date),
+      rating: +args.courseInput.rating,
       creator: req.userId
     });
     let createdCourse;

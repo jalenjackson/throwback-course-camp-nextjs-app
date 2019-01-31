@@ -1,3 +1,3 @@
 exports.URLMAP = {
-  // '/login': '/users/Login' -- example
+  '/courses/new': '/courses/newCourse'
 };

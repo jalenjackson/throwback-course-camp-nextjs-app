@@ -7,5 +7,6 @@ exports.Course = `
     color: String!
     price: Float!
     date: String!
+    rating: Float!
   }
 `;

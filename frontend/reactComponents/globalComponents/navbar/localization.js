@@ -2,7 +2,7 @@ import LocalizedStrings from 'react-localization';
 
 let localization = new LocalizedStrings({
   en:{
-    CompanyName: 'Logo & Company Name',
+    Home: 'Logo & Company Name',
     MenuLinks: {
       LearnAndPractice: 'Learn And Practice',
       Learn: 'Learn',

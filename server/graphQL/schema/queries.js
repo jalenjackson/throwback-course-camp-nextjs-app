@@ -3,5 +3,6 @@ exports.Queries = `
     courses: [Course!]!
     singleCourse(courseId: String!): Course!
     login(email: String!, password: String!): AuthData!
+    globalAutocomplete(term: String!): [Course!]!
   }
 `;
