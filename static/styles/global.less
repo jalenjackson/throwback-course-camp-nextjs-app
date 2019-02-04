@@ -80,6 +80,7 @@ button {
   @media @tablet {
     margin-top: -3px;
   }
+
   img {
     width: 100px;
     height: auto;
@@ -87,11 +88,13 @@ button {
     margin: 0 auto;
     padding-top: 50px;
   }
+
   .footer-company-name {
     font-size: 23px;
     color: white;
     text-align: center;
   }
+
   .company-footer-items {
     width: 80%;
     display: block;
@@ -105,6 +108,7 @@ button {
       width: 100%;
       text-align: center;
     }
+
     .gutter-row {
       @media @desktop-strict {
         width: 49%;
@@ -120,24 +124,175 @@ button {
         width: 100%;
       }
     }
+
     h1, a {
       color: white;
       font-weight: bold;
     }
+
     a {
       opacity: 0.75;
       transition: opacity 250ms ease-in-out;
       display: block;
       margin-top: 5px;
+
       &:hover {
         opacity: 1;
       }
     }
   }
+
   .bottom-footer {
     position: relative;
+
     .bottom-footer-divider {
       color: white;
+    }
+  }
+}
+
+.ant-popover-content {
+  width: 350px !important
+}
+.ant-select-dropdown-menu::-webkit-scrollbar {
+  width: 0.34em;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: rgb(84, 107, 188);
+  outline: 1px solid rgb(84, 107, 188);
+}
+
+.courses-container {
+  .courses-text-container {
+    width: 300px;
+    position: relative;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 170px;
+      display: block;
+      font-size: 25px;
+      font-weight: 100;
+      position: relative;
+
+      img:first-child {
+        width: 120px;
+        height: auto;
+        position: absolute;
+        top: -140px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      span {
+        position: relative;
+        img:last-child {
+          width: 330px;
+          height: auto;
+          position: absolute;
+          top: -77px;
+          left: -70px;
+          animation: none;
+        }
+      }
+    }
+    .inner-carousel {
+      height: 380px;
+      background: white;
+      border-radius: 3px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+    .carousel-copy {
+      h1 {
+        margin-left: 20px;
+        text-align: left;
+        margin-top: 34px;
+        font-size: 20px;
+        color: rgb(60, 60, 65);
+        font-family: GothamMedium, sans-serif;
+      }
+      p {
+        margin-left: 20px;
+        margin-top: 20px;
+        line-height: 24px;
+      }
+      .price {
+        font-weight: bold;
+        img {
+          width: 45px;
+          float: left;
+          margin-left: -5px;
+          height: auto;
+          transform: translateY(-8.5px)
+        }
+      }
+    }
+    .top-info {
+      margin: 0;
+      transform: translate(0,0);
+      position: relative;
+      width: 100%;
+      height: 40px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      h2 {
+        font-size: 12px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+      }
+    }
+    .explore-button {
+      position: absolute;
+      bottom: 25px;
+      left: 20px;
+      background: #9B3B5A;
+      border: none;
+      padding-left: 25px;
+      padding-right: 25px;
+      height: 40px;
+      transition: transform 300ms @cubic-bezier;
+      &:hover {
+        transform: scale(1.05);
+        i {
+          opacity: 1;
+        }
+      }
+      i {
+        transform: translateY(.5px);
+        padding-right: 12px;
+        opacity: 0.5;
+        transition: opacity 300ms ease-in-out;
+      }
+    }
+    .preview-button {
+      position: absolute;
+      right: 26px;
+      bottom: 32px;
+      width: 30px;
+      height: 30px;
+      filter: invert(100%);
+      opacity: 0.4;
+      cursor: pointer;
+      transition: transform 300ms @cubic-bezier, opacity 300ms ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.6;
+      }
     }
   }
 }

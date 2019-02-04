@@ -36,6 +36,15 @@ const CourseSchema = new Schema({
   },
   rating: {
     type: Number,
+  },
+  learning: {
+    type: String,
+  },
+  language: {
+    type: String,
+  },
+  summary: {
+    type: String
   }
 });
 

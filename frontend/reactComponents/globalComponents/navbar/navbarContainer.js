@@ -23,8 +23,11 @@ class NavbarContainer extends Container {
     authenticated: false,
   };
 
-  setInitialAuthentication = (authenticated) => {
+  setInitialAuthentication = (authenticated, auth) => {
     this.setState({ authenticated });
+    if (authenticated) {
+      this.setState({ authorizationToken: auth.token });
+    }
   };
 
   getAutoCompleteDataResults = async (term) => {
@@ -85,7 +88,8 @@ class NavbarContainer extends Container {
         loginErrorMessage: '',
         loginSubmissionInProgress: false,
         loginFormVisibility: false,
-        authenticated: true
+        authenticated: true,
+        authorizationToken: loginResponse.data.data.login.token
       });
       message.success("You are logged in! Now it's time to learn something new!", 2.5);
     } catch (e) {
@@ -139,7 +143,8 @@ class NavbarContainer extends Container {
         registerErrorMessage: '',
         registerSubmissionInProgress: false,
         registerFormVisibility: false,
-        authenticated: true
+        authenticated: true,
+        authorizationToken: registrationResponse.data.data.createUser.token
       });
       message.success("We are so glad you are joining us! Now it's time to learn something new!", 2.5);
     } catch(e) {
@@ -153,7 +158,7 @@ class NavbarContainer extends Container {
   signUserOut = async () => {
     const userCookie = new Cookies();
     userCookie.set('auth', { authenticated: false }, { path: '/' });
-    this.setState({ authenticated: false, profileDrawerVisibility: false });
+    this.setState({ authenticated: false, profileDrawerVisibility: false, authorizationToken: '' });
     message.success(Localization.NavbarContainer.SignOutFinished, 2.5);
   }
 }

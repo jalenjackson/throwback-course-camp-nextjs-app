@@ -14,9 +14,12 @@ exports.createCourse = async (args, req) => {
       image: args.courseInput.image,
       color: args.courseInput.color,
       price: +args.courseInput.price,
+      language: args.courseInput.language,
+      learning: args.courseInput.learning,
       date: new Date(args.courseInput.date),
       rating: +args.courseInput.rating,
-      creator: req.userId
+      creator: req.userId,
+      summary: args.courseInput.summary
     });
     let createdCourse;
     const result = await course.save();
@@ -26,5 +29,7 @@ exports.createCourse = async (args, req) => {
     user.createdCourses.push(course);
     await user.save();
     return createdCourse;
-  } catch (e) { throw e }
+  } catch (e) {
+    throw e
+  }
 };

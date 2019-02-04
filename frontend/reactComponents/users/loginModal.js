@@ -35,7 +35,7 @@ class LoginModal extends React.Component {
           </Form>
           <div className='modal-auth-submit-button-container'>
             <Button onClick={ () => this.props.navbarContainer.setContainerState('loginFormVisibility', false) }>Cancel</Button>
-            <Button type="primary" icon="login" loading={ this.props.navbarContainer.state.loginSubmissionInProgress } onClick={ () => this.props.navbarContainer.handleLoginSubmission(this.props.form) }>Submit</Button>
+            <Button type="primary" icon="login" disabled={ this.props.navbarContainer.state.loginSubmissionInProgress } loading={ this.props.navbarContainer.state.loginSubmissionInProgress } onClick={ () => this.props.navbarContainer.handleLoginSubmission(this.props.form) }>Submit</Button>
           </div>
         </Drawer>
       </div>

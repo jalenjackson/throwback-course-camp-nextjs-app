@@ -22,6 +22,7 @@ Index.getInitialProps = async () => {
         price
         rating
         color
+        summary
         creator {
           name
         }
@@ -30,6 +31,7 @@ Index.getInitialProps = async () => {
   `);
     return { courses: courses.data.data.courses }
   } catch (e) {
+    console.log(e)
     return { courses: false }
   }
 };

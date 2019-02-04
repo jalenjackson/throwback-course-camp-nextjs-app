@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const schema = require('./graphQL/schema');
 const rootValue = require('./graphQL/resolvers');
 const VerifyAuthentication = require('./middleware/verifyAuthentication');
+const Uploaders = require('./uploaders/uploaderRoutes');
 const { URLMAP }  = require('../URLMap');
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -15,7 +16,10 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
   server.use(bodyParser.json());
+  server.use(bodyParser.urlencoded({ extended: true }));
+  server.use(bodyParser.json());
   server.use(VerifyAuthentication);
+  server.use('/uploaders', Uploaders);
   server.use('/graphql', graphQlHTTP({
     schema,
     rootValue,

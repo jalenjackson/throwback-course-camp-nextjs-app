@@ -43,8 +43,8 @@ class RegisterModal extends React.Component {
             <p className='modal-auth-error-message'>{ this.props.navbarContainer.state.registerErrorMessage }</p>
           </Form>
           <div className='modal-auth-submit-button-container'>
-            <Button onClick={() => this.props.navbarContainer.setContainerState('registerFormVisibility', false)} style={{ marginRight: 8 }}>Cancel</Button>
-            <Button type="primary" icon="user" loading={ this.props.navbarContainer.state.registerSubmissionInProgress } onClick={() => this.props.navbarContainer.handleRegistrationSubmission(this.props.form)}>Submit</Button>
+            <Button onClick={ () => this.props.navbarContainer.setContainerState('registerFormVisibility', false) } style={{ marginRight: 8 }}>Cancel</Button>
+            <Button type="primary" icon="user" disabled={ this.props.navbarContainer.state.registerSubmissionInProgress } loading={ this.props.navbarContainer.state.registerSubmissionInProgress } onClick={() => this.props.navbarContainer.handleRegistrationSubmission(this.props.form)}>Submit</Button>
           </div>
         </Drawer>
       </div>

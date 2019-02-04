@@ -23,7 +23,7 @@ const CourseCarousel = props => (
               </div>
               <div className='carousel-copy'>
                 <h1>{ _.truncate(course.title, { length: 30 }) }</h1>
-                <p>{ _.truncate(course.description, { length: 60 }) }</p>
+                <p>{ _.truncate(course.summary, { length: 60 }) }</p>
                 <p>Taught by
                   <a>{ _.truncate(` ${course.creator.name}`, { length: 20 }) }</a>
                 </p>
@@ -55,7 +55,7 @@ const CourseCarousel = props => (
 
 const popOverContent = () => (
   <div>
-    <Button type='primary'>{ Localization.CourseCarousel.Purchase }</Button>
+    <Button style={{ background: '#FFDE17', border: 'none', color: 'rgb(60,60,65)' }} type='primary'>{ Localization.CourseCarousel.Purchase }</Button>
   </div>
 );
 

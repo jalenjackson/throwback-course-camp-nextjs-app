@@ -10,5 +10,8 @@ exports.Course = `
     date: String!
     creator: User!
     rating: Float!
+    language: String!
+    learning: [String]!
+    summary: String!
   }
 `;

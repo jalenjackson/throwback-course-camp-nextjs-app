@@ -8,6 +8,7 @@ import '../static/styles/global.less';
 import '../frontend/reactComponents/users/less/modals.less';
 import '../frontend/reactComponents/index/index.less';
 import '../frontend/reactComponents/globalComponents/navbar/index.less';
+import '../frontend/reactComponents/courses/newCourse/index.less'
 
 export default class MyApp extends App {
   static async getInitialProps ({ Component, router, ctx }) {
