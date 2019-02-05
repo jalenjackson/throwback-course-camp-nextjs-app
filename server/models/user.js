@@ -19,6 +19,12 @@ const UserSchema = new Schema({
       type: Schema.Types.ObjectId,
       ref: 'Course'
     }
+  ],
+  createdQuizzes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Quiz'
+    }
   ]
 });
 

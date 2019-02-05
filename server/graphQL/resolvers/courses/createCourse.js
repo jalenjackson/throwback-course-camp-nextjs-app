@@ -1,6 +1,6 @@
 const Course =  require('../../../models/course');
 const User =  require('../../../models/user');
-const { TransformCourseObject } = require('../merge');
+const { TransformObject } = require('../merge');
 
 exports.createCourse = async (args, req) => {
   try {
@@ -16,14 +16,14 @@ exports.createCourse = async (args, req) => {
       price: +args.courseInput.price,
       language: args.courseInput.language,
       learning: args.courseInput.learning,
-      date: new Date(args.courseInput.date),
+      date: new Date().toISOString(),
       rating: +args.courseInput.rating,
       creator: req.userId,
       summary: args.courseInput.summary
     });
     let createdCourse;
     const result = await course.save();
-    createdCourse = TransformCourseObject(result);
+    createdCourse = TransformObject(result);
     const user = await User.findById(req.userId);
     if(!user) { throw new Error('User does not exist') }
     user.createdCourses.push(course);

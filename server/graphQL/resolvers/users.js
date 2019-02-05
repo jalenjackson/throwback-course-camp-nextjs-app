@@ -42,7 +42,7 @@ module.exports = {
       email: user.email,
       name: user.name
     }, process.env.JWT_SECRET_KEY, {
-      expiresIn: 20
+      expiresIn: '1h'
     });
 
     return {

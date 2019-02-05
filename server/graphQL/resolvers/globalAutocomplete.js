@@ -1,10 +1,10 @@
-const Course = require('../../../models/course');
+const Course = require('../../models/course');
 
 exports.globalAutocomplete = async (args) => {
   try {
     const queryREQ = args.term.replace(/[^a-zA-Z0-9 ]/g, '');
     const regex = new RegExp(queryREQ, 'i');
-    const courseLookup = await Course.find({
+    return Course.find({
       $or: [{ title: regex }, { description: regex }, { category: regex }]
     },
     { '_id': 1,
@@ -20,6 +20,5 @@ exports.globalAutocomplete = async (args) => {
     })
     .sort({ 'date':-1 })
     .limit(9);
-    return courseLookup;
   } catch (e) { throw e }
 };

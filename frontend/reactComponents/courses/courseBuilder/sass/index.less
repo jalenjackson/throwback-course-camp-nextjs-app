@@ -1,0 +1,43 @@
+@import './topBar';
+@import './VideoSceneEditContainer';
+@import './VideoTimeline';
+@import '../../../../../static/styles/variables.less';
+
+#course-builder {
+  margin-top: 71px;
+  width: 100%;
+  position: relative;
+  @media @desktop {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.flashing-border {
+  animation: flashing-border 150ms ease-in-out infinite;
+}
+
+.flashing-border-1 {
+  animation: flashing-border 150ms ease-in-out 3;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flashing-border {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #24C875;
+  }
+}
+
+
+

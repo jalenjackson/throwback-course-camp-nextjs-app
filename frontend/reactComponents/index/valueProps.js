@@ -23,7 +23,7 @@ const ValueProps = props => (
         placeholder={ Localization.ValueProps.SearchPlaceholder }
         optionLabelProp="text">
         <Input
-          suffix={(
+            suffix={(
             <Button style={ styles.styleButton } className="search-btn" size="large" type="primary">
               <Icon type="search" />
             </Button>
@@ -31,14 +31,14 @@ const ValueProps = props => (
       </AutoComplete>
     </div>
     <div id="home-page-value-props-svg-container">
-      <img src='/static/backgroundImages/homePageHeader.svg' />
+      <img src='/static/backgroundImages/home-landing-svg.svg' />
     </div>
   </div>
 );
 
 const styles = {
   styleButton: { transform: 'translateX(15px)', borderTopLeftRadius: 0, borderBottomLeftRadius: 0 },
-  increaseWidth: { width: '92.5%' }
+  increaseWidth: { width: '65.5%' }
 };
 
 export default ValueProps;

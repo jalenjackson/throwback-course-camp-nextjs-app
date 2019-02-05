@@ -6,7 +6,6 @@ exports.Course = `
     image: String!
     color: String!
     price: Float!
-    date: String!
     rating: Float!
     language: String!
     learning: [String]!
