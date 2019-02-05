@@ -28,6 +28,7 @@ export default class ProfileDrawer extends React.Component {
                 <span>
                 <Avatar shape="circle" size="small"   />
               </span>}>
+                { console.log(this.props.auth) }
                 <MenuItemGroup title={ this.props.auth.name }>
                   <Menu.Item key='profile'>Profile</Menu.Item>
                   <Menu.Item key='settings'>Settings</Menu.Item>

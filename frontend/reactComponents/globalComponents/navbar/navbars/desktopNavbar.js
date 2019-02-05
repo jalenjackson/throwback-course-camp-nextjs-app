@@ -70,7 +70,7 @@ const DesktopNavbar = props => (
       }
       { !props.navbarContainer.state.authenticated
           ? <Menu.Item onClick={ () => props.navbarContainer.setContainerState('loginFormVisibility', true) } style={ inlineStyling(props.navbarContainer.state.authenticated).NonAuthenticatedMenuItems } key={ Localization.MenuKeys.Login }>
-            <a>{ Localization.MenuLinks.Login }</a>
+              <a>{ Localization.MenuLinks.Login }</a>
             </Menu.Item> : null
       }
       { props.navbarContainer.state.authenticated ?
