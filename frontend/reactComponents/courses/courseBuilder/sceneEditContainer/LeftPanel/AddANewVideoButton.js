@@ -1,8 +1,15 @@
 import React from 'react';
+import { Button } from 'antd';
 
 const AddANewVideoButton = () => (
   <div>
-    <button className='add-a-new-video-button'>Add A Video</button>
+    <Button
+        style={{ marginTop: 20 }}
+        type="primary"
+        icon="video-camera"
+        className='add-a-new-video-button-course-builder'>
+      Add New Video
+    </Button>
   </div>
 );
 

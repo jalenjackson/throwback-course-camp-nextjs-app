@@ -4,96 +4,59 @@
   -webkit-box-flex: 1;
   flex: 1 0 auto;
   display: flex;
-  height: calc(100vh - 182px);
+  height: calc(100vh - 229px);
+  background: red;
   @media @desktop {
     display: block;
     width: 100%;
   }
+  @media @desktop-strict {
+    height: calc(100vh - 227px);
+  }
   .video-scene-edit {
     display: flex;
     width: 100%;
-    background: rgb(134,157,238);
+    background: #161824;
     @media @desktop {
       display: block;
       width: 100%;
+      height: auto;
+      padding-bottom: 60px;
     }
     .left-view {
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
-      width: 40%;
+      width: 44%;
       background: #fff;
       overflow-y: auto;
+      @media @desktop-strict {
+        width: 85%;
+      }
       @media @desktop {
         display: block;
         width: 100%;
-        margin-top: 200px;
+        margin-top: 120px;
       }
-      textarea, button {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-      }
-      .section-title {
-        margin-bottom: 10px;
-        font-size: 17px;
-        color: black;
-        line-height: 23px;
-        letter-spacing: 1px;
+      .left-view-section-title {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 25px;
+        font-weight: bold;
+        color: @headerColor;
       }
-      label {
-        width: 86.5%;
-        display: block;
-        margin: 0 auto;
-        margin-top: 10px;
-        font-size: 11px;
-        letter-spacing: 1px;
-        color: #ccc;
-        position: relative;
-        transform: translateY(5px);
-      }
-      textarea, .left-view-category {
-        background-color: transparent;
-        border-radius: 3px;
-        height: 4em;
-        padding: 1rem;
-        resize: none;
-        border: 2px solid rgb(230,230,230);
-        color: rgb(110, 110, 110);
-        margin-top: 10px;
-        &::placeholder {
-          color: #ccc;
-        }
-      }
-      .left-view-description {
-        height: 3em;
-        margin-top: 10px;
-      }
-      .left-view-category {
+      .left-view-fields-inside {
         width: 80%;
-        height: 10px;
         display: block;
         margin: 0 auto;
-        margin-top: 10px !important;
-      }
-      button {
-        margin: 0 auto;
-        margin-top: 20px;
-        border-radius: 5px;
-        display: block;
         @media @desktop {
-          margin-bottom: 30px;
-        }
-        &:after {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
+          width: 85%;
+          margin-bottom: 40px;
         }
       }
     }
     .video-preview {
+      display: flex;
       -webkit-box-align: center;
       align-items: center;
       -webkit-box-pack: center;
@@ -113,7 +76,8 @@
         width: 100%;
         max-height: 100%;
         position: relative;
-        box-shadow: rgba(0,0,0,0.5) 0 1rem 3rem;
+        box-shadow: rgba(0,0,0,1) 0 2rem 3rem;
+        margin-top: -60px;
         @media @desktop {
           margin: 0 auto;
           padding-top: 30px;
