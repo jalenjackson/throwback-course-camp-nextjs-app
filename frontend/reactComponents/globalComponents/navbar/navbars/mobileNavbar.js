@@ -28,7 +28,7 @@ export default class MobileNavbar extends React.Component {
             <Menu.Item key={ Localization.MenuKeys.Home }>
               <a>{ Localization.Home }</a>
             </Menu.Item>
-            { this.props.auth.authenticated
+            { this.props.navbarContainer.state.authenticated
                 ? <SubMenu title={
                   <span>
                     <Badge count={10}>
@@ -38,7 +38,7 @@ export default class MobileNavbar extends React.Component {
                   <Menu.Item key='notification1'>Notification 1</Menu.Item>
                 </SubMenu> : null
             }
-            { this.props.auth.authenticated
+            { this.props.navbarContainer.state.authenticated
                 ? <SubMenu  title={
                   <span>
                     <Avatar shape="circle" size="small"   />
@@ -90,13 +90,13 @@ export default class MobileNavbar extends React.Component {
               { Localization.MenuLinks.EarnMoneyTeaching }
             </Menu.Item>
 
-            { !this.props.auth.authenticated
+            { !this.props.navbarContainer.state.authenticated
               ? <Menu.Item onClick={ () => this.props.navbarContainer.setContainerState('loginFormVisibility', true) }  key={ Localization.MenuKeys.Login }>
                   <a>{ Localization.MenuLinks.Login }</a>
                 </Menu.Item> : null
             }
 
-            { !this.props.auth.authenticated
+            { !this.props.navbarContainer.state.authenticated
                 ? <Menu.Item onClick={() => this.props.navbarContainer.setContainerState('registerFormVisibility', true)}
                     key={ Localization.MenuKeys.Register }>
                   <a>{ Localization.MenuLinks.Register }</a>

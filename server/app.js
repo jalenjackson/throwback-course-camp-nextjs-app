@@ -7,7 +7,8 @@ const schema = require('./graphQL/schema');
 const rootValue = require('./graphQL/resolvers');
 const VerifyAuthentication = require('./middleware/verifyAuthentication');
 const Uploaders = require('./uploaders/uploaderRoutes');
-const { URLMAP }  = require('../URLMap');
+const routesWithSlug = require('./routesWithSlug');
+const { URLMAP }  = require('./URLMap');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -33,6 +34,8 @@ app.prepare().then(() => {
   server.get('/static/*', (req, res) => {
     handle(req, res);
   });
+
+  routesWithSlug({ server, app });
 
   server.get('*', (req, res) => {
     const url = URLMAP[req.path];

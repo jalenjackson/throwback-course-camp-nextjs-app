@@ -21,7 +21,7 @@ export const callHandleUpload = async (context, info, token, navbarContainer) =>
     case 'done': {
       await context.setState({
         fileAdded: { status: true, uploaded: true },
-        fileLocation: info.file.response.fileLocation,
+        fileLocation: info.file.response.link,
       });
       message.success(GlobalLocalization.GetStarted);
       break;

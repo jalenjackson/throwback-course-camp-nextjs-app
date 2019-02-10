@@ -6,7 +6,6 @@ exports.User = `
     password: String
     token: String
     createdCourses: [Course!]
-    createdQuizzes: [Quiz!]
   }
   
   type AuthData {

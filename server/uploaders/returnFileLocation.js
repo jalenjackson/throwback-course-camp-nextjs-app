@@ -2,7 +2,7 @@ exports.returnFileLocation = (req, res) => {
   try {
     if (req.file.location) {
       res.status(200).json({
-        fileLocation: req.file.location
+        link: req.file.location
       });
     } else {
       res.status(500).json({

@@ -31,7 +31,6 @@ Index.getInitialProps = async () => {
   `);
     return { courses: courses.data.data.courses }
   } catch (e) {
-    console.log(e)
     return { courses: false }
   }
 };

@@ -1,7 +1,7 @@
 const multer = require('multer');
 const multerS3 = require('multer-s3');
 const aws = require('aws-sdk');
-const accepted_extensions = ['jpg', 'png', 'gif'];
+const accepted_extensions = ['jpg', 'png', 'gif', 'jpeg'];
 
 aws.config.update({
   secretAccessKey: process.env.AWS_SECRET,
@@ -16,7 +16,6 @@ const upload = multer({
     s3: s3,
     bucket: 'new-company',
     metadata: function (req, file, cb) {
-      console.log(file)
       cb(null, { fieldName: file.fieldname });
     },
     key: function (req, file, cb) {

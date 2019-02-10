@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import CourseBuilderComponent from '../../frontend/reactComponents/courses/courseBuilder/index';
 import { handleAuthentication } from '../../globalHelpers/handleAuthentication';
+import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 
-const CourseBuilder = ({ auth }) => (
+const CourseBuilder = ({ auth, course }) => (
     <div>
       <Head>
         <title>Create Course</title>
@@ -17,13 +18,38 @@ const CourseBuilder = ({ auth }) => (
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
       </Head>
-      <CourseBuilderComponent auth={ auth } />
+      { course ? <CourseBuilderComponent course={ course } auth={ auth } /> : console.log('render 500') }
     </div>
 );
 
 CourseBuilder.getInitialProps = async (ctx) => {
-  handleAuthentication(ctx);
-  return {}
+  try {
+    handleAuthentication(ctx);
+    const courseId = ctx.query.courseId;
+    const course = await GraphQlMutate(GraphQlDevURI, `
+    query {
+      singleCourse(courseId: "${courseId}") {
+        _id
+        title
+        description
+        category
+        sections {
+          title
+          description
+          category
+          videos {
+            title
+            description
+            videoLocation
+          }
+        }
+      }
+    }
+  `);
+    return { course: course.data.data.singleCourse }
+  } catch(e) {
+    return { course: false }
+  }
 };
 
 export default CourseBuilder;

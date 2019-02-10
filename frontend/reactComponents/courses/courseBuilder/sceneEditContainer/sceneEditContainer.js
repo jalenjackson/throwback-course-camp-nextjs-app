@@ -1,6 +1,6 @@
 import React from 'react';
-import LeftPanelContainer from './LeftPanel/LeftPanelContainer';
-import RightPanelVideoPreviewContainer from './RightPanelVideoPreview/RightPanelVideoPreviewContainer';
+import LeftPanelContainer from './leftPanel/leftPanelContainer';
+import RightPanelVideoPreviewContainer from './rightPanelVideoPreview/rightPanelVideoPreviewContainer';
 
 const SceneEditContainer = props => (
   <div className='video-scene-edit-container'>

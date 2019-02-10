@@ -2,31 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c93e22-de8f-4fdc-ab13-cf5547a08d51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Jalen___Tammy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jalen___Tammy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/headers/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/URLMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/URLMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCodingChallenge/AddCodingChallenge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCodingProject/AddCodingProjectModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCrunchModal/AddCrunchModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddExerciseModal/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddMatchGameModal/AddMatchGameModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoModal/AddNewVideoModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoDrawer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddPictureQuizModal/AddPictureQuizModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddQuizToVideoModal/AddQuizToVideoModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/DeleteSectionModal/DeleteSectionModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/EditVideoModal/EditVideoModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/ErrorModal/ErrorModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/Modals.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/Modals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoSceneEditContainer.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoSceneEditContainer.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoTimeline.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoTimeline.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoDrawer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/Modals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/TopProgress.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topProgress.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoPlayer.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/minimalVideoPlayer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoSceneEditContainer.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoTimeline.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoTimeline.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topBar.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoPlayer.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoPlayer.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/AddANewVideoButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/AddANewVideoButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/LeftPanelContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/LeftPanelContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/Video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/AddNewSectionButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/AddNewSectionButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/AddANewVideoButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/LeftPanelContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/RightPanelVideoPreviewContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/rightPanelVideoPreview/rightPanelVideoPreviewContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/rightPanelVideoPreview/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/SceneEditContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/sceneEditContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/AddNewSectionButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/addNewSectionButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/SectionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/sectionList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/SectionTimelineContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/sectionTimelineContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/containerMethods/addNewLearning.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/containerMethods/addNewLearning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/containerMethods/handleUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/containerMethods/handleUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addDescription/pluginsEnabled.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addDescription/pluginsEnabled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/mobileNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/mobileNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/setAuthentication.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalHelpers/verifyAuthentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/globalHelpers/verifyAuthentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/courseBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courseBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/merge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/quizzes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/quizzes/createQuiz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/quizzes/quizzes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/quizzes/singleQuiz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/inputs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/Course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/Course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/verifyAuthentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/verifyAuthentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/verifyAuthenticationStrict.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/verifyAuthenticationStrict.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/quiz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploaders/returnFileLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/uploaders/returnFileLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploaders/singleFileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/uploaders/singleFileUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploaders/uploaderRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/uploaders/uploaderRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/global.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,127 +70,99 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoSceneEditContainer.less">
+        <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/styles/variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/RightPanelVideoPreviewContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoTimeline.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoDrawer/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/LeftPanelContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoPlayer.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="36" selection-end-line="1" />
+            <state relative-caret-position="22">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/TopProgress.less">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/addQuiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/topProgress/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="646">
+              <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoTimeline.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-797">
+              <caret line="161" selection-start-line="161" selection-end-line="161" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/styles/minimalVideoPlayer.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topProgress.less">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphQL/schema/mutations.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/addQuizQuestionToVideo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/containerMethods/saveCourse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-264">
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Course.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Create</find>
-      <find>handle</find>
-      <find>handleEn</find>
-      <find>handleE</find>
-      <find>fill:red</find>
-      <find>color</find>
-      <find>token</find>
-      <find>authorizationToken</find>
-      <find>this.state.tok</find>
-      <find>[align, charCounter, codeBeautifier, codeView, colors, draggable, embedly, emoticons, entities, file, fontAwesome, fontFamily, fontSize, fullscreen, image, imageTUI, imageManager, inlineStyle, inlineClass, lineBreaker, lineHeight, link, lists, paragraphFormat, paragraphStyle, quickInsert, quote, save, table, url, video, wordPaste]</find>
-      <find>plugin</find>
-      <find>this.props</find>
-      <find>props</find>
-      <find>update</find>
-      <find>session</find>
-      <find>AddLe</find>
       <find>AddColor</find>
       <find>inlineSty</find>
       <find>styles</find>
@@ -169,12 +171,28 @@
       <find>@include medium-screen-down</find>
       <find>$</find>
       <find>@include</find>
-      <find>this</find>
       <find>border-bottom</find>
       <find>overflow</find>
       <find>@media</find>
       <find>delete</find>
       <find>90px</find>
+      <find>video-s</find>
+      <find>3px solid</find>
+      <find>video-scen</find>
+      <find>button</find>
+      <find>this.props.conta</find>
+      <find>left-view</find>
+      <find>add-a</find>
+      <find>cubic</find>
+      <find>console</find>
+      <find>console.log</find>
+      <find>token</find>
+      <find>accepted_extens</find>
+      <find>ToolT</find>
+      <find>this</find>
+      <find>question</find>
+      <find>Passenger</find>
+      <find>z-index</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -187,10 +205,10 @@
       <replace>this.props</replace>
       <replace>animation: show 1s ease-in-out forwards infinite</replace>
       <replace>props</replace>
-      <replace>quizInput</replace>
       <replace>@media @desktop</replace>
       <replace>black</replace>
       <replace>context</replace>
+      <replace>quizInput</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -199,57 +217,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/SectionTimeline/AddNewSectionButton.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/index.sass" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/topBar.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/videoPlayer.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/VideoSceneEditContainer.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/VideoSceneEditContainer.sass" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/VideoTimeline.sass" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/Sass/VideoTimeline.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/SectionTimeline/SectionList.js" />
-        <option value="$PROJECT_DIR$/pages/_app.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/setInitialAuthentication.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/getAutocompleteDataResults.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/setContainerState.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleRegistrationSubmission.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/signUserOut.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/index/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCodingChallenge/AddCodingChallenge.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCodingProject/AddCodingProjectModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCrunchModal/AddCrunchModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddExerciseModal/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddMatchGameModal/AddMatchGameModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoModal/AddNewVideoModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddPictureQuizModal/AddPictureQuizModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddQuizToVideoModal/AddQuizToVideoModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/DeleteSectionModal/DeleteSectionModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/EditVideoModal/EditVideoModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/ErrorModal/ErrorModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topBar.less" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/addSectionToCourse.js" />
+        <option value="$PROJECT_DIR$/server/middleware/verifyAuthentication.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/setInitialStateFromData.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/addNewSectionButton.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/sectionList.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/deleteSection.js" />
+        <option value="$PROJECT_DIR$/globalHelpers/helpers.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteSectionImageInFroalaEditor.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/updateSectionDetails.js" />
+        <option value="$PROJECT_DIR$/server/uploaders/singleVideoUpload.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/users.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" />
+        <option value="$PROJECT_DIR$/pages/courses/courseBuilder.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/addNewSection.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteSection.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/handleSectionVideoUpload.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteAddedVideo.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/deleteVideo.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/addVideoToSection.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/updateVideoDetails.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateSectionDetails.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs/Video.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/setInitialStateFromData.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateVideoDetails.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/changeCurrentActiveSection.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/addVideo.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/addQuizToVideo.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Answer.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Quiz/Answer.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz/Question.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz/Answer.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/mutations.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/addQuizQuestionToVideo.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Quiz/Question.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Video.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Quiz/Quiz.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" />
-        <option value="$PROJECT_DIR$/static/styles/variables.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topProgress.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/addANewVideoButton.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/AddANewVideoButton.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoPlayer.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/Video.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/AddNewSectionButton.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/Modals.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoDrawer/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/LeftPanelContainer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoTimeline.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoPlayer.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoSceneEditContainer.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/topProgress/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/TopProgress.less" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoTimeline.less" />
+        <option value="$PROJECT_DIR$/static/styles/minimalVideoPlayer.less" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/addQuiz.js" />
       </list>
     </option>
   </component>
@@ -304,35 +322,65 @@
               <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
               <item name="courses" type="462c0819:PsiDirectoryNode" />
               <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="courses" type="462c0819:PsiDirectoryNode" />
-              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
-              <item name="sceneEditContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="courses" type="462c0819:PsiDirectoryNode" />
-              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
-              <item name="sceneEditContainer" type="462c0819:PsiDirectoryNode" />
-              <item name="LeftPanel" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
+              <item name="resolvers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
+              <item name="resolvers" type="462c0819:PsiDirectoryNode" />
               <item name="courses" type="462c0819:PsiDirectoryNode" />
-              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
-              <item name="topProgress" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
+              <item name="schema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
+              <item name="schema" type="462c0819:PsiDirectoryNode" />
+              <item name="inputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
+              <item name="schema" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
@@ -362,11 +410,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder\SceneEditContainer\LeftPanel" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\resolvers" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\backgroundImages" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\icons" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\schema\types" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\schema\types\Quiz" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\schema\inputs\Quiz" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\schema\inputs" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\globalHelpers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder" />
@@ -399,12 +447,12 @@
       <updated>1548447060575</updated>
       <workItem from="1548447061883" duration="30311000" />
       <workItem from="1548494235406" duration="4679000" />
-      <workItem from="1548526017324" duration="257701000" />
+      <workItem from="1548526017324" duration="339416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292691000" />
+    <option name="totallyTimeSpent" value="374406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -414,8 +462,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.5005417" side_tool="true" weight="0.12908325" />
-      <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TypeScript" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
@@ -435,392 +483,377 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteSectionImageInFroalaEditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="286">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/handleSectionVideoUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/uploaders/removeSingleUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="5" selection-start-line="11" selection-start-column="68" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/deleteVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/addNewSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/updateSectionDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="17" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteAddedVideo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateSectionDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" selection-start-line="7" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/setInitialStateFromData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateVideoDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/changeCurrentActiveSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+        <state relative-caret-position="154">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/topProgress/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="528">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/setAuthentication.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz/Quiz.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/helpers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/earnMoneycta.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="242">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="20" selection-end-column="9" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/courseCarousel.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/merge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-247" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/valueProps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/loginModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/array-unique/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/babel-loader/lib/cache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2285">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bcrypt-pbkdf/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="341" column="53" selection-start-line="341" selection-start-column="53" selection-end-line="341" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/localization.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/babel-core/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCodingChallenge/AddCodingChallenge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCodingProject/AddCodingProjectModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddCrunchModal/AddCrunchModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddExerciseModal/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddMatchGameModal/AddMatchGameModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddPictureQuizModal/AddPictureQuizModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddQuizToVideoModal/AddQuizToVideoModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/DeleteSectionModal/DeleteSectionModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/EditVideoModal/EditVideoModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/ErrorModal/ErrorModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/styles/global.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" selection-start-line="36" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topBar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/headers/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addDescription/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/addANewVideoButton.less">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/deleteSection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <caret line="1" column="25" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/AddANewVideoButton.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/updateVideoDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.less">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/addVideoToSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="400" column="23" selection-start-line="400" selection-start-column="17" selection-end-line="400" selection-end-column="23" />
+        <state relative-caret-position="242">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/Video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/SectionTimelineContainer.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Section.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz/Quiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz/Question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Quiz/Answer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Course.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Section.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Quiz/Question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/containerMethods/saveCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Course.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Quiz/Answer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/mutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/addQuizQuestionToVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="440">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/SceneEditContainer.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/topProgress.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoTimeline.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="-797">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/styles/minimalVideoPlayer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/addQuiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/AddNewSectionButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/Modals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/RightPanelVideoPreview/RightPanelVideoPreviewContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/AddNewVideoDrawer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/styles/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/LeftPanel/LeftPanelContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoTimeline.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoSceneEditContainer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/VideoPlayer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/topProgress/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/TopProgress.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>

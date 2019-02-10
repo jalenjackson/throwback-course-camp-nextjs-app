@@ -34,8 +34,8 @@
       background: #3C3A44
     }
     .scenes::-webkit-scrollbar-thumb {
-      background-color: #24C875;
-      outline: 1px solid #24C875;
+      background-color: #1890FF;
+      outline: 1px solid #1890FF;
       border-radius: 10px;
     }
     .scenes {
@@ -45,9 +45,12 @@
       justify-content: flex-start;
       margin: 0;
       padding: 0.5rem 0;
+      padding-right: 10px;
       overflow-x: auto;
       max-width: 88.5%;
       margin-left: 20px;
+      margin-top: 3px;
+      border-radius: 3px;
       @media @desktop {
         max-width: 95%;
       }
@@ -79,22 +82,26 @@
           }
           .delete-section {
             position: absolute;
-            width: 20px;
-            height: 20px;
-            border-radius: 100%;
-            background: white;
+            width: 17px;
+            height: 17px;
             right: 10px;
-            top: 10px;
+            top: 6px;
             opacity: 0;
+            display: flex;
             justify-content: center;
             align-items: center;
-            transition: transform 300ms ease-in-out, opacity 350ms ease-in-out;
+            color: rgb(60, 60, 65);
+            transition: transform 300ms ease-in-out, opacity 200ms @cubic-bezier;
             @media @desktop {
               width: 15px;
               height: 15px;
             }
             &:hover {
               transform: scale(1.2);
+              .anticon {
+                transition: color 300ms ease-in-out;
+                color: #1890FF;
+              }
             }
             img {
               width: 30px;
@@ -112,7 +119,6 @@
             transition: border 300ms ease-in-out, opacity 350ms ease-in-out;
             border-radius: 3px;
             background: rgba(255,255,255,0.1);
-            z-index: 55;
             border: 3px solid transparent;
             @media @desktop {
               height: 50px;
@@ -148,7 +154,6 @@
     .video-add {
       padding: 0 1rem 0 1.1rem;
       display: flex;
-      z-index: 999999999999;
       position: absolute;
       left: 90%;
       top: 46%;
@@ -176,7 +181,6 @@
         font-size: 0.8125rem;
         height: 3rem;
         position: relative;
-        z-index: 5;
         border: 0;
         transition: 0.2s;
         color: inherit;
@@ -185,7 +189,7 @@
         background: transparent;
         cursor: pointer;
         .add-video-icon {
-          background: #24C875;
+          background: #1890FF;
           border-radius: 50%;
           color: #fff;
           width: 2.5rem;

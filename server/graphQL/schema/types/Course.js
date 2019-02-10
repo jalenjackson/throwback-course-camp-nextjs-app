@@ -13,5 +13,6 @@ exports.Course = `
     language: String!
     learning: [String]!
     summary: String!
+    sections: [Section]
   }
 `;

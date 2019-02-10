@@ -25,5 +25,8 @@ export const pluginsEnabled = [
   'save',
   'table',
   'url',
-  'wordPaste'
+  'wordPaste',
+  'image',
+  'imageManager',
+  'imageTui'
 ];

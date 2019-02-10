@@ -45,7 +45,10 @@ const CourseSchema = new Schema({
   },
   summary: {
     type: String
-  }
+  },
+  sections: {
+    type: Array
+  },
 });
 
 module.exports = mongoose.model('Course', CourseSchema);
