@@ -4,5 +4,6 @@ exports.Video = `
     description: String!
     videoLocation: String!
     quiz: [Quiz]
+    pictureQuiz: [PictureQuiz]
   }
 `;

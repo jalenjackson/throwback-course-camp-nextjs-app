@@ -15,7 +15,7 @@ const TopProgress = () => (
   </div>
 );
 
-const customDot = (dot, { status, index }) => (
+const customDot = dot => (
   <span>{ dot }</span>
 );
 

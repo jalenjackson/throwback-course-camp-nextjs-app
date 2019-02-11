@@ -5,7 +5,6 @@
   flex: 1 0 auto;
   display: flex;
   height: calc(100vh - 229px);
-  background: red;
   @media @desktop {
     display: block;
     width: 100%;
@@ -72,8 +71,10 @@
             padding-bottom: 3px;
             margin-left: 2px;
           }
-          .collapse-remove-margin-top {
-            margin-top: 0;
+          .ant-collapse-item-active > .ant-collapse-header {
+            background: #1890FF;
+            color: white;
+            transition: background 300ms ease-in-out;
           }
         }
       }

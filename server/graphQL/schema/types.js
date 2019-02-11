@@ -3,6 +3,7 @@ const { User } = require('./types/User');
 const { Section } = require('./types/Section');
 const { Video } = require('./types/Video');
 const { Quiz } = require('./types/Quiz');
+const { PictureQuiz } = require('./types/PictureQuiz');
 
 exports.Types = `
   ${Course}
@@ -10,4 +11,5 @@ exports.Types = `
   ${Section}
   ${Video}
   ${Quiz}
+  ${PictureQuiz}
 `;

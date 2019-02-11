@@ -1,4 +1,5 @@
-const Course =  require('../../../models/course');
+const Course =  require('../../../../models/course');
+const { TransformObject } = require('../../merge');
 const aws = require('aws-sdk');
 
 aws.config.update({
@@ -9,10 +10,13 @@ aws.config.update({
 
 let s3 = new aws.S3();
 
-exports.deleteVideo = async args => {
+exports.deleteVideo = async (args, req) => {
   try {
-    console.log(args.fileId)
-    s3.deleteObject({  Bucket: 'new-company-videos', Key: args.fileId }, function(err) {
+    if (!req.isTheUserAuthenticated) {
+      throw new Error('Unauthenticated!');
+    }
+
+    s3.deleteObject({ Bucket: 'new-company-videos', Key: args.fileId }, function(err) {
       if (err) {
         console.log(err)
       }
@@ -27,7 +31,8 @@ exports.deleteVideo = async args => {
     } else {
       return {}
     }
-    return await course.save();
+    const result = await course.save();
+    return TransformObject(result);
   } catch (e) {
     throw e;
   }

@@ -6,7 +6,7 @@ import SetInitialStateFromData from './setInitialStateFromData';
 import { Subscribe } from 'unstated';
 import Container from './container';
 import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
-import AddQuizModal from "./modals/addQuiz";
+import Drawers from './drawers/index';
 
 export default class CourseBuilderComponent extends React.Component {
   render() {
@@ -18,7 +18,10 @@ export default class CourseBuilderComponent extends React.Component {
             { Object.keys(container.state.course).length > 0
               ?
                 <div>
-                  <AddQuizModal />
+                  { container.state.course.sections.length !== 0
+                    ? <Drawers { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                    : null
+                  }
                   <TopProgress { ...this.props } container={ container } />
                   <SceneEditContainer { ...this.props } navbarContainer={ navbarContainer } container={ container } />
                   <SectionTimelineContainer { ...this.props } navbarContainer={ navbarContainer } container={ container }  />

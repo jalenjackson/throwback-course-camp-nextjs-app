@@ -4,6 +4,7 @@ export const updateSectionsAfterAPICall = (context, navbarContainer, response, g
   if (response.data.errors && withCheckAuthentication) {
     return handleUnauthenticatedButFrontEndThinksWeAre(navbarContainer);
   }
+  console.log(context.state.currentActiveSection);
   const course = context.state.course;
   course.sections = response.data.data[graphqlName].sections;
   context.setState({ course, sectionLoading: false });

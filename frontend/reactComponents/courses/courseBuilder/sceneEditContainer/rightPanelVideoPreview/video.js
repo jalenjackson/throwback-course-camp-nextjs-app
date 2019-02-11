@@ -4,8 +4,9 @@ import ReactPlayer from 'react-player';
 export default class Video extends React.Component {
   render() {
     return (
-      <div>
-        <ReactPlayer url='https://s3.amazonaws.com/brainflop-videos/1548228574423' playing={ true }  muted width='100%' height='100%' />
+      <div className='minimal-video'>
+        <div className="video-transition" />
+        <ReactPlayer url={ this.props.container.state.currentVideoLocation } playing={ true }  muted width='100%' height='100%' />
         <div className='video-controls'>
           <div className='video-play-button'>{'>'}</div>
           <div className='video-begin-time'>

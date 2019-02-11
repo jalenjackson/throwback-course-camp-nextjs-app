@@ -1,5 +1,5 @@
-exports.Quiz = `
-  type Quiz {
+exports.PictureQuiz = `
+  type PictureQuiz {
     question: String!
     answers: String!
   }

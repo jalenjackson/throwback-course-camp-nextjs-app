@@ -1,6 +1,6 @@
-import { GraphQlMutate, GraphQlDevURI } from '../../../../../globalHelpers/axiosCalls';
-import { updateSectionsAfterAPICall } from './helpers';
-import GlobalLocalization from '../../../../../globalLocalization';
+import { GraphQlMutate, GraphQlDevURI } from '../../../../../../globalHelpers/axiosCalls';
+import { updateSectionsAfterAPICall } from '../helpers';
+import GlobalLocalization from '../../../../../../globalLocalization';
 import { message } from 'antd';
 
 export const call = async (context, i, navbarContainer, videoLocation) => {
@@ -18,6 +18,14 @@ export const call = async (context, i, navbarContainer, videoLocation) => {
             title
             description
             videoLocation
+            quiz {
+              question
+              answers
+            }
+            pictureQuiz {
+              question
+              answers
+            }
           }
         }
       }
@@ -25,6 +33,7 @@ export const call = async (context, i, navbarContainer, videoLocation) => {
   `, navbarContainer.state.authorizationToken);
     $('.ant-collapse-header').click();
     updateSectionsAfterAPICall(context, navbarContainer, deleteAddedVideoResponse, 'deleteVideo', true);
+    context.updateState('currentVideoLocation', '');
     message.success('Video deleted successfully');
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

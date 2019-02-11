@@ -1,8 +1,11 @@
-const Course =  require('../../../models/course');
-const { TransformObject } = require('../merge');
+const Course =  require('../../../../../models/course');
+const { TransformObject } = require('../../../merge');
 
-exports.addQuizQuestionToVideo = async args => {
+exports.addQuizQuestionToVideo = async (args, req) => {
   try {
+    if (!req.isTheUserAuthenticated) {
+      throw new Error('Unauthenticated!');
+    }
     const course = await Course.findById(args.courseId);
     const section = course.sections[args.sectionIndex];
     const video = section.videos[args.videoIndex];

@@ -41,6 +41,14 @@ CourseBuilder.getInitialProps = async (ctx) => {
             title
             description
             videoLocation
+            quiz {
+              question
+              answers
+            }
+            pictureQuiz {
+              question
+              answers
+            }
           }
         }
       }

@@ -35,7 +35,7 @@ const CourseCarousel = props => (
                   <Rate style={ styles.Rating } disabled defaultValue={ course.rating } />
                 </span>
               </div>
-              <Popover content={ popOverContent() } title={ _.truncate(course.title, { length: 30 }) }>
+              <Popover content={ popOverContent() } title={`Purchase this course for $${ course.price }`}>
                 <Button style={{ background: course.color }} className='explore-button' type="primary" icon="eye">
                   View Course
                 </Button>

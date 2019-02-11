@@ -1,7 +1,7 @@
-import { GraphQlMutate, GraphQlDevURI } from '../../../../../globalHelpers/axiosCalls';
+import { GraphQlMutate, GraphQlDevURI } from '../../../../../../globalHelpers/axiosCalls';
 import { message } from 'antd';
-import GlobalLocalization from '../../../../../globalLocalization';
-import { updateSectionsAfterAPICall } from './helpers';
+import GlobalLocalization from '../../../../../../globalLocalization';
+import { updateSectionsAfterAPICall } from '../helpers';
 
 export const call = async (context, navbarContainer) => {
   try {
@@ -17,6 +17,14 @@ export const call = async (context, navbarContainer) => {
             title
             description
             videoLocation
+            quiz {
+              question
+              answers
+            }
+            pictureQuiz {
+              question
+              answers
+            }
           }
         }
       }

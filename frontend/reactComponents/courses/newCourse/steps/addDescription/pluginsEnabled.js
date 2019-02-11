@@ -22,11 +22,7 @@ export const pluginsEnabled = [
   'paragraphStyle',
   'quickInsert',
   'quote',
-  'save',
   'table',
   'url',
   'wordPaste',
-  'image',
-  'imageManager',
-  'imageTui'
 ];

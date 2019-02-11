@@ -1,5 +1,5 @@
-const Course =  require('../../../models/course');
-const { TransformObject } = require('../merge');
+const Course =  require('../../../../models/course');
+const { TransformObject } = require('../../merge');
 
 exports.addSectionToCourse = async (args, req) => {
   try {

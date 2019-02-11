@@ -14,7 +14,7 @@ const renderAddedVideos = props => {
   const videos = props.container.state.course.sections[props.container.state.currentActiveSection].videos;
   if (videos && videos.length > 0) {
     return (
-      <Collapse onChange={ key => fillInVideoDetails(key, videos, props) } style={{ marginTop: 20, marginBottom: 20 }} accordion>
+      <Collapse onChange={ key => fillInVideoDetailsAndRenderVideo(key, videos, props) } style={{ marginTop: 20, marginBottom: 20 }} accordion>
         { videos.map((video, i) =>
           <Panel header={ `${ video.title ? video.title : 'Video ' + (i + 1) }` } key={ i }>
             <label className='collapse-push-label collapse-remove-margin-top'>Enter a title for this video</label>
@@ -22,7 +22,7 @@ const renderAddedVideos = props => {
             <label className="collapse-push-label">Enter a description for this video</label>
             <TextArea rows={4} value={ props.container.state.videoDescriptionTerm } onChange={ e => props.container.updateVideoDetails('description', i, e.target.value, props.navbarContainer) } style={{ marginBottom: 20 }} placeholder="Your description goes here..." />
             <Button.Group>
-              <Dropdown overlay={ menu }>
+              <Dropdown overlay={ menu(props, i) }>
                 <Button>
                   Add Exercise <Icon type="rocket" />
                 </Button>
@@ -40,22 +40,35 @@ const renderAddedVideos = props => {
   }
 };
 
-const fillInVideoDetails = (key, videos, props) => {
+const fillInVideoDetailsAndRenderVideo = (key, videos, props) => {
   if (key) {
+    $('.video-transition').css({opacity: 1});
+    setTimeout(() => {
+      props.container.updateState('currentVideoLocation', videos[key].videoLocation);
+    }, 300);
+    setTimeout(() => {
+      $('.video-transition').css({opacity: 0});
+    }, 350);
+
     props.container.updateState('videoTitleTerm', videos[key].title);
     props.container.updateState('videoDescriptionTerm', videos[key].description);
   }
 };
 
-const menu = (
+const menu = (props, i) => (
   <Menu>
-    <Menu.Item key="1">Add A Quiz</Menu.Item>
-    <Menu.Item key="2">Add A Picture Quiz</Menu.Item>
+    <Menu.Item onClick={ () => openDrawerFromMenu(props, i, 'addQuizDrawerVisibility') } key='1'>Add A Quiz</Menu.Item>
+    <Menu.Item onClick={ () => openDrawerFromMenu(props, i, 'addPictureQuizDrawerVisibility') } key='2'>Add A Picture Quiz</Menu.Item>
     <Menu.Item key="3">Add A Matching Game</Menu.Item>
     <Menu.Item key="3">Add A Crunch Challenge</Menu.Item>
     <Menu.Item key="3">Add A Coding Challenge</Menu.Item>
     <Menu.Item key="3">Add A Coding Project</Menu.Item>
   </Menu>
 );
+
+const openDrawerFromMenu = (props, currentActiveVideoInSectionIterator, drawerToOpen) => {
+  props.container.updateState('currentActiveVideoInSection', currentActiveVideoInSectionIterator);
+  props.container.updateState(drawerToOpen, true);
+};
 
 export default AddedVideoList;

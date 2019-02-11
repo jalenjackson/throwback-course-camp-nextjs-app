@@ -30,7 +30,14 @@ export default class AddANewVideoButton extends React.Component {
 
   startVideoUploadProcess = async info => {
     if (info.file.status === 'done') {
-      this.props.container.handleSectionVideoUpload(info.file.response.link, this.state.currentSectionWhenUploading);
+      await this.props.container.handleSectionVideoUpload(info.file.response.link, this.state.currentSectionWhenUploading);
+      $('.video-transition').css({ opacity: 1 });
+      setTimeout(() => {
+        this.props.container.updateState('currentVideoLocation', info.file.response.link);
+      }, 300);
+      setTimeout(() => {
+        $('.video-transition').css({ opacity: 0 });
+      }, 400);
     } else if (info.file.status === 'error') {
       if (info.file.response.unauthenticated) {
         handleUnauthenticatedButFrontEndThinksWeAre(this.props.navbarContainer);
