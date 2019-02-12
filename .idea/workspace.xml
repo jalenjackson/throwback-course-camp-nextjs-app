@@ -2,46 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c93e22-de8f-4fdc-ab13-cf5547a08d51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/addNewSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/changeCurrentActiveSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/changeCurrentActiveSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteAddedVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/deleteSectionImageInFroalaEditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/handleSectionVideoUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/setInitialStateFromData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateSectionDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateState.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/updateState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/updateVideoDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/modals/addQuiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/rightPanelVideoPreview/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/rightPanelVideoPreview/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/topProgress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/topProgress/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addDescription/pluginsEnabled.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addDescription/pluginsEnabled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/courseCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/courseCarousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/courseBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courseBuilder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/addQuizQuestionToVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addQuiz/addQuizQuestionToVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/addSectionToCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/addSectionToCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/addVideoToSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/addVideoToSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/deleteSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/deleteSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/deleteVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/deleteVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/updateSectionDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/updateSectionDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/updateVideoDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/updateVideoDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/inputs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/Video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/minimalVideoPlayer.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/minimalVideoPlayer.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,7 +39,122 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/editMatchingGameQuestion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1015">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-110">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/saveMatchingGameQuestion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="634">
+              <caret line="45" column="21" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="42" column="102" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/addedQuestion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addedAnswer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-286">
+              <caret line="17" column="41" selection-start-line="16" selection-start-column="25" selection-end-line="17" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/deleteMatchingGameQuestion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1056">
+              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+              <folding>
+                <element signature="e#68#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -111,28 +212,42 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/deleteVideo.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/updateVideoDetails.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/sceneEditContainer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSectionImageInFroalaEditor.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addDescription/pluginsEnabled.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/rightPanelVideoPreview/video.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less" />
-        <option value="$PROJECT_DIR$/static/styles/minimalVideoPlayer.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addAnotherAnswer.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/addPictureQuizDrawer.less" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/updatePictureQuizQuestion.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/addAnotherPictureQuizQuestionToQuiz.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addAnotherAnswer.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addedAnswer.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/matchingGame.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Video.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/MatchingGame/matchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/MatchingGame/matchingGameAnswer.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types/MatchingGame/matchingGame.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/types.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs/MatchingGame/MatchingGameAnswer.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/inputs/MatchingGame/MatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addMatchingGame/addMatchingGameToVideo.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addMatchingGame/deleteMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/mutations.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addMatchingGame/editMatchingGameQuestion.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/index.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/uploadQuestion.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/add-picture-quiz-drawer.less" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/types/Video.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/types/PictureQuiz.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/addPictureQuizQuestionToVideo.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/types.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/saveMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/saveMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/index.js" />
+        <option value="$PROJECT_DIR$/pages/courses/courseBuilder.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js" />
@@ -142,26 +257,12 @@
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js" />
-        <option value="$PROJECT_DIR$/pages/courses/courseBuilder.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addAnotherAnswer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/addPictureQuizDrawer.less" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/updatePictureQuizQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/deleteMatchingGameQuestion.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/mutations.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/addAnotherPictureQuizQuestionToQuiz.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addAnotherAnswer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addedAnswer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/editMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/addedQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/index.js" />
       </list>
     </option>
   </component>
@@ -183,6 +284,112 @@
               <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="containerMethods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="containerMethods" type="462c0819:PsiDirectoryNode" />
+              <item name="drawers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="containerMethods" type="462c0819:PsiDirectoryNode" />
+              <item name="drawers" type="462c0819:PsiDirectoryNode" />
+              <item name="addMatchingGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="drawers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="drawers" type="462c0819:PsiDirectoryNode" />
+              <item name="addMatchingGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="drawers" type="462c0819:PsiDirectoryNode" />
+              <item name="addPictureQuiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="reactComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="courseBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="drawers" type="462c0819:PsiDirectoryNode" />
+              <item name="addQuiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL-API" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -200,11 +407,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder\containerMethods\drawers\saveMatchingGame" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\schema\types\MatchingGame" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\resolvers\courses\drawers\addQuiz" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder\containerMethods\sections" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder\containerMethods\videos" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder\containerMethods\misc" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\resolvers\courses\videos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder\drawers\addPictureQuiz" />
@@ -238,15 +445,16 @@
       <updated>1548447060575</updated>
       <workItem from="1548447061883" duration="30311000" />
       <workItem from="1548494235406" duration="4679000" />
-      <workItem from="1548526017324" duration="378273000" />
+      <workItem from="1548526017324" duration="388340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="413263000" />
+    <option name="totallyTimeSpent" value="423330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.12908325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -273,199 +481,88 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Section.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Video.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="154">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Quiz.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Section.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/MatchingGame/matchingGameAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-end-line="6" />
+        <state relative-caret-position="22">
+          <caret line="1" column="25" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/PictureQuiz.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/MatchingGame/matchingGameQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state>
+          <caret column="28" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/Course.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/MatchingGame/MatchingGameQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/MatchingGame/matchingGame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/MatchingGame/MatchingGameAnswer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/addAnotherPictureQuizQuestionToQuiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="43" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addQuiz/addQuizQuestionToVideo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="38" selection-end-line="28" />
+        <state>
+          <caret selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/addPictureQuizQuestionToVideo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="25" column="15" selection-start-line="24" selection-start-column="14" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/changeCurrentActiveSection.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/Course.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/MatchingGame/deleteMatchingGameQuestion.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="9" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/courseBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addAnotherAnswer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="176" selection-start-line="23" selection-start-column="176" selection-end-line="23" selection-end-column="176" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/videoSceneEditContainer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/newCourse/steps/addImage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="36" column="94" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="28" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -476,75 +573,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/deleteVideo.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addMatchingGame/addMatchingGameToVideo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="20" selection-start-line="2" selection-end-line="3" />
+        <state relative-caret-position="396">
+          <caret line="18" column="52" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addMatchingGame/deleteMatchingGameQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="15" selection-end-line="45" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addQuiz/updateQuizQuestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sass/addPictureQuizDrawer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/updatePictureQuizQuestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="38" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="15" column="7" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/graphQL/schema/mutations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addQuiz/addAnotherQuizQuestionToQuiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="25" />
+        <state relative-caret-position="572">
+          <caret line="26" column="137" selection-start-line="26" selection-start-column="137" selection-end-line="26" selection-end-column="137" />
         </state>
       </provider>
     </entry>
@@ -557,39 +603,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="765">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addPictureQuiz/addAnotherPictureQuizQuestionToQuiz.js">
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/drawers/addMatchingGame/editMatchingGameQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="43" />
+        <state relative-caret-position="462">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="44" column="124" selection-start-line="44" selection-start-column="91" selection-end-line="44" selection-end-column="124" />
+        <state relative-caret-position="501">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        <state relative-caret-position="198">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses/courseBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="744">
+          <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
           </folding>
@@ -598,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        <state relative-caret-position="685">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
           </folding>
@@ -608,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="36" column="100" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
+        <state relative-caret-position="744">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
           </folding>
@@ -618,38 +677,195 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="707">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="663">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="699">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/changeCurrentActiveSection.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="81" column="100" selection-start-line="81" selection-end-line="82" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/deleteMatchingGameQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="e#68#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addedAnswer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        <state relative-caret-position="-286">
+          <caret line="17" column="41" selection-start-line="16" selection-start-column="25" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/saveMatchingGameQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="45" column="21" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/editMatchingGameQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1015">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/addedQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -658,38 +874,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="748">
+          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addAnotherAnswer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="396">
+          <caret line="42" column="102" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

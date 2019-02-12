@@ -12,9 +12,10 @@ class NavbarContainer extends Container {
     sectionLoading: false,
     currentActiveSection: 0,
     currentActiveVideoInSection: 0,
+    currentVideoLocation: '',
     addQuizDrawerVisibility: false,
     addPictureQuizDrawerVisibility: false,
-    currentVideoLocation: ''
+    addMatchingGameDrawerVisibility: false
   };
 
   // misc
@@ -32,17 +33,22 @@ class NavbarContainer extends Container {
   deleteAddedVideo = (i, navbarContainer, videoLocation) => Methods.deleteAddedVideo.call(this, i, navbarContainer, videoLocation);
   updateVideoDetails = (type, i, term, navbarContainer) => Methods.updateVideoDetails.call(this, type, i, term, navbarContainer);
 
-  // drawers - addQuiz
+  // exercises - addQuiz
   saveAddQuizQuestion = (e, navbarContainer, question, answers) => Methods.saveAddQuizQuestion.call(e, navbarContainer, this, question, answers);
   editAddQuizAddedAnswer  = (term, type, navbarContainer, questionIterator, answerIterator) => Methods.editAddQuizAddedAnswer.call(this, term, type, navbarContainer, questionIterator, answerIterator);
   editAddQuizAddingNewAnswer = (navbarContainer, term, questionIterator) => Methods.editAddQuizAddingNewAnswer.call(this, navbarContainer, term, questionIterator);
   deleteAddQuizQuestion = (navbarContainer, questionIndex) => Methods.deleteAddQuizQuestion.call(this, navbarContainer, questionIndex);
 
-  // drawers - addPictureQuiz
+  // exercises - addPictureQuiz
   savePictureQuizQuestion = (navbarContainer, question, answers) => Methods.savePictureQuizQuestion.call(this, navbarContainer, question, answers);
   deleteAddPictureQuizQuestion = (navbarContainer, questionIndex) => Methods.deleteAddPictureQuizQuestion.call(this, navbarContainer, questionIndex);
   editAddPictureQuizAddedAnswer  = (term, type, navbarContainer, questionIterator, answerIterator) => Methods.editAddPictureQuizAddedAnswer.call(this, term, type, navbarContainer, questionIterator, answerIterator);
   editAddPictureQuizAddingNewAnswer = (navbarContainer, term, questionIterator) => Methods.editAddPictureQuizAddingNewAnswer.call(this, navbarContainer, term, questionIterator);
+
+  // exercises - addMatchingGame
+  saveMatchingGameQuestion = (navbarContainer, question, answer, matchId) => Methods.saveMatchingGameQuestion.call(this, navbarContainer, question, answer, matchId);
+  deleteMatchingGameQuestion = (navbarContainer, matchId) => Methods.deleteMatchingGameQuestion.call(this, navbarContainer, matchId);
+  editMatchingGameQuestion = (navbarContainer, term, type, matchId) => Methods.editMatchingGameQuestion.call(this, navbarContainer, term, type, matchId);
 }
 
 export default NavbarContainer;

@@ -3,19 +3,15 @@ import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 
-
-export const call = async (context, term, type, navbarContainer, questionIterator, answerIterator) => {
+export const call = async (context, navbarContainer, matchId) => {
   try {
-    const editAddPictureQuizQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
+    const deleteAddMatchingGameQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
-      updatePictureQuizQuestion(
+      deleteMatchingGameQuestion(
         courseId: "${ context.state.course._id }", 
         sectionIndex: ${ context.state.currentActiveSection }, 
         videoIndex: ${ context.state.currentActiveVideoInSection }, 
-        questionIndex: ${ questionIterator }, 
-        answerIndex: ${ answerIterator ? answerIterator : 0 }, 
-        term: "${ term }", 
-        type: "${ type }") {
+        matchId: "${ matchId }") {
           sections {
             title
             description
@@ -45,10 +41,10 @@ export const call = async (context, term, type, navbarContainer, questionIterato
             }
           }
         }
-      }
+    }
+
   `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, editAddPictureQuizQuestionResponseMutation, 'updatePictureQuizQuestion', true);
-    message.success(`Successfully changed picture answer`);
+    updateSectionsAfterAPICall(context, navbarContainer, deleteAddMatchingGameQuestionResponseMutation, 'deleteMatchingGameQuestion', true);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

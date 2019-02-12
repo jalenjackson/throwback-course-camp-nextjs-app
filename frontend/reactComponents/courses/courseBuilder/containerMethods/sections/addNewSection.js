@@ -25,6 +25,16 @@ export const call = async (context, navbarContainer) => {
               question
               answers
             }
+            matchingGame {
+              questions {
+                question
+                matchId
+              }
+              answers {
+                answer
+                matchId
+              }
+            }
           }
         }
       }

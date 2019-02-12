@@ -28,6 +28,16 @@ export const call = async (context, videoLocation, currentActiveSection) => {
                     question
                     answers
                   }
+                  matchingGame {
+                    questions {
+                      question
+                      matchId
+                    }
+                    answers {
+                      answer
+                      matchId
+                    }
+                  }
                 }
               }
             }

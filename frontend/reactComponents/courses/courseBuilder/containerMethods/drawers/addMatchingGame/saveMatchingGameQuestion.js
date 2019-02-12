@@ -3,16 +3,16 @@ import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 
-
-export const call = async (context, navbarContainer, questionIndex) => {
+export const call = async (context, navbarContainer, question, answer, matchId) => {
   try {
-    const deleteAddQuizQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
+    const saveAddMatchingGameQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
-      deleteAddQuizQuestion(
+      addMatchingGameToVideo(
       courseId: "${ context.state.course._id }", 
       sectionIndex: ${ context.state.currentActiveSection }, 
       videoIndex: ${ context.state.currentActiveVideoInSection }, 
-      questionIndex: ${ questionIndex }) {
+      question: { question: "${ question }", matchId: "${ matchId }" }, 
+      answer: { answer: "${ answer }", matchId: "${ matchId }" }) {
         sections {
           title
           description
@@ -44,10 +44,8 @@ export const call = async (context, navbarContainer, questionIndex) => {
       }
     }
   `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, deleteAddQuizQuestionResponseMutation, 'deleteAddQuizQuestion', true);
-    message.success('Successfully deleted question');
+    updateSectionsAfterAPICall(context, navbarContainer, saveAddMatchingGameQuestionResponseMutation, 'addMatchingGameToVideo', true);
   } catch (e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };

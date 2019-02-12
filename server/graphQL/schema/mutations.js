@@ -21,5 +21,9 @@ exports.Mutations = `
     addVideoToSection(courseId: String!, sectionIndex: Float!, videoInput: VideoInput): Course    
     updateVideoDetails(courseId: String!, sectionIndex: Float!, videoIndex: Float!, videoInput: VideoInput): Course    
     deleteVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, fileId: String!): Course
+    
+    addMatchingGameToVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, question: MatchingGameQuestionInput, answer: MatchingGameAnswerInput): Course
+    deleteMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, matchId: String!): Course
+    editMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, matchId: String!, type: String!, term: String!): Course
   }
 `;

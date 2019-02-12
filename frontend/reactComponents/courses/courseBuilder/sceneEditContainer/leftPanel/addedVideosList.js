@@ -59,7 +59,7 @@ const menu = (props, i) => (
   <Menu>
     <Menu.Item onClick={ () => openDrawerFromMenu(props, i, 'addQuizDrawerVisibility') } key='1'>Add A Quiz</Menu.Item>
     <Menu.Item onClick={ () => openDrawerFromMenu(props, i, 'addPictureQuizDrawerVisibility') } key='2'>Add A Picture Quiz</Menu.Item>
-    <Menu.Item key="3">Add A Matching Game</Menu.Item>
+    <Menu.Item onClick={ () => openDrawerFromMenu(props, i, 'addMatchingGameDrawerVisibility') } key="3">Add A Matching Game</Menu.Item>
     <Menu.Item key="3">Add A Crunch Challenge</Menu.Item>
     <Menu.Item key="3">Add A Coding Challenge</Menu.Item>
     <Menu.Item key="3">Add A Coding Project</Menu.Item>

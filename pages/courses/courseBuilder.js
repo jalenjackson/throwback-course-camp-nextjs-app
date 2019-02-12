@@ -49,6 +49,16 @@ CourseBuilder.getInitialProps = async (ctx) => {
               question
               answers
             }
+            matchingGame {
+              questions {
+                question
+                matchId
+              }
+              answers {
+                answer
+                matchId
+              }
+            }
           }
         }
       }
