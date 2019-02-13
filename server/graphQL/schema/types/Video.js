@@ -6,5 +6,8 @@ exports.Video = `
     quiz: [Quiz]
     pictureQuiz: [PictureQuiz]
     matchingGame: MatchingGame
+    crunchChallenge: CrunchChallenge
+    codingChallenge: CodingChallenge
+    codingProject: CodingProject
   }
 `;

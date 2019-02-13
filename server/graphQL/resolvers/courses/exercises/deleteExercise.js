@@ -1,7 +1,7 @@
-const Course =  require('../../../../../models/course');
-const { TransformObject } = require('../../../merge');
+const Course =  require('../../../../models/course');
+const { TransformObject } = require('../../merge');
 
-exports.editMatchingGameQuestion = async (args, req) => {
+exports.deleteExercise = async (args, req) => {
   try {
     if (!req.isTheUserAuthenticated) {
       throw new Error('Unauthenticated!');
@@ -9,11 +9,10 @@ exports.editMatchingGameQuestion = async (args, req) => {
     const course = await Course.findById(args.courseId);
     const section = course.sections[args.sectionIndex];
     const video = section.videos[args.videoIndex];
-    const isTypeAnswer = args.type === 'Answer';
 
-    video.matchingGame[isTypeAnswer ? 'answers' : 'questions'].find((obj) => {
-      return obj.matchId === args.matchId;
-    })[isTypeAnswer ? 'answer' : 'question'] = args.term;
+    if (video[args.key]) {
+      delete video[args.key];
+    }
 
     section.videos[args.videoIndex] = video;
     course.sections.set(args.sectionIndex, section);

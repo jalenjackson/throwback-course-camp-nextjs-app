@@ -18,6 +18,10 @@ const { addAnotherPictureQuizQuestionToQuiz } = require('./courses/exercises/add
 const { addMatchingGameToVideo } = require('./courses/exercises/addMatchingGame/addMatchingGameToVideo');
 const { deleteMatchingGameQuestion } = require('./courses/exercises/addMatchingGame/deleteMatchingGameQuestion');
 const { editMatchingGameQuestion } = require('./courses/exercises/addMatchingGame/editMatchingGameQuestion');
+const { addCrunchChallenge } = require('./courses/exercises/addCrunchChallenge/addCrunchChallenge');
+const { addCodingChallenge } = require('./courses/exercises/addCodingChallenge/addCodingChallenge');
+const { addCodingProject } = require('./courses/exercises/addCodingProject/addCodingProject');
+const { deleteExercise } = require('./courses/exercises/deleteExercise');
 
 module.exports = {
   courses,
@@ -39,5 +43,9 @@ module.exports = {
   addAnotherPictureQuizQuestionToQuiz,
   addMatchingGameToVideo,
   deleteMatchingGameQuestion,
-  editMatchingGameQuestion
+  editMatchingGameQuestion,
+  addCrunchChallenge,
+  addCodingChallenge,
+  addCodingProject,
+  deleteExercise
 };

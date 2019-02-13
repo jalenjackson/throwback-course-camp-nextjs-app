@@ -3,6 +3,9 @@ const { TransformObject } = require('../../../merge');
 
 exports.deleteMatchingGameQuestion = async (args, req) => {
   try {
+    if (!req.isTheUserAuthenticated) {
+      throw new Error('Unauthenticated!');
+    }
     const course = await Course.findById(args.courseId);
     const section = course.sections[args.sectionIndex];
     const video = section.videos[args.videoIndex];

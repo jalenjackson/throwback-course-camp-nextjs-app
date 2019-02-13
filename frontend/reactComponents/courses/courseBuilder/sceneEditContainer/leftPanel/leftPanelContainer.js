@@ -40,9 +40,6 @@ export default class LeftPanelContainer extends React.Component {
         toolbarSticky: false,
         fontSizeSelection: true,
       })
-      .on('froalaEditor.image.error', () => {
-        message.error(GlobalLocalization.UnexpectedError)
-      })
       .on('froalaEditor.contentChanged', e => {
         this.props.container.updateSectionDetails('description', 'sectionDescriptionTerm', e.target.value, this.props.navbarContainer, this.props.container.state.currentActiveSection);
       });

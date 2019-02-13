@@ -18,5 +18,9 @@ export const Methods = {
   editAddPictureQuizAddingNewAnswer: require('./drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer'),
   saveMatchingGameQuestion: require('./drawers/addMatchingGame/saveMatchingGameQuestion'),
   deleteMatchingGameQuestion: require('./drawers/addMatchingGame/deleteMatchingGameQuestion'),
-  editMatchingGameQuestion: require('./drawers/addMatchingGame/editMatchingGameQuestion')
+  editMatchingGameQuestion: require('./drawers/addMatchingGame/editMatchingGameQuestion'),
+  saveCrunchChallenge: require('./drawers/addCrunchChallenge/saveCrunchChallenge'),
+  removeExercise: require('./removeExercise'),
+  saveCodingChallenge: require('./drawers/addCodingChallenge/saveCodingChallenge'),
+  saveCodingProject: require('./drawers/addCodingProject/saveCodingProject')
 };

@@ -15,7 +15,10 @@ class NavbarContainer extends Container {
     currentVideoLocation: '',
     addQuizDrawerVisibility: false,
     addPictureQuizDrawerVisibility: false,
-    addMatchingGameDrawerVisibility: false
+    addMatchingGameDrawerVisibility: false,
+    addCrunchChallengeVisibility: false,
+    addCodingChallengeVisibility: false,
+    addCodingProjectVisibility: false
   };
 
   // misc
@@ -49,6 +52,18 @@ class NavbarContainer extends Container {
   saveMatchingGameQuestion = (navbarContainer, question, answer, matchId) => Methods.saveMatchingGameQuestion.call(this, navbarContainer, question, answer, matchId);
   deleteMatchingGameQuestion = (navbarContainer, matchId) => Methods.deleteMatchingGameQuestion.call(this, navbarContainer, matchId);
   editMatchingGameQuestion = (navbarContainer, term, type, matchId) => Methods.editMatchingGameQuestion.call(this, navbarContainer, term, type, matchId);
+
+  // exercises - addCrunchChallenge
+  saveCrunchChallenge = (navbarContainer, target, definitions) => Methods.saveCrunchChallenge.call(this, navbarContainer, target, definitions);
+
+  // remove exercise
+  removeExercise = (navbarContainer, key) => Methods.removeExercise.call(this, navbarContainer, key);
+
+  // exercises - addCodingChallenge
+  saveCodingChallenge = (navbarContainer, title, description, functionText, returnValue, functionName, functionParams, addedParams) => Methods.saveCodingChallenge.call(this, navbarContainer, title, description, functionText, returnValue, functionName, functionParams, addedParams);
+
+  // exercises - addCodingProject
+  saveCodingProject = (navbarContainer, summary) => Methods.saveCodingProject.call(this, navbarContainer, summary);
 }
 
 export default NavbarContainer;

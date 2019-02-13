@@ -3,17 +3,15 @@ import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 
-export const call = async (context, navbarContainer, term, type, matchId) => {
+export const call = async (context, navbarContainer, summary) => {
   try {
-    const editAddMatchingGameQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
-    mutation {
-      editMatchingGameQuestion(
+    const addCodingProjectResponseMutation = await GraphQlMutate(GraphQlDevURI, `
+      mutation {
+      addCodingProject(
         courseId: "${ context.state.course._id }", 
         sectionIndex: ${ context.state.currentActiveSection }, 
         videoIndex: ${ context.state.currentActiveVideoInSection }, 
-        matchId: "${ matchId }", 
-        type: "${ type }", 
-        term: "${ term }") {
+        summary: "${ btoa(summary) }") {
           sections {
             title
             description
@@ -58,11 +56,11 @@ export const call = async (context, navbarContainer, term, type, matchId) => {
               }
             }
           }
+        }
       }
-    }
-    
   `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, editAddMatchingGameQuestionResponseMutation, 'editMatchingGameQuestion', true);
+    updateSectionsAfterAPICall(context, navbarContainer, addCodingProjectResponseMutation, 'addCodingProject', true);
+    message.success('Successfully saved coding project!')
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

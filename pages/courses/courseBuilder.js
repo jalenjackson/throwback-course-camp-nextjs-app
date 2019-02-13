@@ -59,6 +59,22 @@ CourseBuilder.getInitialProps = async (ctx) => {
                 matchId
               }
             }
+            crunchChallenge {
+              target
+              definitions
+            }
+            codingChallenge {
+              title
+              description	
+              functionName
+              functionParams
+              addedFunctionParams
+              startingFunctionText
+              returnValue
+            }
+            codingProject {
+              summary
+            }
           }
         }
       }

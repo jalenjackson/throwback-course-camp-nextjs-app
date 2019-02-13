@@ -39,6 +39,22 @@ export const call = async (context, navbarContainer, question, answers) => {
                   matchId
                 }
               }
+              crunchChallenge {
+                target
+                definitions
+              }
+              codingChallenge {
+                title
+                description	
+                functionName
+                functionParams
+                addedFunctionParams
+                startingFunctionText
+                returnValue
+              }
+              codingProject {
+                summary
+              }
             }
           }
       }

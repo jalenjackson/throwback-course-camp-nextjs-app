@@ -25,5 +25,13 @@ exports.Mutations = `
     addMatchingGameToVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, question: MatchingGameQuestionInput, answer: MatchingGameAnswerInput): Course
     deleteMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, matchId: String!): Course
     editMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, matchId: String!, type: String!, term: String!): Course
+    
+    addCrunchChallenge(courseId: String!, sectionIndex: Float!, videoIndex: Float!, target: String!, definitions: String!): Course
+    
+    addCodingChallenge(courseId: String!, sectionIndex: Float!, videoIndex: Float!, codingChallengeInput: CodingChallengeInput): Course
+    
+    addCodingProject(courseId: String!, sectionIndex: Float!, videoIndex: Float!, summary: String!): Course
+    
+    deleteExercise(courseId: String!, sectionIndex: Float!, videoIndex: Float!, key: String!): Course
   }
 `;

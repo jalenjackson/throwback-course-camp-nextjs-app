@@ -7,6 +7,9 @@ const { PictureQuiz } = require('./types/PictureQuiz');
 const { MatchingGame } = require('./types/MatchingGame/matchingGame');
 const { MatchingGameAnswer } = require('./types/MatchingGame/matchingGameAnswer');
 const { MatchingGameQuestion } = require('./types/MatchingGame/matchingGameQuestion');
+const { CrunchChallenge } = require('./types/CrunchChallenge');
+const { CodingChallenge } = require('./types/CodingChallenge');
+const { CodingProject } = require('./types/CodingProject');
 
 exports.Types = `
   ${Course}
@@ -18,4 +21,7 @@ exports.Types = `
   ${MatchingGame}
   ${MatchingGameQuestion}
   ${MatchingGameAnswer}
+  ${CrunchChallenge}
+  ${CodingChallenge}
+  ${CodingProject}
 `;
