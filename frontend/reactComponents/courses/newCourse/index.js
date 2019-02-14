@@ -6,7 +6,7 @@ import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
 import AddTitle from './steps/addTitle/index';
 import AddDescription from './steps/addDescription/index';
 import AddPrice from './steps/addPrice/index';
-import AddImage from './steps/addImage/index';
+import AddImage from './steps/review/index';
 import AddColor from './steps/addColor/index';
 import AddCategory from './steps/addCategory';
 import AddLearning from './steps/addLearning';

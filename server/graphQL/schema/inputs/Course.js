@@ -3,7 +3,6 @@ exports.Course = `
     title: String!
     description: String!
     category: String!
-    image: String!
     color: String!
     price: Float!
     rating: Float!

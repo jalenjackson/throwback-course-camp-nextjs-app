@@ -11,7 +11,6 @@ exports.createCourse = async (args, req) => {
       title: args.courseInput.title,
       description: args.courseInput.description,
       category: args.courseInput.category,
-      image: args.courseInput.image,
       color: args.courseInput.color,
       price: +args.courseInput.price,
       language: args.courseInput.language,

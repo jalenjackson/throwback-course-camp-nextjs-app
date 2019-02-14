@@ -6,7 +6,6 @@ import { message } from 'antd';
 export const call = async (context, i, navbarContainer, videoLocation) => {
   try {
     const s3VideoId = videoLocation.split('/')[3];
-    console.log(s3VideoId)
     const deleteAddedVideoResponse = await GraphQlMutate(GraphQlDevURI, `
     mutation {
       deleteVideo(courseId: "${ context.state.course._id }", sectionIndex: ${ context.state.currentActiveSection }, videoIndex: ${ i }, fileId: "${ s3VideoId }") {

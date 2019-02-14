@@ -30,6 +30,7 @@ CourseBuilder.getInitialProps = async (ctx) => {
     query {
       singleCourse(courseId: "${courseId}") {
         _id
+        color
         title
         description
         category

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button, Col, Icon, Row, Popover, AutoComplete } from 'antd';
+import { Button, Col, Icon, Row, Popover, Select } from 'antd';
 import { infoPopoverContent } from './popoverContent';
 import Localization from '../../localization';
 const AddCategoryLocalized = Localization.Steps.AddCategory;
+
+const Option = Select.Option;
 
 const AddCategory = props => (
     <div>
@@ -16,15 +18,11 @@ const AddCategory = props => (
               </Icon>
             </Popover>
           </label>
-          <AutoComplete
-              style={{ width: '100%' }}
-              size='large'
-              dataSource={ Localization.Steps.AddCategory.Categories }
-              onSearch={ term => props.container.updateState('category', term) }
-              onSelect={ term => props.container.updateState('category', term) }
-              value={ props.container.state.category }
-              placeholder={ AddCategoryLocalized.Placeholder }>
-          </AutoComplete>
+          <Select defaultValue={ props.container.state.category } style={{ width: 400 }} placeholder="Select A Category" onChange={ v => props.container.updateState('category', v) }>
+            { Localization.Steps.AddCategory.Categories.map((category) => (
+               <Option value={ category }>{ category }</Option>
+            )) }
+          </Select>
         </Col>
       </Row>
       <div className="new-course-button-container">

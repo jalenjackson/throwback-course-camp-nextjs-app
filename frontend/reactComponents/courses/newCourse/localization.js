@@ -64,19 +64,16 @@ let localization = new LocalizedStrings({
           all depends on your marketing strategy. Popular prices range between $8.99 to $350`,
         InputPlaceholder: 'Enter the price you want this course to sell for.'
       },
-      AddImage: {
-        Label: 'Upload an image ',
+      Review: {
+        Label: 'Review Your Course Details',
         PopoverTitle: 'Adding a image',
-        UploadText: 'Click or drag file to upload an image',
-        UploadHint: 'We support JPG, PNG, and GIF',
         CustomerViewingTab: 'When a customer is viewing',
         TaughtBy: 'Taught by',
         MoneyIconAlt: 'Money Icon',
         ViewCourse: 'View Course',
         CustomerPurchases: 'View when a customer purchases',
-        AddImagePrompt: 'Please add an image to view this tab',
         GetStarted: 'Get Started',
-        PopoverContent: 'Whenever a customer buys your course they will see the image you uploaded at the top of the purchasing form.',
+        PopoverContent: 'Below shows how the user will view your course if they are interested directly through our website.',
         ExploreButtonPopoverContent: `When a customer clicks this button, the customer will be taken to a page to 
                                       view all of the sections available in your course.
                                       On this page they can preview your first video, see all of 

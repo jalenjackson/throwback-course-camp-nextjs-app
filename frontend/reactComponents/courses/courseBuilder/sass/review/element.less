@@ -1,0 +1,86 @@
+#course-track-element-container {
+  cursor: pointer;
+  width: 700px;
+  background: white;
+  box-shadow: 0 -8px 38px rgba(0,0,0,0.06), 0 10px 12px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+
+  .course-track-element-circle {
+    border-radius: 100%;
+    padding: 4rem;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #F0F0F0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &::before {
+      opacity: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      transform: scale(1.1);
+      height: 100%;
+      border-left: 3px solid rgb(240, 240, 240);
+      border-right: 3px solid rgb(240, 240, 240);
+      border-radius: 8em;
+      z-index: 2;
+    }
+
+    &:hover::before {
+      animation: animate-border 350ms ease-in-out forwards infinite;
+    }
+
+    &:hover {
+      img {
+        filter: sepia(100%);
+      }
+    }
+
+    img {
+      transition: filter 300ms ease-in-out;
+      width: 80px;
+      height: auto;
+    }
+  }
+
+  .course-track-element-title {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    color: rgb(70, 70, 75);
+    line-height: 24px;
+  }
+
+  .course-track-timeline {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+
+@keyframes animate-border {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+

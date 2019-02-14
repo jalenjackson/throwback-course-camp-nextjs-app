@@ -5,6 +5,7 @@ import { updateSectionsAfterAPICall } from '../helpers';
 
 export const call = async (context, videoLocation, currentActiveSection) => {
   try {
+    console.log(currentActiveSection)
     const uploadedVideoResponse = await GraphQlMutate(GraphQlDevURI, `
       mutation {
         addVideoToSection(

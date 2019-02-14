@@ -1,10 +1,10 @@
 import React from "react";
 import Localization from '../../localization';
 
-export const popOverContent = (
+export const exploreButtonPopoverContent = (
   <div>
     <p>
-      { Localization.Steps.AddImage.PopoverContent }
+      { Localization.Steps.Review.ExploreButtonPopoverContent }
     </p>
   </div>
 );

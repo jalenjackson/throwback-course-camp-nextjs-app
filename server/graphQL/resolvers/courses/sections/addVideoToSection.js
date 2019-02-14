@@ -1,7 +1,7 @@
 const Course =  require('../../../../models/course');
 const { TransformObject } = require('../../merge');
 
-exports.addVideoToSection = async args => {
+exports.addVideoToSection = async (args, req) => {
   try {
     const updateElementByIndex = `sections.${ String(args.sectionIndex) }.videos`;
     const result = await Course.findOneAndUpdate(

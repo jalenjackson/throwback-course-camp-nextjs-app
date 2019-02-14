@@ -47,5 +47,5 @@ module.exports = {
   addCrunchChallenge,
   addCodingChallenge,
   addCodingProject,
-  deleteExercise
+  deleteExercise,
 };

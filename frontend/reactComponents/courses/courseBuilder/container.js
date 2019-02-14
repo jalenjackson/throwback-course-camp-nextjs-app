@@ -3,6 +3,8 @@ import { Methods } from './containerMethods';
 
 class NavbarContainer extends Container {
   state = {
+    currentPane: 'courseBuilder',
+    currentPaneNumber: 0,
     sectionTitleTerm: '',
     sectionDescriptionTerm: '',
     videoTitleTerm: '',
@@ -31,10 +33,12 @@ class NavbarContainer extends Container {
   changeCurrentActiveSection = i => Methods.changeCurrentActiveSection.call(this, i);
   updateSectionDetails = (type, state, value, navbarContainer, currentActiveSection) => Methods.updateSectionDetails.call(this, type, state, value, navbarContainer, currentActiveSection);
   handleSectionVideoUpload = (videoLocation, currentActiveSection) => Methods.handleSectionVideoUpload.call(this, videoLocation, currentActiveSection);
+  reorderSections = (navbarContainer, newSections) => Methods.reorderSections.call(this, navbarContainer, newSections);
 
   // videos
   deleteAddedVideo = (i, navbarContainer, videoLocation) => Methods.deleteAddedVideo.call(this, i, navbarContainer, videoLocation);
   updateVideoDetails = (type, i, term, navbarContainer) => Methods.updateVideoDetails.call(this, type, i, term, navbarContainer);
+  reorderVideos = (navbarContainer, i) => Methods.reorderVideos.call(this, navbarContainer, i);
 
   // exercises - addQuiz
   saveAddQuizQuestion = (e, navbarContainer, question, answers) => Methods.saveAddQuizQuestion.call(e, navbarContainer, this, question, answers);

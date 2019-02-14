@@ -7,6 +7,7 @@ const schema = require('./graphQL/schema');
 const rootValue = require('./graphQL/resolvers');
 const VerifyAuthentication = require('./middleware/verifyAuthentication');
 const Uploaders = require('./uploaders/uploaderRoutes');
+const APIRoutes = require('./APIRoutes/index');
 const routesWithSlug = require('./routesWithSlug');
 const { URLMAP }  = require('./URLMap');
 
@@ -21,6 +22,7 @@ app.prepare().then(() => {
   server.use(bodyParser.json());
   server.use(VerifyAuthentication);
   server.use('/uploaders', Uploaders);
+  server.use('/api-routes', APIRoutes);
   server.use('/graphql', graphQlHTTP({
     schema,
     rootValue,

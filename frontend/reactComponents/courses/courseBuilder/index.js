@@ -7,6 +7,8 @@ import { Subscribe } from 'unstated';
 import Container from './container';
 import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
 import Drawers from './drawers/index';
+import Review from "./review/index";
+import Publish from './publish/index'
 
 export default class CourseBuilderComponent extends React.Component {
   render() {
@@ -15,17 +17,23 @@ export default class CourseBuilderComponent extends React.Component {
         { (container, navbarContainer) => (
           <div id='course-builder'>
             <SetInitialStateFromData container={ container } course={ this.props.course } />
+            <TopProgress { ...this.props } container={ container } />
             { Object.keys(container.state.course).length > 0
               ?
-                <div>
-                  { container.state.course.sections.length !== 0
-                    ? <Drawers { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                container.state.currentPane === 'courseBuilder' ?
+                  <div>
+                    { container.state.course.sections.length !== 0
+                      ? <Drawers { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                      : null
+                    }
+                    <SceneEditContainer { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                    <SectionTimelineContainer { ...this.props } navbarContainer={ navbarContainer } container={ container }  />
+                  </div>
+                  : container.state.currentPane === 'review' ?
+                      <Review { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                    : container.state.currentPane === 'publish' ?
+                      <Publish { ...this.props } navbarContainer={ navbarContainer } container={ container } />
                     : null
-                  }
-                  <TopProgress { ...this.props } container={ container } />
-                  <SceneEditContainer { ...this.props } navbarContainer={ navbarContainer } container={ container } />
-                  <SectionTimelineContainer { ...this.props } navbarContainer={ navbarContainer } container={ container }  />
-                </div>
               : null
             }
           </div>

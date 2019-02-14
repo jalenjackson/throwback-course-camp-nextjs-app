@@ -3,6 +3,6 @@ import Localization from '../../localization';
 
 export const previewPopoverContent = (
   <div>
-    <p dangerouslySetInnerHTML={{ __html: Localization.Steps.AddImage.PreviewButtonPopoverContent }} />
+    <p dangerouslySetInnerHTML={{ __html: Localization.Steps.Review.PreviewButtonPopoverContent }} />
   </div>
 );

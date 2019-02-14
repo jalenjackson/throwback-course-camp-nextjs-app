@@ -14,10 +14,10 @@ export default class AddCrunchChallengeDrawer extends React.Component {
 
   componentDidMount() {
     const currentActiveVideo = this.props.container.state.course.sections[this.props.container.state.currentActiveSection].videos[this.props.container.state.currentActiveVideoInSection];
-    if (currentActiveVideo.crunchChallenge && currentActiveVideo.crunchChallenge.definitions.length > 0) {
+    if (currentActiveVideo && currentActiveVideo.crunchChallenge && currentActiveVideo.crunchChallenge.definitions.length > 0) {
       this.setState({ definitions: currentActiveVideo.crunchChallenge.definitions.split(',') })
     }
-    if (currentActiveVideo.crunchChallenge && currentActiveVideo.crunchChallenge.target) {
+    if (currentActiveVideo && currentActiveVideo.crunchChallenge && currentActiveVideo.crunchChallenge.target) {
       this.setState({ target: currentActiveVideo.crunchChallenge.target })
     }
     $('.ant-empty-description').text('You have not entered any descriptions yet')
