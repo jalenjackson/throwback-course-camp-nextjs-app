@@ -24,5 +24,6 @@ export const Methods = {
   saveCodingChallenge: require('./drawers/addCodingChallenge/saveCodingChallenge'),
   saveCodingProject: require('./drawers/addCodingProject/saveCodingProject'),
   reorderSections: require('./sections/reorderSections'),
-  reorderVideos: require('./videos/reorderVideos')
+  reorderVideos: require('./videos/reorderVideos'),
+  changeCourseStatus: require('./changeCourseStatus')
 };

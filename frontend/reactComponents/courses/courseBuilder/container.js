@@ -3,8 +3,8 @@ import { Methods } from './containerMethods';
 
 class NavbarContainer extends Container {
   state = {
-    currentPane: 'courseBuilder',
-    currentPaneNumber: 0,
+    currentPane: 'publish',
+    currentPaneNumber: 3,
     sectionTitleTerm: '',
     sectionDescriptionTerm: '',
     videoTitleTerm: '',
@@ -20,7 +20,8 @@ class NavbarContainer extends Container {
     addMatchingGameDrawerVisibility: false,
     addCrunchChallengeVisibility: false,
     addCodingChallengeVisibility: false,
-    addCodingProjectVisibility: false
+    addCodingProjectVisibility: false,
+    courseStatusText: ''
   };
 
   // misc
@@ -68,6 +69,9 @@ class NavbarContainer extends Container {
 
   // exercises - addCodingProject
   saveCodingProject = (navbarContainer, summary) => Methods.saveCodingProject.call(this, navbarContainer, summary);
+
+  // exercises - changeCourseStatus
+  changeCourseStatus = (navbarContainer, status) => Methods.changeCourseStatus.call(this, navbarContainer, status);
 }
 
 export default NavbarContainer;

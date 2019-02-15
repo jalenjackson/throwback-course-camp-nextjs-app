@@ -16,6 +16,7 @@ exports.createCourse = async (args, req) => {
       language: args.courseInput.language,
       learning: args.courseInput.learning,
       date: new Date().toISOString(),
+      status: 'Unpublished',
       rating: +args.courseInput.rating,
       creator: req.userId,
       summary: args.courseInput.summary

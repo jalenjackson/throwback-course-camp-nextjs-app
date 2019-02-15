@@ -7,7 +7,8 @@ import { Subscribe } from 'unstated';
 import Container from './container';
 import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
 import Drawers from './drawers/index';
-import Review from "./review/index";
+import ReviewSections from './reviewSections/index';
+import ReviewCourseDetails from './reviewCourseDetails/index';
 import Publish from './publish/index'
 
 export default class CourseBuilderComponent extends React.Component {
@@ -29,11 +30,13 @@ export default class CourseBuilderComponent extends React.Component {
                     <SceneEditContainer { ...this.props } navbarContainer={ navbarContainer } container={ container } />
                     <SectionTimelineContainer { ...this.props } navbarContainer={ navbarContainer } container={ container }  />
                   </div>
-                  : container.state.currentPane === 'review' ?
-                      <Review { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                  : container.state.currentPane === 'reviewSections' ?
+                      <ReviewSections { ...this.props } navbarContainer={ navbarContainer } container={ container } />
                     : container.state.currentPane === 'publish' ?
                       <Publish { ...this.props } navbarContainer={ navbarContainer } container={ container } />
-                    : null
+                      : container.state.currentPane === 'reviewCourseDetails' ?
+                        <ReviewCourseDetails { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                          : null
               : null
             }
           </div>

@@ -3,7 +3,7 @@ import List from './list';
 import { Empty, Button } from 'antd';
 import { navigatePane } from '../topProgress/navigatePane';
 
-export default class Review extends React.Component {
+export default class ReviewSections extends React.Component {
   render () {
     const sections = this.props.container.state.course.sections;
     return (

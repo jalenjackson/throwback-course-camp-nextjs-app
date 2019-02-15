@@ -7,11 +7,13 @@ exports.Course = `
     color: String!
     price: Float!
     date: String!
+    status: String!
     creator: User!
     rating: Float!
     language: String!
     learning: [String]!
     summary: String!
     sections: [Section]
+    publishedCourse: Course
   }
 `;

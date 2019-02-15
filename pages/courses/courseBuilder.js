@@ -34,6 +34,7 @@ CourseBuilder.getInitialProps = async (ctx) => {
         title
         description
         category
+        status
         sections {
           title
           description

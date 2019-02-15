@@ -45,6 +45,15 @@ const CourseSchema = new Schema({
   sections: {
     type: Array
   },
+  status: {
+    type: String // Unpublished, Reviewing, Approved, Published
+  },
+  reviewCourse: {
+    type: Object
+  },
+  publishedCourse: {
+    type: Object
+  }
 });
 
 module.exports = mongoose.model('Course', CourseSchema);

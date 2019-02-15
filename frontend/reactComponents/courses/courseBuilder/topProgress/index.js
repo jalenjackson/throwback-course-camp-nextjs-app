@@ -9,8 +9,9 @@ const TopProgress = props => (
     <div className='top-progress-course-builder-inner'>
       <Steps style={{ transform: 'translateY(25px)' }} current={ props.container.state.currentPaneNumber } progressDot={customDot}>
         <Step style={{ cursor: 'pointer' }} onClick={ () => navigatePane(props, 0, 'courseBuilder') } title="Build" />
-        <Step style={{ cursor: 'pointer' }} onClick={ () => navigatePane(props, 1, 'review') } title="Review" />
-        <Step style={{ cursor: 'pointer' }} onClick={ () => navigatePane(props, 2, 'publish') } title="Publish" />
+        <Step style={{ cursor: 'pointer' }} onClick={ () => navigatePane(props, 1, 'reviewSections') } title="Review Sections" />
+        <Step style={{ cursor: 'pointer' }} onClick={ () => navigatePane(props, 2, 'reviewCourseDetails') } title="Review Course" />
+        <Step style={{ cursor: 'pointer' }} onClick={ () => navigatePane(props, 3, 'publish') } title="Publish" />
       </Steps>
     </div>
   </div>
