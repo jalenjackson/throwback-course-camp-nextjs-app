@@ -7,6 +7,7 @@ import EarnMoneyCTA from './earnMoneycta';
 import { handleScrollSkewAnimation } from './helpers';
 import { Subscribe } from 'unstated';
 import NavbarContainer from '../globalComponents/navbar/navbarContainer';
+import IndexContainer from './container';
 
 export default class IndexComponent extends React.Component {
   componentDidMount() {
@@ -15,14 +16,14 @@ export default class IndexComponent extends React.Component {
 
   render() {
     return (
-      <Subscribe to={[NavbarContainer]}>
-        { navbarContainer => (
+      <Subscribe to={[IndexContainer, NavbarContainer]}>
+        { (indexContainer, navbarContainer) => (
           <div id="home-page">
             <ValueProps navbarContainer={ navbarContainer } />
-            <CourseCarousel { ...this.props } />
-            <PopularCategories />
-            <EarnMoneyCTA />
-            <Footer />
+            <CourseCarousel container={ indexContainer } { ...this.props } />
+            <PopularCategories container={ indexContainer } />
+            <EarnMoneyCTA container={ indexContainer } />
+            <Footer marginTop={ 150 } />
           </div>
         )}
       </Subscribe>

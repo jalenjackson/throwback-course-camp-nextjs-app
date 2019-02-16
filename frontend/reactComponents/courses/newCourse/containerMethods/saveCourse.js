@@ -13,7 +13,7 @@ export const callSaveCourse = async (context, token, navbarContainer, auth) => {
       mutation {
         createCourse(courseInput: {
           title: "${cleanData(context.state.title)}",
-          description: "${btoa(context.state.description)}",
+          description: "${ btoa(unescape(encodeURIComponent(context.state.description))) }",
           category: "${cleanData(context.state.category)}", 
           price: ${+context.state.price},
           color: "${context.state.color}",

@@ -32,7 +32,7 @@ export default class AddPrice extends React.Component {
               <Input
                 onKeyDown={ e => handleEnterNavigation(this.props, this.props.container.state.price, e) }
                 size="large"
-                onChange={ this.props.container.onNumberFieldChange }
+                onChange={ e => this.props.container.onNumberFieldChange(e, this.props) }
                 onBlur={ this.props.container.onNumberFieldBlur }
                 placeholder={ AddPriceLocalized.InputPlaceholder }
                 value={ this.props.container.state.price }

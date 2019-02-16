@@ -20,11 +20,12 @@ class NewCourseContainer extends Container {
   nextStep = () => Methods.moveStep.callNextStep(this);
   prevStep = () => Methods.moveStep.callPrevStep(this);
   onNumberFieldBlur = props => Methods.numberFieldFunctions.callNumberFieldBlur(this, props);
-  onNumberFieldChange = e => Methods.numberFieldFunctions.callNumberFieldChange(this, e);
+  onNumberFieldChange = (e, props) => Methods.numberFieldFunctions.callNumberFieldChange(this, e, props);
   saveCourse = async (token, navbarContainer, auth) => Methods.saveCourse.callSaveCourse(this, token, navbarContainer, auth);
-  addNewLearning = e => Methods.addNewLearning.callAddNewLearning(this, e);
-  removeNewLearning = removedLearning => Methods.removeNewLearning.callRemoveNewLearning(this, removedLearning);
-  setGlobalState = localCourseState => Methods.setGlobalState.callSetGlobalState(this, localCourseState);
+  addNewLearning = (props, e) => Methods.addNewLearning.callAddNewLearning(this, props, e);
+  removeNewLearning = (props, removedLearning) => Methods.removeNewLearning.callRemoveNewLearning(this, props, removedLearning);
+  setGlobalState = (localCourseState, isFromBuildCourse) => Methods.setGlobalState.callSetGlobalState(this, localCourseState, isFromBuildCourse);
+  updateCourse = (course, type, value) => Methods.updateCourse.call(this, course, type, value);
 }
 
 export default NewCourseContainer;

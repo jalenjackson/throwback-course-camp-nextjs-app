@@ -5,7 +5,7 @@ export default class ReviewCourseDetails extends React.Component {
   render() {
     return (
       <div>
-        <NewCourse />
+        <NewCourse auth={ this.props.auth } course={ this.props.container.state.course } isFromBuildCourse={ true } />
       </div>
     )
   }

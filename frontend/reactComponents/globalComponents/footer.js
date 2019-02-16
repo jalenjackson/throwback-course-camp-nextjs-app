@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Divider, Row } from 'antd';
 
-const Footer = () => (
-  <div className='company-footer'>
+const Footer = props => (
+  <div style={{ marginTop: props.marginTop }} className='company-footer'>
     <img src='/static/icons/paperWithBulletPoints.svg' />
     <h1 className='footer-company-name'>Company Name</h1>
     <div className="company-footer-items">

@@ -1,6 +1,7 @@
 exports.Mutations = `
   type RootMutation {
     createCourse(courseInput: CourseInput): Course
+    updateCourse(courseId: String!, courseInput: CourseInput): Course
     
     createUser(userInput: UserInput): User
     

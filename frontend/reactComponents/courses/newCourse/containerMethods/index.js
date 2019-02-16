@@ -5,5 +5,6 @@ export const Methods = {
   saveCourse: require('./saveCourse'),
   addNewLearning: require('./addNewLearning'),
   removeNewLearning: require('./removeNewLearning'),
-  setGlobalState: require('./setGlobalState')
+  setGlobalState: require('./setGlobalState'),
+  updateCourse: require('./updateCourse')
 };

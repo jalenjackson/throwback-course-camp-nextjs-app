@@ -7,6 +7,7 @@ const Index = ({ courses }) => (
     <div>
       <Head>
         <title>Home Page</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous" />
       </Head>
       { courses ? <IndexComponent courses={ courses } /> : console.log('This will render to future 500 error page') }
     </div>
@@ -21,6 +22,11 @@ Index.getInitialProps = async () => {
         description
         price
         rating
+        sections {
+          videos {
+            videoLocation
+          }
+        }
         color
         summary
         creator {

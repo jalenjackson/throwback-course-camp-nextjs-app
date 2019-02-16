@@ -17,13 +17,13 @@ const AddLearning = props => (
             </Popover>
           </label>
           <Input
-            onKeyDown={ e => props.container.addNewLearning(e) }
+            onKeyDown={ e => props.container.addNewLearning(props, e) }
             onChange={ e => props.container.updateState('learningTerm', e.target.value) }
             size='large'
             value={ props.container.state.learningTerm }
             suffix={(
               <Button
-                  onClick={ () => props.container.addNewLearning('Enter') }
+                  onClick={ () => props.container.addNewLearning(props, 'Enter') }
                   style={{ transform: 'translateX(20px)', borderBottomLeftRadius: '0px', borderTopLeftRadius: '0px' }}
                   size="large"
                   type="primary">
@@ -34,7 +34,7 @@ const AddLearning = props => (
       </Row>
       <div style={{ marginTop: 20 }}>
         { props.container.state.learning.map((learning, i) => (
-          <Tag style={{ marginTop: 10 }} key={ i } afterClose={ () => props.container.removeNewLearning(learning) } closable >{ learning }</Tag>
+          <Tag style={{ marginTop: 10 }} key={ i } afterClose={ () => props.container.removeNewLearning(props, learning) } closable >{ learning }</Tag>
         )) }
       </div>
       <div className='new-course-button-container'>

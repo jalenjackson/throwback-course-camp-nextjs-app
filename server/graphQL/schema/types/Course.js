@@ -11,7 +11,7 @@ exports.Course = `
     creator: User!
     rating: Float!
     language: String!
-    learning: [String]!
+    learning: String!
     summary: String!
     sections: [Section]
     publishedCourse: Course

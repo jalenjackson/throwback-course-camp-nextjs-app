@@ -4,17 +4,18 @@ import SceneEditContainer from './sceneEditContainer/sceneEditContainer';
 import TopProgress from './topProgress/index';
 import SetInitialStateFromData from './setInitialStateFromData';
 import { Subscribe } from 'unstated';
-import Container from './container';
+import CourseBuilderContainer from './container';
 import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
 import Drawers from './drawers/index';
 import ReviewSections from './reviewSections/index';
 import ReviewCourseDetails from './reviewCourseDetails/index';
 import Publish from './publish/index'
+import Footer from "../../globalComponents/footer";
 
 export default class CourseBuilderComponent extends React.Component {
   render() {
     return (
-      <Subscribe to={[Container, NavbarContainer]}>
+      <Subscribe to={[CourseBuilderContainer, NavbarContainer]}>
         { (container, navbarContainer) => (
           <div id='course-builder'>
             <SetInitialStateFromData container={ container } course={ this.props.course } />
@@ -39,6 +40,7 @@ export default class CourseBuilderComponent extends React.Component {
                           : null
               : null
             }
+            <Footer marginTop={ 0 } />
           </div>
         )}
       </Subscribe>

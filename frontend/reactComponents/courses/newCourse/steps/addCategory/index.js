@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Col, Icon, Row, Popover, Select } from 'antd';
 import { infoPopoverContent } from './popoverContent';
 import Localization from '../../localization';
+import {updateCourse} from "../../updateCourse";
 const AddCategoryLocalized = Localization.Steps.AddCategory;
 
 const Option = Select.Option;
@@ -18,7 +19,7 @@ const AddCategory = props => (
               </Icon>
             </Popover>
           </label>
-          <Select defaultValue={ props.container.state.category } style={{ width: 400 }} placeholder="Select A Category" onChange={ v => props.container.updateState('category', v) }>
+          <Select defaultValue={ props.container.state.category } style={{ width: 400 }} placeholder="Select A Category" onChange={ v => props.isFromBuildCourse ? updateCourse(props, 'category', v) : props.container.updateState('category', v) }>
             { Localization.Steps.AddCategory.Categories.map((category) => (
                <Option value={ category }>{ category }</Option>
             )) }

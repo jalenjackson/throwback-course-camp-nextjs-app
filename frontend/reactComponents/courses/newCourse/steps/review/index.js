@@ -64,16 +64,19 @@ export default class AddImage extends React.Component {
               </TabPane>
             </Tabs>
           </div>
-        <Button
-          onClick={ () => this.props.container.saveCourse(
-              this.props.navbarContainer.state.authorizationToken,
-              this.props.navbarContainer,
-              this.props.auth) }
-          type='primary'
-          loading={ this.props.container.state.isSavingCourse }
-          className='new-course-next-and-back-button'>
-          { ReviewLocalized.GetStarted }
-        </Button>
+        { this.props.isFromBuildCourse
+          ? null
+          : <Button
+                onClick={ () => this.props.container.saveCourse(
+                  this.props.navbarContainer.state.authorizationToken,
+                  this.props.navbarContainer,
+                  this.props.auth) }
+                type='primary'
+                loading={ this.props.container.state.isSavingCourse }
+                className='new-course-next-and-back-button'>
+              { ReviewLocalized.GetStarted }
+            </Button>
+        }
         <div className='new-course-button-container'>
           <Button
               className='new-course-next-and-back-button'

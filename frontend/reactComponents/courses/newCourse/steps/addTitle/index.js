@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Col, Icon, Input, Row, Popover  } from 'antd';
 import { infoPopoverContent } from './popoverContent';
 import { handleEnterNavigation } from '../../helpers';
+import { updateCourse } from '../../updateCourse';
 import Localization from '../../localization';
 const AddTitleLocalized = Localization.Steps.AddTitle;
 
@@ -21,7 +22,7 @@ const AddTitle = props => (
             allowClear
             onKeyDown={ e => handleEnterNavigation(props, props.container.state.title, e)  }
             value={ props.container.state.title }
-            onChange={ e => props.container.updateState('title', e.target.value) }
+            onChange={ e => props.isFromBuildCourse ? updateCourse(props, 'title', e.target.value) : props.container.updateState('title', e.target.value) }
             prefix={<Icon className='new-course-form-input-icon' type='edit' />}
             size='large'
             placeholder={ AddTitleLocalized.InputPlaceholder }
@@ -40,5 +41,6 @@ const AddTitle = props => (
     </div>
   </div>
 );
+
 
 export default AddTitle;

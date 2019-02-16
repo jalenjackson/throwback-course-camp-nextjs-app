@@ -1,10 +1,10 @@
 import { Container } from 'unstated';
 import { Methods } from './containerMethods';
 
-class NavbarContainer extends Container {
+class CourseBuilderContainer extends Container {
   state = {
-    currentPane: 'publish',
-    currentPaneNumber: 3,
+    currentPane: 'courseBuilder',
+    currentPaneNumber: 0,
     sectionTitleTerm: '',
     sectionDescriptionTerm: '',
     videoTitleTerm: '',
@@ -21,7 +21,12 @@ class NavbarContainer extends Container {
     addCrunchChallengeVisibility: false,
     addCodingChallengeVisibility: false,
     addCodingProjectVisibility: false,
-    courseStatusText: ''
+    courseStatusText: '',
+    videoDuration: '00:00',
+    videoPlaying: true,
+    playedSeconds: 0,
+    seeking: false,
+    played: 0
   };
 
   // misc
@@ -31,7 +36,7 @@ class NavbarContainer extends Container {
   // sections
   addNewSection = (navbarContainer, token) => Methods.addNewSection.call(this, navbarContainer, token);
   deleteSection = (i, navbarContainer) => Methods.deleteSection.call(this, i, navbarContainer);
-  changeCurrentActiveSection = i => Methods.changeCurrentActiveSection.call(this, i);
+  changeCurrentActiveSection = (i, e) => Methods.changeCurrentActiveSection.call(this, i, e);
   updateSectionDetails = (type, state, value, navbarContainer, currentActiveSection) => Methods.updateSectionDetails.call(this, type, state, value, navbarContainer, currentActiveSection);
   handleSectionVideoUpload = (videoLocation, currentActiveSection) => Methods.handleSectionVideoUpload.call(this, videoLocation, currentActiveSection);
   reorderSections = (navbarContainer, newSections) => Methods.reorderSections.call(this, navbarContainer, newSections);
@@ -74,4 +79,4 @@ class NavbarContainer extends Container {
   changeCourseStatus = (navbarContainer, status) => Methods.changeCourseStatus.call(this, navbarContainer, status);
 }
 
-export default NavbarContainer;
+export default CourseBuilderContainer;

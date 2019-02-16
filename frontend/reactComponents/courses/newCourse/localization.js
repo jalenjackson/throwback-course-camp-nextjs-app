@@ -15,7 +15,7 @@ let localization = new LocalizedStrings({
         { title: 'Learning' },
         { title: 'Color' },
         { title: 'Price' },
-        { title: 'Image' },
+        { title: 'Review' },
       ],
       AddTitle: {
         IconAlt: 'Light Bulb Icon',

@@ -3,6 +3,7 @@ import { Button, Col, Form, Icon, Popover, Row } from 'antd';
 import { infoPopoverContent } from './popoverContent';
 import { pluginsEnabled } from './pluginsEnabled';
 import Localization from '../../localization';
+import {updateCourse} from "../../updateCourse";
 const AddDescriptionLocalized = Localization.Steps.AddDescription;
 
 export default class AddDescription extends React.Component {
@@ -15,7 +16,7 @@ export default class AddDescription extends React.Component {
       pluginsEnabled
     });
     textArea.on('froalaEditor.contentChanged', e => {
-      this.props.container.updateState('description', e.target.value)
+      this.props.isFromBuildCourse ? updateCourse(this.props, 'description', e.target.value) : this.props.container.updateState('description', e.target.value);
     });
   }
 

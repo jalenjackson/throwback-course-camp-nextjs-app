@@ -3,6 +3,7 @@ import AllSteps from './steps/steps';
 import { Subscribe } from 'unstated';
 import NewCourseContainer from './container';
 import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
+import CourseBuilderContainer from '../../courses/courseBuilder/container';
 import AddTitle from './steps/addTitle/index';
 import AddDescription from './steps/addDescription/index';
 import AddPrice from './steps/addPrice/index';
@@ -13,6 +14,7 @@ import AddLearning from './steps/addLearning';
 import AddLanguage from './steps/addLanguage';
 import SetInitialStateFromData from './setinitialStateFromData';
 import AddShortSummary from './steps/addShortSummary';
+import Footer from '../../globalComponents/footer';
 
 class NewCourseComponent extends React.Component {
   componentDidMount() {
@@ -25,24 +27,25 @@ class NewCourseComponent extends React.Component {
 
   render() {
     return (
-      <Subscribe to={[NewCourseContainer, NavbarContainer]}>
-        { (newCourseContainer, navbarContainer) => (
+      <Subscribe to={[NewCourseContainer, NavbarContainer, CourseBuilderContainer]}>
+        { (newCourseContainer, navbarContainer, courseBuilderContainer) => (
           <div>
-            <SetInitialStateFromData container={ newCourseContainer } />
+            <SetInitialStateFromData course={ this.props.course } isFromBuildCourse={ this.props.course } container={ newCourseContainer } />
             <div id='create-new-course'>
               <AllSteps currentStep={ newCourseContainer.state.currentStep } />
               <div className='steps-action'>
-                { newCourseContainer.state.currentStep === 0 ? <AddTitle container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 1 ? <AddLanguage container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 2 ? <AddShortSummary container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 3 ? <AddDescription container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 4 ? <AddCategory container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 5 ? <AddLearning container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 6 ? <AddColor container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 7 ? <AddPrice container={ newCourseContainer } /> : null }
-                { newCourseContainer.state.currentStep === 8 ? <AddImage navbarContainer={ navbarContainer } container={ newCourseContainer } auth={ this.props.auth } /> : null }
+                { newCourseContainer.state.currentStep === 0 ? <AddTitle { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 1 ? <AddLanguage { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 2 ? <AddShortSummary { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 3 ? <AddDescription { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 4 ? <AddCategory { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 5 ? <AddLearning { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 6 ? <AddColor { ...this.props } courseBuilderContainer={ courseBuilderContainer } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 7 ? <AddPrice { ...this.props } container={ newCourseContainer } /> : null }
+                { newCourseContainer.state.currentStep === 8 ? <AddImage { ...this.props } navbarContainer={ navbarContainer } container={ newCourseContainer } auth={ this.props.auth } /> : null }
               </div>
             </div>
+            <Footer marginTop={ 150 } />
           </div>
         )}
       </Subscribe>

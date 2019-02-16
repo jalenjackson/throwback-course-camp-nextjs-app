@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Carousel, Popover, Rate } from 'antd';
 import { slickSliderOptions } from './helpers';
+import VideoPreviewModal from './videoPreviewModal';
 import _ from 'lodash';
 import Localization from './localization';
 
@@ -40,10 +41,11 @@ const CourseCarousel = props => (
                   View Course
                 </Button>
               </Popover>
-              <img alt="Preview Button" className='preview-button' src='/static/icons/video-play.svg' />
+              <img onClick={ () => showPreviewVideoModal(props, course) } alt="Preview Button" className='preview-button' src='/static/icons/video-play.svg' />
             </div>
           ))}
         </Carousel>
+        <VideoPreviewModal { ...props } />
         <a className='see-all-link'>
           <span>{ Localization.SeeAll }</span>
         </a>
@@ -52,6 +54,13 @@ const CourseCarousel = props => (
     <div className="skewed-background" />
   </div>
 );
+
+const showPreviewVideoModal = (props, course) => {
+  props.container.updateState('videoPreviewModalVisibility', true);
+  props.container.updateState('videoPreviewCourse', course);
+  props.container.updateState('videoPlaying', true);
+  props.container.updateState('currentVideoLocation', course.sections[0].videos[0].videoLocation);
+};
 
 const popOverContent = () => (
   <div>

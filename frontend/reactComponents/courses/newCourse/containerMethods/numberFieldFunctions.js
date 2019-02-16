@@ -1,3 +1,5 @@
+import { updateCourse } from '../updateCourse';
+
 export const callNumberFieldBlur = (context, props) => {
   const { price } = context.state;
   const { onBlur, onChange } = props;
@@ -9,10 +11,11 @@ export const callNumberFieldBlur = (context, props) => {
   }
 };
 
-export const callNumberFieldChange = (context, e) => {
+export const callNumberFieldChange = (context, e, props) => {
   const { value } = e.target;
   const reg = /^-?(0|[1-9][0-9]*)(\.[0-9]*)?$/;
   if ((!Number.isNaN(value) && reg.test(value)) || value === '' || value === '-') {
     context.setState({ price: value });
+    if (props.isFromBuildCourse) updateCourse(props, 'price', value)
   }
 };

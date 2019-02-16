@@ -3,6 +3,7 @@ import { Button, Col, Icon, Input, Row, Popover  } from 'antd';
 import { infoPopoverContent } from './popoverContent';
 import { handleEnterNavigation } from '../../helpers';
 import Localization from '../../localization';
+import {updateCourse} from "../../updateCourse";
 const AddSummaryLocalized = Localization.Steps.AddSummary;
 
 const AddShortSummary = props => (
@@ -21,7 +22,7 @@ const AddShortSummary = props => (
               allowClear
               onKeyDown={ e => handleEnterNavigation(props, props.container.state.title, e)  }
               value={ props.container.state.summary }
-              onChange={ e => props.container.updateState('summary', e.target.value) }
+              onChange={ e => props.isFromBuildCourse ? updateCourse(props, 'summary', e.target.value) : props.container.updateState('summary', e.target.value) }
               prefix={<Icon className='new-course-form-input-icon' type='edit' />}
               size='large'
               placeholder={ AddSummaryLocalized.InputPlaceholder }

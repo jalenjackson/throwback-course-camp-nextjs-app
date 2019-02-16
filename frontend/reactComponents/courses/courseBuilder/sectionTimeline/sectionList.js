@@ -21,7 +21,7 @@ const renderSections = props => {
   return props.container.state.course.sections.map((section, i) => (
     <Draggable key={`draggable${i}`} draggableId={`draggable${i}`} index={i}>
       {(provided) => (
-        <div ref={ provided.innerRef } { ...provided.draggableProps } { ...provided.dragHandleProps } onClick={ () => props.container.changeCurrentActiveSection(i) } className='video-wrap'>
+        <div ref={ provided.innerRef } { ...provided.draggableProps } { ...provided.dragHandleProps } onClick={ e => props.container.changeCurrentActiveSection(i, e) } className='video-wrap'>
           <div className='video-scene'>
             <Popconfirm placement="topLeft" title="Are you sure delete this entire section?" onConfirm={ () => props.container.deleteSection(i, props.navbarContainer) } okText="Yes" cancelText="No">
               <div className='delete-section'><Icon style={{ fontSize: 15, color: 'white' }} type='delete' /></div>

@@ -22,6 +22,7 @@ const { addCrunchChallenge } = require('./courses/exercises/addCrunchChallenge/a
 const { addCodingChallenge } = require('./courses/exercises/addCodingChallenge/addCodingChallenge');
 const { addCodingProject } = require('./courses/exercises/addCodingProject/addCodingProject');
 const { deleteExercise } = require('./courses/exercises/deleteExercise');
+const { updateCourse } = require('./courses/updateCourse');
 
 module.exports = {
   courses,
@@ -48,4 +49,5 @@ module.exports = {
   addCodingChallenge,
   addCodingProject,
   deleteExercise,
+  updateCourse
 };

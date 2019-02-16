@@ -3,6 +3,7 @@ import { Button, Col, Form, Icon, Popover, Row } from 'antd';
 import { SketchPicker } from 'react-color'
 import { infoPopoverContent } from './popoverContent';
 import Localization from '../../localization';
+import {updateCourse} from "../../updateCourse";
 const AddColorLocalized = Localization.Steps.AddColor;
 
 const AddColor = props => (
@@ -17,7 +18,7 @@ const AddColor = props => (
                 </Icon>
               </Popover>
             </label>
-            <SketchPicker color={ props.container.state.color } onChange={ color => props.container.updateState('color', color.hex) } />
+            <SketchPicker color={ props.container.state.color } onChange={ color => props.isFromBuildCourse ? updateColor(props, color.hex) : props.container.updateState('color', color.hex) } />
           </Col>
         </Row>
         <div className='new-course-button-container'>
@@ -40,5 +41,12 @@ const AddColor = props => (
       </Form>
     </div>
 );
+
+const updateColor = (props, hex) => {
+  updateCourse(props, 'color', hex);
+  const course = props.courseBuilderContainer.state.course;
+  course.color = hex;
+  props.courseBuilderContainer.updateState('course', course);
+};
 
 export default AddColor;

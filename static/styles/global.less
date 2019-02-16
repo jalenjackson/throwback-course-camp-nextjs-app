@@ -71,7 +71,6 @@ button {
   min-height: 40vh;
   padding-bottom: 20px;
   height: auto;
-  margin-top: 150px;
   background: black;
   position: relative;
   @media @tablet {
@@ -292,4 +291,34 @@ button {
       }
     }
   }
+}
+
+:root {
+  --checkmark-square: 20px;
+  --short-length: 30%;
+  --long-length: 80%;
+}
+.checkmark {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.checkmark:after,
+.checkmark:before {
+  display: block;
+  content: "";
+  width: calc(20px / 12);
+  background-color: #D4D9DD;
+  position: absolute;
+  transform-origin: 0 100%;
+  bottom: 25%;
+  left: calc(35% - 2px);
+}
+.checkmark:before {
+  height: 30%;
+  transform: rotate(-45deg);
+}
+.checkmark:after {
+  height: 80%;
+  transform: rotate(45deg);
 }
