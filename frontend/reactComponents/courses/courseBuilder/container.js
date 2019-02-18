@@ -14,7 +14,6 @@ class CourseBuilderContainer extends Container {
     sectionLoading: false,
     currentActiveSection: 0,
     currentActiveVideoInSection: 0,
-    currentVideoLocation: '',
     addQuizDrawerVisibility: false,
     addPictureQuizDrawerVisibility: false,
     addMatchingGameDrawerVisibility: false,
@@ -22,11 +21,18 @@ class CourseBuilderContainer extends Container {
     addCodingChallengeVisibility: false,
     addCodingProjectVisibility: false,
     courseStatusText: '',
+    courseColor: '',
+    videoPreviewModalVisibility: false,
     videoDuration: '00:00',
     videoPlaying: true,
     playedSeconds: 0,
     seeking: false,
-    played: 0
+    played: 0,
+    currentVideoLocation: '',
+    videoPreviewCourse: {},
+    playbackRate: 1.0,
+    loop: false,
+    volume: 0.8
   };
 
   // misc

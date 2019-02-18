@@ -6,7 +6,8 @@ export const call = (context, course) => {
     sectionDescriptionTerm: firstSection ? atob(firstSection.description) : '',
     sectionCategoryTerm: firstSection ? firstSection.category : '',
     currentVideoLocation: firstSection && firstSection.videos && firstSection.videos.length > 0 ? firstSection.videos[0].videoLocation : '',
-    courseStatusText: setCourseStatusText(course)
+    courseStatusText: setCourseStatusText(course),
+    courseColor: course.color
   });
 };
 
