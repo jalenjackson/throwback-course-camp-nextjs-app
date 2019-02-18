@@ -43,7 +43,7 @@ export const call = async (context, i, navbarContainer, videoLocation) => {
     $('.ant-collapse-header').click();
     updateSectionsAfterAPICall(context, navbarContainer, deleteAddedVideoResponse, 'deleteVideo', true);
     context.updateState('currentVideoLocation', '');
-    message.success('Video deleted successfully');
+    message.success('Index deleted successfully');
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

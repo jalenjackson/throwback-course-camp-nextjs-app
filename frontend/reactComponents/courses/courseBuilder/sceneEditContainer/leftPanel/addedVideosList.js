@@ -1,9 +1,10 @@
 import React from 'react';
 import { Collapse, Button, Icon, Dropdown, Menu, Popconfirm, Input, Select } from 'antd';
 import { reorderSections } from '../../draggableMethods';
+import atob from 'atob';
 import _ from 'lodash';
+import {pluginsEnabled} from "../../../newCourse/steps/addDescription/pluginsEnabled";
 
-const { TextArea } = Input;
 const Panel = Collapse.Panel;
 
 export default class AddedVideoList extends React.Component {
@@ -19,6 +20,28 @@ export default class AddedVideoList extends React.Component {
     )
   }
 
+  initiateFroalaEditor = key => {
+    const textArea = $(`.video-description-${ key }`);
+    if (this.props.container.state.course.sections.length !== 0) {
+      console.log(textArea);
+      console.log(key)
+      console.log($(`.video-description-${ key }`))
+      textArea.froalaEditor({
+        placeholderText: 'Create a description for this section!',
+        fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
+        codeMirror: true,
+        pluginsEnabled,
+        toolbarSticky: false,
+        fontSizeSelection: true,
+      })
+      .on('froalaEditor.contentChanged', e => {
+        this.props.container.updateVideoDetails('description', key, e.target.value, this.props.navbarContainer);
+      });
+    } else {
+      textArea.hide();
+    }
+  };
+
   renderAddedVideos = () => {
     const videos = this.props.container.state.course.sections[this.props.container.state.currentActiveSection].videos;
     if (videos && videos.length > 0) {
@@ -29,7 +52,9 @@ export default class AddedVideoList extends React.Component {
                 <label className='collapse-push-label collapse-remove-margin-top'>Enter a title for this video</label>
                 <Input value={ this.props.container.state.videoTitleTerm } onChange={ e => this.props.container.updateVideoDetails('title', i, e.target.value, this.props.navbarContainer) } placeholder="Your title goes here..." />
                 <label className="collapse-push-label">Enter a description for this video</label>
-                <TextArea rows={4} value={ this.props.container.state.videoDescriptionTerm } onChange={ e => this.props.container.updateVideoDetails('description', i, e.target.value, this.props.navbarContainer) } style={{ marginBottom: 20 }} placeholder="Your description goes here..." />
+                <div style={{ marginBottom: 30 }}>
+                  <textarea className={ `video-description-${ i }` } rows={4} value={ this.props.container.state.videoDescriptionTerm } placeholder="Your description goes here..." />
+                </div>
                 <label style={{ marginTop: -10 }} className="collapse-push-label">Reorder Video</label>
                 <Select
                     value={ this.state.orderOfVideo }
@@ -78,9 +103,9 @@ export default class AddedVideoList extends React.Component {
     return n+(s[(v-20)%10]||s[v]||s[0]);
   };
 
-  fillInVideoDetailsAndRenderVideo = (key, videos) => {
+  fillInVideoDetailsAndRenderVideo = async (key, videos) => {
     if (key) {
-      this.setState({ orderOfVideo: +key + 1 })
+      await this.setState({ orderOfVideo: +key + 1 });
       $('.video-transition').css({opacity: 1});
       setTimeout(() => {
         this.props.container.updateState('currentVideoLocation', videos[key].videoLocation);
@@ -89,20 +114,21 @@ export default class AddedVideoList extends React.Component {
         $('.video-transition').css({opacity: 0});
       }, 350);
 
-      this.props.container.updateState('videoTitleTerm', videos[key].title);
-      this.props.container.updateState('videoDescriptionTerm', videos[key].description);
+      await this.props.container.updateState('videoTitleTerm', videos[key].title);
+      await this.props.container.updateState('videoDescriptionTerm', atob(videos[key].description));
+      this.initiateFroalaEditor(key);
     }
   };
 
   menu = i => (
-      <Menu>
-        <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addQuizDrawerVisibility') } key='1'>Add A Quiz</Menu.Item>
-        <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addPictureQuizDrawerVisibility') } key='2'>Add A Picture Quiz</Menu.Item>
-        <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addMatchingGameDrawerVisibility') } key="3">Add A Matching Game</Menu.Item>
-        <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addCrunchChallengeVisibility') } key="4">Add A Crunch Challenge</Menu.Item>
-        <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addCodingChallengeVisibility') } key="5">Add A Coding Challenge</Menu.Item>
-        <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addCodingProjectVisibility') } key="6">Add A Coding Project</Menu.Item>
-      </Menu>
+    <Menu>
+      <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addQuizDrawerVisibility') } key='1'>Add A Quiz</Menu.Item>
+      <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addPictureQuizDrawerVisibility') } key='2'>Add A Picture Quiz</Menu.Item>
+      <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addMatchingGameDrawerVisibility') } key="3">Add A Matching Game</Menu.Item>
+      <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addCrunchChallengeVisibility') } key="4">Add A Crunch Challenge</Menu.Item>
+      <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addCodingChallengeVisibility') } key="5">Add A Coding Challenge</Menu.Item>
+      <Menu.Item onClick={ () => this.openDrawerFromMenu(i, 'addCodingProjectVisibility') } key="6">Add A Coding Project</Menu.Item>
+    </Menu>
   );
 
   openDrawerFromMenu = (currentActiveVideoInSectionIterator, drawerToOpen) => {

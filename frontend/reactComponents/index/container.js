@@ -3,6 +3,7 @@ import { Methods } from './containerMethods';
 
 class IndexContainer extends Container {
   state = {
+    courseColor: '',
     videoPreviewModalVisibility: false,
     videoDuration: '00:00',
     videoPlaying: true,
@@ -10,7 +11,10 @@ class IndexContainer extends Container {
     seeking: false,
     played: 0,
     currentVideoLocation: '',
-    videoPreviewCourse: {}
+    videoPreviewCourse: {},
+    playbackRate: 1.0,
+    loop: false,
+    volume: 0.8
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);

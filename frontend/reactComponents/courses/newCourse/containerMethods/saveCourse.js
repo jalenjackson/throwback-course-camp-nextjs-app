@@ -1,3 +1,4 @@
+import btoa from 'btoa';
 import { message } from 'antd';
 import { cleanData } from './helpers';
 import { sessionExpired } from './helpers';

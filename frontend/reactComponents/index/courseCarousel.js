@@ -60,6 +60,7 @@ const showPreviewVideoModal = (props, course) => {
   props.container.updateState('videoPreviewCourse', course);
   props.container.updateState('videoPlaying', true);
   props.container.updateState('currentVideoLocation', course.sections[0].videos[0].videoLocation);
+  props.container.updateState('courseColor', course.color);
 };
 
 const popOverContent = () => (

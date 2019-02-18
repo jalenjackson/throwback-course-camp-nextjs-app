@@ -1,3 +1,4 @@
+import btoa from 'btoa';
 import { GraphQlDevURI, GraphQlMutate } from '../../../../../../globalHelpers/axiosCalls';
 import { message } from 'antd';
 import GlobalLocalization from '../../../../../../globalLocalization';
@@ -11,7 +12,7 @@ export const call = async (context, type, state, value, navbarContainer, current
         updateSectionDetails(
           courseId: "${ context.state.course._id }", 
           sectionIndex: ${ currentActiveSection},
-          sectionInput: { ${ type }: "${ type === 'description' ? btoa(value) : value }" }) {
+          sectionInput: { ${ type }: "${ type === 'description' ? btoa(unescape(encodeURIComponent(value))) : value }" }) {
             sections {
               title
               description

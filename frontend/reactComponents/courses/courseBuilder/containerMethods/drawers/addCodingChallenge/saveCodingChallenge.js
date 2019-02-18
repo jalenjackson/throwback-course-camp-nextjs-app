@@ -1,3 +1,4 @@
+import btoa from 'btoa';
 import { GraphQlMutate, GraphQlDevURI } from '../../../../../../../globalHelpers/axiosCalls';
 import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
@@ -14,8 +15,8 @@ export const call = async (context, navbarContainer, title, description, functio
           codingChallengeInput: 
             { 
               title: "${ title }", 
-              description: "${ btoa(description) }", 
-              startingFunctionText: "${ btoa(functionText) }", 
+              description: "${ btoa(unescape(encodeURIComponent(description))) }", 
+              startingFunctionText: "${ btoa(unescape(encodeURIComponent(functionText))) }", 
               returnValue: "${ returnValue }", 
               functionName: "${ functionName }", 
               functionParams: "${ functionParams }", 

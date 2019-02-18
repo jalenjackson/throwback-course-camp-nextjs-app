@@ -30,10 +30,13 @@ const sections = props => {
                 <Collapse style={{ marginTop: 5 }}>
                   <Panel header={ video.title ? video.title : `Video ${ i + 1 }` } key={ i }>
                     <Timeline>
-                      <Timeline.Item>15min instructional video</Timeline.Item>
-                      <Timeline.Item>Quiz</Timeline.Item>
-                      <Timeline.Item>Picture Quiz</Timeline.Item>
-                      <Timeline.Item>Matching Game</Timeline.Item>
+                      <Timeline.Item>15min Instructional Video</Timeline.Item>
+                      { video.quiz ? <Timeline.Item>Multiple Choice Quiz</Timeline.Item> : null }
+                      { video.pictureQuiz ? <Timeline.Item>Picture Quiz</Timeline.Item> : null }
+                      { video.matchingGame ? <Timeline.Item>Matching Game</Timeline.Item> : null }
+                      { video.crunchChallenge ? <Timeline.Item>Crunch Challenge</Timeline.Item> : null }
+                      { video.codingChallenge ? <Timeline.Item>Coding Exercise</Timeline.Item> : null }
+                      { video.codingProject ? <Timeline.Item>Coding Project</Timeline.Item> : null }
                     </Timeline>
                     <Button type="primary">Preview</Button>
                   </Panel>

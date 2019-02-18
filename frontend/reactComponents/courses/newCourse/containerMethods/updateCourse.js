@@ -1,3 +1,4 @@
+import btoa from 'btoa';
 import { GraphQlMutate, GraphQlDevURI } from '../../../../../globalHelpers/axiosCalls';
 import { message } from 'antd';
 import GlobalLocalization from '../../../../../globalLocalization';
@@ -10,7 +11,7 @@ export const call = async (context, course, type, value) => {
     } else {
       valueToUpdate = `"${ value }"`;
     }
-    if (type === 'description') valueToUpdate = `"${ btoa(value) }"`;
+    if (type === 'description') valueToUpdate = `"${ btoa(unescape(encodeURIComponent(context.state.description))) }"`;
 
     const updateCourseResponse = await GraphQlMutate(GraphQlDevURI, `
     mutation {

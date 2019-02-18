@@ -1,3 +1,4 @@
+import btoa from 'btoa';
 import { GraphQlMutate, GraphQlDevURI } from '../../../../../../globalHelpers/axiosCalls';
 import { updateSectionsAfterAPICall } from '../helpers';
 import GlobalLocalization from '../../../../../../globalLocalization';
@@ -13,7 +14,7 @@ export const call = async (context, type, i, term, navbarContainer) => {
         courseId: "${ context.state.course._id }", 
         sectionIndex: ${ context.state.currentActiveSection }, 
         videoIndex: ${ i }, 
-          videoInput: {${ type }: "${ term }"}) {
+          videoInput: {${ type }: "${ type === 'description' ? btoa(unescape(encodeURIComponent(term))) : term }"}) {
             sections {
               title
               description

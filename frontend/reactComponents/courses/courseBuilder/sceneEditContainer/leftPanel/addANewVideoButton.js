@@ -1,7 +1,6 @@
 import React from 'react';
 import { Upload, Button, Icon } from 'antd';
 import { handleUnauthenticatedButFrontEndThinksWeAre } from '../../../../../../globalHelpers/handleUnauthenticatedButFrontEndThinksWeAre';
-let test = null;
 
 export default class AddANewVideoButton extends React.Component {
   state = {

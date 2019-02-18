@@ -3,6 +3,7 @@ import Head from 'next/head';
 import CourseBuilderComponent from '../../frontend/reactComponents/courses/courseBuilder/index';
 import { handleAuthentication } from '../../globalHelpers/handleAuthentication';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
+import atob from "atob";
 
 const CourseBuilder = ({ auth, course }) => (
     <div>
@@ -89,7 +90,7 @@ CourseBuilder.getInitialProps = async (ctx) => {
   `);
     return { course: course.data.data.singleCourse }
   } catch(e) {
-    console.log(e.response.data)
+    console.log(e.response.data);
     return { course: false }
   }
 };
