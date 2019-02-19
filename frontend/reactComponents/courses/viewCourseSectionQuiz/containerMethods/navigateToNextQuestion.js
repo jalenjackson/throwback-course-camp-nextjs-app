@@ -14,7 +14,7 @@ export const call = async (context, props) => {
     resetAnswerChoiceUI();
   }, 650);
   setTimeout(async () => {
-    if (context.state.currentActiveQuestion !== props.currentVideo.quiz.length - 1) {
+    if (context.state.currentActiveQuestion !== props.currentVideo[props.isPictureQuiz ? 'pictureQuiz' : 'quiz'].length - 1) {
       await context.setState({
         currentActiveQuestion: context.state.currentActiveQuestion + 1,
         answeredQuestion: false,

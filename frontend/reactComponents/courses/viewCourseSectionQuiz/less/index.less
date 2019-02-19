@@ -11,16 +11,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(240,240,240);
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     pointer-events: none;
+    background: rgb(56, 64, 71);
     h1 {
       font-size: 55px;
-      color: rgb(70,70,80);
+      color: white;
     }
     img {
       position: fixed;
@@ -35,10 +35,12 @@
       opacity: 0;
       transform: translateY(10px)
     }
-    svg, #svg-container{
+    svg, #svg-container, #pop-picture-quiz-svg {
       position:absolute;
       width:80%;
+      z-index: 99;
       height:80%;
+      pointer-events: none;
     }
   }
   .ant-alert {

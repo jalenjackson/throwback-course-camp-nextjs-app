@@ -10,9 +10,9 @@ exports.Mutations = `
     updatePictureQuizQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, term: String!, questionIndex: Float!, answerIndex: Float, type: String!): Course
     addAnotherPictureQuizQuestionToQuiz(courseId: String!, sectionIndex: Float!, videoIndex: Float!, questionIndex: Float!, term: String!): Course
     
-    addQuizQuestionToVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, question: String!, answers: String!): Course    
+    addQuizQuestionToVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, question: String!, answers: String!, optionalImage: String): Course    
     deleteAddQuizQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, questionIndex: Float!): Course    
-    updateQuizQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, term: String!, questionIndex: Float!, answerIndex: Float, type: String!): Course
+    updateQuizQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, term: String!, optionalImage: String, questionIndex: Float!, answerIndex: Float, type: String!): Course
     addAnotherQuizQuestionToQuiz(courseId: String!, sectionIndex: Float!, videoIndex: Float!, questionIndex: Float!, term: String!): Course
     
     updateSectionDetails(courseId: String!, sectionIndex: Float!, sectionInput: SectionInput): Course
@@ -23,9 +23,9 @@ exports.Mutations = `
     updateVideoDetails(courseId: String!, sectionIndex: Float!, videoIndex: Float!, videoInput: VideoInput): Course    
     deleteVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, fileId: String!): Course
     
-    addMatchingGameToVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, question: MatchingGameQuestionInput, answer: MatchingGameAnswerInput): Course
+    addMatchingGameToVideo(courseId: String!, sectionIndex: Float!, videoIndex: Float!, timeAllotted: Float!, question: MatchingGameQuestionInput, answer: MatchingGameAnswerInput): Course
     deleteMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, matchId: String!): Course
-    editMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, matchId: String!, type: String!, term: String!): Course
+    editMatchingGameQuestion(courseId: String!, sectionIndex: Float!, videoIndex: Float!, timeAllotted: Float, matchId: String!, type: String, term: String): Course
     
     addCrunchChallenge(courseId: String!, sectionIndex: Float!, videoIndex: Float!, target: String!, definitions: String!): Course
     

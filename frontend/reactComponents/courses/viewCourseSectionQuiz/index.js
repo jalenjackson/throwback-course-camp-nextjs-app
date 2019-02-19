@@ -4,8 +4,8 @@ import Footer from '../../globalComponents/footer';
 import ViewCourseSectionQuizContainer from './container';
 import PopQuizIntro from './popQuizIntro';
 import Quiz from "./quiz/index";
-import TopProgress from "./TopProgress";
-import GameOver from "./gameOver";
+import EndResults from './endResults/index';
+import TopProgress from '../reusableComponents/topProgress';
 
 export default class ViewCourseSectionQuiz extends React.Component {
   componentDidMount () {
@@ -22,10 +22,10 @@ export default class ViewCourseSectionQuiz extends React.Component {
           { container => (
              <div className='view-course-section-quiz'>
                <PopQuizIntro container={ container } { ...this.props } />
-                <TopProgress { ...this.props } />
+               <TopProgress courseColor={ this.props.course.color } currentSection={ this.props.currentSection } />
                 { !container.state.gameOver
                   ? <Quiz container={ container } { ...this.props } />
-                  : <GameOver />
+                  : <EndResults />
                 }
                 <Footer />
              </div>

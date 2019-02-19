@@ -14,6 +14,8 @@ import '../frontend/reactComponents/courses/viewCourse/less/index.less';
 import '../frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less';
 import '../frontend/reactComponents/globalComponents/video/less/index.less'
 import '../frontend/reactComponents/courses/viewCourseSectionQuiz/less/index.less';
+import '../frontend/reactComponents/courses/viewCourseSectionMatchingGame/index.less';
+import '../frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/index.less';
 
 export default class MyApp extends App {
   static async getInitialProps ({ Component, router, ctx }) {

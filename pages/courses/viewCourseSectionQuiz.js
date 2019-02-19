@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import ViewCourseSectionQuizComponent from '../../frontend/reactComponents/courses/viewCourseSectionQuiz/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
+import { courseSections } from '../sharedQueryCourseResponses';
 
 const ViewCourseSectionQuiz = ({ auth, course, currentVideo, currentSection, currentQuiz }) => (
     <div>
@@ -25,34 +26,7 @@ ViewCourseSectionQuiz.getInitialProps = async (ctx) => {
         creator {
           name
         }
-        sections {
-          videos {
-            title
-            description
-            videoLocation
-            quiz {
-              question
-              answers
-            }
-            pictureQuiz {
-              question
-            }
-            matchingGame {
-              questions {
-                question
-              }
-            }
-            codingChallenge {
-              title
-            }
-            codingProject {
-              summary
-            }
-            crunchChallenge {
-              target
-            }
-          }
-        }
+        ${ courseSections }
       }
     }
 

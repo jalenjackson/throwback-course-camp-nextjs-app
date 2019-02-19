@@ -3,6 +3,7 @@ import Head from 'next/head';
 import ViewCourseSectionVideoComponent from '../../frontend/reactComponents/courses/viewCourseSectionVideo/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
+import { courseSections } from '../sharedQueryCourseResponses';
 
 const ViewCourseSectionVideo = ({ auth, course, currentVideo, currentSection }) => (
     <div>
@@ -26,34 +27,7 @@ ViewCourseSectionVideo.getInitialProps = async (ctx) => {
         creator {
           name
         }
-        sections {
-          videos {
-            title
-            description
-            videoLocation
-            quiz {
-              question
-              answers
-            }
-            pictureQuiz {
-              question
-            }
-            matchingGame {
-              questions {
-                question
-              }
-            }
-            codingChallenge {
-              title
-            }
-            codingProject {
-              summary
-            }
-            crunchChallenge {
-              target
-            }
-          }
-        }
+        ${ courseSections }
       }
     }
 

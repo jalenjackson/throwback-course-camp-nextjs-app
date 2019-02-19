@@ -16,6 +16,7 @@ exports.addMatchingGameToVideo = async (args, req) => {
 
     video.matchingGame.questions.push(args.question);
     video.matchingGame.answers.push(args.answer);
+    video.matchingGame.timeAllotted = args.timeAllotted;
 
     section.videos[args.videoIndex] = video;
     course.sections.set(args.sectionIndex, section);

@@ -4,6 +4,7 @@ import { shuffle } from '../../../../../globalHelpers/shuffleArray';
 export default class Answers extends React.Component {
   render () {
     const state = this.props.container.state;
+    const { isPictureQuiz } = this.props;
     this.shuffleAnswers(state);
     return (
       <div className="quiz-answers">
@@ -20,7 +21,10 @@ export default class Answers extends React.Component {
               </div>
             </div>
             <div className='answer-text-container'>
-              <p>{ shuffledAnswer.answer }</p>
+              { isPictureQuiz
+                ? <img src={ shuffledAnswer.answer } />
+                : <p>{ shuffledAnswer.answer }</p>
+              }
             </div>
           </div>
         )) }

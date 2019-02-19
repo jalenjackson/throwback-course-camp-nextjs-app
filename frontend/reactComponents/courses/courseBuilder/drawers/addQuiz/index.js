@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Icon, Button, Drawer, Collapse, Popconfirm } from 'antd';
+import { Form, Input, Icon, Button, Drawer, Collapse, Popconfirm, Upload } from 'antd';
 import AddedAnswer from './addedAnswer';
 import AddAnotherAnswer from './addAnotherAnswer';
 
@@ -11,7 +11,8 @@ class AddQuizDrawer extends React.Component {
   state = {
     question: '',
     isEditingQuestion: false,
-    queryingAPI: false
+    queryingAPI: false,
+    optionalImageUrl: 'false'
   };
 
   removeAddedAnswer = (k) => {
@@ -37,9 +38,10 @@ class AddQuizDrawer extends React.Component {
 
   initiateQuestionSave = async e => {
     this.setState({ queryingAPI: true });
-    await this.props.container.saveAddQuizQuestion(e, this.props.navbarContainer, this.state.question, this.props.form.getFieldsValue().names);
+    await this.props.container.saveAddQuizQuestion(e, this.props.navbarContainer, this.state.question, this.props.form.getFieldsValue().names, this.state.optionalImageUrl);
     this.props.form.resetFields();
-    this.setState({ question: '', queryingAPI: false });
+    this.setState({ question: '', queryingAPI: false, optionalImageUrl: 'false' });
+    $('.ant-upload-list-item .anticon-close').click();
   };
 
   handleDeleteQuestion = i => {
@@ -81,6 +83,20 @@ class AddQuizDrawer extends React.Component {
             <label>Enter A Question</label>
             <Input value={ this.state.question } onChange={ e => this.setState({ question: e.target.value }) } />
           </Form.Item>
+          <Form.Item>
+            <label style={{ marginRight: 5 }}>Add Optional Image</label>
+            <Upload
+                disabled={ this.state.optionalImageUrl !== 'false' }
+                accept='image/gif, image/jpeg, image/png'
+                onChange={ this.handleUploadOptionalImage }
+                headers={{ Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }` }}
+                action="/uploaders/single-upload"
+                name="singleFile">
+              <Button>
+                <Icon type="upload" /> Click to Upload
+              </Button>
+            </Upload>
+          </Form.Item>
           { answers }
           <Button.Group style={{  marginTop: 25 }}>
             <Button type="dashed" onClick={ this.addNewAnswer }>
@@ -94,9 +110,9 @@ class AddQuizDrawer extends React.Component {
           : <Collapse style={{ marginTop: 20, marginBottom: 20 }} accordion>
               { currentActiveVideo.quiz.map((questionObj, i) =>
                 <Panel header={ questionObj.question } key={ i }>
-                  <AddedAnswer { ...this.props } type='Question' question={ questionObj.question } questionIterator={ i } />
+                  <AddedAnswer { ...this.props } type='Question' optionalImage={ questionObj.optionalImage } question={ questionObj.question } questionIterator={ i } />
                   { questionObj.answers.split(',').map((answer, j) => (
-                    <AddedAnswer { ...this.props } type='Answer' answer={ answer } questionIterator={ i } answerIterator={ j } isCorrectAnswer={ j === 0 }/>
+                    <AddedAnswer { ...this.props } type='Answer' questionObj={ questionObj } answer={ answer } questionIterator={ i } answerIterator={ j } isCorrectAnswer={ j === 0 }/>
                   )) }
                   <AddAnotherAnswer { ...this.props } questionIterator={ i } />
                   <Popconfirm title="Are you sure delete this question?" onConfirm={ () => this.handleDeleteQuestion(i) } okText="Yes" cancelText="No">
@@ -109,6 +125,12 @@ class AddQuizDrawer extends React.Component {
       </Drawer>
     )
   }
+
+  handleUploadOptionalImage = (info) => {
+    if (info.file.status === 'done') {
+      this.setState({ optionalImageUrl: info.file.response.link });
+    }
+  };
 }
 
 export default Form.create()(AddQuizDrawer);

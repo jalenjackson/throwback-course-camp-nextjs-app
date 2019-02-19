@@ -53,8 +53,8 @@ class CourseBuilderContainer extends Container {
   reorderVideos = (navbarContainer, i) => Methods.reorderVideos.call(this, navbarContainer, i);
 
   // exercises - addQuiz
-  saveAddQuizQuestion = (e, navbarContainer, question, answers) => Methods.saveAddQuizQuestion.call(e, navbarContainer, this, question, answers);
-  editAddQuizAddedAnswer  = (term, type, navbarContainer, questionIterator, answerIterator) => Methods.editAddQuizAddedAnswer.call(this, term, type, navbarContainer, questionIterator, answerIterator);
+  saveAddQuizQuestion = (e, navbarContainer, question, answers, optionalImage) => Methods.saveAddQuizQuestion.call(e, navbarContainer, this, question, answers, optionalImage);
+  editAddQuizAddedAnswer  = (term, type, navbarContainer, questionIterator, answerIterator, optionalImage) => Methods.editAddQuizAddedAnswer.call(this, term, type, navbarContainer, questionIterator, answerIterator, optionalImage);
   editAddQuizAddingNewAnswer = (navbarContainer, term, questionIterator) => Methods.editAddQuizAddingNewAnswer.call(this, navbarContainer, term, questionIterator);
   deleteAddQuizQuestion = (navbarContainer, questionIndex) => Methods.deleteAddQuizQuestion.call(this, navbarContainer, questionIndex);
 
@@ -65,9 +65,9 @@ class CourseBuilderContainer extends Container {
   editAddPictureQuizAddingNewAnswer = (navbarContainer, term, questionIterator) => Methods.editAddPictureQuizAddingNewAnswer.call(this, navbarContainer, term, questionIterator);
 
   // exercises - addMatchingGame
-  saveMatchingGameQuestion = (navbarContainer, question, answer, matchId) => Methods.saveMatchingGameQuestion.call(this, navbarContainer, question, answer, matchId);
+  saveMatchingGameQuestion = (navbarContainer, question, answer, timeAllotted, matchId) => Methods.saveMatchingGameQuestion.call(this, navbarContainer, question, answer, timeAllotted, matchId);
   deleteMatchingGameQuestion = (navbarContainer, matchId) => Methods.deleteMatchingGameQuestion.call(this, navbarContainer, matchId);
-  editMatchingGameQuestion = (navbarContainer, term, type, matchId) => Methods.editMatchingGameQuestion.call(this, navbarContainer, term, type, matchId);
+  editMatchingGameQuestion = (navbarContainer, term, type, timeAllotted, matchId) => Methods.editMatchingGameQuestion.call(this, navbarContainer, term, type, timeAllotted, matchId);
 
   // exercises - addCrunchChallenge
   saveCrunchChallenge = (navbarContainer, target, definitions) => Methods.saveCrunchChallenge.call(this, navbarContainer, target, definitions);

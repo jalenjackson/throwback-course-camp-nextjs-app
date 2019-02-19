@@ -11,9 +11,13 @@ exports.editMatchingGameQuestion = async (args, req) => {
     const video = section.videos[args.videoIndex];
     const isTypeAnswer = args.type === 'Answer';
 
-    video.matchingGame[isTypeAnswer ? 'answers' : 'questions'].find((obj) => {
-      return obj.matchId === args.matchId;
-    })[isTypeAnswer ? 'answer' : 'question'] = args.term;
+    if (args.type !== 'Time') {
+      video.matchingGame[isTypeAnswer ? 'answers' : 'questions'].find((obj) => {
+        return obj.matchId === args.matchId;
+      })[isTypeAnswer ? 'answer' : 'question'] = args.term;
+    } else {
+      video.matchingGame.timeAllotted = args.timeAllotted
+    }
 
     section.videos[args.videoIndex] = video;
     course.sections.set(args.sectionIndex, section);

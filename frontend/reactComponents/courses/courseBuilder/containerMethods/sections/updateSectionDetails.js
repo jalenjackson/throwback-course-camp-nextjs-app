@@ -3,6 +3,7 @@ import { GraphQlDevURI, GraphQlMutate } from '../../../../../../globalHelpers/ax
 import { message } from 'antd';
 import GlobalLocalization from '../../../../../../globalLocalization';
 import { updateSectionsAfterAPICall } from '../helpers';
+import { sharedMutationResponse } from '../sharedMutationResponse';
 
 export const call = async (context, type, state, value, navbarContainer, currentActiveSection) => {
   try {
@@ -13,34 +14,7 @@ export const call = async (context, type, state, value, navbarContainer, current
           courseId: "${ context.state.course._id }", 
           sectionIndex: ${ currentActiveSection},
           sectionInput: { ${ type }: "${ type === 'description' ? btoa(unescape(encodeURIComponent(value))) : value }" }) {
-            sections {
-              title
-              description
-              category
-              videos {
-                title
-                description
-                videoLocation
-                quiz {
-                  question
-                  answers
-                }
-                pictureQuiz {
-                  question
-                  answers
-                }
-                matchingGame {
-                  questions {
-                    question
-                    matchId
-                  }
-                  answers {
-                    answer
-                    matchId
-                  }
-                }
-              }
-            }
+            ${ sharedMutationResponse }
           }
         }
     `, navbarContainer.state.authorizationToken);

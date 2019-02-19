@@ -2,13 +2,16 @@ import { GraphQlMutate, GraphQlDevURI } from '../../../../../../../globalHelpers
 import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
+import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-export const call = async (e, navbarContainer, context, question, answers) => {
+export const call = async (e, navbarContainer, context, question, answers, optionalImage) => {
   try {
     e.preventDefault();
     const answerValuesFiltered = answers.filter((answer) => {
       return answer && answer.trim() !== '';
     });
+
+    console.log(optionalImage);
 
     const saveAddQuizQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
@@ -17,51 +20,9 @@ export const call = async (e, navbarContainer, context, question, answers) => {
         sectionIndex: ${ context.state.currentActiveSection }, 
         videoIndex: ${ context.state.currentActiveVideoInSection }, 
         question: "${ question }", 
+        optionalImage: "${ optionalImage }",
         answers: "${ answerValuesFiltered }") {
-          sections {
-            title
-            description
-            category
-            videos {
-              title
-              description
-              videoLocation
-              quiz {
-                question
-                answers
-              }
-              pictureQuiz {
-                question
-                answers
-              }
-              matchingGame {
-                questions {
-                  question
-                  matchId
-                }
-                answers {
-                  answer
-                  matchId
-                }
-              }
-              crunchChallenge {
-                target
-                definitions
-              }
-              codingChallenge {
-                title
-                description	
-                functionName
-                functionParams
-                addedFunctionParams
-                startingFunctionText
-                returnValue
-              }
-              codingProject {
-                summary
-              }
-            }
-          }
+          ${ sharedMutationResponse }
         }
       }
   `, navbarContainer.state.authorizationToken);

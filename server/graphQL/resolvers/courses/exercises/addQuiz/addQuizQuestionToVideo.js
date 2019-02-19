@@ -12,7 +12,8 @@ exports.addQuizQuestionToVideo = async (args, req) => {
 
     const questionObj = {
       question: args.question,
-      answers: args.answers
+      answers: args.answers,
+      optionalImage: args.optionalImage
     };
 
     video.quiz ? video.quiz.push(questionObj) : video.quiz = [questionObj];

@@ -2,6 +2,7 @@ import { GraphQlDevURI, GraphQlMutate } from '../../../../../../globalHelpers/ax
 import { message } from 'antd';
 import GlobalLocalization from '../../../../../../globalLocalization';
 import { updateSectionsAfterAPICall } from '../helpers';
+import { sharedMutationResponse } from '../sharedMutationResponse';
 
 export const call = async (context, videoLocation, currentActiveSection) => {
   try {
@@ -13,34 +14,7 @@ export const call = async (context, videoLocation, currentActiveSection) => {
           sectionIndex: ${ currentActiveSection }, 
           videoInput: 
             { title: "", description: "", videoLocation: "${ videoLocation }" }) {
-              sections {
-                title
-                description
-                category
-                videos {
-                  title
-                  description
-                  videoLocation
-                  quiz {
-                    question
-                    answers
-                  }
-                  pictureQuiz {
-                    question
-                    answers
-                  }
-                  matchingGame {
-                    questions {
-                      question
-                      matchId
-                    }
-                    answers {
-                      answer
-                      matchId
-                    }
-                  }
-                }
-              }
+              ${ sharedMutationResponse }
             }
           }
       `);

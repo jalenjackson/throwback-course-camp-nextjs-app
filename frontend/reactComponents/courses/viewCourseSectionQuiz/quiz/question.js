@@ -5,18 +5,30 @@ import { shuffle } from '../../../../../globalHelpers/shuffleArray';
 export default class Question extends React.Component {
   render() {
     const state = this.props.container.state;
-    const { currentQuiz } = this.props;
+    const { currentQuiz, isPictureQuiz} = this.props;
+    const currentQuestion = state.shuffledQuestions[state.currentActiveQuestion];
     this.shuffleQuestions(currentQuiz, state);
     return (
       <div className='quiz-question'>
-        <p className='quiz-question-progress'>
-          <span>Question { state.currentActiveQuestion + 1 } of { currentQuiz.length }</span>
-        </p>
-        <Timer { ...this.props } />
-        <h1 className='quiz-question-text'>{ state.shuffledQuestions.length > 0
-          ? state.shuffledQuestions[state.currentActiveQuestion].question
+        { currentQuestion
+          ? <div>
+              <p className='quiz-question-progress'>
+                <span>Question { state.currentActiveQuestion + 1 } of { currentQuiz.length }</span>
+              </p>
+              <Timer { ...this.props } />
+              { currentQuestion.optionalImage !== 'false' && !isPictureQuiz
+                  ? <img style={{ border: `3px solid ${ this.props.course.color }80` }} className='question-image' src={ currentQuestion.optionalImage } />
+                  : null
+              }
+              <h1 className='quiz-question-text'>
+                { state.shuffledQuestions.length > 0
+                    ? currentQuestion.question
+                    : null
+                }
+              </h1>
+            </div>
           : null
-        }</h1>
+        }
       </div>
     )
   }

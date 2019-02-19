@@ -2,7 +2,7 @@ import { GraphQlMutate, GraphQlDevURI } from '../../../../../../../globalHelpers
 import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
-
+import { sharedMutationResponse } from '../../sharedMutationResponse';
 
 export const call = async (context, term, type, navbarContainer, questionIterator, answerIterator) => {
   try {
@@ -16,50 +16,7 @@ export const call = async (context, term, type, navbarContainer, questionIterato
         answerIndex: ${ answerIterator ? answerIterator : 0 }, 
         term: "${ term }", 
         type: "${ type }") {
-          sections {
-            title
-            description
-            category
-            videos {
-              title
-              description
-              videoLocation
-              quiz {
-                question
-                answers
-              }
-              pictureQuiz {
-                question
-                answers
-              }
-              matchingGame {
-                questions {
-                  question
-                  matchId
-                }
-                answers {
-                  answer
-                  matchId
-                }
-              }
-              crunchChallenge {
-                target
-                definitions
-              }
-              codingChallenge {
-                title
-                description	
-                functionName
-                functionParams
-                addedFunctionParams
-                startingFunctionText
-                returnValue
-              }
-              codingProject {
-                summary
-              }
-            }
-          }
+          ${ sharedMutationResponse }
         }
       }
   `, navbarContainer.state.authorizationToken);

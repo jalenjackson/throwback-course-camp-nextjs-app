@@ -18,6 +18,7 @@ exports.updateQuizQuestion = async (args, req) => {
       course.sections.set(args.sectionIndex, section);
     } else {
       section.videos[args.videoIndex].quiz[args.questionIndex].question = args.term;
+      if (args.optionalImage !== 'false') section.videos[args.videoIndex].quiz[args.questionIndex].optionalImage = args.optionalImage;
       course.sections.set(args.sectionIndex, section);
     }
 

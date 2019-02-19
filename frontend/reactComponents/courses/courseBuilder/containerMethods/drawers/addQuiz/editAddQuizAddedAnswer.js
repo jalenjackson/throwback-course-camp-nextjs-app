@@ -2,9 +2,9 @@ import { GraphQlMutate, GraphQlDevURI } from '../../../../../../../globalHelpers
 import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
+import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-
-export const call = async (context, term, type, navbarContainer, questionIterator, answerIterator) => {
+export const call = async (context, term, type, navbarContainer, questionIterator, answerIterator, optionalImage) => {
   try {
     const editAddQuizQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
@@ -15,51 +15,9 @@ export const call = async (context, term, type, navbarContainer, questionIterato
         questionIndex: ${ questionIterator }, 
         answerIndex: ${ answerIterator ? answerIterator : 0 }, 
         term: "${ term }", 
+        optionalImage: "${ optionalImage }",
         type: "${ type }") {
-          sections {
-            title
-            description
-            category
-            videos {
-              title
-              description
-              videoLocation
-              quiz {
-                question
-                answers
-              }
-              pictureQuiz {
-                question
-                answers
-              }
-              matchingGame {
-                questions {
-                  question
-                  matchId
-                }
-                answers {
-                  answer
-                  matchId
-                }
-              }
-              crunchChallenge {
-                target
-                definitions
-              }
-              codingChallenge {
-                title
-                description	
-                functionName
-                functionParams
-                addedFunctionParams
-                startingFunctionText
-                returnValue
-              }
-              codingProject {
-                summary
-              }
-            }
-          }
+          ${ sharedMutationResponse }
         }
       }
   `, navbarContainer.state.authorizationToken);

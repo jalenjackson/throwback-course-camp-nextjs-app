@@ -3,8 +3,9 @@ import { Subscribe } from 'unstated';
 import Video from '../../globalComponents/video/index';
 import ViewCourseContainer from './container';
 import SetStateForVideo from './setStateForVideo';
-import {Steps, Popover, Timeline} from 'antd';
+import { Steps, Popover, Timeline } from 'antd';
 import Footer from "../../globalComponents/footer";
+import TopProgress from '../reusableComponents/topProgress';
 
 const Step = Steps.Step;
 

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import ViewCourseComponent from '../../frontend/reactComponents/courses/viewCourse/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
+import { courseResponse } from '../sharedQueryCourseResponses';
 
 const ViewCourse = ({ auth, course }) => (
     <div>
@@ -20,62 +21,7 @@ ViewCourse.getInitialProps = async (ctx) => {
     const course = await GraphQlMutate(GraphQlDevURI, `
     query {
       singleCourse(courseId: "${ courseId }") {
-        _id
-        color
-        title
-        description
-        summary
-        price
-        learning
-        language
-        category
-        creator {
-          name
-        }
-        sections {
-          title
-          description
-          category
-          videos {
-            title
-            description
-            videoLocation
-            quiz {
-              question
-              answers
-            }
-            pictureQuiz {
-              question
-              answers
-            }
-            matchingGame {
-              questions {
-                question
-                matchId
-              }
-              answers {
-                answer
-                matchId
-              }
-            }
-            crunchChallenge {
-              target
-              definitions
-            }
-            codingChallenge {
-              title
-              description	
-              functionName
-              functionParams
-              addedFunctionParams
-              startingFunctionText
-              returnValue
-            }
-            codingProject {
-              summary
-            }
-          }
-        }
+        ${ courseResponse }
       }
     }
   `);

@@ -2,6 +2,7 @@ import { GraphQlMutate, GraphQlDevURI } from '../../../../../../globalHelpers/ax
 import { message } from 'antd';
 import GlobalLocalization from '../../../../../../globalLocalization';
 import { updateSectionsAfterAPICall } from '../helpers';
+import { sharedMutationResponse } from '../sharedMutationResponse';
 
 export const call = async (context, navbarContainer) => {
   try {
@@ -9,34 +10,7 @@ export const call = async (context, navbarContainer) => {
     const updateSectionResponse = await GraphQlMutate(GraphQlDevURI, `
     mutation {
       addSectionToCourse(courseId: "${ context.state.course._id }") {
-        sections {
-          title
-          description
-          category
-          videos {
-            title
-            description
-            videoLocation
-            quiz {
-              question
-              answers
-            }
-            pictureQuiz {
-              question
-              answers
-            }
-            matchingGame {
-              questions {
-                question
-                matchId
-              }
-              answers {
-                answer
-                matchId
-              }
-            }
-          }
-        }
+        ${ sharedMutationResponse }
       }
     }
   `, navbarContainer.state.authorizationToken);
