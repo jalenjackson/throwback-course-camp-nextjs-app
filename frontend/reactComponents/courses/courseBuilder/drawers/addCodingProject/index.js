@@ -30,6 +30,17 @@ export default class AddCodingProjectDrawer extends React.Component {
           pluginsEnabled,
           toolbarSticky: false,
           fontSizeSelection: true,
+          emoticonsStep: 4,
+          emoticonsSet: [
+            { code: '1f600', desc: 'Grinning face' },
+            { code: '1f601', desc: 'Grinning face with smiling eyes' },
+            { code: '1f602', desc: 'Face with tears of joy' },
+            { code: '1f603', desc: 'Smiling face with open mouth' },
+            { code: '1f604', desc: 'Smiling face with open mouth and smiling eyes' },
+            { code: '1f605', desc: 'Smiling face with open mouth and cold sweat' },
+            { code: '1f606', desc: 'Smiling face with open mouth and tightly-closed eyes' },
+            { code: '1f607', desc: 'Smiling face with halo' }
+          ]
         })
         .on('froalaEditor.contentChanged', e => {
           this.setState({ summary: e.target.value });

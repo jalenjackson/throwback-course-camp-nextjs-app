@@ -1,6 +1,6 @@
-const User = require('../../models/user');
-const Course =  require('../../models/course');
-const { dateToString } = require('../helpers/date');
+const User = require('../../../models/user');
+const Course =  require('../../../models/course');
+const { dateToString } = require('../../helpers/date');
 
 const MongoFindUser = async userId => {
   try {

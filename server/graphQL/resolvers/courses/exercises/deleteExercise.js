@@ -1,5 +1,5 @@
 const Course =  require('../../../../models/course');
-const { TransformObject } = require('../../merge');
+const { TransformObject } = require('../merge');
 
 exports.deleteExercise = async (args, req) => {
   try {

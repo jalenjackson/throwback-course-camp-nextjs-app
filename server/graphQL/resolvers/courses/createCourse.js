@@ -1,6 +1,6 @@
 const Course =  require('../../../models/course');
 const User =  require('../../../models/user');
-const { TransformObject } = require('../merge');
+const { TransformObject } = require('./merge');
 
 exports.createCourse = async (args, req) => {
   try {

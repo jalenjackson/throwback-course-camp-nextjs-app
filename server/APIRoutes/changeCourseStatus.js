@@ -30,6 +30,6 @@ exports.call = async (req, res) => {
 
 const success = res => {
   return res.status(200).json({
-    message: 'Course status successfully updated'
+    message: 'course status successfully updated'
   });
 };

@@ -1,10 +1,12 @@
-const UserResolver = require('./users');
-const CourseResolver = require('./courses');
-const { globalAutocomplete } = require('./globalAutocomplete');
+const UserResolver = require('./users/auth');
+const CourseResolver = require('./courses/index');
+const ForumQuestionResolver = require('./forumQuestions/index');
+const { globalAutocomplete } = require('./global/globalAutocomplete');
 
 const RootResolver = {
   ...UserResolver,
   ...CourseResolver,
+  ...ForumQuestionResolver,
   globalAutocomplete
 };
 

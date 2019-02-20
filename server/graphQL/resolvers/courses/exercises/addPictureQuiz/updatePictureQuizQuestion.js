@@ -1,5 +1,5 @@
 const Course =  require('../../../../../models/course');
-const { TransformObject } = require('../../../merge');
+const { TransformObject } = require('../../merge');
 const aws = require('aws-sdk');
 
 aws.config.update({

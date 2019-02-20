@@ -2,7 +2,7 @@ import LocalizedStrings from 'react-localization';
 
 let localization = new LocalizedStrings({
   en:{
-    Home: 'Course Camp',
+    Home: 'course Camp',
     MenuLinks: {
       LearnAndPractice: 'Learn And Practice',
       Learn: 'Learn',
@@ -44,7 +44,7 @@ let localization = new LocalizedStrings({
       Login: 'login'
     },
     Search: {
-      Placeholder: 'Search For A Course...'
+      Placeholder: 'Search For A course...'
     },
     NavbarContainer: {
       InvalidAuthorization: 'Invalid Authorization',

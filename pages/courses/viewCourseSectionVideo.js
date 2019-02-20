@@ -37,7 +37,6 @@ ViewCourseSectionVideo.getInitialProps = async (ctx) => {
     const currentVideo = course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex];
     return { course: course.data.data.singleCourse, currentVideo, currentSection }
   } catch(e) {
-    console.log(e)
     return { course: false }
   }
 };

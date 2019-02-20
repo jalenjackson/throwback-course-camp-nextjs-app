@@ -1,8 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import ViewCourseSectionCodingProjectComponent from '../../frontend/reactComponents/courses/viewCourseSectionCodingProject';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import { courseSections } from '../sharedQueryCourseResponses';
+import dynamic from 'next/dynamic';
+import atob from 'atob';
+
+const ViewCourseSectionCodingProjectComponent = dynamic(() => import('../../frontend/reactComponents/courses/viewCourseSectionCodingProject'), {
+  ssr: false
+});
 
 const ViewCourseSectionCodingProject = ({ auth, course, currentVideo, currentSection, codingProject }) => (
     <div>
@@ -43,6 +48,8 @@ ViewCourseSectionCodingProject.getInitialProps = async (ctx) => {
   `);
     const currentSection = course.data.data.singleCourse.sections[sectionIndex];
     const currentVideo = course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex];
+    course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex].codingProject.summary
+        = atob(course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex].codingProject.summary);
     const codingProject = course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex].codingProject;
     return { course: course.data.data.singleCourse, currentVideo, currentSection, codingProject }
   } catch(e) {

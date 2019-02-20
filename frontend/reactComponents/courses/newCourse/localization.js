@@ -65,12 +65,12 @@ let localization = new LocalizedStrings({
         InputPlaceholder: 'Enter the price you want this course to sell for.'
       },
       Review: {
-        Label: 'Review Your Course Details',
+        Label: 'Review Your course Details',
         PopoverTitle: 'Adding a image',
         CustomerViewingTab: 'When a customer is viewing',
         TaughtBy: 'Taught by',
         MoneyIconAlt: 'Money Icon',
-        ViewCourse: 'View Course',
+        ViewCourse: 'View course',
         CustomerPurchases: 'View when a customer purchases',
         GetStarted: 'Get Started',
         PopoverContent: 'Below shows how the user will view your course if they are interested directly through our website.',

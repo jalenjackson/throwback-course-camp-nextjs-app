@@ -38,6 +38,11 @@ function routesWithSlug({ server, app }) {
     const { courseId, sectionIndex, videoIndex } = req.params;
     app.render(req, res, '/courses/viewCourseSectionCodingProject', { courseId, sectionIndex, videoIndex });
   });
+
+  server.get('/courses/view/:courseId/:sectionIndex/:videoIndex/coding-challenge', (req, res) => {
+    const { courseId, sectionIndex, videoIndex } = req.params;
+    app.render(req, res, '/courses/viewCourseSectionCodingChallenge', { courseId, sectionIndex, videoIndex });
+  });
 }
 
 module.exports = routesWithSlug;

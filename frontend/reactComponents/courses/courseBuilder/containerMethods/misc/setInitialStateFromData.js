@@ -14,7 +14,7 @@ export const call = (context, course) => {
 export const setCourseStatusText = course => {
   switch (course.status) {
     case 'Unpublished': {
-      return 'Submit Course For Review'
+      return 'Submit course For Review'
     }
     case 'Reviewing': {
       return 'We are in the process of reviewing your course! We will get back to you soon!'

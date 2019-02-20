@@ -1,0 +1,93 @@
+#html-sandbox {
+  margin-left: 76px;
+  margin-top: 20px;
+  position: relative;
+  .coding-project {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    .top-bar {
+      width: 100%;
+      height: 50px;
+      h1 {
+        font-size: 17px;
+        color: white;
+      }
+    }
+    .quiz-top-section {
+      width: 100%;
+    }
+    .coding-project-summary-container {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      min-height: 67vh;
+      height: auto;
+      background: white;
+      box-shadow: 0 -8px 38px rgba(0,0,0,0.06), 0 10px 12px rgba(0,0,0,0.06);
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      position: relative;
+
+      .coding-project-summary {
+        padding-top: 30px;
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .current-sandbox {
+      position: relative;
+      width: 100%;
+      height: 67vh;
+      .files {
+        width: 100%;
+        height: 50px;
+        background: #2E3339;
+        display: flex;
+        flex-direction: row;
+        .file-nav {
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          h1 {
+            font-size: 17px;
+            color: white !important;
+            font-weight: 300;
+            transform: translateY(5px)
+          }
+        }
+        .file-nav-active {
+          background: #384148;
+        }
+      }
+      #html-sandbox, #css-sandbox, #javascript-sandbox {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        * {
+          font-family: monospace, sans-serif;
+        }
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(200, 200, 200);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+  }
+  .sandbox-iframe {
+    display: none;
+  }
+}
+
+

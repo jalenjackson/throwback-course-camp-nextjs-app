@@ -38,6 +38,7 @@
     "next": "^7.0.2",
     "next-plugin-transpile-modules": "^2.0.0",
     "react": "^16.7.0",
+    "react-ace": "^6.4.0",
     "react-beautiful-dnd": "^10.0.4",
     "react-color": "^2.17.0",
     "react-dom": "^16.7.0",

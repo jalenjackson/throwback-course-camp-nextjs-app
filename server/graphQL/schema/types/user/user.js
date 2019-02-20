@@ -6,6 +6,7 @@ exports.User = `
     password: String
     token: String
     createdCourses: [Course!]
+    createdForumQuestions: [ForumQuestion!]
   }
   
   type AuthData {

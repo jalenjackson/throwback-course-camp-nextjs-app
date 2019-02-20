@@ -20,6 +20,12 @@ const UserSchema = new Schema({
       ref: 'Course'
     }
   ],
+  createdForumQuestions: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'ForumQuestion'
+    }
+  ],
   createdQuizzes: [
     {
       type: Schema.Types.ObjectId,
