@@ -3,6 +3,7 @@ import { Button, Carousel, Popover, Rate } from 'antd';
 import { slickSliderOptions } from './helpers';
 import VideoPreviewModal from './videoPreviewModal';
 import _ from 'lodash';
+import { Link } from '../../../routes';
 import Localization from './localization';
 
 const CourseCarousel = props => (
@@ -37,9 +38,11 @@ const CourseCarousel = props => (
                 </span>
               </div>
               <Popover content={ popOverContent() } title={`Purchase this course for $${ course.price }`}>
-                <Button style={{ background: course.color }} className='explore-button' type="primary" icon="eye">
-                  View Course
-                </Button>
+                <Link to={ `/courses/view/${ course._id }` }>
+                  <Button style={{ background: course.color }} className='explore-button' type="primary" icon="eye">
+                    View Course
+                  </Button>
+                </Link>
               </Popover>
               <img onClick={ () => showPreviewVideoModal(props, course) } alt="Preview Button" className='preview-button' src='/static/icons/video-play.svg' />
             </div>

@@ -4,5 +4,8 @@ exports.ForumQuestion = `
     title: String!
     body: String!
     course: Course!
+    sectionIndex: Float!
+    videoIndex: Float!
+    exercise: String
   }
 `;

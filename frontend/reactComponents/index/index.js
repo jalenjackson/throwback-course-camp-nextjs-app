@@ -10,8 +10,15 @@ import NavbarContainer from '../globalComponents/navbar/navbarContainer';
 import IndexContainer from './container';
 
 export default class IndexComponent extends React.Component {
+  state = {
+    loaded: false
+  };
+
   componentDidMount() {
     handleScrollSkewAnimation();
+    setTimeout(() => {
+      this.setState({ loaded: true });
+    }, 500)
   }
 
   render() {
@@ -30,4 +37,3 @@ export default class IndexComponent extends React.Component {
     )
   }
 }
-

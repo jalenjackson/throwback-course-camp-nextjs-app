@@ -2,10 +2,11 @@ import React from 'react';
 import { Subscribe } from 'unstated';
 import Video from '../../globalComponents/video/index';
 import ViewCourseContainer from './container';
+import NewQuestionContainer from '../../globalComponents/newQuestion/container';
 import SetStateForVideo from './setStateForVideo';
-import { Steps, Popover, Timeline } from 'antd';
-import Footer from "../../globalComponents/footer";
-import TopProgress from '../reusableComponents/topProgress';
+import { Steps, Popover, Timeline, Button } from 'antd';
+import Footer from '../../globalComponents/footer';
+import NewQuestion from '../../globalComponents/newQuestion';
 
 const Step = Steps.Step;
 
@@ -13,9 +14,10 @@ export default class ViewCourseSectionVideo extends React.Component {
   render() {
     const { course, currentVideo, currentSection } = this.props;
     return (
-      <Subscribe to={[ViewCourseContainer]}>
-        { container => (
+      <Subscribe to={[ViewCourseContainer, NewQuestionContainer]}>
+        { (container, newQuestionContainer) => (
           <div>
+            <NewQuestion { ...this.props } courseColor={ this.props.course.color } />
             <SetStateForVideo courseColor={ course.color } currentVideo={ currentVideo } container={ container } />
             { container.state.currentVideoLocation.trim() !== ''
               ? <div>
@@ -42,6 +44,12 @@ export default class ViewCourseSectionVideo extends React.Component {
                     <Video container={ container } />
                   </div>
                   <div className="video-section video-details-container">
+                    <Button.Group style={{ marginLeft: 13, marginTop: 20 }}>
+                      <Button
+                          onClick={ () => newQuestionContainer.updateState('visibility', true) }
+                          style={{ background: this.props.course.color, borderColor: 'rgb(150, 150, 150)' }} type="primary">Ask A Question</Button>
+                      <Button style={{ background: this.props.course.color, borderColor: 'rgb(150, 150, 150)' }} type="primary">View Forum</Button>
+                    </Button.Group>
                     <h1 className='section-title'><span>Notes</span></h1>
                     <div dangerouslySetInnerHTML={{ __html: currentVideo.description }} className='video-details' />
                   </div>

@@ -8,12 +8,13 @@ const rootValue = require('./graphQL/resolvers');
 const VerifyAuthentication = require('./middleware/verifyAuthentication');
 const Uploaders = require('./uploaders/uploaderRoutes');
 const APIRoutes = require('./APIRoutes/index');
-const routesWithSlug = require('./routesWithSlug');
-const { URLMAP }  = require('./URLMap');
+const routes = require('../routes');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
+
 const handle = app.getRequestHandler();
+const handler = routes.getRequestHandler(app);
 
 app.prepare().then(() => {
   const server = express();
@@ -29,23 +30,10 @@ app.prepare().then(() => {
     graphiql: true
   }));
 
-  server.get('/_next/*', (req, res) => {
-    handle(req, res);
-  });
-
-  server.get('/static/*', (req, res) => {
-    handle(req, res);
-  });
-
-  routesWithSlug({ server, app });
+  server.use(handler);
 
   server.get('*', (req, res) => {
-    const url = URLMAP[req.path];
-    if (url) {
-      app.render(req, res, url);
-    } else {
-      handle(req, res);
-    }
+    return handle(req, res)
   });
 
   return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@quizopcluster-16smp.mongodb.net/${ process.env.MONGO_DB_DEV }?retryWrites=true`,

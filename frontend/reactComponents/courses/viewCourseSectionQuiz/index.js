@@ -2,6 +2,7 @@ import React from 'react';
 import { Subscribe } from 'unstated';
 import Footer from '../../globalComponents/footer';
 import ViewCourseSectionQuizContainer from './container';
+import NewQuestionContainer from '../../globalComponents/newQuestion/container';
 import PopQuizIntro from './popQuizIntro';
 import Quiz from "./quiz/index";
 import EndResults from './endResults/index';
@@ -18,14 +19,14 @@ export default class ViewCourseSectionQuiz extends React.Component {
 
   render() {
     return (
-        <Subscribe to={[ViewCourseSectionQuizContainer]}>
-          { container => (
+        <Subscribe to={[ViewCourseSectionQuizContainer, NewQuestionContainer]}>
+          { (container, newQuestionContainer) => (
              <div className='view-course-section-quiz'>
                <PopQuizIntro container={ container } { ...this.props } />
                <TopProgress courseColor={ this.props.course.color } currentSection={ this.props.currentSection } />
                 { !container.state.gameOver
                   ? <Quiz container={ container } { ...this.props } />
-                  : <EndResults />
+                  : <EndResults { ...this.props } newQuestionContainer={ newQuestionContainer } />
                 }
                 <Footer />
              </div>

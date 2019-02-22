@@ -13,6 +13,17 @@ const ForumQuestionSchema = new Schema({
   course: {
     type: Schema.Types.ObjectId,
     ref: 'Course'
+  },
+  sectionIndex: {
+    type: Number,
+    required: true
+  },
+  videoIndex: {
+    type: Number,
+    required: true
+  },
+  exercise: {
+    type: String
   }
 });
 

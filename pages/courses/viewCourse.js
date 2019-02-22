@@ -21,6 +21,9 @@ ViewCourse.getInitialProps = async (ctx) => {
     const course = await GraphQlMutate(GraphQlDevURI, `
     query {
       singleCourse(courseId: "${ courseId }") {
+        creator {
+          name
+        }
         ${ courseResponse }
       }
     }

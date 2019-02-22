@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, Icon, Button, Input, AutoComplete, Badge, Avatar } from 'antd';
 import { MoneySVG, PaperWithBulletPointsSVG } from '../../svgs/index';
 import Localization from '../localization';
+import { Link } from '../../../../../routes';
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -10,7 +11,9 @@ const DesktopNavbar = props => (
   <div id="navbar">
     <Menu onClick={ e => props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [props.navbarContainer.state.activeLink] } mode="horizontal">
       <Menu.Item key={ Localization.MenuKeys.Home }>
-        <a>{ Localization.Home }</a>
+        <Link to='/'>
+          <a>{ Localization.Home }</a>
+        </Link>
       </Menu.Item>
       <AutoComplete
         style={{ width: 500 }}
@@ -28,7 +31,11 @@ const DesktopNavbar = props => (
             <Menu.Item key={ Localization.MenuKeys.Courses }>{ Localization.MenuLinks.AllCourses }</Menu.Item>
             <Menu.Item key={ Localization.MenuKeys.CourseCategories }>{ Localization.MenuLinks.Categories }</Menu.Item>
           </SubMenu>
-          <Menu.Item key={ Localization.MenuKeys.Community }>{ Localization.MenuLinks.Community }</Menu.Item>
+          <Menu.Item key={ Localization.MenuKeys.Community }>
+            <Link to='/community'>
+              { Localization.MenuLinks.Community }
+            </Link>
+          </Menu.Item>
         </MenuItemGroup>
         <MenuItemGroup title={ Localization.MenuLinks.Practice }>
           <SubMenu key={ Localization.MenuKeys.Quizzes } title={ Localization.MenuLinks.Quizzes }>
@@ -58,8 +65,12 @@ const DesktopNavbar = props => (
         </MenuItemGroup>
       </SubMenu>
       <Menu.Item key={ Localization.MenuKeys.BecomeATeacher }>
-        <Icon className="navbar-money-svg" component={ MoneySVG } />
-        { Localization.MenuLinks.EarnMoneyTeaching }
+        <Link to='/teach'>
+          <a>
+            <Icon className="navbar-money-svg" component={ MoneySVG } />
+            { Localization.MenuLinks.EarnMoneyTeaching }
+          </a>
+        </Link>
       </Menu.Item>
       { !props.navbarContainer.state.authenticated
         ? <Menu.Item onClick={() => props.navbarContainer.setContainerState('registerFormVisibility', true)}

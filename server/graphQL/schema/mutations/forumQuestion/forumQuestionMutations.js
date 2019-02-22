@@ -1,3 +1,3 @@
 exports.forumQuestionMutations = `
-  createForumQuestion(courseId: String!, forumQuestionInput: ForumQuestionInput): ForumQuestion
+  createForumQuestion(forumQuestionInput: ForumQuestionInput): ForumQuestion
 `;
