@@ -24,6 +24,13 @@ const ForumQuestionSchema = new Schema({
   },
   exercise: {
     type: String
+  },
+  date: {
+    type: String
+  },
+  creator: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
   }
 });
 

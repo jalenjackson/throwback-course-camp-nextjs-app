@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class Community extends React.Component {
+export default class Profile extends React.Component {
   render() {
     return (
       <div>
-        Community
+        <h1>Profile</h1>
       </div>
     )
   }

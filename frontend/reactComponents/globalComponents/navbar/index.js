@@ -8,19 +8,21 @@ import RegisterModal from '../../users/registerModal';
 import SetAuthentication from './setAuthentication';
 import ProfileDrawer from "../../users/profileDrawer";
 
-const Navbar = props => (
-  <Subscribe to={[NavbarContainer]}>
-    { navbarContainer => (
-      <div>
-        <SetAuthentication navbarContainer={ navbarContainer } auth={ props.auth } />
-        <MobileNavbar navbarContainer={ navbarContainer } auth={ props.auth } />
-        <DesktopNavbar navbarContainer={ navbarContainer } auth={ props.auth } />
-        <LoginModal navbarContainer={ navbarContainer } />
-        <RegisterModal navbarContainer={ navbarContainer } />
-        <ProfileDrawer navbarContainer={ navbarContainer } auth={ props.auth } />
-      </div>
-    )}
-  </Subscribe>
-);
-
-export default Navbar
+export default class Navbar extends React.Component {
+  render() {
+    return (
+      <Subscribe to={[NavbarContainer]}>
+        { navbarContainer => (
+          <div>
+            <SetAuthentication navbarContainer={ navbarContainer } auth={ this.props.auth } />
+            <MobileNavbar navbarContainer={ navbarContainer } auth={ this.props.auth } />
+            <DesktopNavbar navbarContainer={ navbarContainer } auth={ this.props.auth } />
+            <LoginModal navbarContainer={ navbarContainer } />
+            <RegisterModal navbarContainer={ navbarContainer } />
+            <ProfileDrawer navbarContainer={ navbarContainer } auth={ this.props.auth } />
+          </div>
+        )}
+      </Subscribe>
+    )
+  }
+}

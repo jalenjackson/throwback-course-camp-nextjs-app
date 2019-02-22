@@ -3,7 +3,7 @@ import App, { Container } from 'next/app';
 import { Provider } from 'unstated';
 import { VerifyAuthentication } from '../globalHelpers/verifyAuthentication';
 import Navbar from '../frontend/reactComponents/globalComponents/navbar/index';
-import { PageTransition } from 'next-page-transitions'
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import NProgress from 'nprogress'
 import '../static/styles/application.less';
 import '../static/styles/global.less';
@@ -21,13 +21,14 @@ import '../frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/ind
 import '../frontend/reactComponents/courses/viewCourseSectionCodingProject/index.less';
 import '../frontend/reactComponents/courses/viewCourseSectionCodingChallenge/index.less';
 import '../frontend/reactComponents/earnMoneyTeaching/less/index.less';
+import '../frontend/reactComponents/community/community/index.less';
 import '../static/styles/npprogress.less';
 
 import Router from 'next/router';
 NProgress.configure({ easing: 'linear', speed: 500, trickleSpeed: 200, trickle: true });
 
 Router.events.on('routeChangeStart', (url) => {
-  NProgress.start()
+  NProgress.start();
 });
 
 Router.events.on('routeChangeComplete', () => {
@@ -51,33 +52,40 @@ export default class MyApp extends App {
 
     return (
       <Container>
-        <PageTransition timeout={ 300 } classNames="page-transition">
-          <Provider>
+        <Provider>
+          <div>
             <Navbar auth={ auth } />
+            <TransitionGroup>
+              <CSSTransition
+                key={this.props.router.route}
+                timeout={500}
+                classNames="page">
             <Component {...pageProps} auth={ auth } />
-          </Provider>
-        </PageTransition>
+              </CSSTransition>
+            </TransitionGroup>
+          </div>
+        </Provider>
+        
         <style jsx global>{`
-          .page-transition-enter {
+          .page-enter {
             opacity: 0.4;
-            transform: translate3d(0, 40px, 0);
+            z-index: -999999999;
+            transform: translate3d(0, 90px, 0);
           }
-          .page-transition-enter-active {
+          .page-enter-active {
             opacity: 1;
             transform: translate3d(0, 0, 0);
             transition: transform 300ms cubic-bezier(.12,1,.8,.97), opacity 300ms ease-in-out;
           }
-          .page-transition-exit {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
+          .page-exit {
+            display: block;
           }
-          .page-transition-exit-active {
-            opacity: 0.7;
-            transform: translate3d(0, 40px, 0);
-            transition: opacity 300ms cubic-bezier(.12,1,.8,.97), transform 300ms cubic-bezier(.12,1,.8,.97);
+          .page-exit.page-exit-active {
+            display: none;
           }
         `}</style>
       </Container>
     )
   }
 }
+

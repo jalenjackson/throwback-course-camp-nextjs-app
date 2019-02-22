@@ -10,13 +10,14 @@ exports.createForumQuestion = async (args, req) => {
       body: args.forumQuestionInput.body,
       sectionIndex: args.forumQuestionInput.sectionIndex,
       videoIndex: args.forumQuestionInput.videoIndex,
-      exercise: args.forumQuestionInput.exercise
+      exercise: args.forumQuestionInput.exercise,
+      creator: args.forumQuestionInput.creator,
+      date: new Date().toISOString()
     });
     let createdForumQuestion;
     const result = await forumQuestion.save();
     createdForumQuestion = TransformObject(result);
-    const user = await User.findById('5c5266c44dfc285408bcc1da');
-    if(!user) { throw new Error('User does not exist') }
+    const user = await User.findById(result.creator);
     user.createdForumQuestions.push(forumQuestion);
     await user.save();
     return createdForumQuestion;

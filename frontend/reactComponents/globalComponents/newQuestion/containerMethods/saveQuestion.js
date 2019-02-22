@@ -5,14 +5,15 @@ import btoa from 'btoa';
 
 export const call = async (context, props) => {
   try {
-    console.log(props)
+    console.log(props.auth)
     const addNewQuestionMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
       createForumQuestion(
         forumQuestionInput: 
           { course: "${ props.course._id }", 
             exercise: "${ props.exercise }", 
-            title: "${ context.state.title }", 
+            title: "${ context.state.title }",
+            creator: "${ props.auth._id }",
             body: "${ btoa(unescape(encodeURIComponent(context.state.body))) }", 
             sectionIndex: ${ props.sectionIndex },
             videoIndex: ${ props.videoIndex } }) {

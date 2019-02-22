@@ -7,7 +7,6 @@ export const VerifyAuthentication = ctx => {
       ? new Cookies()
       : new Cookies(ctx.req.headers.cookie);
     const authenticationCookie = checkForAuthenticationCookie.get('auth');
-    console.log(authenticationCookie)
     if (authenticationCookie && authenticationCookie.token) {
       try {
         jwt.verify(authenticationCookie.token, process.env.JWT_SECRET_KEY);

@@ -1,6 +1,6 @@
-export const call = (context, authenticated, auth) => {
-  context.setState({ authenticated });
+export const call = async (context, authenticated, auth) => {
+  await context.setState({ authenticated });
   if (authenticated) {
-    context.setState({ authorizationToken: auth.token });
+    await context.setState({ authorizationToken: auth.token });
   }
 };

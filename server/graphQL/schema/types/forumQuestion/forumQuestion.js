@@ -7,5 +7,7 @@ exports.ForumQuestion = `
     sectionIndex: Float!
     videoIndex: Float!
     exercise: String
+    date: String!
+    creator: User!
   }
 `;

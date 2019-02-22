@@ -76,6 +76,8 @@
       }
       h1 {
         font-size: 35px;
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
         color: rgb(80, 95, 95);
         font-weight: bold;
         @media @desktop-strict {
@@ -84,10 +86,16 @@
       }
       p {
         font-size: 17px;
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
         font-weight: lighter;
         line-height: 31px;
         color: #686b87;
-        transform: translateX(3px);
+        margin-left: 3px;
+      }
+      .ant-select-lg {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
       }
       @media @desktop {
         width: 86%;

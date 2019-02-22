@@ -1,19 +1,52 @@
 import React from 'react';
 import Head from 'next/head';
-import CommunityComponent from '../../frontend/reactComponents/community/index';
+import CommunityComponent from '../../frontend/reactComponents/community/community/index';
+import {GraphQlDevURI, GraphQlMutate} from "../../globalHelpers/axiosCalls";
 
-const Community = () => (
+const Community = ({ forumQuestions }) => (
     <div>
       <Head>
         <title>Home Page</title>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossOrigin="anonymous" />
       </Head>
-      <CommunityComponent />
+      <CommunityComponent forumQuestions={ forumQuestions } />
     </div>
 );
 
 Community.getInitialProps = async () => {
-  return {};
+  try {
+    const forumQuestions = await GraphQlMutate(GraphQlDevURI, `
+      {
+        forumQuestions {
+        _id
+        title
+        date
+        exercise
+        sectionIndex
+        videoIndex
+        course {
+          title
+          color
+          sections {
+            title
+            videos {
+              title
+            }
+          }
+        }
+        creator {
+          name
+        }
+      }
+    }
+  `);
+    return { forumQuestions: forumQuestions.data.data.forumQuestions }
+  } catch(e) {
+    console.log(e);
+    return {};
+  }
 };
 
 export default Community;

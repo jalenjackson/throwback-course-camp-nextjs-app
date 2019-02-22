@@ -6,5 +6,6 @@ exports.ForumQuestionInput = `
     sectionIndex: Float!
     videoIndex: Float!
     exercise: String
+    creator: String!
   }
 `;
