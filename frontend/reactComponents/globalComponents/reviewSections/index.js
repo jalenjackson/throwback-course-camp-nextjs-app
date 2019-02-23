@@ -1,11 +1,13 @@
 import React from 'react';
 import List from './list';
 import { Empty, Button } from 'antd';
-import { navigatePane } from '../topProgress/navigatePane';
+import { navigatePane } from '../../courses/courseBuilder/topProgress/navigatePane';
 
 export default class ReviewSections extends React.Component {
   render () {
-    const sections = this.props.container.state.course.sections;
+    const sections = this.props.courseNotInState
+      ? this.props.course.sections
+      : this.props.container.state.course.sections;
     return (
       <div>
         { sections && sections.length > 0

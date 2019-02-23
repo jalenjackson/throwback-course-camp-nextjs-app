@@ -16,4 +16,5 @@ routes
   .add('community/community', '/community')
   .add('community/communityQuestion', '/community/:questionId')
   .add('user/profile', '/profile')
-  .add('courses/courseCategories', '/courses/:category');
+  .add('courses/courseCategories', '/courses/:category')
+  .add('courses/track', '/courses/view/:courseId/track');

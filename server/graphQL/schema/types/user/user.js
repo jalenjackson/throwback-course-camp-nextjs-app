@@ -5,6 +5,9 @@ exports.User = `
     name: String!
     password: String
     token: String
+    isBusinessAccount: Boolean
+    paidCourses: [Course!]
+    moneyMade: Float!
     createdCourses: [Course!]
     createdForumQuestions: [ForumQuestion!]
   }
@@ -15,5 +18,7 @@ exports.User = `
     tokenExpiration: Int!
     email: String!
     name: String!
+    paidCourses: [Course!]
+    moneyMade: Float!
   }
 `;

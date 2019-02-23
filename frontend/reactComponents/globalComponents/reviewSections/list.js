@@ -1,11 +1,13 @@
 import React from 'react';
 import Element from './element';
-import {Button, Empty} from "antd";
-import {navigatePane} from "../topProgress/navigatePane";
+import { Button, Empty } from 'antd';
+import { navigatePane } from "../../courses/courseBuilder/topProgress/navigatePane";
 
 export default class List extends React.Component {
   render() {
-    const sections = this.props.container.state.course.sections;
+    const sections = this.props.courseNotInState
+      ? this.props.course.sections
+      : this.props.container.state.course.sections;
     return (
       <div style={{ marginTop: 50 }}>
         { this.renderPaths(sections) }

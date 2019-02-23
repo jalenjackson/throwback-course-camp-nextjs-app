@@ -1,4 +1,4 @@
-const UserResolver = require('./users/auth');
+const UserResolver = require('./users/index');
 const CourseResolver = require('./courses/index');
 const ForumQuestionResolver = require('./forumQuestions/index');
 const { globalAutocomplete } = require('./global/globalAutocomplete');

@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import ViewCourseComponent from '../../frontend/reactComponents/courses/viewCourse/index';
+import TrackComponent from '../../frontend/reactComponents/courses/track/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
 import { courseResponse } from '../sharedQueryCourseResponses';
 
-export default class ViewCourse extends React.Component {
+export default class Track extends React.Component {
   render() {
     return (
       <div>
@@ -16,17 +16,16 @@ export default class ViewCourse extends React.Component {
                   crossOrigin="anonymous" />
         </Head>
         { this.props.course
-          ? <ViewCourseComponent
-              userPaidForCourseAlready={ userPaidForCourseAlready(this.props.auth, this.props.course) }
-              course={ this.props.course }
-              auth={ this.props.auth } />
+          ? <TrackComponent
+            course={ this.props.course }
+            auth={ this.props.auth } />
           : console.log('render 500') }
       </div>
     )
   }
 }
 
-ViewCourse.getInitialProps = async (ctx) => {
+Track.getInitialProps = async (ctx) => {
   try {
     const courseId = ctx.query.courseId;
     const course = await GraphQlMutate(GraphQlDevURI, `
@@ -43,11 +42,5 @@ ViewCourse.getInitialProps = async (ctx) => {
     return { course: course.data.data.singleCourse }
   } catch(e) {
     return { course: false }
-  }
-};
-
-const userPaidForCourseAlready = (auth, course) => {
-  if (auth.authenticated) {
-    return !!auth.paidCourses.find(c => c._id === course._id);
   }
 };

@@ -7,7 +7,7 @@ import { Subscribe } from 'unstated';
 import CourseBuilderContainer from './container';
 import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
 import Drawers from './drawers/index';
-import ReviewSections from './reviewSections/index';
+import ReviewSections from '../../globalComponents/reviewSections';
 import ReviewCourseDetails from './reviewCourseDetails/index';
 import Publish from './publish/index'
 import Footer from "../../globalComponents/footer";

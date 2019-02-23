@@ -20,11 +20,16 @@ export const call = async (context, form) => {
           email
           name
           token
+          moneyMade
+          paidCourses {
+            _id
+          }
         }
       }
     `);
     form.resetFields();
     const userCookie = new Cookies();
+    console.log(loginResponse.data.data.login)
     userCookie.set('auth', loginResponse.data.data.login, { path: '/' });
     await context.setState({
       loginErrorMessage: '',

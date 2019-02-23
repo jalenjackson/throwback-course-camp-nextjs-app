@@ -1,7 +1,7 @@
 import React from 'react'
 import Sections from './columns/sections';
 import Language from './columns/language';
-import BuyCourse from './columns/buyCourse';
+import BuyCourseWrapper from './columns/buyCourse';
 import Instructor from './columns/intructor';
 import Learning from './columns/learning';
 import Completion from './columns/completion';
@@ -12,7 +12,10 @@ const ViewCourseComponent = props => (
   <div id='view-course'>
     <div className="course-sections-container">
       <div id='course-sections'>
-        <BuyCourse { ...props } />
+        { props.userPaidForCourseAlready
+          ? null
+          : <BuyCourseWrapper { ...props } />
+        }
         <Language { ...props }/>
         <Instructor { ...props } />
         <Learning { ...props } />

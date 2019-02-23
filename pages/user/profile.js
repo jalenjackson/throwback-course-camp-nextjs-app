@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import ProfileComponent from '../../frontend/reactComponents/user/profile';
+import ProfileComponent from '../../frontend/reactComponents/users/profile';
 
 const Profile = () => (
   <div>

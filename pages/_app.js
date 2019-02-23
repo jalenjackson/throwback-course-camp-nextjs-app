@@ -22,6 +22,7 @@ import '../frontend/reactComponents/courses/viewCourseSectionCodingProject/index
 import '../frontend/reactComponents/courses/viewCourseSectionCodingChallenge/index.less';
 import '../frontend/reactComponents/earnMoneyTeaching/less/index.less';
 import '../frontend/reactComponents/community/community/index.less';
+import '../frontend/reactComponents/courses/coursesCategories/index.less';
 import '../static/styles/npprogress.less';
 
 import Router from 'next/router';

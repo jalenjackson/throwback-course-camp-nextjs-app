@@ -31,7 +31,17 @@ const UserSchema = new Schema({
       type: Schema.Types.ObjectId,
       ref: 'Quiz'
     }
-  ]
+  ],
+  isBusinessAccount: {
+    type: Boolean,
+    default: false
+  },
+  paidCourses: {
+    type: Array
+  },
+  moneyMade: {
+    type: Number
+  }
 });
 
 module.exports = mongoose.model('User', UserSchema);
