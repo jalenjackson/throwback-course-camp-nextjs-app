@@ -18,7 +18,11 @@ export default class IndexComponent extends React.Component {
     handleScrollSkewAnimation();
     setTimeout(() => {
       this.setState({ loaded: true });
-    }, 500)
+    }, 500);
+    
+    if (this.props.isRequestFromServer) {
+      console.log('render loading animation')
+    }
   }
 
   render() {
