@@ -59,7 +59,7 @@ export default class MyApp extends App {
             <TransitionGroup>
               <CSSTransition
                 key={this.props.router.route}
-                timeout={500}
+                timeout={550}
                 classNames="page">
             <Component {...pageProps} auth={ auth } />
               </CSSTransition>
@@ -69,14 +69,13 @@ export default class MyApp extends App {
         
         <style jsx global>{`
           .page-enter {
-            opacity: 0.4;
-            z-index: -999999999;
-            transform: translate3d(0, 90px, 0);
+            opacity: 0.65;
+            transform: translate3d(0, 100px, 0);
           }
           .page-enter-active {
             opacity: 1;
             transform: translate3d(0, 0, 0);
-            transition: transform 300ms cubic-bezier(.12,1,.8,.97), opacity 300ms ease-in-out;
+            transition: transform 550ms cubic-bezier(.12,1,.8,.97), opacity 550ms ease-in-out;
           }
           .page-exit {
             display: block;

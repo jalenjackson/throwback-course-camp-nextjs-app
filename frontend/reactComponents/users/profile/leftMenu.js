@@ -15,7 +15,7 @@ export default class LeftMenu extends React.Component {
         </Menu.Item>
         <Menu.Item key="payout">
           <Icon type="desktop" />
-          <span>Payout</span>
+          <span>PayPal Settings</span>
         </Menu.Item>
         <Menu.Item key="paymentHistory">
           <Icon type="desktop" />

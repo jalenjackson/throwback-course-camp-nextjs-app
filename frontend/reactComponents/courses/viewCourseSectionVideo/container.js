@@ -14,7 +14,9 @@ class ViewCourseContainer extends Container {
     videoPreviewCourse: {},
     playbackRate: 1.0,
     loop: false,
-    volume: 0.8
+    volume: 0.8,
+    videoEnded: false,
+    videoEndModalVisible: false
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);

@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class Payout extends React.Component {
+export default class Search extends React.Component {
   render() {
     return (
       <div>
-        PaylPal Settings
+        <h1>Search</h1>
       </div>
     )
   }

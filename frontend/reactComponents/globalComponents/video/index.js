@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import { Menu, Slider } from 'antd';
+import { Menu, Slider, Modal, Button } from 'antd';
 import { Methods } from './Methods/index';
 import screenfull from 'screenfull';
 
@@ -23,8 +23,9 @@ export default class Index extends React.Component {
               muted={ this.props.muted }
               width='100%'
               volume={ this.props.container.state.volume }
-              loop={ this.props.container.state.loop }
+              loop={ false }
               playbackRate={ this.props.container.state.playbackRate }
+              onEnded={ () => this.showEndVideoContainer() }
               height='100%' />
         </div>
         <div className='video-controls'>
@@ -72,14 +73,6 @@ export default class Index extends React.Component {
                   src='/static/icons/video-playback-speed.svg' />
             </div>
           </div>
-          <div className='video-loop'>
-            <img
-                onMouseEnter={ e => e.target.style.opacity = 1 }
-                onMouseLeave={ e => this.props.container.state.loop ? e.target.style.opacity = 1  : e.target.style.opacity = 0.4 }
-                style={{ opacity: this.props.container.state.loop ? 1 : 0.4, transform: 'translateY(18px)' }}
-                onClick={ () => this.props.container.updateState('loop', !this.props.container.state.loop) }
-                src='/static/icons/video-looping.svg' />
-          </div>
           <div className='video-sound'>
             <div
                 onMouseLeave={ () => this.handleVideoDropdown('video-sound', 'hide') }
@@ -121,6 +114,21 @@ export default class Index extends React.Component {
             <img style={{ transform: 'translateY(17px)', marginRight: 15, marginLeft: 5, display: 'block', width: 24 }} onClick={ () => this.requestFullScreen() } src="/static/icons/video-fullscreen.svg" />
           </div>
         </div>
+        <Modal
+          title="Basic Modal"
+          visible={ this.props.container.state.videoEndModalVisible }>
+          <Button.Group>
+            <Button type="primary">
+              Take Quiz
+            </Button>
+            <Button type="primary">
+              Watch Video Again
+            </Button>
+            <Button type="primary">
+              Ask A Question
+            </Button>
+        </Button.Group>
+        </Modal>
       </div>
     )
   }
@@ -157,6 +165,10 @@ export default class Index extends React.Component {
     type === 'hide'
       ? $(`.${ container } .video-dropdown-selection`).removeClass('show-video-dropdown').addClass('hide-video-dropdown')
       : $(`.${ container } .video-dropdown-selection`).removeClass('hide-video-dropdown').addClass('show-video-dropdown');
+  };
+  
+  showEndVideoContainer = () => {
+    this.props.container.updateState('videoEndModalVisible', true);
   };
 
   videoPlaybackOptions = () => (

@@ -17,6 +17,7 @@ class NavbarContainer extends Container {
     registerSubmissionInProgress: false,
     authorizationToken: '',
     authenticated: 'undefined',
+    autocompleteTerm: ''
   };
 
   setInitialAuthentication = (authenticated, auth) => Methods.setInitialAuthentication.call(this, authenticated, auth);

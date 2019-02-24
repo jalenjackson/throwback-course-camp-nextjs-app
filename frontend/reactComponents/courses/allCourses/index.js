@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class Payout extends React.Component {
+export default class AllCourses extends React.Component {
   render() {
     return (
       <div>
-        PaylPal Settings
+        All courses
       </div>
     )
   }

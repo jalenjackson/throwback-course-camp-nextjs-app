@@ -2,33 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c93e22-de8f-4fdc-ab13-cf5547a08d51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Jalen___Tammy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jalen___Tammy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/review/element.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/element.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/review/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/review/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewSections/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewSections/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewSections/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/user/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/pictureQuizSvgAnimation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/popQuizIntro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalLocalization.js" beforeDir="false" afterPath="$PROJECT_DIR$/globalLocalization.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,22 +32,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js">
+        <entry file="file://$PROJECT_DIR$/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="441">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/courses/allCourses.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/allCourses/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="126">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="77" column="81" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/courses/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="27" column="6" selection-end-line="46" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -66,10 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/index.js">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="294">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -78,55 +110,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/photo/index.js">
+        <entry file="file://$PROJECT_DIR$/globalLocalization.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="399">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/paymentHistory/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/closeAccount/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="5" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="504">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -134,17 +142,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/misc/updateState.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>innertr</find>
-      <find>video-play</find>
       <find>begin-</find>
       <find>red</find>
       <find>video-play0-</find>
@@ -173,6 +174,8 @@
       <find>auth</find>
       <find>Tween</find>
       <find>box-</find>
+      <find>categ</find>
+      <find>updateS</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -200,23 +203,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/reactComponents/community/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/community/index.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/queries/forumQuestion/forumQuestionQueries.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/forumQuestions.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/index.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/singleForumQuestion.js" />
-        <option value="$PROJECT_DIR$/pages/community/communityQuestion.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/community/community/index.js" />
-        <option value="$PROJECT_DIR$/pages/community/community.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/community/communityQuestion/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/user/profile/index.js" />
-        <option value="$PROJECT_DIR$/pages/user/profile.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courses/index.js" />
         <option value="$PROJECT_DIR$/pages/courses/courses.js" />
         <option value="$PROJECT_DIR$/pages/courses/coursesCategories.js" />
-        <option value="$PROJECT_DIR$/pages/_app.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.less" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.js" />
         <option value="$PROJECT_DIR$/server/models/user.js" />
@@ -233,7 +221,6 @@
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/container.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js" />
         <option value="$PROJECT_DIR$/pages/courses/viewCourse.js" />
-        <option value="$PROJECT_DIR$/routes.js" />
         <option value="$PROJECT_DIR$/pages/courses/track.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/track/index.js" />
@@ -242,15 +229,31 @@
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/element.less" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/element.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/photo/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/paymentHistory/index.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/closeAccount/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/helpers.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/container.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js" />
+        <option value="$PROJECT_DIR$/static/styles/global.less" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/container.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.js" />
+        <option value="$PROJECT_DIR$/pages/courses/search.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" />
+        <option value="$PROJECT_DIR$/globalLocalization.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js" />
+        <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/allCourses/index.js" />
+        <option value="$PROJECT_DIR$/pages/courses/allCourses.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" />
+        <option value="$PROJECT_DIR$/pages/_app.js" />
       </list>
     </option>
   </component>
@@ -289,24 +292,24 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="users" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="globalComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="users" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="profile" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="globalComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="navbar" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="users" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="profile" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="preview" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="globalComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="navbar" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="navbars" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -368,12 +371,12 @@
       <workItem from="1550729590747" duration="17000" />
       <workItem from="1550729630828" duration="1850000" />
       <workItem from="1550798048868" duration="1807000" />
-      <workItem from="1550799870151" duration="37658000" />
+      <workItem from="1550799870151" duration="45080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="699672000" />
+    <option name="totallyTimeSpent" value="707094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -404,221 +407,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/updateCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="17" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/merge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" selection-start-line="16" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/middleware/verifyAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/buyCourse/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/handleBoughtCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/loginModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/globalHelpers/verifyAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleRegistrationSubmission.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/inputs/course/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/queries/users/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/queries/users/userQueries.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/user/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="27" column="7" selection-start-line="16" selection-start-column="6" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/viewCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="50" column="62" selection-end-line="52" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/track.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewCourseDetails/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewSections/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewSections/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewSections/element.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -704,27 +492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/misc/updateState.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/photo/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -742,32 +513,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/misc/updateState.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -779,10 +533,294 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="252">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/popQuizIntro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/endResults/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/answeredAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/answers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/containerMethods/navigateToNextQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/containerMethods/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/styles/global.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/setAuthentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses/track.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/search/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalLocalization.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/localization.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/allCourses/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="6" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses/allCourses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="77" column="81" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

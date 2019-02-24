@@ -1,8 +1,10 @@
 import React from 'react';
 import { Menu, Icon, Button, Input, AutoComplete, Badge, Avatar } from 'antd';
+import _ from 'lodash';
 import { MoneySVG, PaperWithBulletPointsSVG } from '../../svgs/index';
 import Localization from '../localization';
-import { Link } from '../../../../../routes';
+import GlobalLocalization from '../../../../../globalLocalization';
+import { Router, Link } from '../../../../../routes';
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -18,18 +20,34 @@ const DesktopNavbar = props => (
       <AutoComplete
         style={{ width: 500 }}
         dataSource={ props.navbarContainer.state.autoCompleteDataSource }
+        value={ props.navbarContainer.state.autocompleteTerm }
+        onChange={ term => props.navbarContainer.setContainerState('autocompleteTerm', term) }
         onSearch={ props.navbarContainer.getAutoCompleteDataResults }
         placeholder={ Localization.Search.Placeholder }>
-        <Input suffix={ <Icon type="search" className="certain-category-icon" /> } />
+        <Input onKeyDown={ e => navigateToSearch(e, props, false) } suffix={
+          <Icon
+            onClick={ e => navigateToSearch(e, props, true) }
+            type="search"
+            className="certain-category-icon" /> } />
       </AutoComplete>
       <SubMenu title={
         <span>
           <Icon className="navbar-paper-with-bullets" component={ PaperWithBulletPointsSVG } />{ Localization.MenuLinks.LearnAndPractice }
         </span>}>
         <MenuItemGroup title={ Localization.MenuLinks.Learn }>
-          <SubMenu key={ Localization.MenuKeys.Courses } title={ Localization.MenuLinks.Courses }>
-            <Menu.Item key={ Localization.MenuKeys.Courses }>{ Localization.MenuLinks.AllCourses }</Menu.Item>
-            <Menu.Item key={ Localization.MenuKeys.CourseCategories }>{ Localization.MenuLinks.Categories }</Menu.Item>
+          <Menu.Item key={ Localization.MenuKeys.Courses }>
+            <Link to='/courses/all-courses'>
+              { Localization.MenuLinks.AllCourses }
+            </Link>
+          </Menu.Item>
+          <SubMenu key={ Localization.MenuKeys.CourseCategories } title={ Localization.MenuLinks.Categories }>
+            { GlobalLocalization.coruseCategories.map((category) => (
+              <Menu.Item>
+                <Link to={`/courses/category/${ _.kebabCase(category) }`}>
+                  { category }
+                </Link>
+              </Menu.Item>
+            )) }
           </SubMenu>
           <Menu.Item key={ Localization.MenuKeys.Community }>
             <Link to='/community'>
@@ -70,6 +88,12 @@ const DesktopNavbar = props => (
     </Menu>
   </div>
 );
+
+const navigateToSearch = async (e, props, isClicked) => {
+  if (isClicked || e.key === 'Enter') {
+    await Router.pushRoute(`/courses/search/${ props.navbarContainer.state.autocompleteTerm }`)
+  }
+};
 
 const inlineStyling = () => {
   return {

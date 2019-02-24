@@ -16,7 +16,7 @@ class ViewCourseSectionQuizContainer extends Container {
     questionsShuffled: false,
     currentShuffledAnswers: [],
     shuffledQuestions: [],
-    gameStarted: false
+    gameStarted: true
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);
