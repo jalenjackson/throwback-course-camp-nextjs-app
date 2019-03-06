@@ -5,7 +5,7 @@ import { Link } from '../../../../routes';
 const Element = props => (
     <div>
       <div>
-        <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0` : '#' }>
+        <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }` : '#' }>
           <div style={{ background: props.courseNotInState
               ? props.course.color
               : props.container.state.course.color
@@ -18,7 +18,7 @@ const Element = props => (
           <Timeline>
             { props.video.quiz
               ? <Timeline.Item>
-                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0/quiz` : '#' }>
+                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/quiz` : '#' }>
                     Multiple Choice Quiz
                   </Link>
                 </Timeline.Item>
@@ -26,7 +26,7 @@ const Element = props => (
             }
             { props.video.pictureQuiz
               ? <Timeline.Item>
-                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0/picture-quiz` : '#' }>
+                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/picture-quiz` : '#' }>
                     Picture Quiz
                   </Link>
                 </Timeline.Item>
@@ -34,7 +34,7 @@ const Element = props => (
             }
             { props.video.matchingGame
               ? <Timeline.Item>
-                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0/matching-game` : '#' }>
+                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/matching-game` : '#' }>
                     Matching Game
                   </Link>
                 </Timeline.Item>
@@ -42,7 +42,7 @@ const Element = props => (
             }
             { props.video.crunchChallenge
               ? <Timeline.Item>
-                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0/crunch-challenge` : '#' }>
+                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/crunch-challenge` : '#' }>
                     Crunch Challenge
                   </Link>
                 </Timeline.Item>
@@ -50,7 +50,7 @@ const Element = props => (
             }
             { props.video.codingChallenge
               ? <Timeline.Item>
-                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0/coding-challenge` : '#' }>
+                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/coding-challenge` : '#' }>
                     Coding Exercise
                   </Link>
                 </Timeline.Item>
@@ -58,7 +58,7 @@ const Element = props => (
             }
             { props.video.codingProject
               ? <Timeline.Item>
-                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/0/0/coding-project` : '#' }>
+                  <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/coding-project` : '#' }>
                     Coding Project
                   </Link>
                 </Timeline.Item>

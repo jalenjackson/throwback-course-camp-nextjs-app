@@ -1,3 +1,3 @@
 exports.autocompleteQueries = `
-  globalAutocomplete(term: String!): [Course!]!
+  globalAutocomplete(term: String!, limit: Float!, skip: Float!): Autocomplete!
 `;

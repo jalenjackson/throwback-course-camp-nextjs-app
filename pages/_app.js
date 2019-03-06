@@ -23,6 +23,8 @@ import '../frontend/reactComponents/courses/viewCourseSectionCodingChallenge/ind
 import '../frontend/reactComponents/earnMoneyTeaching/less/index.less';
 import '../frontend/reactComponents/community/community/index.less';
 import '../frontend/reactComponents/courses/coursesCategories/index.less';
+import '../frontend/reactComponents/courses/search/index.less';
+import '../frontend/reactComponents/courses/track/review/index.less';
 import '../static/styles/npprogress.less';
 
 import Router from 'next/router';

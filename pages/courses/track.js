@@ -17,6 +17,7 @@ export default class Track extends React.Component {
         </Head>
         { this.props.course
           ? <TrackComponent
+            isRequestFromServer={ this.props.isRequestFromServer }
             course={ this.props.course }
             auth={ this.props.auth } />
           : console.log('render 500') }
@@ -27,6 +28,8 @@ export default class Track extends React.Component {
 
 Track.getInitialProps = async (ctx) => {
   try {
+    const isRequestFromServer = typeof window === 'undefined';
+    
     const courseId = ctx.query.courseId;
     const course = await GraphQlMutate(GraphQlDevURI, `
     query {
@@ -39,7 +42,7 @@ Track.getInitialProps = async (ctx) => {
     }
   `);
     course.data.data.singleCourse.description = atob(course.data.data.singleCourse.description);
-    return { course: course.data.data.singleCourse }
+    return { course: course.data.data.singleCourse, isRequestFromServer }
   } catch(e) {
     return { course: false }
   }

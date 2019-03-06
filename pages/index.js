@@ -19,7 +19,7 @@ Index.getInitialProps = async () => {
     
     const courses = await GraphQlMutate(GraphQlDevURI, `
     query {
-      courses {
+      courses(limit: 10) {
         _id
         title
         description

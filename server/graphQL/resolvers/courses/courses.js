@@ -1,9 +1,13 @@
 const Course =  require('../../../models/course');
 const { TransformObject } = require('./merge');
 
-exports.courses = async () => {
+exports.courses = async args => {
   try {
-    const courses = await Course.find();
+    const courses = await
+      Course.find()
+      .skip(args.skip ? args.skip : 0)
+      .limit(args.limit ? args.limit : 0);
+    
     return courses.map(course => {
       return TransformObject(course)
     });

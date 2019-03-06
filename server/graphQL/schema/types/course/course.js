@@ -15,5 +15,6 @@ exports.Course = `
     summary: String!
     sections: [Section]
     publishedCourse: Course
+    studentsEnrolled: Float!
   }
 `;

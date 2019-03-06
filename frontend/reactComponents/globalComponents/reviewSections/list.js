@@ -20,14 +20,14 @@ export default class List extends React.Component {
   }
 
   renderPaths(sections) {
-    return sections.map(section => (
+    return sections.map((section, i) => (
       <div>
         <div id='course-track-element-container'>
           <h1 style={{ transform: 'translate(23px, 13px)', fontSize: 16, display: 'block' }}>{ section.title ? section.title : 'No title added for this section' }</h1>
           { section.videos && section.videos.length > 0
-            ? section.videos.map((video, i) => (
+            ? section.videos.map((video, j) => (
               <div>
-                <Element type={ 'video' } video={ video } {...this.props}  />
+                <Element sectionIndex={ i } videoIndex={ j } type={ 'video' } video={ video } { ...this.props }  />
                 { i === section.videos.length - 1
                   ? null
                   : <div className='divider video-dividers'/>

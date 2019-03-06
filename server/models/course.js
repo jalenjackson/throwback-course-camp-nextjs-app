@@ -53,6 +53,9 @@ const CourseSchema = new Schema({
   },
   publishedCourse: {
     type: Object
+  },
+  studentsEnrolled: {
+    type: Number
   }
 });
 

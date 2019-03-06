@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import Localization from './localization';
+import { Link } from '../../../routes';
 
 const EarnMoneyCTA = () => (
   <div className='earn-money-cta'>
@@ -8,7 +9,9 @@ const EarnMoneyCTA = () => (
     <div className='earn-money-cta-text-container'>
       <h1>{ Localization.EarnMoneyCTA.Title }</h1>
       <p>{ Localization.EarnMoneyCTA.Paragraph }</p>
-      <Button type="primary" icon="dollar">{ Localization.GetStarted }</Button>
+      <Link to='/teach'>
+        <Button type="primary" icon="dollar">{ Localization.GetStarted }</Button>
+      </Link>
     </div>
   </div>
 );

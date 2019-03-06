@@ -6,7 +6,9 @@ class NewQuestionContainer extends Container {
     title: '',
     body: '',
     visibility: false,
-    textAreaInit: false
+    successModalVisible: false,
+    textAreaInit: false,
+    submittedQuestionId: ''
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);

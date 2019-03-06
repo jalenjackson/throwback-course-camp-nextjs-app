@@ -15,7 +15,7 @@ let localization = new LocalizedStrings({
       Purchase: 'Purchase'
     },
     PopularCategories: {
-      Header: 'Popular Categories'
+      Header: 'Categories'
     },
     EarnMoneyCTA: {
       Title: 'Do You Want To Earn Money Teaching?',

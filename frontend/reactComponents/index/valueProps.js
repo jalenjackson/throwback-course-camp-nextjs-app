@@ -3,19 +3,13 @@ import Circle from '../globalComponents/svgs/circle';
 import Square from '../globalComponents/svgs/square';
 import { AutoComplete, Button, Icon, Input } from 'antd';
 import Localization from './localization';
-import TweenMax, { Power3 } from 'gsap/TweenMax';
+import { Router } from "../../../routes";
+import _ from 'lodash';
 
 export default class ValueProps extends React.Component {
-  componentDidMount() {
-    TweenMax.to('#home-page-value-props-text-container h1', 0.3,
-      { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.2});
-    
-    TweenMax.to('#home-page-value-props-text-container p', 0.3,
-      { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.25});
-    
-    TweenMax.to('#home-page-value-props-text-container .ant-select-lg', 0.3,
-      { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.35});
-  }
+  state = {
+    isNavigating: false
+  };
   
   render() {
     return (
@@ -35,11 +29,14 @@ export default class ValueProps extends React.Component {
             size="large"
             style={ styles.increaseWidth }
             placeholder={ Localization.ValueProps.SearchPlaceholder }
+            value={ this.props.navbarContainer.state.autocompleteTerm }
+            onChange={ term => this.props.navbarContainer.setContainerState('autocompleteTerm', term) }
             optionLabelProp="text">
             <Input
+              onKeyDown={ e => this.navigateToSearch(e, false) }
               suffix={(
-                <Button style={ styles.styleButton } className="search-btn" size="large" type="primary">
-                  <Icon type="search" />
+                <Button onClick={ e => this.navigateToSearch(e, true) } style={ styles.styleButton } className="search-btn" size="large" type="primary">
+                  <Icon type={ !this.props.navbarContainer.state.isNavigating ? 'search' : 'loading' } />
                 </Button>
               )} />
           </AutoComplete>
@@ -50,6 +47,13 @@ export default class ValueProps extends React.Component {
       </div>
     )
   }
+  
+  navigateToSearch = async (e, isClicked) => {
+    if (isClicked || e.key === 'Enter') {
+      await this.props.navbarContainer.setContainerState('isNavigating', true);
+      await Router.pushRoute(`/courses/search/${ _.kebabCase(this.props.navbarContainer.state.autocompleteTerm) }`)
+    }
+  };
 }
 
 const styles = {

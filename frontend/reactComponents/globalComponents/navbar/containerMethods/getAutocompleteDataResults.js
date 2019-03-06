@@ -5,15 +5,17 @@ export const call = async (context, term) => {
     try {
       const queryMainSearch = await GraphQlMutate(GraphQlDevURI, `
           query {
-            globalAutocomplete(term: "${term}") {
-              title
+            globalAutocomplete(term: "${term}", limit: 9, skip: 0) {
+              courses {
+                title
+              }
             }
           }
         `);
-      const queryMainSearchResults = queryMainSearch.data.data.globalAutocomplete;
+      const queryMainSearchResults = queryMainSearch.data.data.globalAutocomplete.courses;
       const tmpQueryMainSearchResultsArray = [];
       if (queryMainSearchResults.length > 0) {
-        queryMainSearch.data.data.globalAutocomplete.map((course) => {
+        queryMainSearch.data.data.globalAutocomplete.courses.map((course) => {
           tmpQueryMainSearchResultsArray.push(course.title);
         });
         context.setState({ autoCompleteDataSource: tmpQueryMainSearchResultsArray });

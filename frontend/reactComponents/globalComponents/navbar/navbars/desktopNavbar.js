@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, Icon, Button, Input, AutoComplete, Badge, Avatar } from 'antd';
 import _ from 'lodash';
-import { MoneySVG, PaperWithBulletPointsSVG } from '../../svgs/index';
+import {BrainFlopLogoSVG, MoneySVG, PaperWithBulletPointsSVG} from '../../svgs/index';
 import Localization from '../localization';
 import GlobalLocalization from '../../../../../globalLocalization';
 import { Router, Link } from '../../../../../routes';
@@ -27,8 +27,9 @@ const DesktopNavbar = props => (
         <Input onKeyDown={ e => navigateToSearch(e, props, false) } suffix={
           <Icon
             onClick={ e => navigateToSearch(e, props, true) }
-            type="search"
-            className="certain-category-icon" /> } />
+            type={ !props.navbarContainer.state.isNavigating ? 'search' : 'loading' }
+            className="certain-category-icon" />
+        } />
       </AutoComplete>
       <SubMenu title={
         <span>
@@ -36,7 +37,7 @@ const DesktopNavbar = props => (
         </span>}>
         <MenuItemGroup title={ Localization.MenuLinks.Learn }>
           <Menu.Item key={ Localization.MenuKeys.Courses }>
-            <Link to='/courses/all-courses'>
+            <Link to='/courses/all-courses?page=1'>
               { Localization.MenuLinks.AllCourses }
             </Link>
           </Menu.Item>
@@ -63,6 +64,12 @@ const DesktopNavbar = props => (
             { Localization.MenuLinks.EarnMoneyTeaching }
           </a>
         </Link>
+      </Menu.Item>
+      <Menu.Item key='brainflop'>
+        <a target='_blank' href='https://brainflop.com'>
+          <Icon className="navbar-brainflop-svg" component={ BrainFlopLogoSVG } />
+          BrainFlop
+        </a>
       </Menu.Item>
       { !props.navbarContainer.state.authenticated
         ? <Menu.Item onClick={() => props.navbarContainer.setContainerState('registerFormVisibility', true)}
@@ -91,7 +98,9 @@ const DesktopNavbar = props => (
 
 const navigateToSearch = async (e, props, isClicked) => {
   if (isClicked || e.key === 'Enter') {
-    await Router.pushRoute(`/courses/search/${ props.navbarContainer.state.autocompleteTerm }`)
+    await props.navbarContainer.setContainerState('isNavigating', true);
+    await Router.pushRoute(`/courses/search/${ _.kebabCase(props.navbarContainer.state.autocompleteTerm) }?page=1`);
+    props.navbarContainer.setContainerState('isNavigating', false);
   }
 };
 

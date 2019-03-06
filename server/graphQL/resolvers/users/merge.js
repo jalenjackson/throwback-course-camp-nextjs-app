@@ -8,6 +8,7 @@ const TransformObject = k => {
 };
 
 const MongoFindPaidCourses = async courseIds => {
+  console.log(courseIds)
   try {
     const courses = await Course.find({ _id: { $in: courseIds }});
     return courses.map(course => {

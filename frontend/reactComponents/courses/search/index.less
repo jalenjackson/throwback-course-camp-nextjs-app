@@ -1,0 +1,46 @@
+@import '../../../../static/styles/variables';
+
+.search-copy {
+  width: 100%;
+  height: 150px;
+  background: #846DB1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  h1 {
+    color: white;
+    opacity: 0;
+    transform: translate3d(0, 20px, 0)
+  }
+}
+
+.pagination-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none
+}
+
+.pagination-bar-loader {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  transform: translateY(-30px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+}
+
+.inner-course-map {
+  opacity: 0;
+  transform: translate3d(0, 60px, 0);
+}

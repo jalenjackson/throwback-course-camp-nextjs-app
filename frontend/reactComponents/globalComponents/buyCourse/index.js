@@ -1,12 +1,15 @@
 import React from 'react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 import { GraphQlMutate, GraphQlDevURI } from '../../../../globalHelpers/axiosCalls';
+import { Button, message } from 'antd';
+import GlobalLocalization from '../../../../globalLocalization';
+import { Router } from '../../../../routes';
+import Cookies from "universal-cookie";
 
 export default class BuyCourse extends React.Component {
   render() {
     const onSuccess = async () => {
-      console.log(this.props.auth)
-      const handlePayout = await GraphQlMutate(GraphQlDevURI, `
+      await GraphQlMutate(GraphQlDevURI, `
         mutation {
           handleBoughtCourse(courseId: "${ this.props.course._id }", amountPaid: ${ this.props.course.price }) {
             name
@@ -16,16 +19,19 @@ export default class BuyCourse extends React.Component {
           }
         }
       `, this.props.auth.token);
-      
-      console.log(handlePayout);
+      const userCookie = new Cookies();
+      const newAuthCookie = this.props.auth;
+      newAuthCookie.paidCourses.push({ _id: this.props.course._id });
+      userCookie.set('auth', newAuthCookie, { path: '/' });
+      Router.pushRoute(`/courses/view/${ this.props.course._id }/track?enrolled=true`);
     };
     
-    const onCancel = (data) => {
-      console.log('The payment was cancelled!', data);
+    const onCancel = () => {
+      message.info('Let us know if there were any issues you encountered. customerservice@customerservice.com')
     };
     
-    const onError = (err) => {
-      console.log("Error!", err);
+    const onError = () => {
+      message.error(GlobalLocalization.UnexpectedError);
     };
     
     let env = 'sandbox';
@@ -39,15 +45,39 @@ export default class BuyCourse extends React.Component {
     
     return (
       <div>
-        <PaypalExpressBtn
-          env={env}
-          client={client}
-          currency={currency}
-          total={total}
-          onError={onError}
-          onSuccess={onSuccess}
-          onCancel={onCancel} />
+        <div style={ this.props.auth.authenticated ? authenticatedStyles : nonAuthenticatedStyles }>
+          <PaypalExpressBtn
+            env={env}
+            client={client}
+            currency={currency}
+            total={total}
+            onError={onError}
+            onSuccess={onSuccess}
+            onCancel={onCancel} />
+        </div>
+        { !this.props.auth.authenticated
+          ? <Button onClick={ () => this.props.authContainer.setContainerState('registerFormVisibility', true) } type="primary">
+              Purchase Course With PayPal
+            </Button>
+          : null
+        }
       </div>
     );
   }
 }
+
+const nonAuthenticatedStyles = {
+  opacity: 0,
+  position: 'absolute',
+  top: '-1000px',
+  left: '-1000px',
+  pointerEvents: 'none'
+};
+
+const authenticatedStyles = {
+  opacity: 1,
+  position: 'relative',
+  top: 0,
+  left: 0,
+  pointerEvents: 'auto'
+};

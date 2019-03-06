@@ -28,10 +28,15 @@ export default class LeftPanelContainer extends React.Component {
       this.initiateFroalaEditor();
     }
   }
-
+  
+  componentWillUnmount() {
+    const textArea = $('#build-course-section-description-text-area');
+    textArea.froalaEditor('destroy');
+  }
+  
   initiateFroalaEditor = () => {
     const textArea = $('#build-course-section-description-text-area');
-    if (this.props.container.state.course.sections.length !== 0) {
+    if (this.props.container.state.course.sections.length !== 0 && textArea.froalaEditor) {
       textArea.froalaEditor({
         placeholderText: 'Create a description for this section!',
         fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },

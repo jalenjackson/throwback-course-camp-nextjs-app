@@ -29,16 +29,16 @@ export const call = async (context, form) => {
     `);
     form.resetFields();
     const userCookie = new Cookies();
-    console.log(loginResponse.data.data.login)
     userCookie.set('auth', loginResponse.data.data.login, { path: '/' });
     await context.setState({
       loginErrorMessage: '',
       loginSubmissionInProgress: false,
       loginFormVisibility: false,
       authenticated: true,
+      auth: loginResponse.data.data.login,
       authorizationToken: loginResponse.data.data.login.token
     });
-    message.success("You are logged in! Now it's time to learn something new!", 2.5);
+    window.location.reload();
   } catch (e) {
     form.resetFields();
     context.setState({

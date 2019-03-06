@@ -2,8 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import AllCoursesComponent from '../../frontend/reactComponents/courses/allCourses/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
-import atob from 'atob';
-import { courseResponse } from '../sharedQueryCourseResponses';
 
 export default class AllCourses extends React.Component {
   render() {
@@ -15,11 +13,10 @@ export default class AllCourses extends React.Component {
                   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                   crossOrigin="anonymous" />
         </Head>
-        { this.props.course
-          ? <AllCoursesComponent
-            course={ this.props.course }
-            auth={ this.props.auth } />
-          : console.log('render 500') }
+        <AllCoursesComponent
+          searchResults={ this.props.searchResults }
+          totalPageCount={ this.props.totalPageCount }
+          defaultPageNumber={ this.props.defaultPageNumber } />
       </div>
     )
   }
@@ -27,19 +24,37 @@ export default class AllCourses extends React.Component {
 
 AllCourses.getInitialProps = async (ctx) => {
   try {
-    const courseId = ctx.query.courseId;
-    const course = await GraphQlMutate(GraphQlDevURI, `
-    query {
-      singleCourse(courseId: "${ courseId }") {
-        creator {
-          name
+    const searchResults = await GraphQlMutate(GraphQlDevURI, `
+      query {
+        globalAutocomplete(term: "", limit: 8, skip: 0) {
+          courseListLength
+          courses {
+            _id
+            title
+            description
+            price
+            rating
+            sections {
+              videos {
+                videoLocation
+              }
+            }
+            color
+            summary
+            creator {
+              name
+            }
+          }
         }
-        ${ courseResponse }
       }
+    `);
+    const results = searchResults.data.data.globalAutocomplete;
+    
+    return {
+      searchResults: results.courses,
+      totalPageCount: Number(results.courseListLength),
+      defaultPageNumber: Number(ctx.query.page)
     }
-  `);
-    course.data.data.singleCourse.description = atob(course.data.data.singleCourse.description);
-    return { course: course.data.data.singleCourse }
   } catch(e) {
     return { course: false }
   }

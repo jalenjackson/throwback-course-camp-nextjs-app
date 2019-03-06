@@ -10,6 +10,7 @@ const { MatchingGameQuestion } = require('./matchingGame/matchingGameQuestion');
 const { CrunchChallenge } = require('./crunchChallenge');
 const { CodingChallenge } = require('./codingChallenge');
 const { CodingProject } = require('./codingProject');
+const { Autocomplete } = require('../global/autocomplete');
 
 exports.allCourseTypes = `
   ${Course}
@@ -24,4 +25,5 @@ exports.allCourseTypes = `
   ${CrunchChallenge}
   ${CodingChallenge}
   ${CodingProject}
+  ${Autocomplete}
 `;

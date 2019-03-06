@@ -3,6 +3,7 @@ import { Button, Col, Popover, Row } from 'antd';
 import _ from 'lodash';
 import Localization from '../localization';
 import { CategoryIcons, CategoryDefinitions, styles } from './helpers';
+import { Link } from '../../../../routes';
 
 const Index = () => (
   <div id='popular-categories'>
@@ -26,14 +27,15 @@ const Index = () => (
                 <h1>{ CategoryDefinitions[i].title }</h1>
               </div>
               <div className='category-explore-btn-container'>
-                <Button className='explore-button' type="primary" icon="eye">{ Localization.Explore }</Button>
+                <Link to={`/courses/category/${ _.kebabCase(CategoryDefinitions[i].title) }`}>
+                  <Button className='explore-button' type="primary" icon="eye">{ Localization.Explore }</Button>
+                </Link>
               </div>
             </div>
           </Col>
         </Popover>
         )) }
       </Row>
-      <a>{ Localization.SeeAll }</a>
     </div>
   </div>
 );
