@@ -13,6 +13,7 @@ const routes = require('../routes');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
+const PORT = process.env.PORT || 5000;
 
 const handle = app.getRequestHandler();
 const handler = routes.getRequestHandler(app);
@@ -42,7 +43,7 @@ app.prepare().then(() => {
   return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@coursecamp-qxarr.mongodb.net/${ mongoEnv }?retryWrites=true`,
     { useNewUrlParser: true })
     .then(() => {
-      server.listen(5000, () => console.log(`Consumer GraphQL API Running On PORT 5000`));
+      server.listen(PORT, () => console.log(`Consumer GraphQL API Running On PORT ${ PORT }`));
     })
     .catch(err => console.log(err));
 });
