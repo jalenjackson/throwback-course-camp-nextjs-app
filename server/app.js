@@ -37,8 +37,6 @@ app.prepare().then(() => {
     return handle(req, res)
   });
   
-  console.log(process.env)
-
   return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@quizopcluster-16smp.mongodb.net/${ process.env.MONGO_DB_DEV }?retryWrites=true`,
     { useNewUrlParser: true })
     .then(() => {
