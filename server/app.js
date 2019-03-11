@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const next = require('next');
 const bodyParser = require('body-parser');
@@ -35,6 +36,8 @@ app.prepare().then(() => {
   server.get('*', (req, res) => {
     return handle(req, res)
   });
+  
+  console.log(process.env)
 
   return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@quizopcluster-16smp.mongodb.net/${ process.env.MONGO_DB_DEV }?retryWrites=true`,
     { useNewUrlParser: true })
