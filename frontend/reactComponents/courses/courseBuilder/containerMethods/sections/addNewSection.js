@@ -4,7 +4,7 @@ import GlobalLocalization from '../../../../../../globalLocalization';
 import { updateSectionsAfterAPICall } from '../helpers';
 import { sharedMutationResponse } from '../sharedMutationResponse';
 
-export const call = async (context, navbarContainer) => {
+export const call = async (context, auth) => {
   try {
     context.setState({ sectionLoading: true });
     const updateSectionResponse = await GraphQlMutate(GraphQlDevURI, `
@@ -13,8 +13,8 @@ export const call = async (context, navbarContainer) => {
         ${ sharedMutationResponse }
       }
     }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, updateSectionResponse, 'addSectionToCourse', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, updateSectionResponse, 'addSectionToCourse', true);
     message.success('New section created successfully');
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

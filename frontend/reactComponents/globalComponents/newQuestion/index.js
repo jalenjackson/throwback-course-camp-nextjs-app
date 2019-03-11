@@ -10,6 +10,7 @@ export default class NewQuestion extends React.Component {
       <Subscribe to={[NewQuestionContainer]}>
         { container => (
           <div id='create-new-question'>
+            { console.log(container.state) }
             <QuestionModal container={ container } { ...this.props } />
             <QuestionSuccess container={ container } { ...this.props } />
           </div>

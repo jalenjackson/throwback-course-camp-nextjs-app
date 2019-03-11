@@ -2,11 +2,11 @@ import axios from 'axios';
 import GlobalLocalization from '../../../../../../globalLocalization';
 import { message } from 'antd';
 
-export const call = async (context, navbarContainer, newSections) => {
+export const call = async (context, auth, newSections) => {
   try {
     let headers = {
       'Content-Type': 'application/json',
-      'Authorization': ` Bearer ${ navbarContainer.state.authorizationToken }`
+      'Authorization': ` Bearer ${ auth.token }`
     };
 
     let body = {

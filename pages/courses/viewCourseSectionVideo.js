@@ -4,11 +4,13 @@ import ViewCourseSectionVideoComponent from '../../frontend/reactComponents/cour
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
 import { courseSections } from '../sharedQueryCourseResponses';
+import {handleAuthentication} from "../../globalHelpers/handleAuthentication";
 
 const ViewCourseSectionVideo = ({ auth, course, currentVideo, currentSection, sectionIndex, videoIndex }) => (
     <div>
       <Head>
         <title>View Course</title>
+        <style>{ globalStyle }</style>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
@@ -34,6 +36,9 @@ const ViewCourseSectionVideo = ({ auth, course, currentVideo, currentSection, se
 
 ViewCourseSectionVideo.getInitialProps = async (ctx) => {
   try {
+    const isRequestFromServer = typeof window === 'undefined';
+    
+    handleAuthentication(ctx);
     const { courseId, sectionIndex, videoIndex } = ctx.query;
     const course = await GraphQlMutate(GraphQlDevURI, `
     {
@@ -53,10 +58,23 @@ ViewCourseSectionVideo.getInitialProps = async (ctx) => {
     course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex].description = atob(course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex].description);
     const currentSection = course.data.data.singleCourse.sections[sectionIndex];
     const currentVideo = course.data.data.singleCourse.sections[sectionIndex].videos[videoIndex];
-    return { course: course.data.data.singleCourse, currentVideo, currentSection, sectionIndex, videoIndex }
+    return {
+      course: course.data.data.singleCourse,
+      currentVideo,
+      currentSection,
+      sectionIndex,
+      videoIndex,
+      isRequestFromServer
+    }
   } catch(e) {
     return { course: false }
   }
 };
+
+const globalStyle = `
+  body {
+    background: white;
+  }
+`;
 
 export default ViewCourseSectionVideo;

@@ -6,7 +6,6 @@ import { sharedMutationResponse } from '../sharedMutationResponse';
 
 export const call = async (context, videoLocation, currentActiveSection) => {
   try {
-    console.log(currentActiveSection)
     const uploadedVideoResponse = await GraphQlMutate(GraphQlDevURI, `
       mutation {
         addVideoToSection(
@@ -18,7 +17,7 @@ export const call = async (context, videoLocation, currentActiveSection) => {
             }
           }
       `);
-    updateSectionsAfterAPICall(context, false, uploadedVideoResponse, 'addVideoToSection', false);
+    updateSectionsAfterAPICall(context, uploadedVideoResponse, 'addVideoToSection', false);
     message.success('Your amazing video has been uploaded!')
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError)

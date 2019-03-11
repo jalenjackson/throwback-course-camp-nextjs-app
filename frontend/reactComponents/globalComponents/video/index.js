@@ -25,7 +25,6 @@ export default class Index extends React.Component {
               volume={ this.props.container.state.volume }
               loop={ false }
               playbackRate={ this.props.container.state.playbackRate }
-              onEnded={ () => this.showEndVideoContainer() }
               height='100%' />
         </div>
         <div className='video-controls'>
@@ -114,21 +113,6 @@ export default class Index extends React.Component {
             <img style={{ transform: 'translateY(17px)', marginRight: 15, marginLeft: 5, display: 'block', width: 24 }} onClick={ () => this.requestFullScreen() } src="/static/icons/video-fullscreen.svg" />
           </div>
         </div>
-        <Modal
-          title="Basic Modal"
-          visible={ this.props.container.state.videoEndModalVisible }>
-          <Button.Group>
-            <Button type="primary">
-              Take Quiz
-            </Button>
-            <Button type="primary">
-              Watch Video Again
-            </Button>
-            <Button type="primary">
-              Ask A Question
-            </Button>
-        </Button.Group>
-        </Modal>
       </div>
     )
   }
@@ -165,10 +149,6 @@ export default class Index extends React.Component {
     type === 'hide'
       ? $(`.${ container } .video-dropdown-selection`).removeClass('show-video-dropdown').addClass('hide-video-dropdown')
       : $(`.${ container } .video-dropdown-selection`).removeClass('hide-video-dropdown').addClass('show-video-dropdown');
-  };
-  
-  showEndVideoContainer = () => {
-    this.props.container.updateState('videoEndModalVisible', true);
   };
 
   videoPlaybackOptions = () => (

@@ -31,7 +31,7 @@ export default class Answers extends React.Component {
       </div>
     )
   }
-
+  
   handleAnswerMouseEnterAndLeave = (e, type) => {
     $(e.currentTarget).find('.letter')
       .css({ border: `3px solid ${ this.props.course.color }${ type === 'leave' ? '80' : 'FF' }` })

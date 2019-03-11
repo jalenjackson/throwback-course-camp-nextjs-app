@@ -16,18 +16,11 @@ export default class ProfileDrawer extends React.Component {
               closable={ false }
               onClose={ () => this.props.navbarContainer.setContainerState('profileDrawerVisibility', false) }
               visible={ this.props.navbarContainer.state.profileDrawerVisibility }>
-            <Menu onClick={ e => this.props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [this.props.navbarContainer.state.activeLink] } mode="inline">
-              <SubMenu title={
+            <Menu defaultSelectedKeys={['1']}
+                  defaultOpenKeys={['1']} onClick={ e => this.props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [this.props.navbarContainer.state.activeLink] } mode="inline">
+              <SubMenu key="1" title={
                 <span>
-                <Badge count={10}>
-                  <Icon type="bell" />
-                </Badge>
-              </span>}>
-                <Menu.Item key='notification1'>Notification 1</Menu.Item>
-              </SubMenu>
-              <SubMenu title={
-                <span>
-                <Avatar shape="circle" size="small"   />
+                <Avatar src={ this.props.auth.profileImage } shape="circle" size="small"  />
               </span>}>
                 <MenuItemGroup title={ this.props.auth.name }>
                   <Menu.Item key='profile'>

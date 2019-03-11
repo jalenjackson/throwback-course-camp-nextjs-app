@@ -11,6 +11,8 @@ const { CrunchChallenge } = require('./crunchChallenge');
 const { CodingChallenge } = require('./codingChallenge');
 const { CodingProject } = require('./codingProject');
 const { Autocomplete } = require('../global/autocomplete');
+const { Payout } = require('../global/payout');
+const { Review } = require('../global/review');
 
 exports.allCourseTypes = `
   ${Course}
@@ -26,4 +28,6 @@ exports.allCourseTypes = `
   ${CodingChallenge}
   ${CodingProject}
   ${Autocomplete}
+  ${Payout}
+  ${Review}
 `;

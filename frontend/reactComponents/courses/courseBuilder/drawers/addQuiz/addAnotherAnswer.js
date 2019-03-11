@@ -29,7 +29,7 @@ export default class AddAnotherAnswer extends React.Component {
 
   initiateSaveAnswer = async () => {
     this.setState({ savingQuestion: true });
-    await this.props.container.editAddQuizAddingNewAnswer(this.props.navbarContainer, this.state.addingNewQuestionTerm, this.props.questionIterator);
+    await this.props.container.editAddQuizAddingNewAnswer(this.props.auth, this.state.addingNewQuestionTerm, this.props.questionIterator);
     this.setState({ editingQuestionTerm: '', isEditingQuestion: false, savingQuestion: false, addingNewQuestionTerm: '', isAddingNewQuestion: false });
   };
 }

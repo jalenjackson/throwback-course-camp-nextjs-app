@@ -4,7 +4,7 @@ import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-export const call = async (context, term, type, navbarContainer, questionIterator, answerIterator, optionalImage) => {
+export const call = async (context, term, type, auth, questionIterator, answerIterator, optionalImage) => {
   try {
     const editAddQuizQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
@@ -20,8 +20,8 @@ export const call = async (context, term, type, navbarContainer, questionIterato
           ${ sharedMutationResponse }
         }
       }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, editAddQuizQuestionResponseMutation, 'updateQuizQuestion', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, editAddQuizQuestionResponseMutation, 'updateQuizQuestion', true);
     message.success(`Successfully changed answer to ${ String(term) }`);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

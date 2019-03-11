@@ -5,7 +5,7 @@ import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-export const call = async (context, navbarContainer, summary) => {
+export const call = async (context, auth, summary) => {
   try {
     const addCodingProjectResponseMutation = await GraphQlMutate(GraphQlDevURI, `
       mutation {
@@ -17,8 +17,8 @@ export const call = async (context, navbarContainer, summary) => {
           ${ sharedMutationResponse }
         }
       }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, addCodingProjectResponseMutation, 'addCodingProject', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, addCodingProjectResponseMutation, 'addCodingProject', true);
     message.success('Successfully saved coding project!')
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

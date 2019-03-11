@@ -14,7 +14,7 @@ export default class AddANewVideoButton extends React.Component {
             name='singleVideo'
             action='/uploaders/single-video'
             headers={{
-              Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }`,
+              Authorization: `Bearer ${ this.props.auth.token }`,
               currentSection: `${ this.props.container.state.currentActiveSection }` }}
             onChange={ info => this.startVideoUploadProcess(info) }>
           <Button>
@@ -37,7 +37,7 @@ export default class AddANewVideoButton extends React.Component {
       }, 400);
     } else if (info.file.status === 'error') {
       if (info.file.response.unauthenticated) {
-        handleUnauthenticatedButFrontEndThinksWeAre(this.props.navbarContainer);
+        handleUnauthenticatedButFrontEndThinksWeAre(this.props.auth);
       }
     }
   };

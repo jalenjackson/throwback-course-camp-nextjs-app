@@ -34,14 +34,14 @@ export default class AddCrunchChallengeDrawer extends React.Component {
   saveCrunchChallenge = async () => {
     if (this.state.target.trim() !== '' && this.state.definitions.length !== 0) {
       this.setState({saving: true});
-      await this.props.container.saveCrunchChallenge(this.props.navbarContainer, this.state.target, this.state.definitions);
+      await this.props.container.saveCrunchChallenge(this.props.auth, this.state.target, this.state.definitions);
       this.setState({saving: false});
     }
   };
 
   removeCrunchChallenge = async () => {
     this.setState({deleting: true});
-    await this.props.container.removeExercise(this.props.navbarContainer, 'crunchChallenge');
+    await this.props.container.removeExercise(this.props.auth, 'crunchChallenge');
     this.setState({ deleting: false, definitions: [] });
     this.props.container.updateState('addCrunchChallengeVisibility', false);
   };

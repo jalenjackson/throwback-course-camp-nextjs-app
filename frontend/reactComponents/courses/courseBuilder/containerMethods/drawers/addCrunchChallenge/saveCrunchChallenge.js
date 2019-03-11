@@ -4,7 +4,7 @@ import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-export const call = async (context, navbarContainer, target, definitions) => {
+export const call = async (context, auth, target, definitions) => {
   try {
     const saveCrunchChallengeResponseMutation = await GraphQlMutate(GraphQlDevURI, `
       mutation {
@@ -17,8 +17,8 @@ export const call = async (context, navbarContainer, target, definitions) => {
             ${ sharedMutationResponse }
           }
         }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, saveCrunchChallengeResponseMutation, 'addCrunchChallenge', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, saveCrunchChallengeResponseMutation, 'addCrunchChallenge', true);
     message.success('Successfully saved crunch challenge!')
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

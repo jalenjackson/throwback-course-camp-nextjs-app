@@ -1,4 +1,6 @@
-export const call = context => {
+import {recordExercisePlayed} from "../../../../../globalHelpers/recordExercisePlayed";
+
+export const call = (context, props) => {
   context.setState({
     isEvaluating: true,
     codeOutput: '',
@@ -49,7 +51,7 @@ export const call = context => {
         setTimeout(() => {
           if (event.data['eval'] !== undefined) {
             if (String(event.data['eval']) === String(context.state.returnValue)) {
-              return context.setState({
+              context.setState({
                 codeOutput: event.data.eval,
                 codeOutputMessage: 'Great job! You are on a role!',
                 isError: false,
@@ -57,6 +59,7 @@ export const call = context => {
                 isEvaluating: false,
                 noOutput: false
               });
+              return recordExercisePlayed(props.course._id, 'codingChallenge', 'Completed', props.sectionIndex, props.videoIndex, props.auth);
             } else {
               return context.setState({
                 codeOutput: event.data.eval,

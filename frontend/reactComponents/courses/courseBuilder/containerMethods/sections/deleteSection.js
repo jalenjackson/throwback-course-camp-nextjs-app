@@ -4,7 +4,7 @@ import GlobalLocalization from '../../../../../../globalLocalization';
 import { updateSectionsAfterAPICall } from '../helpers';
 import { sharedMutationResponse } from '../sharedMutationResponse';
 
-export const call = async (context, i, navbarContainer) => {
+export const call = async (context, i, auth) => {
   try {
     await context.setState({ sectionLoading: true });
     const deleteSectionResponse = await GraphQlMutate(GraphQlDevURI, `
@@ -13,10 +13,9 @@ export const call = async (context, i, navbarContainer) => {
         ${ sharedMutationResponse }
       }
     }
-  `, navbarContainer.state.authorizationToken);
+  `, auth.token);
     await context.setState({ currentActiveSection: context.state.currentActiveSection === 0 ? 0 : context.state.currentActiveSection - 1});
-    console.log(context.state.currentActiveSection);
-    await updateSectionsAfterAPICall(context, navbarContainer, deleteSectionResponse, 'deleteSection', true);
+    await updateSectionsAfterAPICall(context, deleteSectionResponse, 'deleteSection', true);
     message.success('Section deleted successfully');
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

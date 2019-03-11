@@ -87,7 +87,7 @@ export default class AddedVideoList extends React.Component {
         fontSizeSelection: true,
       })
       .on('froalaEditor.contentChanged', e => {
-        this.props.container.updateVideoDetails('description', key, e.target.value, this.props.navbarContainer);
+        this.props.container.updateVideoDetails('description', key, e.target.value, this.props.auth);
       });
     } else {
       textArea.hide();
@@ -102,7 +102,7 @@ export default class AddedVideoList extends React.Component {
             { videos.map((video, i) =>
               <Panel className={ `video-panel-${ i }` } header={ `${ video.title ? video.title : 'Video ' + (i + 1) }` } key={ i }>
                 <label className='collapse-push-label collapse-remove-margin-top'>Enter a title for this video</label>
-                <Input value={ this.props.container.state.videoTitleTerm } onChange={ e => this.props.container.updateVideoDetails('title', i, e.target.value, this.props.navbarContainer) } placeholder="Your title goes here..." />
+                <Input value={ this.props.container.state.videoTitleTerm } onChange={ e => this.props.container.updateVideoDetails('title', i, e.target.value, this.props.auth) } placeholder="Your title goes here..." />
                 <label className="collapse-push-label">Enter a description for this video</label>
                 <div style={{ marginBottom: 30 }}>
                   <textarea className={ `video-description-${ i }` } rows={4} value={ this.props.container.state.videoDescriptionTerm } placeholder="Your description goes here..." />
@@ -124,7 +124,7 @@ export default class AddedVideoList extends React.Component {
                       Add Exercise <Icon type="rocket" />
                     </Button>
                   </Dropdown>
-                  <Popconfirm title="Are you sure delete this video" onConfirm={ () => this.props.container.deleteAddedVideo(i, this.props.navbarContainer, video.videoLocation) } okText="Yes" cancelText="No">
+                  <Popconfirm title="Are you sure delete this video" onConfirm={ () => this.props.container.deleteAddedVideo(i, this.props.auth, video.videoLocation) } okText="Yes" cancelText="No">
                     <Button type="danger">
                       <Icon type="delete" /> Delete Video
                     </Button>
@@ -143,7 +143,7 @@ export default class AddedVideoList extends React.Component {
     course.sections[this.props.container.state.currentActiveSection].videos = videosReordered;
 
     this.props.container.updateState('course', course);
-    this.props.container.reorderSections(this.props.navbarContainer, course.sections);
+    this.props.container.reorderSections(this.props.auth, course.sections);
     $(`.video-panel-${ startIndex }`).find('.ant-collapse-header').click();
     $(`.video-panel-${ endIndex }`).find('.ant-collapse-header').click();
     this.setState({ orderOfVideo: endIndex + 1 });

@@ -12,21 +12,23 @@ import { Subscribe } from 'unstated';
 import {BarLoader} from "react-spinners";
 import { Link } from '../../../../routes';
 import ContinueLearningButton from "./columns/continueLearningButton";
-import { Button } from "antd";
 import EditCourseButton from "./columns/editCourseButton";
+import {animateElementsOnLoad} from "./helpers";
 
 export default class ViewCourseComponent extends React.Component {
   state = {
     loaded: false
   };
   
-  componentDidMount() {
+  async componentDidMount() {
     if (this.props.isRequestFromServer) {
-      setTimeout(() => {
-        this.setState({ loaded: true });
+      setTimeout(async () => {
+        await this.setState({ loaded: true });
+        animateElementsOnLoad();
       }, 600);
     } else {
-      this.setState({ loaded: true });
+      await this.setState({ loaded: true });
+      animateElementsOnLoad();
     }
   }
   

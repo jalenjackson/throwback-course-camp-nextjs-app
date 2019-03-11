@@ -59,7 +59,7 @@ export default class AddedElement extends React.Component {
 
   initiateSaveAnswer = async () => {
     this.setState({ isQueryingAPI: true });
-    await this.props.container.editMatchingGameQuestion(this.props.navbarContainer, this.state.editingTerm, this.props.type, this.state.timeAllotted, this.props.matchId);
+    await this.props.container.editMatchingGameQuestion(this.props.auth, this.state.editingTerm, this.props.type, this.state.timeAllotted, this.props.matchId);
     this.setState({ isQueryingAPI: false, editingTerm: '', isEditing: false });
   }
 }

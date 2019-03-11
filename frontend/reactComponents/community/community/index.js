@@ -6,19 +6,10 @@ import { Link } from '../../../../routes';
 export default class Community extends React.Component {
   componentDidMount() {
     $('body').css({ background: '#EDEFF0' })
+    console.log(this.props)
   }
   
   render() {
-    const questionActions = [
-      <span>
-        <Tooltip title="2 Answers">
-          <b style={{ paddingLeft: 8, cursor: 'auto' }}>
-            2 Answers
-          </b>
-        </Tooltip>
-      </span>
-    ];
-    
     return (
       <div id='community'>
         <h1 className="community-title">Community</h1>
@@ -27,16 +18,14 @@ export default class Community extends React.Component {
           size="large"
           style={{ width: '100%' }}
           placeholder="input here"
-          optionLabelProp="value"
-        >
+          optionLabelProp="value">
           <Input suffix={<Icon type="search" className="certain-category-icon" />} />
         </AutoComplete>
         <Divider />
         
-        { this.props.forumQuestions.map((forumQuestion) => (
+        { this.props.forumQuestions.map(forumQuestion => (
           <div className='community-question'>
             <Comment
-              actions={ questionActions }
               author={<a>{ forumQuestion.creator.name }</a>}
               avatar={(
                 <Avatar

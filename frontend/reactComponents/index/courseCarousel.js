@@ -29,6 +29,9 @@ const CourseCarousel = props => (
                 <p>Taught by
                   <a>{ _.truncate(` ${course.creator.name}`, { length: 20 }) }</a>
                 </p>
+                <Link route={`/courses/category/${ _.kebabCase(course.category) }?page=1`} className="course-category">
+                  <a style={{ marginLeft: 20, paddingTop: 5, display: 'block' }}>{ course.category }</a>
+                </Link>
                 <p className='price'>
                   <img alt="Money icon" src="/static/icons/money.svg" />
                   ${ course.price }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { recordExercisePlayed } from "../../../../globalHelpers/recordExercisePlayed";
 
 const Files = props => (
   <div className="files">
@@ -27,7 +28,18 @@ const Files = props => (
       className={`file-nav ${ props.container.state.currentSandbox === 'Output' ? 'file-nav-active' : '' }`}>
       <h1>Output</h1>
     </div>
+    <div
+      onClick={ () => finishAndRecord(props) }
+      className={`file-nav ${ props.container.state.currentSandbox === 'Finished' ? 'file-nav-active' : '' }`}>
+      <h1>Finished</h1>
+    </div>
   </div>
 );
+
+const finishAndRecord = props => {
+  props.container.updateSandboxView('Finished');
+  props.afterExerciseModalContainer.updateState('winModalVisible', true);
+  return recordExercisePlayed(props.course._id, 'codingProject', 'Completed', props.sectionIndex, props.videoIndex, props.auth);
+};
 
 export default Files;

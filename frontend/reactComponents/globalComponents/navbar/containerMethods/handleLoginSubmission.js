@@ -2,7 +2,6 @@ import Localization from '../localization';
 import { IsTheEmailAddressValid } from '../../../../../globalHelpers/validations';
 import { GraphQlDevURI, GraphQlMutate } from '../../../../../globalHelpers/axiosCalls';
 import Cookies from 'universal-cookie';
-import { message } from 'antd';
 
 export const call = async (context, form) => {
   if (context.state.email.trim().length === 0 || context.state.password.trim().length === 0) {
@@ -21,8 +20,18 @@ export const call = async (context, form) => {
           name
           token
           moneyMade
+          profileImage
+          payoutHistory {
+            payoutBatchId
+            emailAddressReceiver
+            amount
+          }
           paidCourses {
             _id
+          }
+          courseProgress {
+            courseId
+            exercisesPlayed
           }
         }
       }

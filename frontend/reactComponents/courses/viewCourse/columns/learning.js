@@ -2,7 +2,7 @@ import React from 'react';
 import { List } from 'antd';
 
 const Learning = props => (
-  <React.Fragment>
+  <div className='learning-wrapper column-wrapper'>
     <h1 className="section-title">
       <span>What you will learn</span>
     </h1>
@@ -19,7 +19,7 @@ const Learning = props => (
             </List.Item>)} />
       </div>
     </div>
-  </React.Fragment>
+  </div>
 );
 
 export default Learning;

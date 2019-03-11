@@ -1,8 +1,8 @@
 import React from 'react';
-import _ from "lodash";
 import {Popover, Rate, Button} from "antd";
 import {Link} from "../../../routes";
 import Localization from "../index/localization";
+import _ from 'lodash'
 
 export default class Course extends React.Component {
   render() {
@@ -17,8 +17,9 @@ export default class Course extends React.Component {
             <h1>{ _.truncate(course.title, { length: 30 }) }</h1>
             <p>{ _.truncate(course.summary, { length: 60 }) }</p>
             <p>{ `Taught by ` }
-              <a>{ _.truncate(course.creator.name, { length: 20 }) }</a>
+              <Link>{ _.truncate(course.creator.name, { length: 20 }) }</Link>
             </p>
+            <a href={`/courses/category/${ _.kebabCase(course.category) }?page=1`} className="course-category">{ course.category }</a>
             <p className='price'>
               <img alt="Money icon" src="/static/icons/money.svg" />
               $20

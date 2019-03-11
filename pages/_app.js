@@ -25,6 +25,8 @@ import '../frontend/reactComponents/community/community/index.less';
 import '../frontend/reactComponents/courses/coursesCategories/index.less';
 import '../frontend/reactComponents/courses/search/index.less';
 import '../frontend/reactComponents/courses/track/review/index.less';
+import '../frontend/reactComponents/courses/reusableComponents/index.less';
+import '../frontend/reactComponents/courses/track/index.less';
 import '../static/styles/npprogress.less';
 
 import Router from 'next/router';

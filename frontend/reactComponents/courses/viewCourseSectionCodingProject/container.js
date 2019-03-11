@@ -6,7 +6,8 @@ class CodingChallengeContainer extends Container {
     htmlSandboxValue: '',
     cssSandboxValue: '',
     javascriptSandboxValue: '',
-    currentSandbox: 'Task'
+    currentSandbox: 'Task',
+    endGame: false
   };
 
   setEditorValue = (state, newValue) => Methods.setEditorValue.call(this, state, newValue);

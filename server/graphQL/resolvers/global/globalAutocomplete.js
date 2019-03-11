@@ -6,7 +6,8 @@ exports.globalAutocomplete = async (args) => {
     const queryREQ = args.term.replace(/[^a-zA-Z0-9 ]/g, '');
     const regex = new RegExp(queryREQ, 'i');
     const courses = await Course.find({
-      $or: [{ title: regex }, { description: regex }, { category: regex }]
+      $or: [{ title: regex }, { description: regex }, { category: regex }],
+      'status': 'Approved'
     },
     { '_id': 1,
       'title': 1,

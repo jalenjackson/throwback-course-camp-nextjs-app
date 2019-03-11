@@ -51,7 +51,7 @@ export default class ValueProps extends React.Component {
   navigateToSearch = async (e, isClicked) => {
     if (isClicked || e.key === 'Enter') {
       await this.props.navbarContainer.setContainerState('isNavigating', true);
-      await Router.pushRoute(`/courses/search/${ _.kebabCase(this.props.navbarContainer.state.autocompleteTerm) }`)
+      await Router.pushRoute(`/courses/search/${ _.kebabCase(this.props.navbarContainer.state.autocompleteTerm) }?page=1`)
     }
   };
 }

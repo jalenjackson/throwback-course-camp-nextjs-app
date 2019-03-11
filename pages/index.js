@@ -24,6 +24,7 @@ Index.getInitialProps = async () => {
         title
         description
         price
+        category
         rating
         sections {
           videos {

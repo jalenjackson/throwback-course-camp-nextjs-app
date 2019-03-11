@@ -3,11 +3,11 @@ import GlobalLocalization from '../../../../../globalLocalization';
 import { setCourseStatusText } from './misc/setInitialStateFromData';
 import { message } from 'antd';
 
-export const call = async (context, navbarContainer, status) => {
+export const call = async (context, auth, status) => {
   try {
     let headers = {
       'Content-Type': 'application/json',
-      'Authorization': ` Bearer ${ navbarContainer.state.authorizationToken }`
+      'Authorization': ` Bearer ${ auth.token }`
     };
 
     let body = {

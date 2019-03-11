@@ -4,7 +4,7 @@ import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-export const call = async (context, navbarContainer, question, answer, timeAllotted, matchId) => {
+export const call = async (context, auth, question, answer, timeAllotted, matchId) => {
   try {
     const saveAddMatchingGameQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
@@ -18,8 +18,8 @@ export const call = async (context, navbarContainer, question, answer, timeAllot
         ${ sharedMutationResponse }
       }
     }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, saveAddMatchingGameQuestionResponseMutation, 'addMatchingGameToVideo', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, saveAddMatchingGameQuestionResponseMutation, 'addMatchingGameToVideo', true);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

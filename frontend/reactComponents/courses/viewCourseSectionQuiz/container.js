@@ -19,6 +19,9 @@ class ViewCourseSectionQuizContainer extends Container {
     gameStarted: true
   };
 
+  resetState = () => {
+    this.setState({});
+  };
   updateState = (state, value) => Methods.updateState.call(this, state, value);
   answerQuestion = (isCorrect, e, props) => Methods.answerQuestion.call(this, isCorrect, e, props);
   navigateToNextQuestion = props => Methods.navigateToNextQuestion.call(this, props);

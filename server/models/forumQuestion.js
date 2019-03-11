@@ -31,6 +31,9 @@ const ForumQuestionSchema = new Schema({
   creator: {
     type: Schema.Types.ObjectId,
     ref: 'User'
+  },
+  answers: {
+    type: Array
   }
 });
 

@@ -76,6 +76,7 @@ export default class Search extends React.Component {
                       </div>
                     : <div style={{ marginTop: 50 }}>
                         <Empty
+                          style={{ marginBottom: 150 }}
                           image="https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original"
                           description={
                             <span>

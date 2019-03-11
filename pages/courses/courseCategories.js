@@ -3,7 +3,7 @@ import Head from 'next/head';
 import CourseCategoriesComponent from '../../frontend/reactComponents/courses/coursesCategories/index';
 import {GraphQlDevURI, GraphQlMutate} from "../../globalHelpers/axiosCalls";
 
-const CourseCategories = ({ auth, courses }) => (
+const CourseCategories = ({ auth, searchResults, searchTerm, totalPageCount, defaultPageNumber }) => (
   <div>
     <Head>
       <title>Create Course</title>
@@ -17,37 +17,61 @@ const CourseCategories = ({ auth, courses }) => (
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
       <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
     </Head>
-    <CourseCategoriesComponent courses={ courses } auth={ auth } />
+    <CourseCategoriesComponent
+      searchResults={ searchResults }
+      searchTerm={ searchTerm }
+      totalPageCount={ totalPageCount }
+      defaultPageNumber={ defaultPageNumber }
+      auth={ auth } />
   </div>
 );
 
-CourseCategories.getInitialProps = async () => {
+CourseCategories.getInitialProps = async ctx => {
   try {
-    const courses = await GraphQlMutate(GraphQlDevURI, `
-    query {
-      courses {
-        _id
-        title
-        description
-        price
-        rating
-        sections {
-          videos {
-            videoLocation
+    const searchTerm = ctx.query.category.split('-').join(' ');
+    const searchResults = await GraphQlMutate(GraphQlDevURI, `
+      query {
+        globalAutocomplete(term: "${ searchTerm }", limit: 8, skip: ${ getSkipAmount(ctx.query.page) }) {
+          courseListLength
+          courses {
+            _id
+            title
+            description
+            price
+            rating
+            category
+            sections {
+              videos {
+                videoLocation
+              }
+            }
+            color
+            summary
+            creator {
+              name
+            }
           }
         }
-        color
-        summary
-        creator {
-          name
-        }
       }
-    }
   `);
-    return { courses: courses.data.data.courses }
+    
+    const results = searchResults.data.data.globalAutocomplete;
+    
+    return {
+      searchResults: results.courses,
+      searchTerm,
+      totalPageCount: Number(results.courseListLength),
+      defaultPageNumber: Number(ctx.query.page),
+    }
   } catch (e) {
+    console.log(e)
     return { courses: false }
   }
+};
+
+const getSkipAmount = page => {
+  if (page === 1) return 0;
+  return (page - 1) * 8;
 };
 
 export default CourseCategories;

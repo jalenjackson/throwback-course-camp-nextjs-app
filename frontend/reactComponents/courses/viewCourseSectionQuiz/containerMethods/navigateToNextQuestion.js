@@ -1,5 +1,7 @@
 import { animateQuestionText } from '../helpers';
 import TweenMax, { Power4 } from 'gsap/TweenMax';
+import {recordExercisePlayed} from "../../../../../globalHelpers/recordExercisePlayed";
+import React from "react";
 
 export const call = async (context, props) => {
   await context.setState({
@@ -8,7 +10,7 @@ export const call = async (context, props) => {
   });
   setTimeout(() => {
     $('.quiz-section-overlay').addClass('animate-question-switch');
-  }, 550)
+  }, 550);
   setTimeout(() => {
     TweenMax.to('.timer', 0.3, { transform: 'scale(0)', ease: Power4.easeOut, delay: 0.5 });
     resetAnswerChoiceUI();
@@ -27,9 +29,12 @@ export const call = async (context, props) => {
       TweenMax.to('.timer', 0.3, { transform: 'scale(1)', ease: Power4.easeOut, delay: 0.8 });
       animateQuestionText('.quiz-question h1')
     } else {
-      return context.setState({
+      context.setState({
         gameOver: true
-      })
+      });
+      const endScore = `${ props.container.state.correctAnswers }/${ props.currentQuiz.length }`;
+      
+      return recordExercisePlayed(props.course._id, props.isPictureQuiz ? 'pictureQuiz' : 'quiz', endScore, props.sectionIndex, props.videoIndex, props.auth);
     }
   }, 1000);
   setTimeout(() => {

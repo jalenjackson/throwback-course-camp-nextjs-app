@@ -56,6 +56,12 @@ const CourseSchema = new Schema({
   },
   studentsEnrolled: {
     type: Number
+  },
+  reviews: {
+    type: Array
+  },
+  overallRating: {
+    type: Number
   }
 });
 

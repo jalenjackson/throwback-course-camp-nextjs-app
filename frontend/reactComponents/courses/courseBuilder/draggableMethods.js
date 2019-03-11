@@ -3,7 +3,7 @@ export const onDragEnd = (props, result, arr, isFromTimeline) => {
   const newSections = reorderSections(arr, result.source.index, result.destination.index);
   if (isFromTimeline) {
     props.container.changeCurrentActiveSection(result.destination.index);
-    props.container.reorderSections(props.navbarContainer, newSections);
+    props.container.reorderSections(props.auth, newSections);
   }
 };
 

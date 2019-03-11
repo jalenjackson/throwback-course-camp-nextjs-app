@@ -5,7 +5,7 @@ import GlobalLocalization from '../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../sharedMutationResponse';
 
-export const call = async (context, type, i, term, navbarContainer) => {
+export const call = async (context, type, i, term, auth) => {
   try {
     const state = type === 'title' ? 'videoTitleTerm' : 'videoDescriptionTerm';
     await context.setState({ [state]: term, sectionLoading: true });
@@ -19,8 +19,8 @@ export const call = async (context, type, i, term, navbarContainer) => {
             ${ sharedMutationResponse }
           }
         }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, updateVideoDetailsResponse, 'updateVideoDetails', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, updateVideoDetailsResponse, 'updateVideoDetails', true);
     context.setState({ sectionLoading: false });
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

@@ -28,6 +28,11 @@ const TransformObject = k => {
     _id: k.id,
     course: MongoFindCourse.bind(this, k._doc.course),
     creator: MongoFindUser.bind(this, k._doc.creator),
+    answers: k._doc.answers.map(answer => {
+      const userId = answer.userId;
+      answer.userId = MongoFindUser.bind(this, userId)
+      return answer;
+    })
   }
 };
 

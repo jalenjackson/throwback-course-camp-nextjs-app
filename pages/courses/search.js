@@ -27,7 +27,6 @@ export default class Search extends React.Component {
 Search.getInitialProps = async (ctx) => {
   try {
     const searchTerm = ctx.query.query.split('-').join(' ');
-    console.log(ctx.query);
     const searchResults = await GraphQlMutate(GraphQlDevURI, `
       query {
         globalAutocomplete(term: "${ searchTerm }", limit: 8, skip: ${ getSkipAmount(ctx.query.page) }) {
@@ -38,6 +37,7 @@ Search.getInitialProps = async (ctx) => {
             description
             price
             rating
+            category
             sections {
               videos {
                 videoLocation

@@ -16,5 +16,7 @@ exports.Course = `
     sections: [Section]
     publishedCourse: Course
     studentsEnrolled: Float!
+    reviews: [Review]
+    overallRating: Float!
   }
 `;

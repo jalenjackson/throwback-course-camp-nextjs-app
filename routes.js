@@ -19,6 +19,7 @@ routes
   .add('courses/courseCategories', '/courses/category/:category')
   .add('courses/track', '/courses/view/:courseId/track')
   .add('courses/search', '/courses/search/:query')
-  .add('courses/allCourses', '/courses/all-courses');
+  .add('courses/allCourses', '/courses/all-courses')
+  .add('courses/coursesInReview', '/courses/courses-in-review');
 
 

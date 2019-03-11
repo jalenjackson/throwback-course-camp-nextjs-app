@@ -2,15 +2,16 @@ import TweenMax, { Power4 } from 'gsap/TweenMax';
 import TimelineMax from 'gsap/TimelineMax';
 
 export const animateQuestionText = () => {
-  const T1Split = new SplitText('.quiz-question-text', { type: 'words' });
-
-  const T1Animation = new TimelineMax();
-  TweenMax.set(
+  if (document !== undefined) {
+    const T1Split = new SplitText('.quiz-question-text', {type: 'words'});
+  
+    const T1Animation = new TimelineMax();
+    TweenMax.set(
       '#split',
-      { opacity: 1 }
-  );
-
-  T1Animation.staggerFrom(
+      {opacity: 1}
+    );
+  
+    T1Animation.staggerFrom(
       T1Split.words,
       0.3,
       {
@@ -20,4 +21,5 @@ export const animateQuestionText = () => {
         delay: 0.3
       },
       0.02, '+=0');
+  }
 };

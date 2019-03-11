@@ -2,60 +2,179 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c93e22-de8f-4fdc-ab13-cf5547a08d51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Jalen___Tammy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jalen___Tammy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/allCourses/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/allCourses/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/community/community/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/community/community/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/community/communityQuestion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/community/communityQuestion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/changeCourseStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/changeCourseStatus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCodingChallenge/saveCodingChallenge.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCodingChallenge/saveCodingChallenge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCodingProject/saveCodingProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCodingProject/saveCodingProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCrunchChallenge/saveCrunchChallenge.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCrunchChallenge/saveCrunchChallenge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/deleteMatchingGameQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/deleteMatchingGameQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/editMatchingGameQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/editMatchingGameQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/saveMatchingGameQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/saveMatchingGameQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/deleteAddPictureQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddedAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/deleteAddQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddedAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/editAddQuizAddingNewAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addQuiz/saveAddQuizQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/removeExercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/removeExercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/reorderSections.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/reorderSections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/deleteAddedVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/reorderVideos.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/reorderVideos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/videos/updateVideoDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/draggableMethods.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/draggableMethods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addCodingChallenge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addCodingChallenge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addCodingProject/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addCodingProject/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addCrunchChallenge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addCrunchChallenge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/addedQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/addedQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addMatchingGame/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addAnotherAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addAnotherAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addedAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/addedAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addPictureQuiz/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addAnotherAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addAnotherAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/addedAnswer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/drawers/addQuiz/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/publishCourse.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/publishCourse.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/publish/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/publish/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/addNewSectionButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/addNewSectionButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/sectionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sectionTimeline/sectionList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/coursesCategories/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/reusableComponents/topProgress.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/reusableComponents/topProgress.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/track/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/track/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/completion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/completion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/continueLearningButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/continueLearningButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/editCourseButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/editCourseButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/intructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/intructor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/language.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/language.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/learning.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/learning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/sections.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/sections.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/rightCourseDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/rightCourseDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/checkWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/checkWork.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/containerMethods/executeCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/containerMethods/executeCode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/output.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingChallenge/output.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/containerMethods/getOutput.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/containerMethods/getOutput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/currentSandbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/currentSandbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/files.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/files.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCodingProject/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/crunchChallenge.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/crunchChallenge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionCrunchChallenge/title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/endGameResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/endGameResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/matchingGame/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/matchingGame/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionMatchingGame/title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionPictureQuiz/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionPictureQuiz/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/containerMethods/navigateToNextQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/containerMethods/navigateToNextQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/endResults/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/endResults/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/less/quiz.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/less/quiz.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/answers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/answers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/quiz/timer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/buyCourse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/buyCourse/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/getAutocompleteDataResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/getAutocompleteDataResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/earnMoneyTeaching/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/earnMoneyTeaching/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/earnMoneyTeaching/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/earnMoneyTeaching/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/course.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/setInitialAuthentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/setInitialAuthentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/signUserOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/signUserOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/saveQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/saveQuestion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/pageLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionSuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionSuccess.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/element.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/svgs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/svgs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/earnMoneycta.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/earnMoneycta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/courseCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/courseCarousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/localization.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/popularCategories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/popularCategories/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/valueProps.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/valueProps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/leftMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/paymentHistory/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/paymentHistory/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/payoutHistory/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/photo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/photo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profile/preview/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalHelpers/verifyAuthentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/globalHelpers/verifyAuthentication.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/courses/allCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/allCourses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/community/community.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/community/community.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/community/communityQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/community/communityQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/courseCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courseCategories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/track.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/track.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionCodingChallenge.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionCodingChallenge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionCodingProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionCodingProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionCrunchChallenge.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionCrunchChallenge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionMatchingGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionMatchingGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionPictureQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionPictureQuiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionQuiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/viewCourseSectionVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/viewCourseSectionVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/earnMoneyTeaching.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/earnMoneyTeaching.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/APIRoutes/changeCourseStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/APIRoutes/changeCourseStatus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/merge.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/handleBoughtCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/users/handleBoughtCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/courseMutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/courseMutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/forumQuestion/forumQuestionMutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations/forumQuestion/forumQuestionMutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations/root.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/courses/courseQueries.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/queries/courses/courseQueries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/global/autocompleteQueries.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/queries/global/autocompleteQueries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/forumQuestion/forumQuestionQueries.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/queries/forumQuestion/forumQuestionQueries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/users/userQueries.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/queries/users/userQueries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/course/course.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/course/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/forumQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/forumQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphQL/schema/types/user/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/global.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/forumQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/forumQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/application.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/application.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/videos/earnMoneyTeaching.mp4" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,65 +187,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/uploadProfileImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionModal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionSuccess.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/saveQuestion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="644">
+              <caret line="34" column="79" selection-start-line="34" selection-end-line="35" />
               <folding>
                 <element signature="e#0#87#0" expanded="true" />
               </folding>
@@ -134,11 +199,24 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/next.config.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/track/index.js">
+        <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="45" column="24" selection-start-line="34" selection-start-column="16" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="602">
+              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -147,65 +225,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/container.js">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/uploadProfileImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="126">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/middleware/verifyAuthentication.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/globalHelpers/handleAuthentication.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/body.js">
+        <entry file="file://$PROJECT_DIR$/globalHelpers/verifyAuthentication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="168">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/updateState.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>updateState</find>
-      <find>ViewCourseContainer</find>
-      <find>ViewCouse</find>
-      <find>apples</find>
-      <find>state</find>
-      <find>auth</find>
-      <find>Tween</find>
-      <find>box-</find>
-      <find>categ</find>
-      <find>updateS</find>
-      <find>img</find>
-      <find>popular</find>
-      <find>preview-b</find>
-      <find>cta</find>
-      <find>courses-con</find>
-      <find>text</find>
-      <find>inner</find>
-      <find>box-s</find>
-      <find>props</find>
-      <find>red</find>
+      <find>summare</find>
+      <find>summa</find>
+      <find>summar</find>
+      <find>showEnd</find>
+      <find>recordExercisePlayed</find>
+      <find>record</find>
+      <find>slick-slide</find>
+      <find>caro</find>
+      <find>slick-</find>
       <find>inset</find>
-      <find>categories</find>
-      <find>TweenMax</find>
-      <find>background</find>
-      <find>cubic</find>
-      <find>length</find>
-      <find>track</find>
-      <find>navbar-com</find>
-      <find>video-sec</find>
-      <find>this.props</find>
+      <find>bix-</find>
+      <find>box-s</find>
+      <find>fill=&quot;#333333&quot;</find>
+      <find>fill=&quot;rgb(90, 90, 105)&quot;</find>
+      <find>course-builder-preview</find>
+      <find>red</find>
+      <find>Link</find>
+      <find>confi</find>
+      <find>auth</find>
+      <find>this.props.auth</find>
+      <find>setState</find>
+      <find>this</find>
+      <find>hot-l</find>
+      <find>navbarContainer.state.authorizationToken</find>
+      <find>navbarContainer</find>
+      <find>navbarCont</find>
+      <find>status</find>
+      <find>approveCo</find>
+      <find>courseStatusTe</find>
+      <find>noti</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -223,9 +324,17 @@
       <replace>this.openDrawerFromMenu</replace>
       <replace>props.container</replace>
       <replace>context</replace>
-      <replace>this.props</replace>
       <replace>props</replace>
+      <replace>className</replace>
+      <replace>this.props</replace>
+      <replace>thisContainer</replace>
+      <replace>fill=&quot;rgb(90, 90, 105)&quot;</replace>
+      <replace>fill=&quot;rgb(80, 80, 105)&quot;</replace>
+      <replace>this.props.container.state.auth</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\courseBuilder</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -233,57 +342,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/search/container.js" />
-        <option value="$PROJECT_DIR$/globalHelpers/uriQueryMinipulator.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/merge.js" />
-        <option value="$PROJECT_DIR$/pages/courses/search.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/search/initiateCourses.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/getAutocompleteDataResults.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/course.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.less" />
-        <option value="$PROJECT_DIR$/pages/courses/allCourses.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/allCourses/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/pagination/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/pagination/getMoreCourses.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.js" />
-        <option value="$PROJECT_DIR$/server/models/course.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/types/course/course.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/continueLearningButton.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/users/handleBoughtCourse.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js" />
-        <option value="$PROJECT_DIR$/server/graphQL/schema/types/user/user.js" />
-        <option value="$PROJECT_DIR$/globalHelpers/loaderStyles.js" />
-        <option value="$PROJECT_DIR$/pages/_app.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/track/review/index.less" />
-        <option value="$PROJECT_DIR$/pages/courses/track.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/setInitialAuthentication.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/buyCourse/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/signUserOut.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/track/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/svgs/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/editCourseButton.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/savePictureQuizQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addPictureQuiz/editAddPictureQuizAddingNewAnswer.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/saveMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/editMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addMatchingGame/deleteMatchingGameQuestion.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCodingProject/saveCodingProject.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCrunchChallenge/saveCrunchChallenge.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/reorderSections.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" />
-        <option value="$PROJECT_DIR$/globalHelpers/metaRequires.js" />
-        <option value="$PROJECT_DIR$/pages/courses/viewCourse.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/element.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/list.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/reusableComponents/topProgress.js" />
-        <option value="$PROJECT_DIR$/static/styles/global.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/container.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/saveQuestion.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/index.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionModal.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionSuccess.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/handleSectionVideoUpload.js" />
+        <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/mutations/course/courseMutations.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/coursesInReview.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/approveCourse.js" />
+        <option value="$PROJECT_DIR$/server/APIRoutes/changeCourseStatus.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/approveCourse.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/schema/queries/courses/courseQueries.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/getCourseByStatus.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/courseByStatus.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/approved.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/reviewing.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/unpublished.js" />
+        <option value="$PROJECT_DIR$/pages/courses/coursesInReview.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/courseStates/reviewing.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/courseStates/approved.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/courseStates/unpublished.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/container.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/index.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/setCourseStatus.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/renderCourses.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/getCoursesByStatus.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/publishCourse.less" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/publish/index.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js" />
+        <option value="$PROJECT_DIR$/server/graphQL/resolvers/users/uploadProfileImage.js" />
+        <option value="$PROJECT_DIR$/globalHelpers/verifyAuthentication.js" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/uploadProfileImage.js" />
+        <option value="$PROJECT_DIR$/pages/_app.js" />
       </list>
     </option>
   </component>
@@ -321,64 +430,57 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="courses" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="users" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="courses" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="viewCourseSectionVideo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="users" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="profile" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="courses" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="viewCourseSectionVideo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="less" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="globalComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="globalComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="newQuestion" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="reactComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="globalComponents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="newQuestion" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="users" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="profile" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="containerMethods" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="globalHelpers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="courses" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="APIRoutes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="graphQL" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="GraphQL-API" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="middleware" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -389,7 +491,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BrainFlop-NextJS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QuizOp-API" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -399,18 +501,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\coursesInReview\courseStates" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\icons" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\backgroundImages" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\search" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\server\graphQL\schema\types" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\globalComponents\pagination" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\users\profile\preview" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\videos" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\reusableComponents\winModal" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\icons" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\search" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\users\profile" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\globalComponents" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\earnMoneyTeaching" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\coursesInReview" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\community\communityQuestion" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\track" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\reusableComponents\loseModal" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\reusableComponents\winModal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,18 +545,18 @@
       <workItem from="1550798048868" duration="1807000" />
       <workItem from="1550799870151" duration="45080000" />
       <workItem from="1551024843788" duration="882000" />
-      <workItem from="1551027471412" duration="70070000" />
+      <workItem from="1551027471412" duration="203211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="778046000" />
+    <option name="totallyTimeSpent" value="911187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837488" visible="true" weight="0.12961012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837488" visible="true" weight="0.12908325" />
       <window_info id="Structure" order="1" sideWeight="0.5016251" side_tool="true" weight="0.12961012" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.5005417" side_tool="true" weight="0.12908325" />
@@ -474,432 +576,407 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837488" visible="true" weight="0.12961012" />
-      <window_info id="Structure" order="1" sideWeight="0.5016251" side_tool="true" weight="0.12961012" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="npm" order="3" sideWeight="0.5005417" side_tool="true" weight="0.12908325" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TypeScript" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/mutations/user/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/schema/types/user/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/handleBoughtCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/globalHelpers/verifyAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/globalHelpers/loaderStyles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/track/review/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="36" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="525">
+          <caret line="81" selection-start-line="81" selection-end-line="90" selection-end-column="2" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/setAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/setInitialAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/continueLearningButton.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/courseStates/approved.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/buyCourse/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/courseStates/reviewing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="84">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/signUserOut.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/track.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icons/brainflop-logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/icon/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/svgs/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/courseBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/globalHelpers/metaRequires.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/editCourseButton.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/container.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/columns/buyCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/element.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="60" column="136" selection-start-line="60" selection-start-column="136" selection-end-line="60" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/reviewSections/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/less/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/viewCourseSectionQuiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/viewCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/courses/viewCourseSectionVideo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/reusableComponents/topProgress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/styles/global.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/track/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="45" column="24" selection-start-line="34" selection-start-column="16" selection-end-line="45" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/updateState.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="23" />
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/body.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="441">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/containerMethods/saveQuestion.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/courseStates/unpublished.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="63">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/setCourseStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/renderCourses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/coursesInReview/containerMethods/getCoursesByStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="e#0#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/newQuestion/questionSuccess.js">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/pagination/getMoreCourses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" selection-start-column="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less">
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/pagination/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/track/reviewCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewCourseDetails/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/setInitialStateFromData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sharedMutationResponse.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/index.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/publishCourse.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/removeExercise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/changeCourseStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/misc/setInitialStateFromData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/publish/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/reviewCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/recordExercisePlayed.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/merge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/createCourse.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/courseByStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses/allCourses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/loginModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/containerMethods/handleLoginSubmission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbarContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profileDrawer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/navbars/desktopNavbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/uploadProfileImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middleware/verifyAuthentication.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalHelpers/handleAuthentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalHelpers/verifyAuthentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/profile/containerMethods/uploadProfileImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="34" column="79" selection-start-line="34" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

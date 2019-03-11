@@ -6,7 +6,9 @@ class ViewCourseSectionCrunchChallengeContainer extends Container {
     countdownTime: 30,
     matchingGameEnded: false,
     addedAnswers: [],
-    crunchChallengeAnswers: []
+    crunchChallengeAnswers: [],
+    gameOver: false,
+    correctAnswers: 0
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);

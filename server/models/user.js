@@ -41,6 +41,18 @@ const UserSchema = new Schema({
   },
   moneyMade: {
     type: Number
+  },
+  courseProgress: {
+    type: Array
+  },
+  xp: {
+    type: Number
+  },
+  payoutHistory: {
+    type: Array
+  },
+  profileImage: {
+    type: String
   }
 });
 

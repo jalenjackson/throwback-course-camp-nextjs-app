@@ -51,13 +51,13 @@ export default class AddCodingProjectDrawer extends React.Component {
 
   saveCodingProject = async () => {
     this.setState({ saving: true });
-    await this.props.container.saveCodingProject(this.props.navbarContainer, this.state.summary);
+    await this.props.container.saveCodingProject(this.props.auth, this.state.summary);
     this.setState({ saving: false });
   };
 
   removeCodingProject = async () => {
     this.setState({ deleting: true });
-    await this.props.container.removeExercise(this.props.navbarContainer, 'codingProject');
+    await this.props.container.removeExercise(this.props.auth, 'codingProject');
     this.setState({
       deleting: false,
     });

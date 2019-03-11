@@ -24,14 +24,14 @@ class AddPictureDrawer extends React.Component {
       this.state.fileList.map((file) => {
         fileLocationArray.push(file.response.link);
       });
-      await this.props.container.savePictureQuizQuestion(this.props.navbarContainer, this.state.questionTerm, fileLocationArray);
+      await this.props.container.savePictureQuizQuestion(this.props.auth, this.state.questionTerm, fileLocationArray);
       this.setState({ fileList: [], questionTerm: '', queryingAPI: false });
     }
   };
 
   handleQuestionDelete = async i => {
     this.setState({ queryingAPI: true });
-    await this.props.container.deleteAddPictureQuizQuestion(this.props.navbarContainer, i);
+    await this.props.container.deleteAddPictureQuizQuestion(this.props.auth, i);
     this.setState({ queryingAPI: false });
   };
 
@@ -45,7 +45,7 @@ class AddPictureDrawer extends React.Component {
       className: 'upload-list-inline',
       fileList: this.state.fileList,
       headers: {
-        Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }`
+        Authorization: `Bearer ${ this.props.auth.token }`
       }
     };
 

@@ -5,12 +5,12 @@ import atob from 'atob';
 const Panel = Collapse.Panel;
 
 const Sections = props => (
-  <React.Fragment>
+  <div className='sections-wrapper column-wrapper'>
     <h1 className="section-title">
       <span>Course Sections</span>
     </h1>
     { sections(props) }
-  </React.Fragment>
+  </div>
 );
 
 const sections = props => {

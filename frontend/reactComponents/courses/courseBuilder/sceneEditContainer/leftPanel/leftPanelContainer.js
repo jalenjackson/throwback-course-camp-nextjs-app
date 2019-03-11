@@ -46,7 +46,7 @@ export default class LeftPanelContainer extends React.Component {
         fontSizeSelection: true,
       })
       .on('froalaEditor.contentChanged', e => {
-        this.props.container.updateSectionDetails('description', 'sectionDescriptionTerm', e.target.value, this.props.navbarContainer, this.props.container.state.currentActiveSection);
+        this.props.container.updateSectionDetails('description', 'sectionDescriptionTerm', e.target.value, this.props.auth, this.props.container.state.currentActiveSection);
       });
     } else {
       textArea.hide();
@@ -62,9 +62,9 @@ export default class LeftPanelContainer extends React.Component {
             ? <div>
                 <h1 className='left-view-section-title'>{ container.state.sectionTitleTerm }</h1>
                 <label>Title</label>
-                <Input value={ container.state.sectionTitleTerm } onChange={ e => container.updateSectionDetails('title', 'sectionTitleTerm', e.target.value, this.props.navbarContainer, this.props.container.state.currentActiveSection) } allowClear placeholder="Type in the title for this section" />
+                <Input value={ container.state.sectionTitleTerm } onChange={ e => container.updateSectionDetails('title', 'sectionTitleTerm', e.target.value, this.props.auth, this.props.container.state.currentActiveSection) } allowClear placeholder="Type in the title for this section" />
                 <label style={{ marginTop: '20px', display: 'block' }}>Category</label>
-                <Input value={ container.state.sectionCategoryTerm } onChange={ e => container.updateSectionDetails('category', 'sectionCategoryTerm', e.target.value, this.props.navbarContainer, this.props.container.state.currentActiveSection) } allowClear placeholder="Type in a category for this section" />
+                <Input value={ container.state.sectionCategoryTerm } onChange={ e => container.updateSectionDetails('category', 'sectionCategoryTerm', e.target.value, this.props.auth, this.props.container.state.currentActiveSection) } allowClear placeholder="Type in a category for this section" />
                 <label style={{ marginTop: '20px', display: 'block' }}>Description</label>
               </div>
               : null
@@ -85,7 +85,7 @@ export default class LeftPanelContainer extends React.Component {
                       Add your first section to get started
                     </span>
                     }>
-                  <Button onClick={ () => container.addNewSection(this.props.navbarContainer) } type="primary">Add New Section</Button>
+                  <Button onClick={ () => container.addNewSection(this.props.auth) } type="primary">Add New Section</Button>
                 </Empty>
               </div>
             }

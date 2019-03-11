@@ -8,11 +8,19 @@ const Output = props => (
         title='Output'
         centered
         visible={ props.container.state.outputModalVisibility }
-        onOk={ () => props.container.updateState('outputModalVisibility', false) }
+        onOk={ () => handleOk(props) }
         onCancel={ () => props.container.updateState('outputModalVisibility', false) }>
       <OutputData { ...props } />
     </Modal>
   </div>
 );
+
+const handleOk = props => {
+  if (props.container.state.isCorrect) {
+    props.container.updateState('endGame', true);
+    props.afterExerciseModalContainer.updateState('winModalVisible', true);
+  }
+  props.container.updateState('outputModalVisibility', false);
+};
 
 export default Output;

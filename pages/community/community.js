@@ -37,11 +37,13 @@ Community.getInitialProps = async () => {
           }
         }
         creator {
+          _id
           name
         }
       }
     }
   `);
+    console.log(forumQuestions.data.data)
     return { forumQuestions: forumQuestions.data.data.forumQuestions }
   } catch(e) {
     console.log(e);

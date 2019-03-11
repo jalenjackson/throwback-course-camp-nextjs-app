@@ -5,7 +5,6 @@ import TopProgress from './topProgress/index';
 import SetInitialStateFromData from './setInitialStateFromData';
 import { Subscribe } from 'unstated';
 import CourseBuilderContainer from './container';
-import NavbarContainer from '../../globalComponents/navbar/navbarContainer';
 import Drawers from './drawers/index';
 import ReviewSections from '../../globalComponents/reviewSections';
 import ReviewCourseDetails from './reviewCourseDetails/index';
@@ -15,8 +14,8 @@ import Footer from "../../globalComponents/footer";
 export default class CourseBuilderComponent extends React.Component {
   render() {
     return (
-      <Subscribe to={[CourseBuilderContainer, NavbarContainer]}>
-        { (container, navbarContainer) => (
+      <Subscribe to={[CourseBuilderContainer]}>
+        { container => (
           <div id='course-builder'>
             <SetInitialStateFromData container={ container } course={ this.props.course } />
             <TopProgress { ...this.props } container={ container } />
@@ -25,18 +24,18 @@ export default class CourseBuilderComponent extends React.Component {
                 container.state.currentPane === 'courseBuilder' ?
                   <div>
                     { container.state.course.sections.length !== 0
-                      ? <Drawers { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                      ? <Drawers { ...this.props } container={ container } />
                       : null
                     }
-                    <SceneEditContainer { ...this.props } navbarContainer={ navbarContainer } container={ container } />
-                    <SectionTimelineContainer { ...this.props } navbarContainer={ navbarContainer } container={ container }  />
+                    <SceneEditContainer { ...this.props } container={ container } />
+                    <SectionTimelineContainer { ...this.props } container={ container }  />
                   </div>
                   : container.state.currentPane === 'reviewSections' ?
-                      <ReviewSections { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                      <ReviewSections { ...this.props } container={ container } />
                     : container.state.currentPane === 'publish' ?
-                      <Publish { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                      <Publish { ...this.props } container={ container } />
                       : container.state.currentPane === 'reviewCourseDetails' ?
-                        <ReviewCourseDetails { ...this.props } navbarContainer={ navbarContainer } container={ container } />
+                        <ReviewCourseDetails { ...this.props } container={ container } />
                           : null
               : null
             }

@@ -3,11 +3,17 @@ import Timer from './timer';
 import { shuffle } from '../../../../../globalHelpers/shuffleArray';
 
 export default class Question extends React.Component {
-  render() {
+  
+  componentDidMount() {
     const state = this.props.container.state;
     const { currentQuiz, isPictureQuiz} = this.props;
-    const currentQuestion = state.shuffledQuestions[state.currentActiveQuestion];
     this.shuffleQuestions(currentQuiz, state);
+  }
+  
+  render() {
+    const state = this.props.container.state;
+    const currentQuestion = state.shuffledQuestions[state.currentActiveQuestion];
+    const { currentQuiz, isPictureQuiz} = this.props;
     return (
       <div className='quiz-question'>
         { currentQuestion
@@ -17,7 +23,7 @@ export default class Question extends React.Component {
               </p>
               <Timer { ...this.props } />
               { currentQuestion.optionalImage !== 'false' && !isPictureQuiz
-                  ? <img style={{ border: `3px solid ${ this.props.course.color }80` }} className='question-image' src={ currentQuestion.optionalImage } />
+                  ? <img className='question-image' src={ currentQuestion.optionalImage } />
                   : null
               }
               <h1 className='quiz-question-text'>

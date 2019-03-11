@@ -16,7 +16,7 @@ exports.call = async (req, res) => {
       await course.save();
       return success(res);
     }
-    case 'Published': {
+    case 'Approved': {
       course.publishedCourse = course.reviewCourse;
       course.reviewCourse = {};
       await course.save();

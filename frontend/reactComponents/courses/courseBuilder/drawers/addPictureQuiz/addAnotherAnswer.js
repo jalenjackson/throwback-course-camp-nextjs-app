@@ -15,7 +15,7 @@ export default class AddAnotherAnswer extends React.Component {
       name: 'singleFile',
       action: '/uploaders/single-upload',
       headers: {
-        Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }`,
+        Authorization: `Bearer ${ this.props.auth.token }`,
       }
     };
     return (
@@ -40,7 +40,7 @@ export default class AddAnotherAnswer extends React.Component {
   handleNewImageUpload = async info => {
     if (info.file.status === 'done') {
       this.setState({ savingQuestion: true });
-      await this.props.container.editAddPictureQuizAddingNewAnswer(this.props.navbarContainer, info.file.response.link, this.props.questionIterator);
+      await this.props.container.editAddPictureQuizAddingNewAnswer(this.props.auth, info.file.response.link, this.props.questionIterator);
       this.setState({ editingQuestionTerm: '', isEditingQuestion: false, savingQuestion: false, addingNewQuestionTerm: '', isAddingNewQuestion: false });
     }
     if (info.file.status === 'error') {

@@ -44,7 +44,7 @@ const DesktopNavbar = props => (
           <SubMenu key={ Localization.MenuKeys.CourseCategories } title={ Localization.MenuLinks.Categories }>
             { GlobalLocalization.coruseCategories.map((category) => (
               <Menu.Item>
-                <Link to={`/courses/category/${ _.kebabCase(category) }`}>
+                <Link to={`/courses/category/${ _.kebabCase(category) }?page=1`}>
                   { category }
                 </Link>
               </Menu.Item>
@@ -87,7 +87,7 @@ const DesktopNavbar = props => (
          <Menu.Item style={ inlineStyling(props.navbarContainer.state.authenticated).AuthenticatedMenuItems } onClick={ () => props.navbarContainer.setContainerState('profileDrawerVisibility', true) }>
            <span>
              <Badge className="navbar-authenticated-badge" style={{ transform: 'translate(12px, -3px)', fontSize: 11 }} count={10}>
-               <Avatar className="navbar-authenticated-avatar" shape="circle" size="small"  />
+               <Avatar src={ props.auth.profileImage } className="navbar-authenticated-avatar" shape="circle" size="small"  />
              </Badge>
             </span>
          </Menu.Item> : null

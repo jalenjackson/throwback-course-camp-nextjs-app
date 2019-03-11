@@ -17,7 +17,7 @@ export default class AddedAnswer extends React.Component {
       name: 'singleFile',
       action: '/uploaders/single-upload',
       headers: {
-        Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }`,
+        Authorization: `Bearer ${ this.props.auth.token }`,
       }
     };
     const { isCorrectAnswer, questionIterator, answerIterator, answer, type, question } = this.props;
@@ -68,7 +68,7 @@ export default class AddedAnswer extends React.Component {
   handleNewImageUpload = async (info, questionIterator, answerIterator, type) => {
     if (info.file.status === 'done') {
       this.setState({ savingQuestion: true });
-      await this.props.container.editAddPictureQuizAddedAnswer(info.file.response.link, type, this.props.navbarContainer, questionIterator, answerIterator);
+      await this.props.container.editAddPictureQuizAddedAnswer(info.file.response.link, type, this.props.auth, questionIterator, answerIterator);
       this.setState({ isEditingQuestion: false, savingQuestion: false });
     }
     if (info.file.status === 'error') {
@@ -78,7 +78,7 @@ export default class AddedAnswer extends React.Component {
 
   updateQuestion = async (questionIterator, answerIterator, type) => {
     this.setState({ savingQuestion: true });
-    await this.props.container.editAddPictureQuizAddedAnswer(this.state.editingQuestionTerm, type, this.props.navbarContainer, questionIterator, answerIterator);
+    await this.props.container.editAddPictureQuizAddedAnswer(this.state.editingQuestionTerm, type, this.props.auth, questionIterator, answerIterator);
     this.setState({ editingQuestionTerm: '', isEditingQuestion: false, savingQuestion: false });
   }
 }

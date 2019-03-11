@@ -3,7 +3,7 @@ import Head from 'next/head';
 import CommunityComponent from '../../frontend/reactComponents/community/communityQuestion/index';
 import { GraphQlDevURI, GraphQlMutate } from '../../globalHelpers/axiosCalls';
 
-const CommunityQuestion = ({ forumQuestion }) => (
+const CommunityQuestion = ({ forumQuestion, auth }) => (
   <div>
     <Head>
       <title>Home Page</title>
@@ -11,7 +11,7 @@ const CommunityQuestion = ({ forumQuestion }) => (
               integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
               crossOrigin="anonymous" />
     </Head>
-    <CommunityComponent forumQuestion={ forumQuestion } />
+    <CommunityComponent auth={ auth } forumQuestion={ forumQuestion } />
   </div>
 );
 
@@ -20,8 +20,17 @@ CommunityQuestion.getInitialProps = async ctx => {
     const forumQuestion = await GraphQlMutate(GraphQlDevURI, `
       {
         singleForumQuestion(forumQuestionId: "${ ctx.query.questionId }") {
+          _id
           title
           date
+          answers {
+            userId {
+              name
+              profileImage
+            }
+            date
+            answer
+          }
           exercise
           sectionIndex
           videoIndex
@@ -36,6 +45,7 @@ CommunityQuestion.getInitialProps = async ctx => {
             }
           }
           creator {
+            _id
             name
           }
         }

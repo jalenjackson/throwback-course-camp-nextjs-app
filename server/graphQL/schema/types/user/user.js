@@ -10,6 +10,10 @@ exports.User = `
     moneyMade: Float!
     createdCourses: [Course!]
     createdForumQuestions: [ForumQuestion!]
+    courseProgress: [CourseProgress]
+    xp: Float!
+    payoutHistory: [Payout]
+    profileImage: String
   }
   
   type AuthData {
@@ -20,5 +24,8 @@ exports.User = `
     name: String!
     paidCourses: [Course!]
     moneyMade: Float!
+    courseProgress: [CourseProgress]
+    payoutHistory: [Payout]
+    profileImage: String
   }
 `;

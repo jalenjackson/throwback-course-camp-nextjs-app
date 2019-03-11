@@ -2,7 +2,7 @@ import React from 'react';
 import BuyCourse from '../../../globalComponents/buyCourse';
 
 const BuyCourseWrapper = props => (
-  <React.Fragment>
+  <div className='buy-course-wrapper column-wrapper'>
     <div style={{ marginTop: '55px' }}>
       <h1 style={{ transform: 'translateY(-8px)', marginTop: 35 }} className="section-title">
         <span>Purchase Course With PayPal</span>
@@ -18,7 +18,7 @@ const BuyCourseWrapper = props => (
         : null
       }
     </div>
-  </React.Fragment>
+  </div>
 );
 
 export default BuyCourseWrapper;

@@ -19,8 +19,11 @@ export const setCourseStatusText = course => {
     case 'Reviewing': {
       return 'We are in the process of reviewing your course! We will get back to you soon!'
     }
-    case 'Published': {
-      return 'Your course is live and published in the marketplace!'
+    case 'Approved': {
+      return 'Your course is now in the marketplace!'
+    }
+    case 'NotApproved': {
+      return 'your course was not approved. We sent you an email explaining what you need to change'
     }
   }
 };

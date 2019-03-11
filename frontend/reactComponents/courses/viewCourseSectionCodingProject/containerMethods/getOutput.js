@@ -6,5 +6,5 @@ export const call = context => {
   let scriptTag = `<script>${context.state.javascriptSandboxValue}` + '<';
   scriptTag +=  "/script>";
   iframe.css({ display: 'block' }).contents().find("body").append(scriptTag);
-  context.setState({ currentSandbox: 'Output' });
+  context.setState({ currentSandbox: 'Output', endGame: 'false' });
 };

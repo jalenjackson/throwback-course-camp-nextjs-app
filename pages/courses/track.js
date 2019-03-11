@@ -4,6 +4,7 @@ import TrackComponent from '../../frontend/reactComponents/courses/track/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
 import { courseResponse } from '../sharedQueryCourseResponses';
+import {handleAuthentication} from "../../globalHelpers/handleAuthentication";
 
 export default class Track extends React.Component {
   render() {
@@ -11,6 +12,7 @@ export default class Track extends React.Component {
       <div>
         <Head>
           <title>View Course</title>
+          <style>{ globalStyle }</style>
           <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                   crossOrigin="anonymous" />
@@ -28,6 +30,7 @@ export default class Track extends React.Component {
 
 Track.getInitialProps = async (ctx) => {
   try {
+    handleAuthentication(ctx);
     const isRequestFromServer = typeof window === 'undefined';
     
     const courseId = ctx.query.courseId;
@@ -47,3 +50,9 @@ Track.getInitialProps = async (ctx) => {
     return { course: false }
   }
 };
+
+const globalStyle = `
+  body {
+    background: rgb(250, 250, 250);
+  }
+`;

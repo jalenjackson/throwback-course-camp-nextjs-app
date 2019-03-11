@@ -28,7 +28,7 @@ export default class AddedAnswer extends React.Component {
                         disabled={ this.state.optionalImageUrl !== 'false' }
                         accept='image/gif, image/jpeg, image/png'
                         onChange={ this.handleUploadOptionalImage }
-                        headers={{ Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }` }}
+                        headers={{ Authorization: `Bearer ${ this.props.auth.token }` }}
                         action="/uploaders/single-upload"
                         name="singleFile">
                       <Button>
@@ -65,7 +65,7 @@ export default class AddedAnswer extends React.Component {
 
   initiateSaveAnswer = async (questionIterator, answerIterator, type) => {
     this.setState({ savingQuestion: true });
-    await this.props.container.editAddQuizAddedAnswer(this.state.editingQuestionTerm, type, this.props.navbarContainer, questionIterator, answerIterator, this.state.optionalImageUrl);
+    await this.props.container.editAddQuizAddedAnswer(this.state.editingQuestionTerm, type, this.props.auth, questionIterator, answerIterator, this.state.optionalImageUrl);
     this.setState({ editingQuestionTerm: '', isEditingQuestion: false, savingQuestion: false });
   }
 }

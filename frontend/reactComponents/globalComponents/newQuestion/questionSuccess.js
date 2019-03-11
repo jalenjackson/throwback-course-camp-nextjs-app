@@ -13,7 +13,7 @@ export default class QuestionSuccess extends React.Component {
           visible={ container.state.successModalVisible }
           onOk={ () => container.updateState('successModalVisible', false) }
           onCancel={ () => container.updateState('successModalVisible', false) }>
-          <img src='/static/backgroundImages/shouting.svg' />
+          <img src='/static/backgroundImages/educationalBackground.svg' />
           <Link route={ `/community/${ container.state.submittedQuestionId }` }>
             <Button style={{ marginTop: 20 }}>View Question In Community</Button>
           </Link>

@@ -15,13 +15,13 @@ export default class AddMatchingGameDrawer extends React.Component {
 
   saveMatch = async () => {
     this.setState({ isQueryingAPI: true });
-    await this.props.container.saveMatchingGameQuestion(this.props.navbarContainer, this.state.questionTerm, this.state.answerTerm, this.state.timeAllotted, generateRandomMatchId());
+    await this.props.container.saveMatchingGameQuestion(this.props.auth, this.state.questionTerm, this.state.answerTerm, this.state.timeAllotted, generateRandomMatchId());
     this.setState({ isQueryingAPI: false });
   };
 
   deleteQuestion = async matchId => {
     this.setState({ isQueryingAPI: true });
-    await this.props.container.deleteMatchingGameQuestion(this.props.navbarContainer, matchId);
+    await this.props.container.deleteMatchingGameQuestion(this.props.auth, matchId);
     this.setState({ isQueryingAPI: false });
   };
 

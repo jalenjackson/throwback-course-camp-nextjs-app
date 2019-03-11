@@ -2,7 +2,7 @@ import React from 'react';
 import { Comment, Avatar } from 'antd';
 
 const Instructor = props => (
-  <React.Fragment>
+  <div className='instructor-wrapper column-wrapper'>
     <h1 className="section-title">
       <span>Instructor</span>
     </h1>
@@ -21,7 +21,7 @@ const Instructor = props => (
         />
       </div>
     </div>
-  </React.Fragment>
+  </div>
 );
 
 export default Instructor;

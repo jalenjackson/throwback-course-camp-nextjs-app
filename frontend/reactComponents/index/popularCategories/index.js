@@ -21,17 +21,17 @@ const Index = () => (
         { _.times(8, (i) => (
           <Popover content={ renderPopoverContent(i) } title={ CategoryDefinitions[i].title }>
             <Col key={ i } className="gutter-row" span={ 6 }>
-            <div className="gutter-box">
-              <img src={ CategoryIcons[i] } />
-              <div className="category-title">
-                <h1>{ CategoryDefinitions[i].title }</h1>
+              <div className="gutter-box">
+                <img src={ CategoryIcons[i] } />
+                <div className="category-title">
+                  <h1>{ CategoryDefinitions[i].title }</h1>
+                </div>
+                <div className='category-explore-btn-container'>
+                  <Link to={`/courses/category/${ _.kebabCase(CategoryDefinitions[i].title) }?page=1`}>
+                    <Button className='explore-button' type="primary" icon="eye">{ Localization.Explore }</Button>
+                  </Link>
+                </div>
               </div>
-              <div className='category-explore-btn-container'>
-                <Link to={`/courses/category/${ _.kebabCase(CategoryDefinitions[i].title) }`}>
-                  <Button className='explore-button' type="primary" icon="eye">{ Localization.Explore }</Button>
-                </Link>
-              </div>
-            </div>
           </Col>
         </Popover>
         )) }

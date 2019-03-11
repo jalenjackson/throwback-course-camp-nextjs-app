@@ -1,6 +1,7 @@
 import React from 'react';
-import { Timeline } from 'antd';
+import { Timeline, Icon } from 'antd';
 import { Link } from '../../../../routes';
+import {getCourseProgress} from "../../../../globalHelpers/getCourseProgress";
 
 const Element = props => (
     <div>
@@ -19,7 +20,28 @@ const Element = props => (
             { props.video.quiz
               ? <Timeline.Item>
                   <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/quiz` : '#' }>
-                    Multiple Choice Quiz
+                    <a style={{ color: getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex)
+                        ? isPerfectScore(
+                          getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex).split('/')[0],
+                          getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex).split('/')[1])
+                            ? '#5FCF80'
+                            : '#FE4E56'
+                        : '#1890FF'
+                      }}>
+                      { getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex)
+                        ? <span>{`
+                            You took this quiz and scored a
+                            ${ getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex) }
+                            ${ isPerfectScore(
+                                 getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex).split('/')[0],
+                                 getCourseProgress(props.course._id, props.auth, 'quiz', props.sectionIndex, props.videoIndex).split('/')[1]
+                              ) ? 'Great job!'
+                                : 'Improve your score'
+                            }
+                          `}</span>
+                        : 'Quiz'
+                      }
+                    </a>
                   </Link>
                 </Timeline.Item>
               : null
@@ -27,7 +49,28 @@ const Element = props => (
             { props.video.pictureQuiz
               ? <Timeline.Item>
                   <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/picture-quiz` : '#' }>
-                    Picture Quiz
+                    <a style={{ color: getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex)
+                        ? isPerfectScore(
+                          getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex).split('/')[0],
+                          getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex).split('/')[1])
+                          ? '#5FCF80'
+                          : '#FE4E56'
+                        : '#1890FF'
+                    }}>
+                      { getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex)
+                        ? <span>{`
+                            You took this picture quiz and scored a
+                            ${ getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex) }
+                            ${ isPerfectScore(
+                          getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex).split('/')[0],
+                          getCourseProgress(props.course._id, props.auth, 'pictureQuiz', props.sectionIndex, props.videoIndex).split('/')[1]
+                        ) ? 'Great job!'
+                          : 'Improve your score'
+                          }
+                          `}</span>
+                        : 'Take Picture Quiz'
+                      }
+                    </a>
                   </Link>
                 </Timeline.Item>
               : null
@@ -35,7 +78,18 @@ const Element = props => (
             { props.video.matchingGame
               ? <Timeline.Item>
                   <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/matching-game` : '#' }>
-                    Matching Game
+                    <a style={{ color:
+                        getCourseProgress(props.course._id, props.auth, 'matchingGame', props.sectionIndex, props.videoIndex)
+                          ? '#5FCF80'
+                          : '#1890FF'
+                    }}>
+                      { getCourseProgress(props.course._id, props.auth, 'matchingGame', props.sectionIndex, props.videoIndex)
+                        ? <span>{`
+                            Great job! You completed this matching game!
+                          `}</span>
+                        : 'Take Matching Game'
+                      }
+                    </a>
                   </Link>
                 </Timeline.Item>
               : null
@@ -43,7 +97,28 @@ const Element = props => (
             { props.video.crunchChallenge
               ? <Timeline.Item>
                   <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/crunch-challenge` : '#' }>
-                    Crunch Challenge
+                    <a style={{ color: getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex)
+                        ? isPerfectScore(
+                          getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex).split('/')[0],
+                          getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex).split('/')[1])
+                          ? '#5FCF80'
+                          : '#FE4E56'
+                        : '#1890FF'
+                    }}>
+                      { getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex)
+                        ? <span>{`
+                            You took this crunch challenge and scored a
+                            ${ getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex) }
+                            ${ isPerfectScore(
+                          getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex).split('/')[0],
+                          getCourseProgress(props.course._id, props.auth, 'crunchChallenge', props.sectionIndex, props.videoIndex).split('/')[1]
+                        ) ? 'Great job!'
+                          : 'Improve your score'
+                          }
+                          `}</span>
+                        : 'Take Crunch Challenge'
+                      }
+                    </a>
                   </Link>
                 </Timeline.Item>
               : null
@@ -51,7 +126,17 @@ const Element = props => (
             { props.video.codingChallenge
               ? <Timeline.Item>
                   <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/coding-challenge` : '#' }>
-                    Coding Exercise
+                    <a style={{ color: getCourseProgress(props.course._id, props.auth, 'codingChallenge', props.sectionIndex, props.videoIndex)
+                        ? '#5FCF80'
+                        : '#1890FF'
+                    }}>
+                      { getCourseProgress(props.course._id, props.auth, 'codingChallenge', props.sectionIndex, props.videoIndex)
+                        ? <span>{`
+                            Great job! You completed this coding challenge!
+                          `}</span>
+                        : 'Take Coding Exercise'
+                      }
+                    </a>
                   </Link>
                 </Timeline.Item>
               : null
@@ -59,7 +144,17 @@ const Element = props => (
             { props.video.codingProject
               ? <Timeline.Item>
                   <Link to={ props.courseNotInState ? `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ props.videoIndex }/coding-project` : '#' }>
-                    Coding Project
+                    <a style={{ color: getCourseProgress(props.course._id, props.auth, 'codingProject', props.sectionIndex, props.videoIndex)
+                        ? '#5FCF80'
+                        : '#1890FF'
+                    }}>
+                      { getCourseProgress(props.course._id, props.auth, 'codingProject', props.sectionIndex, props.videoIndex)
+                        ? <span>{`
+                            Great job! You completed this coding project!
+                          `}</span>
+                        : 'Take Coding Project'
+                      }
+                    </a>
                   </Link>
                 </Timeline.Item>
               : null
@@ -69,5 +164,9 @@ const Element = props => (
       </div>
     </div>
 );
+
+const isPerfectScore = (score, length) => {
+  return score === length;
+};
 
 export default Element;

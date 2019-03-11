@@ -11,12 +11,13 @@ class ViewCourseSectionCodingChallengeContainer extends Container {
     isCorrect: false,
     isError: false,
     outputModalVisibility: false,
-    noOutput: false
+    noOutput: false,
+    endGame: false
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);
   setEditorValue = (state, newValue) => Methods.setEditorValue.call(this, state, newValue);
-  executeCode = () => Methods.executeCode.call(this);
+  executeCode = props => Methods.executeCode.call(this, props);
 }
 
 export default ViewCourseSectionCodingChallengeContainer

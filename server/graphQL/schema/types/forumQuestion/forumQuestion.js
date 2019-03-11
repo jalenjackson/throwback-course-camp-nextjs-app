@@ -9,5 +9,6 @@ exports.ForumQuestion = `
     exercise: String
     date: String!
     creator: User!
+    answers: [ForumQuestionAnswer]
   }
 `;

@@ -4,15 +4,13 @@ import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../../sharedMutationResponse';
 
-export const call = async (e, navbarContainer, context, question, answers, optionalImage) => {
+export const call = async (e, auth, context, question, answers, optionalImage) => {
   try {
     e.preventDefault();
     const answerValuesFiltered = answers.filter((answer) => {
       return answer && answer.trim() !== '';
     });
-
-    console.log(optionalImage);
-
+    
     const saveAddQuizQuestionResponseMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
       addQuizQuestionToVideo(
@@ -25,8 +23,8 @@ export const call = async (e, navbarContainer, context, question, answers, optio
           ${ sharedMutationResponse }
         }
       }
-  `, navbarContainer.state.authorizationToken);
-    updateSectionsAfterAPICall(context, navbarContainer, saveAddQuizQuestionResponseMutation, 'addQuizQuestionToVideo', true);
+  `, auth.token);
+    updateSectionsAfterAPICall(context, saveAddQuizQuestionResponseMutation, 'addQuizQuestionToVideo', true);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

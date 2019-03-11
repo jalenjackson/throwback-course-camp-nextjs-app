@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Completion = () => (
-  <React.Fragment>
+  <div className='completion-wrapper column-wrapper'>
     <div className='course-completion'>
       <img src='/static/icons/trophy.svg'/>
       <h1>Course Completion</h1>
     </div>
-  </React.Fragment>
+  </div>
 );
 
 export default Completion;

@@ -4,7 +4,7 @@ import GlobalLocalization from '../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../sharedMutationResponse';
 
-export const call = async (context, i, navbarContainer, videoLocation) => {
+export const call = async (context, i, auth, videoLocation) => {
   try {
     const s3VideoId = videoLocation.split('/')[3];
     const deleteAddedVideoResponse = await GraphQlMutate(GraphQlDevURI, `
@@ -13,9 +13,9 @@ export const call = async (context, i, navbarContainer, videoLocation) => {
         ${ sharedMutationResponse }
       }
     }
-  `, navbarContainer.state.authorizationToken);
+  `, auth.token);
     $('.ant-collapse-header').click();
-    updateSectionsAfterAPICall(context, navbarContainer, deleteAddedVideoResponse, 'deleteVideo', true);
+    updateSectionsAfterAPICall(context, deleteAddedVideoResponse, 'deleteVideo', true);
     context.updateState('currentVideoLocation', '');
     message.success('Index deleted successfully');
   } catch (e) {

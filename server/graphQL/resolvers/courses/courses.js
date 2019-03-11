@@ -4,7 +4,7 @@ const { TransformObject } = require('./merge');
 exports.courses = async args => {
   try {
     const courses = await
-      Course.find()
+      Course.find({ 'status': 'Approved' })
       .skip(args.skip ? args.skip : 0)
       .limit(args.limit ? args.limit : 0);
     

@@ -38,7 +38,7 @@ class AddQuizDrawer extends React.Component {
 
   initiateQuestionSave = async e => {
     this.setState({ queryingAPI: true });
-    await this.props.container.saveAddQuizQuestion(e, this.props.navbarContainer, this.state.question, this.props.form.getFieldsValue().names, this.state.optionalImageUrl);
+    await this.props.container.saveAddQuizQuestion(e, this.props.auth, this.state.question, this.props.form.getFieldsValue().names, this.state.optionalImageUrl);
     this.props.form.resetFields();
     this.setState({ question: '', queryingAPI: false, optionalImageUrl: 'false' });
     $('.ant-upload-list-item .anticon-close').click();
@@ -46,7 +46,7 @@ class AddQuizDrawer extends React.Component {
 
   handleDeleteQuestion = i => {
     this.setState({ queryingAPI: true });
-    this.props.container.deleteAddQuizQuestion(this.props.navbarContainer, i);
+    this.props.container.deleteAddQuizQuestion(this.props.auth, i);
     this.setState({ queryingAPI: false });
   };
 
@@ -89,7 +89,7 @@ class AddQuizDrawer extends React.Component {
                 disabled={ this.state.optionalImageUrl !== 'false' }
                 accept='image/gif, image/jpeg, image/png'
                 onChange={ this.handleUploadOptionalImage }
-                headers={{ Authorization: `Bearer ${ this.props.navbarContainer.state.authorizationToken }` }}
+                headers={{ Authorization: `Bearer ${ this.props.auth.token }` }}
                 action="/uploaders/single-upload"
                 name="singleFile">
               <Button>

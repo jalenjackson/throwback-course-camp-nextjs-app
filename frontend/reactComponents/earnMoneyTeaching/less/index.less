@@ -1,9 +1,121 @@
 #earn-money-teaching {
+  .get-started-teaching-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #9881B1;
+    height: 200px;
+    h1 {
+      font-size: 20px;
+      color: white;
+    }
+  }
+
+  .course-builder-value-props {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .course-builder-value-prop {
+      width: 33.3%;
+      height: 400px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .course-builder-value-prop-inner {
+        width: 85%;
+        height: 85%;
+        border-radius: 6px;
+        position: relative;
+        text-align: center;
+        h1 {
+          color: rgb(80, 80, 105);
+          font-size: 25px;
+          line-height: 34px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        p {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 14px;
+        }
+        img {
+          width: 100px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+
+  .course-preview-container {
+    position: relative;
+    .course-preview-container-bg-img {
+      position: absolute;
+      height: 100%;
+      opacity: 0;
+      transform: translate3d(0, 60px, 0);
+      width: auto;
+      left: 0;
+      top: 0;
+    }
+    .course-preview-container-bg-img-2 {
+      right: 0;
+      left: inherit;
+    }
+    .course-builder-preview {
+      opacity: 0;
+      transform: translate3d(0, 60px, 0);
+      background: url("/static/backgroundImages/course-categories.svg") center center no-repeat;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      height: 700px;
+      margin-bottom: 80px;
+      position: relative;
+      border: 3px solid #00CC6F;
+      border-radius: 4px;
+      overflow: hidden;
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .course-builder-preview-title {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+    text-align: center;
+    margin-top: 50px;
+    font-weight: lighter;
+    color: rgb(80, 80, 105);
+    margin-bottom: 30px;
+    font-family: GothamLight, sans-serif;
+    span {
+      color: #00CC6F;
+      font-family: GothamLight, sans-serif
+    }
+  }
   .value-props {
     width: 100%;
-    height: 700px;
+    height: 550px;
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
     overflow: hidden;
     position: relative;
+    background: url('/static/backgroundImages/woman-laying-back-at-home.jpg') center center no-repeat;
+    background-size: cover;
     video {
       position: absolute;
       top: 0;
@@ -19,24 +131,29 @@
       width: 100%;
       height: 100%;
       z-index: 9;
-      background: radial-gradient(circle at right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
       display: flex;
       align-items: center;
       .overlay-copy {
         margin-left: 200px;
         width: 600px;
         h1 {
-          color: white;
-          font-size: 60px;
-          font-family: GothamLight, sans-serif
+          color: rgb(80, 80, 100);
+          font-size: 40px;
+          font-family: GothamLight, sans-serif;
+          opacity: 0;
+          transform: translate3d(0, 60px, 0);
         }
         p {
-          color: white;
-          font-size: 21px;
-          transform: translate(7px, -20px)
+          color: rgb(80, 80, 100);
+          font-size: 17px;
+          margin-top: 30px;
+          width: 60%;
+          opacity: 0;
+          transform: translate3d(0, 60px, 0);
         }
         button {
-          transform: translate(7px, -5px)
+          opacity: 0;
+          transform: translate3d(0, 30px, 0);
         }
       }
     }

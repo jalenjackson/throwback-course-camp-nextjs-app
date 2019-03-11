@@ -28,7 +28,7 @@ export default class List extends React.Component {
             ? section.videos.map((video, j) => (
               <div>
                 <Element sectionIndex={ i } videoIndex={ j } type={ 'video' } video={ video } { ...this.props }  />
-                { i === section.videos.length - 1
+                { j === section.videos.length - 1
                   ? null
                   : <div className='divider video-dividers'/>
                 }

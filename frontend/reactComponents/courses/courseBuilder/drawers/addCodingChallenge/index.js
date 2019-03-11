@@ -62,7 +62,7 @@ ${ this.state.functionName }(${ $('.function-parameter').val() })
     `;
 
     await this.props.container.saveCodingChallenge(
-      this.props.navbarContainer,
+      this.props.auth,
       this.state.title,
       this.state.description,
       functionText,
@@ -111,7 +111,7 @@ ${ this.state.functionName }(${ $('.function-parameter').val() })
 
   removeCodingChallenge = async () => {
     this.setState({ deleting: true });
-    await this.props.container.removeExercise(this.props.navbarContainer, 'codingChallenge');
+    await this.props.container.removeExercise(this.props.auth, 'codingChallenge');
     this.setState({
       title: '',
       description: '',
