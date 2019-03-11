@@ -37,7 +37,9 @@ app.prepare().then(() => {
     return handle(req, res)
   });
   
-  return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@quizopcluster-16smp.mongodb.net/${ process.env.MONGO_DB_DEV }?retryWrites=true`,
+  const mongoEnv = dev ? 'development' : 'production';
+  
+  return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@coursecamp-qxarr.mongodb.net/${ mongoEnv }?retryWrites=true`,
     { useNewUrlParser: true })
     .then(() => {
       server.listen(5000, () => console.log(`Consumer GraphQL API Running On PORT 5000`));
