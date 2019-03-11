@@ -39,6 +39,8 @@ app.prepare().then(() => {
   
   const mongoEnv = dev ? 'development' : 'production';
   
+  console.log(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@coursecamp-qxarr.mongodb.net/${ mongoEnv }?retryWrites=true`)
+  
   return mongoose.connect(`mongodb+srv://${ process.env.MONGO_USER }:${ process.env.MONGO_PASSWORD }@coursecamp-qxarr.mongodb.net/${ mongoEnv }?retryWrites=true`,
     { useNewUrlParser: true })
     .then(() => {
