@@ -13,7 +13,7 @@ const routes = require('../routes');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
-const PORT = dev ? 5000 : 80;
+const PORT = process.env.PORT || 5000;
 
 const handle = app.getRequestHandler();
 const handler = routes.getRequestHandler(app);
