@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-console.log('enviorment', process.env.NODE_ENV);
+const dev = process.env.NODE_ENV !== 'production';
 
-export const GraphQlDevURI = 'http://localhost:8080/graphql';
-export const host = 'http://localhost:8080';
+export const GraphQlDevURI = dev ? 'http://localhost:8080/graphql' : 'http://api.coursecamp.io/graphql';
+export const host = dev ? 'http://localhost:8080' : 'http://api.coursecamp.io';
 
 export const GraphQlMutate = async (uri, query, token) => {
   try {

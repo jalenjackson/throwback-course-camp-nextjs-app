@@ -2,136 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c93e22-de8f-4fdc-ab13-cf5547a08d51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/globalResources/styles/application.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/now.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/index.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/topProgress.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/topProgress.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/videoSceneEditContainer.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/videoSceneEditContainer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/videoTimeline.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/videoTimeline.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/search/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/less/quiz.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionQuiz/less/quiz.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourseSectionVideo/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/navbar/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/globalComponents/video/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/reactComponents/index/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/reactComponents/index/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/globalHelpers/axiosCalls.js" beforeDir="false" afterPath="$PROJECT_DIR$/globalHelpers/axiosCalls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/APIRoutes/changeCourseStatus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/APIRoutes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/APIRoutes/sections/reorderSections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/helpers/date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/courseByStatus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/createCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addCodingChallenge/addCodingChallenge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addCodingProject/addCodingProject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addCrunchChallenge/addCrunchChallenge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addMatchingGame/addMatchingGameToVideo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addMatchingGame/deleteMatchingGameQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addMatchingGame/editMatchingGameQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addPictureQuiz/addAnotherPictureQuizQuestionToQuiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addPictureQuiz/addPictureQuizQuestionToVideo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addPictureQuiz/deleteAddPictureQuizQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addPictureQuiz/updatePictureQuizQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addQuiz/addAnotherQuizQuestionToQuiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addQuiz/addQuizQuestionToVideo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addQuiz/deleteAddQuizQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/addQuiz/updateQuizQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/exercises/deleteExercise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/recordExercisePlayed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/reviewCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/addSectionToCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/addVideoToSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/deleteSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/sections/updateSectionDetails.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/singleCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/updateCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/deleteVideo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/courses/videos/updateVideoDetails.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/addForumQuestionAnswer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/createForumQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/forumQuestions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/forumQuestions/singleForumQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/global/createToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/getUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/handleBoughtCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/handlePayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/resolvers/users/uploadProfileImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/codingChallenge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/course.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/matchingGame/matchingGameAnswer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/matchingGame/matchingGameQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/section.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/course/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/forumQuestion/forumQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/inputs/forumQuestion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/answerChoiceQuizMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/codingChallengeMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/codingProjectMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/courseMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/crunchChallengeMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/globalMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/matchingGameMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/pictureQuizMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/sectionMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/course/videoMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/courseProgress/courseProgress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/courseProgress/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/forumQuestion/forumQuestionMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/forumQuestion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/root.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/user/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/mutations/user/userMutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/courses/courseQueries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/courses/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/forumQuestion/forumQuestionQueries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/forumQuestion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/global/autocompleteQueries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/global/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/root.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/users/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/queries/users/userQueries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/schemaDefinition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/codingChallenge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/codingProject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/course.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/crunchChallenge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/matchingGame/matchingGame.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/matchingGame/matchingGameAnswer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/matchingGame/matchingGameQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/pictureQuiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/quiz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/section.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/course/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/courseProgress/courseProgress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/courseProgress/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/forumQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/forumQuestionAnswers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/forumQuestion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/global/autocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/global/payout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/global/review.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphQL/schema/types/user/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/verifyAuthentication.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/verifyAuthenticationStrict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/forumQuestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/scripts/createXCourses.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploaders/removeSingleUpload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploaders/returnFileLocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploaders/singleFileUpload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploaders/singleVideoUpload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploaders/uploaderRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/application.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/globalResources/styles/global.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/npprogress.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/globalResources/styles/npprogress.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/globalResources/styles/variables.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -145,20 +40,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/next.config.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/globalHelpers/axiosCalls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="102" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodemon.json">
+        <entry file="file://$PROJECT_DIR$/globalHelpers/drawSVGPlugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="39" />
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,65 +83,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.less">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server.js">
+        <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/variables.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/globalHelpers/axiosCalls.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/application.less">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/globalLocalization.js">
+        <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/global.less">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/npprogress.less">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>summare</find>
       <find>summa</find>
       <find>summar</find>
       <find>showEnd</find>
@@ -254,6 +155,7 @@
       <find>approveCo</find>
       <find>courseStatusTe</find>
       <find>noti</find>
+      <find>http://localhost:8080</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -289,11 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/drawers/addCrunchChallenge/saveCrunchChallenge.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/addNewSection.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/deleteSection.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/reorderSections.js" />
-        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sections/updateSectionDetails.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addedVideosList.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/leftPanelContainer.js" />
         <option value="$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/sceneEditContainer/leftPanel/addANewVideoButton.js" />
@@ -337,15 +234,20 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/nodemon.json" />
         <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/globalHelpers/axiosCalls.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/now.json" />
+        <option value="$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/less/index.less" />
+        <option value="$PROJECT_DIR$/frontend/globalResources/styles/global.less" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/next.config.js" />
+        <option value="$PROJECT_DIR$/globalHelpers/axiosCalls.js" />
+        <option value="$PROJECT_DIR$/pages/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="613" />
-    <option name="width" value="1261" />
+    <option name="x" value="11" />
+    <option name="width" value="1863" />
     <option name="height" value="1079" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -354,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -361,11 +264,20 @@
               <item name="Course-Camp-Consumer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
+            <path>
+              <item name="Course-Camp-Consumer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="globalHelpers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Course-Camp-Consumer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,19 +291,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\Course-Camp-Consumer\frontend\globalResources\styles" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\Course-Camp-Consumer" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\coursesInReview\courseStates" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\icons" />
+      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\backgroundImages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\coursesInReview" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\community\communityQuestion" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\track" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\reusableComponents\loseModal" />
       <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\reusableComponents\winModal" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\Course-Camp-Consumer" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\frontend\reactComponents\courses\coursesInReview\courseStates" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\icons" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\backgroundImages" />
-      <recent name="C:\Users\Jalen &amp; Tammy\Desktop\GraphQL-API\static\videos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -431,7 +343,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="920795000" />
+    <option name="totallyTimeSpent" value="925784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -462,58 +374,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/track/reviewCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/reviewCourseDetails/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/setInitialStateFromData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/containerMethods/sharedMutationResponse.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/index.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/courseBuilder/less/publishCourse.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -557,40 +417,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/reviewCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/recordExercisePlayed.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/merge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/createCourse.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/courseByStatus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/reviewCourse.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/recordExercisePlayed.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/merge.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/index.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/createCourse.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/courseByStatus.js" />
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -609,20 +441,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/courses/courses.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/global/globalAutocomplete.js" />
     <entry file="file://$PROJECT_DIR$/frontend/reactComponents/users/loginModal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -684,23 +504,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/uploadProfileImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/middleware/verifyAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/auth.js" />
+    <entry file="file://$PROJECT_DIR$/server/graphQL/resolvers/users/uploadProfileImage.js" />
+    <entry file="file://$PROJECT_DIR$/server/middleware/verifyAuthentication.js" />
     <entry file="file://$PROJECT_DIR$/globalHelpers/handleAuthentication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -712,15 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,11 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/_app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -750,34 +544,14 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jest.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jest.setup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jest.config.js" />
+    <entry file="file://$PROJECT_DIR$/jest.setup.js" />
     <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/globalLocalization.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -801,17 +575,87 @@
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/globalHelpers/axiosCalls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/now.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/courses/viewCourse/less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/reactComponents/index/index.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/application.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/npprogress.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/globalResources/styles/global.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalHelpers/drawSVGPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalHelpers/axiosCalls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="102" />
         </state>
       </provider>
     </entry>

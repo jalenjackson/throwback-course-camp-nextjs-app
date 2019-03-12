@@ -1,0 +1,15 @@
+{
+  "name": "CourseCamp",
+  "alias": [
+    "teamcoursecamp.com",
+    "www.teamcoursecamp.com"
+  ],
+  "version": 2,
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "package.json", "use": "@now/node-server" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.js" }
+  ]
+}

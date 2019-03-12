@@ -5,8 +5,8 @@ import { VerifyAuthentication } from '../globalHelpers/verifyAuthentication';
 import Navbar from '../frontend/reactComponents/globalComponents/navbar/index';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import NProgress from 'nprogress'
-import '../static/styles/application.less';
-import '../static/styles/global.less';
+import '../frontend/globalResources/styles/application.less';
+import '../frontend/globalResources/styles/global.less';
 import '../frontend/reactComponents/users/less/modals.less';
 import '../frontend/reactComponents/index/index.less';
 import '../frontend/reactComponents/globalComponents/navbar/index.less';
@@ -27,7 +27,7 @@ import '../frontend/reactComponents/courses/search/index.less';
 import '../frontend/reactComponents/courses/track/review/index.less';
 import '../frontend/reactComponents/courses/reusableComponents/index.less';
 import '../frontend/reactComponents/courses/track/index.less';
-import '../static/styles/npprogress.less';
+import '../frontend/globalResources/styles/npprogress.less';
 
 import Router from 'next/router';
 NProgress.configure({ easing: 'linear', speed: 500, trickleSpeed: 200, trickle: true });
