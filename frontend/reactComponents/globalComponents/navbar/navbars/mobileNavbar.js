@@ -24,15 +24,15 @@ export default class MobileNavbar extends React.Component {
             visible={ this.state.visible }>
           <Menu onClick={ e => this.props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [this.props.navbarContainer.state.activeLink] } mode="inline">
             <AutoComplete
-              dataSource={ props.navbarContainer.state.autoCompleteDataSource }
-              value={ props.navbarContainer.state.autocompleteTerm }
-              onChange={ term => props.navbarContainer.setContainerState('autocompleteTerm', term) }
-              onSearch={ props.navbarContainer.getAutoCompleteDataResults }
+              dataSource={ this.props.navbarContainer.state.autoCompleteDataSource }
+              value={ this.props.navbarContainer.state.autocompleteTerm }
+              onChange={ term => this.props.navbarContainer.setContainerState('autocompleteTerm', term) }
+              onSearch={ this.props.navbarContainer.getAutoCompleteDataResults }
               placeholder={ Localization.Search.Placeholder }>
-              <Input onKeyDown={ e => navigateToSearch(e, props, false) } suffix={
+              <Input onKeyDown={ e => navigateToSearch(e, this.props, false) } suffix={
                 <Icon
-                  onClick={ e => navigateToSearch(e, props, true) }
-                  type={ !props.navbarContainer.state.isNavigating ? 'search' : 'loading' }
+                  onClick={ e => navigateToSearch(e, this.props, true) }
+                  type={ !this.props.navbarContainer.state.isNavigating ? 'search' : 'loading' }
                   className="certain-category-icon" />
               } />
             </AutoComplete>
