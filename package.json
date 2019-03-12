@@ -4,7 +4,7 @@
   "description": "The official course camp consumer Next.js & React.js frontend",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon server.js --watch server",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "deploy": "now && now alias",

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Drawer, Menu, Icon, AutoComplete, Input, Avatar, Badge } from 'antd';
 import Localization from '../localization';
+import {Link, Router} from '../../../../../routes'
+import { navigateToSearch } from "./navigateToSearch";
 
 export default class MobileNavbar extends React.Component {
   state = { visible: false };
@@ -10,8 +12,10 @@ export default class MobileNavbar extends React.Component {
     const MenuItemGroup = Menu.ItemGroup;
     return (
       <div id='mobile-navbar'>
-        <a>Logo</a>
-        <img alt="mobile menu" onClick={ () => this.setState({ visible: true }) } src='/static/icons/hamburger.png' />
+        <Link to='/'>
+          <a><img src='/static/icons/logo.svg' /> Course Camp</a>
+        </Link>
+        <img className='hamburger' alt="mobile menu" onClick={ () => this.setState({ visible: true }) } src='/static/icons/hamburger.png' />
         <Drawer
             title="Basic Drawer"
             placement="right"
@@ -20,10 +24,17 @@ export default class MobileNavbar extends React.Component {
             visible={ this.state.visible }>
           <Menu onClick={ e => this.props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [this.props.navbarContainer.state.activeLink] } mode="inline">
             <AutoComplete
-                dataSource={ this.props.navbarContainer.state.autoCompleteDataSource }
-                onSearch={ this.props.navbarContainer.getAutoCompleteDataResults }
-                placeholder={ Localization.Search.Placeholder }>
-              <Input suffix={ <Icon type="search" className="certain-category-icon" /> } />
+              dataSource={ props.navbarContainer.state.autoCompleteDataSource }
+              value={ props.navbarContainer.state.autocompleteTerm }
+              onChange={ term => props.navbarContainer.setContainerState('autocompleteTerm', term) }
+              onSearch={ props.navbarContainer.getAutoCompleteDataResults }
+              placeholder={ Localization.Search.Placeholder }>
+              <Input onKeyDown={ e => navigateToSearch(e, props, false) } suffix={
+                <Icon
+                  onClick={ e => navigateToSearch(e, props, true) }
+                  type={ !props.navbarContainer.state.isNavigating ? 'search' : 'loading' }
+                  className="certain-category-icon" />
+              } />
             </AutoComplete>
             <Menu.Item key={ Localization.MenuKeys.Home }>
               <a>{ Localization.Home }</a>

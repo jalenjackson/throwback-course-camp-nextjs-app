@@ -1,10 +1,11 @@
 import React from 'react';
 import { Menu, Icon, Button, Input, AutoComplete, Badge, Avatar } from 'antd';
 import _ from 'lodash';
-import {BrainFlopLogoSVG, MoneySVG, PaperWithBulletPointsSVG} from '../../svgs/index';
+import {MoneySVG, PaperWithBulletPointsSVG, Logo} from '../../svgs/index';
 import Localization from '../localization';
 import GlobalLocalization from '../../../../../globalLocalization';
 import { Router, Link } from '../../../../../routes';
+import { navigateToSearch } from "./navigateToSearch";
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -14,7 +15,9 @@ const DesktopNavbar = props => (
     <Menu onClick={ e => props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [props.navbarContainer.state.activeLink] } mode="horizontal">
       <Menu.Item key={ Localization.MenuKeys.Home }>
         <Link to='/'>
-          <a>{ Localization.Home }</a>
+          <a>
+            <Icon style={{ width: 35, height: 35 }} className="navbar-paper-with-bullets" component={ Logo } />{ Localization.Home }
+          </a>
         </Link>
       </Menu.Item>
       <AutoComplete
@@ -65,12 +68,6 @@ const DesktopNavbar = props => (
           </a>
         </Link>
       </Menu.Item>
-      <Menu.Item key='brainflop'>
-        <a target='_blank' href='https://brainflop.com'>
-          <Icon className="navbar-brainflop-svg" component={ BrainFlopLogoSVG } />
-          BrainFlop
-        </a>
-      </Menu.Item>
       { !props.navbarContainer.state.authenticated
         ? <Menu.Item onClick={() => props.navbarContainer.setContainerState('registerFormVisibility', true)}
              style={ inlineStyling(props.navbarContainer.state.authenticated).NonAuthenticatedMenuItems }
@@ -95,14 +92,6 @@ const DesktopNavbar = props => (
     </Menu>
   </div>
 );
-
-const navigateToSearch = async (e, props, isClicked) => {
-  if (isClicked || e.key === 'Enter') {
-    await props.navbarContainer.setContainerState('isNavigating', true);
-    await Router.pushRoute(`/courses/search/${ _.kebabCase(props.navbarContainer.state.autocompleteTerm) }?page=1`);
-    props.navbarContainer.setContainerState('isNavigating', false);
-  }
-};
 
 const inlineStyling = () => {
   return {

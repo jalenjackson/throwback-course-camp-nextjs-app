@@ -11,3 +11,7 @@ export const PaperWithBulletPointsSVG = () => (
 export const BrainFlopLogoSVG = () => (
   <object data="/static/icons/brainflop-logo.svg" type="image/svg+xml" />
 );
+
+export const Logo = () => (
+  <object data="/static/icons/logo.svg" type="image/svg+xml" />
+);

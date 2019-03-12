@@ -16,8 +16,8 @@ export default class Footer extends React.Component {
         { this.state.loaded
           ?
             <div style={{ marginTop: this.props.marginTop }} className='company-footer'>
-              <img src='/static/icons/paperWithBulletPoints.svg' />
-              <h1 className='footer-company-name'>Company Name</h1>
+              <img src='/static/icons/logo.svg' />
+              <h1 className='footer-company-name'>Course Camp</h1>
               <div className="company-footer-items">
                 <Row gutter={16}>
                   <Col className="gutter-row" span={6}>
