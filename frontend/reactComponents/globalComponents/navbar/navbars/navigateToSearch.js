@@ -8,3 +8,11 @@ export const navigateToSearch = async (e, props, isClicked) => {
     props.navbarContainer.setContainerState('isNavigating', false);
   }
 };
+
+export const inlineStyling = () => {
+  return {
+    NonAuthenticatedMenuItems: { float: 'right' },
+    AuthenticatedMenuItems: { float: 'right', marginRight: '20px' },
+    AuthenticatedBadge: { transform: 'translate(-13px, -5px)' },
+  }
+};

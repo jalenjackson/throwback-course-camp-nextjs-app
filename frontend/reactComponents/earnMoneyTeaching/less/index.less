@@ -73,7 +73,7 @@
     .course-builder-preview {
       opacity: 0;
       transform: translate3d(0, 60px, 0);
-      background: url("/static/backgroundImages/course-categories.svg") center center no-repeat;
+      background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("/static/backgroundImages/course-categories.svg") center center no-repeat;
       width: 80%;
       display: block;
       margin: 0 auto;
@@ -101,10 +101,8 @@
     font-weight: lighter;
     color: rgb(80, 80, 105);
     margin-bottom: 30px;
-    font-family: GothamLight, sans-serif;
     span {
       color: #00CC6F;
-      font-family: GothamLight, sans-serif
     }
   }
   .value-props {
@@ -114,7 +112,7 @@
     transform: translate3d(0, 60px, 0);
     overflow: hidden;
     position: relative;
-    background: url('/static/backgroundImages/woman-laying-back-at-home.jpg') center center no-repeat;
+    background: linear-gradient(rgba(48,56,83, 0.7), rgba(48,56,83, 0.95)), url('/static/backgroundImages/woman-laying-back-at-home.jpg') center center no-repeat;
     background-size: cover;
     video {
       position: absolute;
@@ -137,18 +135,19 @@
         margin-left: 200px;
         width: 600px;
         h1 {
-          color: rgb(80, 80, 100);
+          color: white;
           font-size: 40px;
-          font-family: GothamLight, sans-serif;
           opacity: 0;
           transform: translate3d(0, 60px, 0);
         }
         p {
-          color: rgb(80, 80, 100);
+          color: white;
           font-size: 17px;
           margin-top: 30px;
           width: 60%;
           opacity: 0;
+          font-family: GothamLight, sans-serif;
+          font-weight: bold;
           transform: translate3d(0, 60px, 0);
         }
         button {

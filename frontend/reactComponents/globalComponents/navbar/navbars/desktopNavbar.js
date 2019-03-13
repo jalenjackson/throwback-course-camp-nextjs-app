@@ -5,7 +5,7 @@ import {MoneySVG, PaperWithBulletPointsSVG, Logo} from '../../svgs/index';
 import Localization from '../localization';
 import GlobalLocalization from '../../../../../globalLocalization';
 import { Router, Link } from '../../../../../routes';
-import { navigateToSearch } from "./navigateToSearch";
+import { navigateToSearch, inlineStyling } from "./navigateToSearch";
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -16,7 +16,7 @@ const DesktopNavbar = props => (
       <Menu.Item key={ Localization.MenuKeys.Home }>
         <Link to='/'>
           <a>
-            <Icon style={{ width: 35, height: 35 }} className="navbar-paper-with-bullets" component={ Logo } />{ Localization.Home }
+            <Icon style={{ width: 35, height: 35, transform: 'translateY(10px)' }} className="navbar-paper-with-bullets" component={ Logo } />{ Localization.Home }
           </a>
         </Link>
       </Menu.Item>
@@ -68,19 +68,19 @@ const DesktopNavbar = props => (
           </a>
         </Link>
       </Menu.Item>
-      { !props.navbarContainer.state.authenticated
+      { !props.auth.authenticated
         ? <Menu.Item onClick={() => props.navbarContainer.setContainerState('registerFormVisibility', true)}
              style={ inlineStyling(props.navbarContainer.state.authenticated).NonAuthenticatedMenuItems }
              key={ Localization.MenuKeys.Register }>
             <Button type="dashed">{ Localization.MenuLinks.Register }</Button>
           </Menu.Item> : null
       }
-      { !props.navbarContainer.state.authenticated
+      { !props.auth.authenticated
           ? <Menu.Item onClick={ () => props.navbarContainer.setContainerState('loginFormVisibility', true) } style={ inlineStyling(props.navbarContainer.state.authenticated).NonAuthenticatedMenuItems } key={ Localization.MenuKeys.Login }>
               <a>{ Localization.MenuLinks.Login }</a>
             </Menu.Item> : null
       }
-      { props.navbarContainer.state.authenticated ?
+      { props.auth.authenticated ?
          <Menu.Item style={ inlineStyling(props.navbarContainer.state.authenticated).AuthenticatedMenuItems } onClick={ () => props.navbarContainer.setContainerState('profileDrawerVisibility', true) }>
            <span>
              <Badge className="navbar-authenticated-badge" style={{ transform: 'translate(12px, -3px)', fontSize: 11 }} count={10}>
@@ -92,13 +92,5 @@ const DesktopNavbar = props => (
     </Menu>
   </div>
 );
-
-const inlineStyling = () => {
-  return {
-    NonAuthenticatedMenuItems: { float: 'right' },
-    AuthenticatedMenuItems: { float: 'right', marginRight: '20px' },
-    AuthenticatedBadge: { transform: 'translate(-13px, -5px)' },
-  }
-};
 
 export default DesktopNavbar
