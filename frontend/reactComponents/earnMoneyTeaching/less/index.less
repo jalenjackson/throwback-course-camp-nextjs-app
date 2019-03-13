@@ -1,3 +1,5 @@
+@import '../../../globalResources/styles/variables';
+
 #earn-money-teaching {
   .get-started-teaching-cta {
     display: flex;
@@ -10,7 +12,7 @@
       font-size: 20px;
       color: white;
     }
-  }
+}
 
   .course-builder-value-props {
     display: flex;
@@ -18,6 +20,16 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
+    @media @desktop {
+      display: block;
+      width: 90%;
+    }
+    .course-builder-value-prop-middle {
+      @media @desktop {
+        margin-top: -60px;
+        margin-bottom: 20px
+      }
+    }
     .course-builder-value-prop {
       width: 33.3%;
       height: 400px;
@@ -25,6 +37,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media @desktop {
+        width: 100%;
+      }
       .course-builder-value-prop-inner {
         width: 85%;
         height: 85%;
@@ -65,6 +80,9 @@
       width: auto;
       left: 0;
       top: 0;
+      @media @desktop {
+        display: none
+      }
     }
     .course-preview-container-bg-img-2 {
       right: 0;
@@ -83,6 +101,9 @@
       border: 3px solid #00CC6F;
       border-radius: 4px;
       overflow: hidden;
+      @media @desktop {
+        display: none;
+      }
       video {
         position: absolute;
         top: 0;
@@ -97,10 +118,16 @@
     opacity: 0;
     transform: translate3d(0, 60px, 0);
     text-align: center;
-    margin-top: 50px;
     font-weight: lighter;
     color: rgb(80, 80, 105);
+    width: 85%;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 50px;
+    @media @desktop {
+      font-size: 25px;
+    }
     span {
       color: #00CC6F;
     }
@@ -114,6 +141,9 @@
     position: relative;
     background: linear-gradient(rgba(48,56,83, 0.7), rgba(48,56,83, 0.95)), url('/static/backgroundImages/woman-laying-back-at-home.jpg') center center no-repeat;
     background-size: cover;
+    @media @phone {
+      background: rgb(48,56,83)
+    }
     video {
       position: absolute;
       top: 0;
@@ -134,25 +164,52 @@
       .overlay-copy {
         margin-left: 200px;
         width: 600px;
+        @media @desktop {
+          margin-left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+        }
         h1 {
           color: white;
           font-size: 40px;
           opacity: 0;
           transform: translate3d(0, 60px, 0);
+          @media @phone {
+            font-size: 26px;
+            width: 85%;
+            display: block;
+            margin: 0 auto;
+          }
         }
         p {
           color: white;
           font-size: 17px;
-          margin-top: 30px;
+          margin-top: 10px;
           width: 60%;
           opacity: 0;
           font-family: GothamLight, sans-serif;
           font-weight: bold;
           transform: translate3d(0, 60px, 0);
+          margin-left: 5px;
+          @media @desktop {
+            width: 44%;
+            margin-top: 10px;
+          }
+          @media @phone {
+            width: 80%;
+          }
         }
         button {
           opacity: 0;
           transform: translate3d(0, 30px, 0);
+          margin-top: 10px;
+          @media @desktop {
+            margin-top: 30px;
+          }
         }
       }
     }

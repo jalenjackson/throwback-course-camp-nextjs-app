@@ -21,18 +21,13 @@ export default class Footer extends React.Component {
               <div className="company-footer-items">
                 <Row gutter={16}>
                   <Col className="gutter-row" span={6}>
-                    <h1>Learn</h1>
-                    <a>Courses</a>
+                    <h1>All Courses</h1>
+                    <a>Categories</a>
                     <a>Community</a>
                   </Col>
                   <Col className="gutter-row" span={6}>
-                    <h1>Practice</h1>
-                    <a>Quizzes</a>
-                    <a>Picture Quizzes</a>
-                    <a>Matching Games</a>
-                    <a>Crunch Challenges</a>
-                    <a>Coding Challenges</a>
-                    <a>Coding Projects</a>
+                    <h1>Become A Teacher</h1>
+                    <a>Earn Money Teaching</a>
                   </Col>
                   <Col className="gutter-row" span={6}>
                     <h1>Join</h1>
@@ -47,7 +42,7 @@ export default class Footer extends React.Component {
                 </Row>
               </div>
               <div className="bottom-footer">
-                <Divider className="bottom-footer-divider">© Company Name, LLC</Divider>
+                <Divider className="bottom-footer-divider">©2019 Course Camp, LLC</Divider>
               </div>
             </div>
           : <div style={ loaderStyle } />
