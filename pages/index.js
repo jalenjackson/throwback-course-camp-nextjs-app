@@ -20,26 +20,30 @@ Index.getInitialProps = async () => {
     const courses = await GraphQlMutate(GraphQlDevURI, `
     query {
       courses(limit: 10) {
-        _id
-        title
-        description
-        price
-        category
-        rating
-        sections {
-          videos {
-            videoLocation
+        publishedCourse {
+          _id
+          title
+          description
+          price
+          category
+          rating
+          sections {
+            videos {
+              videoLocation
+            }
           }
-        }
-        color
-        summary
-        creator {
-          name
+          color
+          summary
+          creator {
+            name
+          }
         }
       }
     }
   `);
-    return { courses: courses.data.data.courses, isRequestFromServer }
+    const coursesResponse = courses.data.data.courses;
+    console.log(courses.data)
+    return { courses: coursesResponse, isRequestFromServer }
   } catch (e) {
     return { courses: false }
   }

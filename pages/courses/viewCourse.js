@@ -53,14 +53,21 @@ ViewCourse.getInitialProps = async (ctx) => {
           _id
           name
         }
-        ${ courseResponse }
+        publishedCourse {
+          ${ courseResponse }
+        }
       }
     }
   `);
-    const singleCourse = course.data.data.singleCourse;
+    const singleCourse = course.data.data.singleCourse.publishedCourse;
+    if (!singleCourse) {
+      return typeof document === 'undefined'
+        ? ctx.res.redirect('/')
+        : window.location.href = '/';
+    }
     singleCourse.description = atob(singleCourse.description);
     return {
-      course: course.data.data.singleCourse,
+      course: singleCourse,
       isRequestFromServer
     }
   } catch(e) {

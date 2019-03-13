@@ -8,7 +8,13 @@ export const courseResponse = `
   learning
   language
   category
+  rating
+  date
   status
+  creator {
+    _id
+    name
+  }
   sections {
     title
     description

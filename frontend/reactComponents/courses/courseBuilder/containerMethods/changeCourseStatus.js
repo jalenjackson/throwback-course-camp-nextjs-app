@@ -2,6 +2,7 @@ import axios from 'axios';
 import GlobalLocalization from '../../../../../globalLocalization';
 import { setCourseStatusText } from './misc/setInitialStateFromData';
 import { message } from 'antd';
+import { host } from "../../../../../globalHelpers/axiosCalls";
 
 export const call = async (context, auth, status) => {
   try {
@@ -16,7 +17,7 @@ export const call = async (context, auth, status) => {
       course: context.state.course
     };
 
-    await axios.post('http://localhost:5000/api-routes/change-course-status',
+    await axios.post(`${ host }/api-routes/change-course-status`,
       JSON.stringify(body),
       { headers });
     const course = context.state.course;

@@ -18,17 +18,31 @@ export const call = async (context, form) => {
   try {
     const registrationResponse = await GraphQlMutate(GraphQlDevURI, `
       mutation {
-        createUser(userInput: 
-        { 
+        createUser(userInput:
+        {
           name: "${context.state.name}",
-          email: "${context.state.email}", 
-          password: "${context.state.password}" 
-        }) 
+          email: "${context.state.email}",
+          password: "${context.state.password}"
+        })
         {
           _id
           email
           name
           token
+          moneyMade
+          profileImage
+          payoutHistory {
+            payoutBatchId
+            emailAddressReceiver
+            amount
+          }
+          paidCourses {
+            _id
+          }
+          courseProgress {
+            courseId
+            exercisesPlayed
+          }
         }
       }
     `);
@@ -49,7 +63,7 @@ export const call = async (context, form) => {
       authenticated: true,
       authorizationToken: registrationResponse.data.data.createUser.token
     });
-    message.success("We are so glad you are joining us! Now it's time to learn something new!", 2.5);
+    window.location.reload();
   } catch(e) {
     context.setState({
       registerErrorMessage: Localization.NavbarContainer.UnexpectedError,

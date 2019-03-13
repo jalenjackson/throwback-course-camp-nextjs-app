@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon, Input, Button, Upload, message } from 'antd';
 import GlobalLocalization from '../../../../../../globalLocalization';
+import { host } from "../../../../../../globalHelpers/axiosCalls";
 
 const ButtonGroup = Button.Group;
 
@@ -15,7 +16,7 @@ export default class AddedAnswer extends React.Component {
   render() {
     const props = {
       name: 'singleFile',
-      action: '/uploaders/single-upload',
+      action: `${ host }/uploaders/single-upload`,
       headers: {
         Authorization: `Bearer ${ this.props.auth.token }`,
       }
@@ -29,7 +30,9 @@ export default class AddedAnswer extends React.Component {
               <div style={{ marginTop: 10 }}>
                 <ButtonGroup style={{ marginTop: 10 }}>
                   <Button onClick={ () => this.setState({ isEditingQuestion: false }) }>Cancel</Button>
-                  <Upload onChange={ info => this.handleNewImageUpload(info, questionIterator, answerIterator, type) } {...props}>
+                  <Upload
+                    onChange={ info => this.handleNewImageUpload(info, questionIterator, answerIterator, type) }
+                    {...props}>
                     <Button>
                       <Icon type={ this.state.savingQuestion ? 'loading' : 'upload' } /> Upload a new image
                     </Button>

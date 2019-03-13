@@ -2,6 +2,7 @@ import React from 'react';
 import { Form, Input, Icon, Button, Drawer, Collapse, Popconfirm, Upload } from 'antd';
 import AddedAnswer from './addedAnswer';
 import AddAnotherAnswer from './addAnotherAnswer';
+import { host } from "../../../../../../globalHelpers/axiosCalls";
 
 const Panel = Collapse.Panel;
 
@@ -90,7 +91,7 @@ class AddQuizDrawer extends React.Component {
                 accept='image/gif, image/jpeg, image/png'
                 onChange={ this.handleUploadOptionalImage }
                 headers={{ Authorization: `Bearer ${ this.props.auth.token }` }}
-                action="/uploaders/single-upload"
+                action={ `${ host }/uploaders/single-upload` }
                 name="singleFile">
               <Button>
                 <Icon type="upload" /> Click to Upload

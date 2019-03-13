@@ -2,6 +2,7 @@ import React from 'react';
 import {Form, Icon, Button, Drawer, Upload, Input, Collapse, Popconfirm} from 'antd';
 import AddedAnswer from "./addedAnswer";
 import AddAnotherAnswer from "./addAnotherAnswer";
+import { host } from "../../../../../../globalHelpers/axiosCalls";
 
 const Panel = Collapse.Panel;
 
@@ -40,7 +41,7 @@ class AddPictureDrawer extends React.Component {
 
     const uploaderOptions = {
       name: 'singleFile',
-      action: '/uploaders/single-upload',
+      action: `${ host }/uploaders/single-upload`,
       listType: 'picture',
       className: 'upload-list-inline',
       fileList: this.state.fileList,
@@ -61,7 +62,10 @@ class AddPictureDrawer extends React.Component {
             <Icon type="info-circle" /> The first image you upload will be considered the correct answer to the question you ask. <br/><br/>
             <label>Enter a question</label>
             <Input value={ this.state.questionTerm } onChange={ e => this.setState({ questionTerm: e.target.value }) } />
-            <Upload accept='image/gif, image/jpeg, image/png' onChange={ this.handleUploaderChangeEvent } { ...uploaderOptions }>
+            <Upload
+              accept='image/gif, image/jpeg, image/png'
+              onChange={ this.handleUploaderChangeEvent }
+              { ...uploaderOptions }>
               <Button style={{ marginTop: 10 }}>
                 <Icon type="upload" /> Upload an answer
               </Button>

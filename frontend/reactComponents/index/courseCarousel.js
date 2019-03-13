@@ -20,29 +20,29 @@ const CourseCarousel = props => (
         <Carousel { ...slickSliderOptions }>
           { props.courses.map((course, i) => (
             <div key={ i } className="inner-carousel">
-              <div style={{ background: course.color }} className='top-info'>
+              <div style={{ background: course.publishedCourse.color }} className='top-info'>
                 <h2 className="top-info-header">24 hours</h2>
               </div>
               <div className='carousel-copy'>
-                <h1>{ _.truncate(course.title, { length: 30 }) }</h1>
-                <p>{ _.truncate(course.summary, { length: 60 }) }</p>
+                <h1>{ _.truncate(course.publishedCourse.title, { length: 30 }) }</h1>
+                <p>{ _.truncate(course.publishedCourse.summary, { length: 60 }) }</p>
                 <p>Taught by
-                  <a>{ _.truncate(` ${course.creator.name}`, { length: 20 }) }</a>
+                  <a>{ _.truncate(` ${course.publishedCourse.creator.name}`, { length: 20 }) }</a>
                 </p>
-                <Link route={`/courses/category/${ _.kebabCase(course.category) }?page=1`} className="course-category">
-                  <a style={{ marginLeft: 20, paddingTop: 5, display: 'block' }}>{ course.category }</a>
+                <Link route={`/courses/category/${ _.kebabCase(course.publishedCourse.category) }?page=1`} className="course-category">
+                  <a style={{ marginLeft: 20, paddingTop: 5, display: 'block' }}>{ course.publishedCourse.category }</a>
                 </Link>
                 <p className='price'>
                   <img alt="Money icon" src="/static/icons/money.svg" />
-                  ${ course.price }
+                  ${ course.publishedCourse.price }
                 </p>
                 <span>
                   <Rate style={ styles.Rating } disabled defaultValue={ course.rating } />
                 </span>
               </div>
-              <Popover content={ popOverContent() } title={`Purchase this course for $${ course.price }`}>
-                <Link to={ `/courses/view/${ course._id }` }>
-                  <Button style={{ background: course.color }} className='explore-button' type="primary" icon="eye">
+              <Popover content={ popOverContent() } title={`Purchase this course for $${ course.publishedCourse.price }`}>
+                <Link to={ `/courses/view/${ course.publishedCourse._id }` }>
+                  <Button style={{ background: course.publishedCourse.color }} className='explore-button' type="primary" icon="eye">
                     View Course
                   </Button>
                 </Link>

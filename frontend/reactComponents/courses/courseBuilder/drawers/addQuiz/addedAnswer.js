@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon, Input, Button, Upload } from 'antd';
+import { host } from "../../../../../../globalHelpers/axiosCalls";
 
 const ButtonGroup = Button.Group;
 
@@ -29,7 +30,7 @@ export default class AddedAnswer extends React.Component {
                         accept='image/gif, image/jpeg, image/png'
                         onChange={ this.handleUploadOptionalImage }
                         headers={{ Authorization: `Bearer ${ this.props.auth.token }` }}
-                        action="/uploaders/single-upload"
+                        action={ `${ host }/uploaders/single-upload` }
                         name="singleFile">
                       <Button>
                         <Icon type="upload" /> Click to Upload

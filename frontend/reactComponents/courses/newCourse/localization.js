@@ -67,13 +67,13 @@ let localization = new LocalizedStrings({
       Review: {
         Label: 'Review Your course Details',
         PopoverTitle: 'Adding a image',
-        CustomerViewingTab: 'When a customer is viewing',
+        CustomerViewingTab: 'When a customer is viewing your course',
         TaughtBy: 'Taught by',
         MoneyIconAlt: 'Money Icon',
         ViewCourse: 'View course',
         CustomerPurchases: 'View when a customer purchases',
         GetStarted: 'Get Started',
-        PopoverContent: 'Below shows how the user will view your course if they are interested directly through our website.',
+        PopoverContent: 'Below shows how the user will view your course.',
         ExploreButtonPopoverContent: `When a customer clicks this button, the customer will be taken to a page to 
                                       view all of the sections available in your course.
                                       On this page they can preview your first video, see all of 

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { message } from 'antd';
+import { host } from "../../../../../globalHelpers/axiosCalls";
 
 export const call = async (context, auth, course, status) => {
   try {
@@ -14,7 +15,7 @@ export const call = async (context, auth, course, status) => {
       course: course
     };
     
-    await axios.post('http://localhost:5000/api-routes/change-course-status',
+    await axios.post(`${ host }/api-routes/change-course-status`,
       JSON.stringify(body),
       { headers });
     message.success('Successfully set course status to ' + status)

@@ -8,6 +8,14 @@
   justify-content: center;
   align-items: center;
   background: blue;
+  @media @desktop {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px
+  }
   .course-information-text-container {
     width: 85%;
     height: 85vh;
@@ -16,11 +24,17 @@
     border-radius: 3px;
     overflow-y: auto;
     margin-top: -40px;
+    @media @desktop {
+      width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
     .summary {
       margin-top: 5px;
       margin-left: 30px;
     }
-    h1 {
+    .course-information-title {
       margin-left: 30px;
       margin-top: 30px;
       font-size: 26px;
@@ -36,13 +50,17 @@
       transform: translateY(0px);
     }
     .description {
-      line-height: 22px;
       width: 90%;
       display: block;
       margin: 0 auto;
       overflow-x: hidden;
-      color: rgb(130, 130, 130);
       margin-top: -30px;
+      padding-bottom: 50px;
+      img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   .course-information-text-container::-webkit-scrollbar {

@@ -1,20 +1,20 @@
 import btoa from 'btoa';
 import { message } from 'antd';
 import { cleanData } from './helpers';
-import { sessionExpired } from './helpers';
 import { GraphQlDevURI, GraphQlMutate } from '../../../../../globalHelpers/axiosCalls';
 import GlobalLocalization from '../../../../../globalLocalization';
+import { Router } from '../../../../../routes';
 
-export const callSaveCourse = async (context, token, navbarContainer, auth) => {
+export const callSaveCourse = async (context, auth) => {
+  const loadingIndicator = message.loading('Getting you all set up...', 0);
   try {
-    const loadingIndicator = message.loading('Getting you all set up...', 0);
-    context.setState({isSavingCourse: true});
+    context.setState({ isSavingCourse: true });
     if (allFieldsAreFilledIn(context)) {
       const saveCourseResponse = await GraphQlMutate(GraphQlDevURI, `
       mutation {
         createCourse(courseInput: {
           title: "${cleanData(context.state.title)}",
-          description: "${ btoa(unescape(encodeURIComponent(context.state.description))) }",
+          description: "${btoa(unescape(encodeURIComponent(context.state.description)))}",
           category: "${cleanData(context.state.category)}", 
           price: ${+context.state.price},
           color: "${context.state.color}",
@@ -23,40 +23,20 @@ export const callSaveCourse = async (context, token, navbarContainer, auth) => {
           summary: "${context.state.summary}",
           rating: 0
         }) {
+          _id
           title
         }
       }
-    `, token);
-      const courseResponseBody = saveCourseResponse.data;
-      console.log(courseResponseBody.errors)
-      if (courseResponseBody.errors && courseResponseBody.errors.length > 0) {
-        if (courseResponseBody.errors[0].message === 'Unauthenticated!') {
-          context.setState({isSavingCourse: false});
-          setTimeout(loadingIndicator, 10);
-          sessionExpired(navbarContainer);
-        } else {
-          context.setState({isSavingCourse: false});
-          setTimeout(loadingIndicator, 0.01);
-          message.error(GlobalLocalization.UnexpectedError);
-        }
-      } else {
-        if (courseResponseBody.data.createCourse !== null) {
-          context.setState({isSavingCourse: false});
-          message.success(`Awesome ${auth.name}! Now it's time to start adding your content`);
-          localStorage.removeItem('newCourseLocalState');
-          setTimeout(loadingIndicator, 10);
-        } else {
-          setTimeout(loadingIndicator, 10);
-          message.error(GlobalLocalization.UnexpectedError);
-        }
-      }
-    } else {
+    `, auth.token);
+      context.setState({ isSavingCourse: false });
+      message.success(`Awesome ${ auth.name }! Now it's time to start adding your content`);
+      localStorage.removeItem('newCourseLocalState');
       setTimeout(loadingIndicator, 10);
-      context.setState({isSavingCourse: false});
-      message.error(GlobalLocalization.FieldsNotFilledIn)
+      Router.pushRoute(`/courses/build/${ saveCourseResponse.data.data.createCourse._id }?newcourse=true`)
     }
   } catch (e) {
-    console.log(e)
+    message.error(GlobalLocalization.UnexpectedError);
+    setTimeout(loadingIndicator, 10);
   }
 };
 

@@ -233,9 +233,6 @@
     @media @desktop {
       width: 80%;
     }
-    @media @tablet {
-      width: 100%;
-    }
     .earn-money-cta-text-container {
       width: 80%;
       height: 100%;
@@ -246,6 +243,9 @@
       h1 {
         color: white;
         margin-top: 110px;
+        @media @tablet {
+          font-size: 24px;
+        }
       }
       p {
         color: white;
@@ -265,6 +265,9 @@
       padding-top: 40px;
       @media @desktop {
         width: 85%;
+      }
+      @media @tablet {
+        width: 60%;
       }
     }
   }

@@ -38,7 +38,6 @@ const sections = props => {
                       { video.codingChallenge ? <Timeline.Item>Coding Exercise</Timeline.Item> : null }
                       { video.codingProject ? <Timeline.Item>Coding Project</Timeline.Item> : null }
                     </Timeline>
-                    <Button type="primary">Preview</Button>
                   </Panel>
                 </Collapse>
               )) : null }

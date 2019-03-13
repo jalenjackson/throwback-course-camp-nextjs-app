@@ -51,6 +51,7 @@ export default class AddImage extends React.Component {
                           content={ previewPopoverContent }
                           title={ ReviewLocalized.PreviewButton }>
                         <img
+                            style={{ transform: 'scale(1.7)' }}
                             alt={ ReviewLocalized.PreviewButton }
                             className='preview-button'
                             src='/static/icons/video-play.svg' />
@@ -59,18 +60,12 @@ export default class AddImage extends React.Component {
                   </div>
                 </div>
               </TabPane>
-              <TabPane tab={ ReviewLocalized.CustomerPurchases } key='2'>
-                <p>View for When user buys. Come back to this later</p>
-              </TabPane>
             </Tabs>
           </div>
         { this.props.isFromBuildCourse
           ? null
           : <Button
-                onClick={ () => this.props.container.saveCourse(
-                  this.props.navbarContainer.state.authorizationToken,
-                  this.props.navbarContainer,
-                  this.props.auth) }
+                onClick={ () => this.props.container.saveCourse(this.props.auth) }
                 type='primary'
                 loading={ this.props.container.state.isSavingCourse }
                 className='new-course-next-and-back-button'>

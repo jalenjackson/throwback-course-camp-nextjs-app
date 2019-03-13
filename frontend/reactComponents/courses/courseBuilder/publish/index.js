@@ -9,7 +9,7 @@ export default class Publish extends React.Component {
   render() {
     const containerState = this.props.container.state;
     return (
-      <div style={{ marginBottom: 100 }} id='publish-course'>
+      <div style={{ marginBottom: 150 }} id='publish-course'>
         <div className='publish-course-button-container'>
           { containerState.course.status === 'Approved'
             ? <div>

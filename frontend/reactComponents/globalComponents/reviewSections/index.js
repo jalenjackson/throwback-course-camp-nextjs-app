@@ -14,7 +14,7 @@ export default class ReviewSections extends React.Component {
           ? <List { ...this.props } />
           : <div>
             <Empty
-                style={{ marginTop: 50 }}
+                style={{ marginTop: 50, marginBottom: 150 }}
                 image="https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original"
                 description={
                   <span>You have not added any videos for your course yet</span>

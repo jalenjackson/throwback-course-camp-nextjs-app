@@ -98,7 +98,7 @@ export default class AddedVideoList extends React.Component {
     const videos = this.props.container.state.course.sections[this.props.container.state.currentActiveSection].videos;
     if (videos && videos.length > 0) {
       return (
-          <Collapse onChange={ key => this.fillInVideoDetailsAndRenderVideo(key, videos, this.props) } style={{ marginTop: 20, marginBottom: 20 }} accordion>
+          <Collapse onChange={ key => this.fillInVideoDetailsAndRenderVideo(key, videos, this.props) } style={{ marginTop: 20, marginBottom: 100 }} accordion>
             { videos.map((video, i) =>
               <Panel className={ `video-panel-${ i }` } header={ `${ video.title ? video.title : 'Video ' + (i + 1) }` } key={ i }>
                 <label className='collapse-push-label collapse-remove-margin-top'>Enter a title for this video</label>

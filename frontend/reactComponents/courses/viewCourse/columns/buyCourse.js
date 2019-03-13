@@ -5,7 +5,7 @@ const BuyCourseWrapper = props => (
   <div className='buy-course-wrapper column-wrapper'>
     <div style={{ marginTop: '55px' }}>
       <h1 style={{ transform: 'translateY(-8px)', marginTop: 35 }} className="section-title">
-        <span>Purchase Course With PayPal</span>
+        <span>Purchase Course With PayPal For ${ props.course.price }</span>
       </h1>
       { typeof window !== 'undefined'
         ? <BuyCourse

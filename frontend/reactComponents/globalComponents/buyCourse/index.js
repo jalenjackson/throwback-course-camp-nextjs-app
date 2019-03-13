@@ -21,13 +21,14 @@ export default class BuyCourse extends React.Component {
       `, this.props.auth.token);
       const userCookie = new Cookies();
       const newAuthCookie = this.props.auth;
+      if (!newAuthCookie.paidCourses) newAuthCookie.paidCourses = [];
       newAuthCookie.paidCourses.push({ _id: this.props.course._id });
       userCookie.set('auth', newAuthCookie, { path: '/' });
       Router.pushRoute(`/courses/view/${ this.props.course._id }/track?enrolled=true`);
     };
     
     const onCancel = () => {
-      message.info('Let us know if there were any issues you encountered. customerservice@customerservice.com')
+      message.info('Let us know if there were any issues you encountered. help@teamcoursecamp.com')
     };
     
     const onError = () => {
@@ -47,6 +48,7 @@ export default class BuyCourse extends React.Component {
       <div>
         <div style={ this.props.auth.authenticated ? authenticatedStyles : nonAuthenticatedStyles }>
           <PaypalExpressBtn
+            shipping={ 1 }
             env={env}
             client={client}
             currency={currency}

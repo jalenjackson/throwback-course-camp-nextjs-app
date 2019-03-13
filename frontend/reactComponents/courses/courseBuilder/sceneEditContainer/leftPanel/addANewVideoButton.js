@@ -1,6 +1,7 @@
 import React from 'react';
-import { Upload, Button, Icon } from 'antd';
-import { handleUnauthenticatedButFrontEndThinksWeAre } from '../../../../../../globalHelpers/handleUnauthenticatedButFrontEndThinksWeAre';
+import { Upload, Button, Icon, message } from 'antd';
+import { host } from '../../../../../../globalHelpers/axiosCalls';
+import GlobalLocalization from "../../../../../../globalLocalization";
 
 export default class AddANewVideoButton extends React.Component {
   state = {
@@ -8,11 +9,11 @@ export default class AddANewVideoButton extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div style={{ marginBottom: 50, marginTop: 30 }}>
         <Upload
             accept='video/mp4,video/x-m4v,video/*'
             name='singleVideo'
-            action='/uploaders/single-video'
+            action={`${ host }/uploaders/single-video`}
             headers={{
               Authorization: `Bearer ${ this.props.auth.token }`,
               currentSection: `${ this.props.container.state.currentActiveSection }` }}
@@ -36,9 +37,7 @@ export default class AddANewVideoButton extends React.Component {
         $('.video-transition').css({ opacity: 0 });
       }, 400);
     } else if (info.file.status === 'error') {
-      if (info.file.response.unauthenticated) {
-        handleUnauthenticatedButFrontEndThinksWeAre(this.props.auth);
-      }
+      message.error(GlobalLocalization.UnexpectedError);
     }
   };
 }

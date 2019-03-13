@@ -3,10 +3,11 @@ import Head from 'next/head';
 import NewCourseComponent from '../../frontend/reactComponents/courses/newCourse/index';
 import { handleAuthentication } from '../../globalHelpers/handleAuthentication';
 
-const NewCourse = ({ auth }) => (
+const NewCourse = ({ auth, isRequestFromServer }) => (
     <div>
       <Head>
         <title>Create Course</title>
+        <style>{ globalStyle() }</style>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
@@ -17,13 +18,23 @@ const NewCourse = ({ auth }) => (
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
       </Head>
-      <NewCourseComponent auth={ auth } />
+      <NewCourseComponent auth={ auth } isRequestFromServer={ isRequestFromServer } />
     </div>
 );
 
 NewCourse.getInitialProps = async (ctx) => {
+  const isRequestFromServer = typeof window === 'undefined';
   handleAuthentication(ctx);
-  return {}
+  return { isRequestFromServer }
+};
+
+const globalStyle = courseColor => {
+  return `
+    body {
+      background: #EDEFF0;
+      background-attachment: fixed;
+    }
+`
 };
 
 export default NewCourse;
