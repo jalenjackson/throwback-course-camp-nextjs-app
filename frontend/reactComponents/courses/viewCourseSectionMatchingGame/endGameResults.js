@@ -31,7 +31,7 @@ export default class EndGameResults extends React.Component {
   
         <NextExercises { ...this.props } />
   
-        <NewQuestion exercise={ 'matchingGame' } { ...this.props } courseColor={ this.props.course.color } />
+        <NewQuestion exercise={ 'Matching Game' } { ...this.props } courseColor={ this.props.course.color } />
       </div>
     )
   }

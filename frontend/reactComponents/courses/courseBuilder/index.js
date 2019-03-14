@@ -58,7 +58,6 @@ export default class CourseBuilderComponent extends React.Component {
                           : null
                     : null
                   }
-                  <Footer marginTop={ 0 } />
                 </div>
               : <div style={ loaderStyles }>
                   <BarLoader color={'#43A5FF'} />

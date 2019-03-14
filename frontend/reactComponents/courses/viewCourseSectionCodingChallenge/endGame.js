@@ -28,7 +28,7 @@ export default class EndGame extends React.Component {
   
         <NextExercises { ...this.props } />
   
-        <NewQuestion exercise={ 'codingChallenge' } { ...this.props } courseColor={ this.props.course.color } />
+        <NewQuestion exercise={ 'Coding Challenge' } { ...this.props } courseColor={ this.props.course.color } />
       </div>
     )
   }

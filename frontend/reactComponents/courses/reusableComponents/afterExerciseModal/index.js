@@ -8,14 +8,14 @@ export default class AfterExerciseModal extends React.Component {
     return (
       <Subscribe to={[AfterExerciseModalContainer]}>
         { container => (
-          <div>
+          <div className='after-exercise'>
             <Modal
               title={ `Awesome! Great Work!` }
               centered
               visible={ container.state.winModalVisible }
               onOk={ () => container.updateState('winModalVisible', false) }
               onCancel={ () => container.updateState('winModalVisible', false) }>
-              <img style={ iconStyle } src='/static/icons/piggybank.svg' />
+              <img className='after-exercise-icon' src='/static/icons/piggybank.svg' />
               <p style={{ fontSize: 17 }}>Awesome Work! You earned <span style={{ color: '#87D068' }}>10xp</span></p>
             </Modal>
   
@@ -33,9 +33,3 @@ export default class AfterExerciseModal extends React.Component {
     )
   }
 }
-
-const iconStyle = {
-  width: 300,
-  display: 'block',
-  margin: '0 auto'
-};

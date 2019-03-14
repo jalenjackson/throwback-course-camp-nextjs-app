@@ -1,3 +1,5 @@
+@import '../../../globalResources/styles/variables';
+
 .next-exercises-container {
   position: relative;
   display: flex;
@@ -34,11 +36,29 @@
   .top-svg {
     width: 600px;
     margin-top: 50px;
+    @media @desktop {
+      width: 95%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
   }
   .up-next-exercises {
     width: 100%;
     display: block;
     margin: 0 auto;
     margin-top: 40px;
+    @media @desktop {
+      transform: scale(0.5)
+    }
+  }
+}
+
+.after-exercise-icon {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  @media @desktop {
+    width: 85%;
   }
 }

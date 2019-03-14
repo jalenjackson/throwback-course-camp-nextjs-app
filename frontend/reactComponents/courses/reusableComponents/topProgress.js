@@ -14,7 +14,7 @@ const TopProgress = props => (
         </h3>
       </Link>
     </div>
-    <div style={{ background: props.courseColor }} className="upper-video-section">
+    <div style={{ background: props.courseColor }} className="upper-video-section top-inner-progress">
       <div style={{ width: '90%', display: 'block', margin: '0 auto' }} className='upper-video-section-steps'>
         <Steps current={ +props.videoIndex }>
           { props.currentSection.videos.map((video) => (

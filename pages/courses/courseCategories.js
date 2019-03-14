@@ -57,6 +57,8 @@ CourseCategories.getInitialProps = async ctx => {
     
     const results = searchResults.data.data.globalAutocomplete;
     
+    console.log(results)
+    
     return {
       searchResults: results.courses,
       searchTerm,

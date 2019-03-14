@@ -10,7 +10,7 @@ import NewQuestion from '../../globalComponents/newQuestion';
 import TopProgress from '../../courses/reusableComponents/topProgress';
 import { Link, Router } from '../../../../routes';
 import { getNextChallenge } from "../../../../globalHelpers/getNextCourseChallenge";
-import {BarLoader} from "react-spinners";
+import PageLoader from "../../globalComponents/pageLoader";
 
 export default class ViewCourseSectionVideo extends React.Component {
   state = {
@@ -68,9 +68,7 @@ export default class ViewCourseSectionVideo extends React.Component {
                   : null
                 }
               </div>
-              : <div style={ loaderStyles }>
-                  <BarLoader color={'#43A5FF'} />
-                </div>
+              : <PageLoader />
             }
           </div>
         )}
@@ -78,14 +76,3 @@ export default class ViewCourseSectionVideo extends React.Component {
     )
   }
 }
-
-const loaderStyles = {
-  width: '100%',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  background: 'white',
-  borderBottom: '1px solid #e8e8e8',
-  boxShadow: 'box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15)',
-  height: '46px',
-};

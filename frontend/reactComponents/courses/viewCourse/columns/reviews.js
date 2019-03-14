@@ -9,7 +9,7 @@ export default class Reviews extends React.Component {
   
   render() {
     return (
-      <div className='buy-course-wrapper column-wrapper'>
+      <div className='review-wrapper column-wrapper'>
         <div style={{ marginTop: '55px' }}>
           <h1 style={{ transform: 'translateY(-8px)', marginTop: 35 }} className="section-title">
             <span>Reviews</span>

@@ -48,8 +48,8 @@ export const getNextChallenge = props => {
   }
   
   else {
-    if (+(props.videoIndex + 1) === props.course.sections[props.sectionIndex].videos.length) {
-      if (+(props.sectionIndex + 1) === props.course.sections.length) {
+    if ((+props.videoIndex + 1) === props.course.sections[props.sectionIndex].videos.length) {
+      if ((+props.sectionIndex + 1) === props.course.sections.length) {
         return {
           type: 'endCourse',
           route: `/end-course`,
@@ -58,14 +58,14 @@ export const getNextChallenge = props => {
       } else {
         return {
           type: 'video',
-          route: `/courses/view/${ props.course._id }/${ props.sectionIndex + 1 }/${ +(props.videoIndex + 1) }`,
+          route: `/courses/view/${ props.course._id }/${ (+props.sectionIndex + 1) }/0`,
           text: 'Next Video'
         }
       }
     } else {
       return {
         type: 'video',
-        route: `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ +(props.videoIndex + 1) }`,
+        route: `/courses/view/${ props.course._id }/${ props.sectionIndex }/${ (+props.videoIndex + 1) }`,
         text: 'Next Video'
       }
     }

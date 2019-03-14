@@ -12,8 +12,7 @@ export default class ReviewCourse extends React.Component {
   
   render() {
     return (
-      <div style={{ boxShadow: 'none', background: 'none' }} id='course-track-element-container'>
-        <Button type='primary' style={{ marginBottom: 20 }} onClick={ () => this.props.container.updateState('showReviewModal', true) }>Review Course</Button>
+      <div>
         <Modal
           title="Review Course"
           visible={ this.props.container.state.showReviewModal }

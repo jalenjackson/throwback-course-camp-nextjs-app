@@ -7,6 +7,7 @@ const Index = ({ courses, isRequestFromServer }) => (
     <div>
       <Head>
         <title>Home Page</title>
+        <style>{ globalStyle }</style>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous" />
       </Head>
       { courses ? <IndexComponent isRequestFromServer={ isRequestFromServer } courses={ courses } /> : console.log('This will render to future 500 error page') }
@@ -55,5 +56,11 @@ Index.getInitialProps = async () => {
     return { courses: false }
   }
 };
+
+const globalStyle = `
+  body {
+    background: white;
+  }
+`;
 
 export default Index;

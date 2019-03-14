@@ -4,6 +4,7 @@ import ViewCourseComponent from '../../frontend/reactComponents/courses/viewCour
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
 import { courseResponse } from '../sharedQueryCourseResponses';
+import { didTheUserCreateThisCourse, userPaidForCourseAlready } from "../helpers";
 
 export default class ViewCourse extends React.Component {
   render() {
@@ -84,14 +85,4 @@ ViewCourse.getInitialProps = async (ctx) => {
   } catch(e) {
     return { course: false }
   }
-};
-
-const userPaidForCourseAlready = (auth, course) => {
-  if (auth.authenticated && auth.paidCourses) {
-    return auth.paidCourses.find(c => c._id === course._id ) !== undefined;
-  }
-};
-
-const didTheUserCreateThisCourse = (userIdFromCourse, userId) => {
-  return userIdFromCourse === userId;
 };

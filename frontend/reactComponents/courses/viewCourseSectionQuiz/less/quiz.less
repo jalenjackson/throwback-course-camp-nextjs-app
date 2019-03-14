@@ -12,6 +12,9 @@
   border-bottom-right-radius: 6px;
   position: relative;
   overflow: hidden;
+  @media @desktop {
+    width: 95%;
+  }
 
   .quiz-section-overlay {
     position: absolute;
@@ -36,6 +39,9 @@
       display: block;
       margin: 0 auto;
       margin-top: 90px;
+      @media @desktop {
+        width: 95%;
+      }
     }
 
     .timer {
@@ -48,11 +54,14 @@
       margin: auto;
     }
     .quiz-question-progress {
-      font-size: 14px;
+      font-size: 11px;
       color: #B9C1D2;
       margin-left: 20px;
       padding-top: 20px;
       transform: translateY(50px);
+      @media @desktop {
+        transform: translate(-5px, -5px)
+      }
 
       span {
         position: relative;
@@ -122,6 +131,11 @@
           width: auto;
           height: 200px;
           margin-bottom: 30px;
+          max-width: 100%;
+          @media @phone {
+            width: 95%;
+            height: auto;
+          }
         }
         p {
           font-size: 16px;

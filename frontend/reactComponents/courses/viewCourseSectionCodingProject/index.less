@@ -48,6 +48,8 @@
         background: #2E3339;
         display: flex;
         flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
         .file-nav {
           padding: 1rem;
           display: flex;
@@ -64,6 +66,17 @@
         .file-nav-active {
           background: #384148;
         }
+      }
+      .files::-webkit-scrollbar {
+        height: 0.54em;
+      }
+      .files::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background: white;
+      }
+      .files::-webkit-scrollbar-thumb {
+        background-color: #9483AE;
+        outline: #9483AE;
       }
       #html-sandbox, #css-sandbox, #javascript-sandbox {
         width: 100% !important;

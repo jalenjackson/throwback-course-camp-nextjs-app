@@ -5,8 +5,19 @@ import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
 import { courseResponse } from '../sharedQueryCourseResponses';
 import {handleAuthentication} from "../../globalHelpers/handleAuthentication";
+import {checkIfUserHasAccess} from "../helpers";
+import { withRouter } from 'next/router';
+import PageLoader from "../../frontend/reactComponents/globalComponents/pageLoader";
 
-export default class Track extends React.Component {
+class Track extends React.Component {
+  state = {
+    start: false
+  };
+  
+  componentWillMount() {
+    this.setState({ start: checkIfUserHasAccess(this.props.auth, this.props.course, this.props.router) });
+  }
+  
   render() {
     return (
       <div>
@@ -17,12 +28,12 @@ export default class Track extends React.Component {
                   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                   crossOrigin="anonymous" />
         </Head>
-        { this.props.course
+        { this.state.start
           ? <TrackComponent
             isRequestFromServer={ this.props.isRequestFromServer }
             course={ this.props.course }
             auth={ this.props.auth } />
-          : console.log('render 500') }
+          : <PageLoader /> }
       </div>
     )
   }
@@ -38,6 +49,7 @@ Track.getInitialProps = async (ctx) => {
     query {
       singleCourse(courseId: "${ courseId }") {
         creator {
+          _id
           name
         }
         ${ courseResponse }
@@ -56,3 +68,5 @@ const globalStyle = `
     background: rgb(250, 250, 250);
   }
 `;
+
+export default withRouter(Track);

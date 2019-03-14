@@ -26,7 +26,7 @@ const EndGame = props => (
     
     <NextExercises { ...props } />
     
-    <NewQuestion exercise={ 'codingProject' } { ...props } courseColor={ props.course.color } />
+    <NewQuestion exercise={ 'Coding Project' } { ...props } courseColor={ props.course.color } />
   </div>
 );
 

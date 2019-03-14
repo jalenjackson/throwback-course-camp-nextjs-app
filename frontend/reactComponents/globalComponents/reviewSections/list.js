@@ -1,7 +1,10 @@
 import React from 'react';
 import Element from './element';
-import { Button, Empty } from 'antd';
+import { Button, Empty, Collapse } from 'antd';
 import { navigatePane } from "../../courses/courseBuilder/topProgress/navigatePane";
+import atob from 'atob';
+
+const Panel = Collapse.Panel;
 
 export default class List extends React.Component {
   render() {
@@ -24,6 +27,11 @@ export default class List extends React.Component {
       <div>
         <div id='course-track-element-container'>
           <h1 style={{ transform: 'translate(23px, 13px)', fontSize: 16, display: 'block' }}>{ section.title ? section.title : 'No title added for this section' }</h1>
+          <Collapse style={{ width: '93%', display: 'block', margin: '0 auto', marginTop: 30 }}>
+            <Panel header="View Description" key="1">
+              <div dangerouslySetInnerHTML={{ __html: atob(section.description) }} />
+            </Panel>
+          </Collapse>
           { section.videos && section.videos.length > 0
             ? section.videos.map((video, j) => (
               <div>

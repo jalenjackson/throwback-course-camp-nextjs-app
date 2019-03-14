@@ -24,7 +24,7 @@ export default class EndResults extends React.Component {
     
         <AfterExerciseModal />
         
-        <Button.Group style={{ marginLeft: 13, marginTop: 20 }}>
+        <Button.Group style={{ marginTop: 20 }}>
           <Button
             onClick={ () => window.location.reload() }
             style={ this.setCourseColor(this.props) }
@@ -38,7 +38,7 @@ export default class EndResults extends React.Component {
     
         <NextExercises { ...this.props } />
     
-        <NewQuestion exercise={ this.props.isPictureQuiz ? 'pictureQuiz' : 'quiz' } { ...this.props } courseColor={ this.props.course.color } />
+        <NewQuestion exercise={ this.props.isPictureQuiz ? 'Picture Quiz' : 'Quiz' } { ...this.props } courseColor={ this.props.course.color } />
       </div>
     )
   }

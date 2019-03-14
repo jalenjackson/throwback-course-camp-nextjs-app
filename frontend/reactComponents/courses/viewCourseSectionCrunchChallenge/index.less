@@ -1,3 +1,5 @@
+@import '../../../globalResources/styles/variables';
+
 .quiz-section {
   background: white;
   .crunch-challenge-container {
@@ -28,13 +30,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media @desktop {
+        display: block;
+      }
       input {
         width: 85%;
         display: block;
         margin: 0 auto;
+        @media @desktop {
+          width: 90%;
+        }
       }
       button {
         margin-right: 3%;
+        @media @desktop {
+          display: block;
+          margin-left: 18px;
+          margin-top: 7px;
+        }
       }
     }
   }

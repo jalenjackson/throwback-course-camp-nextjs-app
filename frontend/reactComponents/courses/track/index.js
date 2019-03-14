@@ -1,13 +1,12 @@
 import React from 'react';
 import ReviewSections from '../../globalComponents/reviewSections/index'
-import { Modal, Progress } from 'antd';
-import {BarLoader} from "react-spinners";
-import { loaderStyles } from "../../../../globalHelpers/loaderStyles";
+import {Button, Modal, Progress} from 'antd';
 import { Link, Router } from '../../../../routes';
 import {getTotalCoursePoints, getTotalUserCoursePoints} from "../../../../globalHelpers/handleCoursePoints";
 import ReviewCourse from "../../globalComponents/reviewCourse/index";
 import TrackContainer from './container';
 import { Subscribe } from 'unstated';
+import PageLoader from "../../globalComponents/pageLoader";
 
 export default class Track extends React.Component {
   state = {
@@ -52,7 +51,8 @@ export default class Track extends React.Component {
                   </Modal>
                 </div>
                 <h1 style={{ textAlign: 'center', fontSize: 18, color: 'rgb(80, 80, 85)', marginTop: 35, marginBottom: 30 }}>{ this.props.course.title }</h1>
-        
+    
+                <Button className="review-course-btn" type='primary' onClick={ () => container.updateState('showReviewModal', true) }>Review Course</Button>
                 <ReviewCourse container={ container } { ...this.props } />
         
                 <div className='course-progress-xp' id='course-track-element-container'>
@@ -73,9 +73,7 @@ export default class Track extends React.Component {
         
                 <ReviewSections { ...this.props } courseNotInState={ true } fromCourseTrack={ true } />
               </div>
-              : <div style={ loaderStyles }>
-                <BarLoader color={'#43A5FF'} />
-              </div>
+              : <PageLoader />
             }
           </div>
         ) }
