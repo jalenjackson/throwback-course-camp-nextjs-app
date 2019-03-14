@@ -14,6 +14,7 @@ import { Link } from '../../../../routes';
 import ContinueLearningButton from "./columns/continueLearningButton";
 import EditCourseButton from "./columns/editCourseButton";
 import {animateElementsOnLoad} from "./helpers";
+import Reviews from "./columns/reviews";
 
 export default class ViewCourseComponent extends React.Component {
   state = {
@@ -48,6 +49,7 @@ export default class ViewCourseComponent extends React.Component {
                         : <BuyCourseWrapper authContainer={ authContainer } { ...this.props } />
                     }
                     <Language { ...this.props }/>
+                    <Reviews { ...this.props } />
                     <Instructor { ...this.props } />
                     <Learning { ...this.props } />
                     <Sections { ...this.props } />

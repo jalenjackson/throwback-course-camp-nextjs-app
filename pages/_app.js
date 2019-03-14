@@ -24,7 +24,7 @@ import '../frontend/reactComponents/earnMoneyTeaching/less/index.less';
 import '../frontend/reactComponents/community/community/index.less';
 import '../frontend/reactComponents/courses/coursesCategories/index.less';
 import '../frontend/reactComponents/courses/search/index.less';
-import '../frontend/reactComponents/courses/track/review/index.less';
+import '../frontend/reactComponents/globalComponents/reviewCourse/less/index.less';
 import '../frontend/reactComponents/courses/reusableComponents/index.less';
 import '../frontend/reactComponents/courses/track/index.less';
 import '../frontend/globalResources/styles/npprogress.less';

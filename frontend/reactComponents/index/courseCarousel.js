@@ -37,6 +37,7 @@ const CourseCarousel = props => (
                   ${ course.publishedCourse.price }
                 </p>
                 <span>
+                  { console.log(course) }
                   <Rate style={ styles.Rating } disabled defaultValue={ course.rating } />
                 </span>
               </div>
@@ -65,8 +66,8 @@ const showPreviewVideoModal = (props, course) => {
   props.container.updateState('videoPreviewModalVisibility', true);
   props.container.updateState('videoPreviewCourse', course);
   props.container.updateState('videoPlaying', true);
-  props.container.updateState('currentVideoLocation', course.sections[0].videos[0].videoLocation);
-  props.container.updateState('courseColor', course.color);
+  props.container.updateState('currentVideoLocation', course.publishedCourse.sections[0].videos[0].videoLocation);
+  props.container.updateState('courseColor', course.publishedCourse.color);
 };
 
 const popOverContent = () => (

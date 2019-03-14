@@ -58,7 +58,7 @@ export default class BuyCourse extends React.Component {
             onCancel={onCancel} />
         </div>
         { !this.props.auth.authenticated
-          ? <Button onClick={ () => this.props.authContainer.setContainerState('registerFormVisibility', true) } type="primary">
+          ? <Button style={{ background: '#F5D585', color: 'rgb(50, 50, 50)', borderColor: '#F5D585' }} onClick={ () => this.props.authContainer.setContainerState('registerFormVisibility', true) } type="primary">
               Purchase Course With PayPal
             </Button>
           : null

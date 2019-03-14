@@ -31,8 +31,10 @@ export default class ViewCourse extends React.Component {
                 ? didTheUserCreateThisCourse(this.props.course.creator._id, this.props.auth._id)
                 : false
               }
+              rating={ this.props.rating }
               userPaidForCourseAlready={ userPaidForCourseAlready(this.props.auth, this.props.course) }
               course={ this.props.course }
+              reviews={ this.props.reviews }
               auth={ this.props.auth }
               isRequestFromServer={ this.props.isRequestFromServer } />
           : console.log('render 500') }
@@ -49,9 +51,14 @@ ViewCourse.getInitialProps = async (ctx) => {
     const course = await GraphQlMutate(GraphQlDevURI, `
     query {
       singleCourse(courseId: "${ courseId }") {
-        creator {
-          _id
-          name
+        rating
+        reviews {
+          userId {
+            name
+            profileImage
+          }
+          rating
+          description
         }
         publishedCourse {
           ${ courseResponse }
@@ -59,6 +66,8 @@ ViewCourse.getInitialProps = async (ctx) => {
       }
     }
   `);
+    const reviews = course.data.data.singleCourse.reviews;
+    const rating = course.data.data.singleCourse.rating;
     const singleCourse = course.data.data.singleCourse.publishedCourse;
     if (!singleCourse) {
       return typeof document === 'undefined'
@@ -67,6 +76,8 @@ ViewCourse.getInitialProps = async (ctx) => {
     }
     singleCourse.description = atob(singleCourse.description);
     return {
+      reviews,
+      rating,
       course: singleCourse,
       isRequestFromServer
     }

@@ -5,7 +5,7 @@ import {BarLoader} from "react-spinners";
 import { loaderStyles } from "../../../../globalHelpers/loaderStyles";
 import { Link, Router } from '../../../../routes';
 import {getTotalCoursePoints, getTotalUserCoursePoints} from "../../../../globalHelpers/handleCoursePoints";
-import ReviewCourse from "./reviewCourse";
+import ReviewCourse from "../../globalComponents/reviewCourse/index";
 import TrackContainer from './container';
 import { Subscribe } from 'unstated';
 

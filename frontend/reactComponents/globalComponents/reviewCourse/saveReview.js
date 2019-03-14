@@ -9,14 +9,16 @@ export const saveReview = async (rating, textAreaValue, props) => {
       reviewCourse(courseId: "${props.course._id}", rating: ${rating}, description: "${textAreaValue}") {
         title
         reviews {
-          userId
+          userId {
+            name
+          }
           rating
           description
         }
       }
     }
   `, props.auth.token);
-    message.success('Thank you for contributing! You review was saved successfully!');
+    message.success('Thank you for contributing! Your review was saved successfully!');
     props.container.updateState('showReviewModal', false);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError)
