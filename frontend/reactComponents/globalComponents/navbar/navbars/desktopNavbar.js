@@ -40,21 +40,29 @@ const DesktopNavbar = props => (
         </span>}>
         <MenuItemGroup title={ Localization.MenuLinks.Learn }>
           <Menu.Item key={ Localization.MenuKeys.Courses }>
-            <Link to='/courses/all-courses?page=1'>
-              { Localization.MenuLinks.AllCourses }
-            </Link>
+            { typeof window !== 'undefined' ? window.location.pathname.split('/')[2] === 'all-courses'
+              ? <a href={ `/courses/all-courses?page=1` }>{ Localization.MenuLinks.AllCourses }</a>
+              : <Link to={ `/courses/all-courses?page=1`}>
+                  { Localization.MenuLinks.AllCourses }
+                </Link>
+              : null
+            }
           </Menu.Item>
           <SubMenu key={ Localization.MenuKeys.CourseCategories } title={ Localization.MenuLinks.Categories }>
             { GlobalLocalization.coruseCategories.map((category) => (
               <Menu.Item>
-                <Link to={`/courses/category/${ _.kebabCase(category) }?page=1`}>
-                  { category }
-                </Link>
+                { typeof window !== 'undefined' ? window.location.pathname.split('/')[2] === 'category'
+                    ? <a href={ `/courses/category/${ _.kebabCase(category) }?page=1` }>{ category }</a>
+                    : <Link to={ `/courses/category/${ _.kebabCase(category) }?page=1`}>
+                        { category }
+                      </Link>
+                  : null
+                }
               </Menu.Item>
             )) }
           </SubMenu>
           <Menu.Item key={ Localization.MenuKeys.Community }>
-            <Link to='/community'>
+            <Link to='/community?page=1'>
               { Localization.MenuLinks.Community }
             </Link>
           </Menu.Item>
@@ -83,9 +91,7 @@ const DesktopNavbar = props => (
       { props.auth.authenticated ?
          <Menu.Item style={ inlineStyling(props.navbarContainer.state.authenticated).AuthenticatedMenuItems } onClick={ () => props.navbarContainer.setContainerState('profileDrawerVisibility', true) }>
            <span>
-             <Badge className="navbar-authenticated-badge" style={{ transform: 'translate(12px, -3px)', fontSize: 11 }} count={10}>
-               <Avatar src={ props.auth.profileImage } className="navbar-authenticated-avatar" shape="circle" size="small"  />
-             </Badge>
+             <Avatar src={ props.auth.profileImage ? props.auth.profileImage : '/static/icons/profile-image-placeholder.png' } className="navbar-authenticated-avatar" shape="circle" size="small"  />
             </span>
          </Menu.Item> : null
       }

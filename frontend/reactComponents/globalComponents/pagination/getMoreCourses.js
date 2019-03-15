@@ -35,9 +35,6 @@ export const getMoreCourses = async (searchTerm, page, skip, container, isAllCou
       }
     `);
     await container.updateState('searchResults', getMoreCoursesResults.data.data.globalAutocomplete.courses);
-  
-    console.log(getMoreCoursesResults)
-  
   }, 500);
   
   setTimeout(() => {

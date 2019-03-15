@@ -57,8 +57,6 @@ CourseCategories.getInitialProps = async ctx => {
     
     const results = searchResults.data.data.globalAutocomplete;
     
-    console.log(results)
-    
     return {
       searchResults: results.courses,
       searchTerm,
@@ -66,7 +64,6 @@ CourseCategories.getInitialProps = async ctx => {
       defaultPageNumber: Number(ctx.query.page),
     }
   } catch (e) {
-    console.log(e)
     return { courses: false }
   }
 };

@@ -5,7 +5,6 @@ import btoa from 'btoa';
 
 export const call = async (context, props) => {
   try {
-    console.log(props)
     const addNewQuestionMutation = await GraphQlMutate(GraphQlDevURI, `
     mutation {
       createForumQuestion(
@@ -27,7 +26,6 @@ export const call = async (context, props) => {
     await context.updateState('body', '');
     context.updateState('successModalVisible', true);
   } catch (e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };

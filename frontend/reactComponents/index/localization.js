@@ -8,7 +8,7 @@ let localization = new LocalizedStrings({
     ValueProps: {
       Header: 'Innovate For The Future',
       Paragraph: 'Proven fun interactive affordable online courses',
-      SearchPlaceholder: 'Search For A course...'
+      SearchPlaceholder: 'Search Courses...'
     },
     CourseCarousel: {
       Header: 'Popular Courses',

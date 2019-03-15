@@ -8,6 +8,7 @@ import { courseResponse } from '../sharedQueryCourseResponses';
 export default class CourseBuilder extends React.Component {
   componentDidMount() {
     const { course, auth } = this.props;
+
     if (!verifyThisCourseIsTheCreatosCourse(course.creator._id, auth._id)) {
       window.location.href = '/'
     }
@@ -41,19 +42,16 @@ CourseBuilder.getInitialProps = async (ctx) => {
     const isRequestFromServer = typeof window === 'undefined';
     handleAuthentication(ctx);
     const courseId = ctx.query.courseId;
-    const firstTime = ctx.query.newcourse;
     const course = await GraphQlMutate(GraphQlDevURI, `
     query {
-      singleCourse(courseId: "${courseId}") {
+      singleCourse(courseId: "${courseId}", ignorePublished: "true") {
         ${ courseResponse }
       }
     }
   `);
-    return { course: course.data.data.singleCourse, firstTime, isRequestFromServer }
+    return { course: course.data.data.singleCourse, isRequestFromServer }
   } catch(e) {
-    return typeof document === 'undefined'
-      ? ctx.res.redirect('/')
-      : window.location.href = '/';
+    console.log('render 500')
   }
 };
 

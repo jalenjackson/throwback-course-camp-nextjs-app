@@ -4,7 +4,7 @@ import { Icon, Menu } from 'antd';
 export default class LeftMenu extends React.Component {
   render() {
     return (
-      <Menu onClick={ e => this.props.container.updateState('menuKey', e.key) } defaultSelectedKeys={['profile']} mode="inline">
+      <Menu theme="dark" onClick={ e => this.handleMenuItemClick(e) } defaultSelectedKeys={['profile']} mode="inline">
         <Menu.Item key="profile">
           <Icon type="pie-chart" />
           <span>Profile</span>
@@ -13,19 +13,26 @@ export default class LeftMenu extends React.Component {
           <Icon type="desktop" />
           <span>Photo</span>
         </Menu.Item>
-        <Menu.Item key="paymentHistory">
+        <Menu.Item key="your-courses">
           <Icon type="desktop" />
-          <span>Payment History</span>
+          <span>Your Courses</span>
+        </Menu.Item>
+        <Menu.Item key="purchased-courses">
+          <Icon type="desktop" />
+          <span>Purchased Courses</span>
         </Menu.Item>
         <Menu.Item key="payoutHistory">
           <Icon type="desktop" />
           <span>Payout History</span>
         </Menu.Item>
-        <Menu.Item key="closeAccount">
-          <Icon type="desktop" />
-          <span>Close Account</span>
-        </Menu.Item>
       </Menu>
     )
+  }
+  
+  handleMenuItemClick = e => {
+    if ($(window).width() < 992) {
+      this.props.container.updateState('menuCollapsed', true);
+    }
+    this.props.container.updateState('menuKey', e.key)
   }
 }

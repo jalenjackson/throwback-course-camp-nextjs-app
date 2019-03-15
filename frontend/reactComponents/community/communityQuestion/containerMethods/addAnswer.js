@@ -9,6 +9,7 @@ export const call = async (context, auth) => {
       addForumQuestionAnswer(forumQuestionId: "${context.state.forumQuestion._id}", answer: "${context.state.newAnswerText}") {
         _id
         title
+        body
         date
         answers {
           userId {
@@ -40,8 +41,8 @@ export const call = async (context, auth) => {
   
     await context.setState({forumQuestion: addAnswerResponse.data.data.addForumQuestionAnswer});
     message.success('Your answer was added successfully');
+    context.setState({ newAnswerModalVisible: false });
   } catch (e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };

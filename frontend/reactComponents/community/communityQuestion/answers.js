@@ -1,5 +1,6 @@
 import React from 'react';
 import { Comment, List } from 'antd';
+import moment from 'moment'
 
 export default class Answers extends React.Component {
   render() {
@@ -14,15 +15,15 @@ export default class Answers extends React.Component {
                 dataSource={ this.props.container.state.forumQuestion.answers }
                 renderItem={ forumQuestion => (
                   <Comment
-                    author={ forumQuestion.userId.name }
+                    author={ _.truncate(forumQuestion.userId.name, { length: 15 }) }
                     avatar={ forumQuestion.userId.profileImage }
                     content={ forumQuestion.answer }
-                    datetime={ forumQuestion.date }
+                    datetime={moment(forumQuestion.date).fromNow()}
                   />
                 )}
               />
             </div>
-          : <h1>No answers yet</h1>
+          : <h3 style={{ marginTop: 20 }}>No answers yet</h3>
         }
       </div>
     )

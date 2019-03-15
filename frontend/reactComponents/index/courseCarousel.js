@@ -37,7 +37,6 @@ const CourseCarousel = props => (
                   ${ course.publishedCourse.price }
                 </p>
                 <span>
-                  { console.log(course) }
                   <Rate style={ styles.Rating } disabled defaultValue={ course.rating } />
                 </span>
               </div>

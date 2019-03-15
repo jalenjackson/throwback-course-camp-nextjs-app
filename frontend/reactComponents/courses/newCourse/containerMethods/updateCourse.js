@@ -13,7 +13,7 @@ export const call = async (context, course, type, value) => {
     }
     if (type === 'description') valueToUpdate = `"${ btoa(unescape(encodeURIComponent(context.state.description))) }"`;
 
-    const updateCourseResponse = await GraphQlMutate(GraphQlDevURI, `
+    await GraphQlMutate(GraphQlDevURI, `
     mutation {
       updateCourse(courseId: "${ course._id }", courseInput: { ${ type }: ${ valueToUpdate } }) {
         sections {
@@ -47,9 +47,7 @@ export const call = async (context, course, type, value) => {
       }
     }
   `);
-    console.log(updateCourseResponse)
   } catch (e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };

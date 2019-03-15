@@ -7,23 +7,26 @@ export default class Profile extends React.Component {
     showModalToTransferFunds: false,
     moneyAmount: '',
     emailToSendTo: '',
+    email: this.props.container.state.auth.email,
+    name: this.props.container.state.auth.name
   };
   
   render() {
     return (
-      <div>
-        <Statistic prefix={<Icon type="dollar" />} title="Money You Made In Total" value={ this.props.container.state.auth.moneyMade } precision={ 2 } />
+      <div id='profile-item'>
+        <h3>Money you made in total</h3>
+        <Statistic prefix={<Icon type="dollar" />} value={ this.props.container.state.auth.moneyMade } precision={ 2 } />
         <Button
+          className='profile-paypal-btn'
           onClick={ () => this.setState({ showModalToTransferFunds: true }) }
           style={{ marginTop: 16, marginBottom: 20 }} type="primary">Transfer To A PayPal Account</Button>
-        <Form>
-          <Form.Item>
-            <Input value={ this.props.container.state.auth.email } placeholder="email" />
-          </Form.Item>
-          <Form.Item>
-            <Input value={ this.props.container.state.auth.name } placeholder="name" />
-          </Form.Item>
-        </Form>
+  
+          <label style={{ display: 'block', marginTop: 10 }}>Your Email</label>
+          <Input onChange={ e => this.setState({ email: e.target.value }) } value={ this.state.email } placeholder="email" />
+          <label style={{ display: 'block', marginTop: 10 }}>Your Name</label>
+          <Input onChange={ e => this.setState({ name: e.target.value }) } value={ this.state.name } placeholder="name" />
+          <p style={{ color: 'crimson' }}>{ this.props.container.state.errorMessage }</p>
+          <Button loading={ this.props.container.state.isSaving } onClick={ () => this.props.container.updateUserInformation(this.state.name, this.state.email) } style={{ display: 'block', marginTop: 20 }} type="primary">Save changes</Button>
         <Modal
           title="Vertically centered modal dialog"
           visible={ this.state.showModalToTransferFunds }
@@ -33,13 +36,13 @@ export default class Profile extends React.Component {
             ? <div>
               <label>Enter the PayPal email address you would like to transfer funds to</label>
               <Input placeholder='Enter email here...' onChange={ e => this.setState({ emailToSendTo: e.target.value }) } />
-              <label>How much do you money do you want to transfer out of your account?</label>
+              <label style={{ marginTop: 10, display: 'block' }}>How much do you money do you want to transfer out of your account?</label>
               <NumericInput { ...this.props } />
               <p style={{ color: '#E64A3B', marginTop: 10 }}>{ this.props.container.state.transferFundsErrorMessage }</p>
               <Button onClick={ () => this.props.container.submitPayout(this.props.container.state.auth, this.state.emailToSendTo, this.props.container.state.transferFundsAmount) } type="primary">Submit</Button>
             </div>
             : <div>
-              <h1>Your transfer was successfully placed into a queue!</h1>
+              <h1>Your transfer was successfully placed!</h1>
               <p>Give it about a few minutes to show up into your account!
                 Your transfer will appear in your payout history once the transfer is completed
               </p>

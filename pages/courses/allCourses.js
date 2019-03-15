@@ -26,7 +26,7 @@ AllCourses.getInitialProps = async (ctx) => {
   try {
     const searchResults = await GraphQlMutate(GraphQlDevURI, `
       query {
-        globalAutocomplete(term: "", limit: 8, skip: 0) {
+        globalAutocomplete(term: "", limit: 8, skip: skip: ${ getSkipAmount(ctx.query.page) }) {
           courseListLength
           courses {
             _id
@@ -58,4 +58,9 @@ AllCourses.getInitialProps = async (ctx) => {
   } catch(e) {
     return { course: false }
   }
+};
+
+const getSkipAmount = page => {
+  if (page === 1) return 0;
+  return (page - 1) * 8;
 };

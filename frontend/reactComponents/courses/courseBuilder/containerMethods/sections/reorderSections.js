@@ -17,7 +17,6 @@ export const call = async (context, auth, newSections) => {
     const reorderSectionsResponse = await axios.post('http://localhost:5000/api-routes/reorder-sections',
       JSON.stringify(body),
       { headers });
-    console.log(reorderSectionsResponse);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

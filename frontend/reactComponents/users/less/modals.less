@@ -1,3 +1,5 @@
+@import '../../../globalResources/styles/variables';
+
 .modal-auth-submit-button-container {
   position: absolute;
   left: 0;
@@ -20,4 +22,24 @@
   overflow: auto;
   height: calc(100% - 108px);
   padding-bottom: 108px;
+}
+
+#profile-item {
+  .profile-paypal-btn {
+    @media @desktop {
+      width: 100%;
+      overflow: hidden;
+      font-size: 12px;
+    }
+  }
+}
+
+#photo-item {
+  img {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    max-width: 85%;
+    border-radius: 6px;
+  }
 }

@@ -20,7 +20,6 @@ export const call = async (context, auth, course, status) => {
       { headers });
     message.success('Successfully set course status to ' + status)
   } catch (e) {
-    console.log(e)
     message.error('There was an issue approving this course');
   }
 };

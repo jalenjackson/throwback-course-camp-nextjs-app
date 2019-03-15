@@ -3,7 +3,7 @@ import { Collapse, Button, Icon, Dropdown, Menu, Popconfirm, Input, Select } fro
 import { reorderSections } from '../../draggableMethods';
 import atob from 'atob';
 import _ from 'lodash';
-import {pluginsEnabled} from "../../../newCourse/steps/addDescription/pluginsEnabled";
+import { pluginsEnabled } from '../../../newCourse/steps/addDescription/pluginsEnabled';
 
 const Panel = Collapse.Panel;
 
@@ -23,9 +23,6 @@ export default class AddedVideoList extends React.Component {
   initiateFroalaEditor = key => {
     const textArea = $(`.video-description-${ key }`);
     if (this.props.container.state.course.sections.length !== 0) {
-      console.log(textArea);
-      console.log(key)
-      console.log($(`.video-description-${ key }`))
       textArea.froalaEditor({
         placeholderText: 'Create a description for this section!',
         fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },

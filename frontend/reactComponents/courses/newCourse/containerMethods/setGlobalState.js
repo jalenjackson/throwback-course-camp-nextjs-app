@@ -17,6 +17,5 @@ export const callSetGlobalState = async (context, localCourseState, isFromBuildC
       language: localCourseState.language,
       summary: localCourseState.summary
     });
-    console.log('state', localCourseState);
   }
 };

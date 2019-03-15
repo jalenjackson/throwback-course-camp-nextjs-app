@@ -11,34 +11,44 @@ const { Content, Sider } = Layout;
 
 export default class Profile extends React.Component {
   state = {
-    collapsed: false,
-    loaded: false
+    loaded: false,
+    collapseWidth: 200,
   };
   
   async componentDidMount() {
-  
-  }
-  
-  onCollapse = (collapsed) => {
-    this.setState({ collapsed });
-  };
-  
-  async componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
     if (this.props.isRequestFromServer) {
       setTimeout(async () => {
-        this.setState({ loaded: true });
+        await this.setState({ loaded: true });
+        this.setInitialCollapseDimensions();
       }, 600);
     } else {
-      this.setState({ loaded: true });
+      await this.setState({ loaded: true });
+      this.setInitialCollapseDimensions();
     }
   }
+  
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+  
+  updateDimensions = () => {
+    this.setInitialCollapseDimensions();
+  };
+  
+  setInitialCollapseDimensions = () => {
+    if ($(window).width() < 992) {
+      this.setState({ collapseWidth: '90%', widthSet: true });
+    } else {
+      this.setState({ collapseWidth: 200, widthSet: false });
+    }
+  };
   
   render() {
     return (
       <Subscribe to={[ProfileContainer]}>
         { container => (
           <div>
-            { console.log(this.props.auth) }
             { this.state.loaded
               ? <div>
                 <SetAuth { ...this.props } container={ container } />
@@ -46,10 +56,13 @@ export default class Profile extends React.Component {
                     ? <div>
                       <Layout style={{ minHeight: '100vh' }}>
                         <Sider
-                          theme='light'
+                          theme='dark'
                           collapsible
-                          collapsed={ this.state.collapsed }
-                          onCollapse={ this.onCollapse }>
+                          breakpoint="lg"
+                          collapsedWidth="0"
+                          width={ this.state.collapseWidth }
+                          collapsed={ container.state.menuCollapsed }
+                          onCollapse={ collapsed => container.updateState('menuCollapsed', collapsed) }>
                           <LeftMenu container={ container } { ...this.props } auth={ this.state.auth } />
                         </Sider>
                         <Layout>

@@ -4,7 +4,7 @@ import {Icon} from "antd";
 
 const BackLink = () => (
   <p>
-    <Link to='/community'>
+    <Link to='/community?page=1'>
       <a>
         <Icon type="arrow-left" /> Back
       </a>

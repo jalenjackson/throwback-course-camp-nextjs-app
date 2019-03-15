@@ -54,7 +54,7 @@ export default class MyApp extends App {
 
   render () {
     const { Component, pageProps, auth } = this.props;
-
+    
     return (
       <Container>
         <Provider>
@@ -65,7 +65,7 @@ export default class MyApp extends App {
                 key={this.props.router.route}
                 timeout={550}
                 classNames="page">
-            <Component {...pageProps} auth={ auth } />
+                <Component {...pageProps} auth={ auth } />
               </CSSTransition>
             </TransitionGroup>
           </div>

@@ -35,7 +35,6 @@ export const call = async (context, profileImage) => {
     userProfileImageResponse.data.data.uploadProfileImage.token = context.state.auth.token;
     userCookie.set('auth', userProfileImageResponse.data.data.uploadProfileImage, { path: '/' });
     context.setState({ auth: userProfileImageResponse.data.data.uploadProfileImage });
-    console.log(userCookie.get('auth'))
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

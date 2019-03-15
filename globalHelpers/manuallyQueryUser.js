@@ -1,7 +1,7 @@
 import { GraphQlDevURI, GraphQlMutate } from './axiosCalls';
 import Cookies from 'universal-cookie';
 
-export const manuallyQueryUser = async auth => {
+export const manuallyQueryUser = async token => {
   const userResponse = await GraphQlMutate(GraphQlDevURI, `
     {
       getUser {
@@ -10,7 +10,14 @@ export const manuallyQueryUser = async auth => {
         name
         token
         moneyMade
+        token
         profileImage
+        createdCourses {
+          _id
+          title
+          studentsEnrolled
+          price
+        }
         payoutHistory {
           payoutBatchId
           emailAddressReceiver
@@ -27,13 +34,11 @@ export const manuallyQueryUser = async auth => {
         }
       }
     }
-  `, auth.token);
+  `, token);
   
   const userObj = userResponse.data.data.getUser;
-  userObj.token = auth.token;
   
   const userCookie = new Cookies();
-  userCookie.set('auth', userObj, { path: '/' });
-  console.log(userObj)
+  userCookie.set('token', userObj.token, { path: '/' });
   return userObj;
 };

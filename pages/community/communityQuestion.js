@@ -3,26 +3,29 @@ import Head from 'next/head';
 import CommunityComponent from '../../frontend/reactComponents/community/communityQuestion/index';
 import { GraphQlDevURI, GraphQlMutate } from '../../globalHelpers/axiosCalls';
 
-const CommunityQuestion = ({ forumQuestion, auth }) => (
+const CommunityQuestion = ({ forumQuestion, auth, isRequestFromServer }) => (
   <div>
     <Head>
       <title>Home Page</title>
+      <style>{ globalStyle() }</style>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
               integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
               crossOrigin="anonymous" />
     </Head>
-    <CommunityComponent auth={ auth } forumQuestion={ forumQuestion } />
+    <CommunityComponent auth={ auth } forumQuestion={ forumQuestion } isRequestFromServer={ isRequestFromServer } />
   </div>
 );
 
 CommunityQuestion.getInitialProps = async ctx => {
   try {
+    const isRequestFromServer = typeof window === 'undefined';
     const forumQuestion = await GraphQlMutate(GraphQlDevURI, `
       {
         singleForumQuestion(forumQuestionId: "${ ctx.query.questionId }") {
           _id
           title
           date
+          body
           answers {
             userId {
               name
@@ -47,14 +50,26 @@ CommunityQuestion.getInitialProps = async ctx => {
           creator {
             _id
             name
+            profileImage
           }
         }
       }
   `);
-    return { forumQuestion: forumQuestion.data.data.singleForumQuestion }
+    return { forumQuestion: forumQuestion.data.data.singleForumQuestion, isRequestFromServer }
   } catch(e) {
-    return {};
+    return typeof document === 'undefined'
+      ? ctx.res.redirect('/')
+      : window.location.href = '/';
   }
+};
+
+const globalStyle = () => {
+  return `
+    body {
+      background: #EDEFF0);
+      background-attachment: fixed;
+    }
+`
 };
 
 export default CommunityQuestion;

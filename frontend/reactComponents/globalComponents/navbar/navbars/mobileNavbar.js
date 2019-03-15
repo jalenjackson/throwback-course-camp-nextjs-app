@@ -80,7 +80,7 @@ export default class MobileNavbar extends React.Component {
                   )) }
                 </SubMenu>
                 <Menu.Item key={ Localization.MenuKeys.Community }>
-                  <Link to='/community'>
+                  <Link to='/community?page=1'>
                     { Localization.MenuLinks.Community }
                   </Link>
                 </Menu.Item>

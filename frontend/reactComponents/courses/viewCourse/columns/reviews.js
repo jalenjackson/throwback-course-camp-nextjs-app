@@ -1,10 +1,10 @@
 import React from 'react';
-import { Modal, List, Avatar, Rate, Button } from "antd";
-import BuyCourse from "./buyCourse";
+import { Modal, List, Avatar, Rate, Button, Pagination } from "antd";
 
 export default class Reviews extends React.Component {
   state = {
-    showModal: false
+    showModal: false,
+    reviewSkip: 0
   };
   
   render() {
@@ -23,19 +23,37 @@ export default class Reviews extends React.Component {
             onOk={ () => this.setState({ showModal: false }) }
             onCancel={ () => this.setState({ showModal: false }) }>
             { this.renderReviews() }
+            { !this.props.reviews || this.props.reviews.length < 1
+              ? <h3>No reviews written yet</h3>
+              : <Pagination
+                style={{ marginTop: 15 }}
+                showQuickJumper
+                pageSize={5}
+                onChange={ page => this.handlePaginationChange(page) }
+                defaultCurrent={ 1 }
+                total={ this.props.reviews.length } />
+            }
           </Modal>
         </div>
       </div>
     )
   }
   
+  handlePaginationChange = page => {
+    this.setState({ reviewSkip: getSkipAmount(page) });
+  };
+  
   renderReviews = () => {
-    if (this.props.reviews && this.props.reviews.length > 0) {
+    let reviews = this.props.reviews.slice(this.state.reviewSkip, this.state.reviewSkip + 5);
+    if (this.state.reviewSkip === 0) {
+      reviews = this.props.reviews.slice(this.state.reviewSkip, 5);
+    }
+    if (reviews && reviews.length > 0) {
       return (
         <div>
           <List
             itemLayout="horizontal"
-            dataSource={ this.props.reviews }
+            dataSource={ reviews }
             renderItem={review => (
               <List.Item>
                 <List.Item.Meta
@@ -51,3 +69,8 @@ export default class Reviews extends React.Component {
     }
   }
 }
+
+const getSkipAmount = page => {
+  if (page === 1) return 0;
+  return 5 * (page - 1);
+};

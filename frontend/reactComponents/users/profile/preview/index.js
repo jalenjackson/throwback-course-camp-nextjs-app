@@ -1,14 +1,15 @@
 import React from 'react';
 import Profile from './profile/index';
 import Photo from './photo/index';
-import PaymentHistory from './paymentHistory/index';
 import PayoutHistory from './payoutHistory/index';
 import CloseAccount from './closeAccount/index';
+import YourCourses from "./yourCourses";
+import PurchasedCourses from "./purchasedCourses";
 
 export default class Preview extends React.Component {
   render() {
     return (
-      <div>
+      <div id='preview-item'>
         <div style={styles}>
           { this.props.container.state.menuKey === 'profile'
             ? <Profile { ...this.props } />
@@ -16,6 +17,14 @@ export default class Preview extends React.Component {
           }
           { this.props.container.state.menuKey === 'photo'
             ? <Photo { ...this.props } />
+            : null
+          }
+          { this.props.container.state.menuKey === 'your-courses'
+            ? <YourCourses { ...this.props } />
+            : null
+          }
+          { this.props.container.state.menuKey === 'purchased-courses'
+            ? <PurchasedCourses { ...this.props } />
             : null
           }
           { this.props.container.state.menuKey === 'paymentHistory'

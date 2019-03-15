@@ -3,6 +3,7 @@ import { IsTheEmailAddressValid } from '../../../../../globalHelpers/validations
 import { GraphQlDevURI, GraphQlMutate } from '../../../../../globalHelpers/axiosCalls';
 import Cookies from 'universal-cookie';
 import { message } from 'antd';
+import GlobalLocalization from "../../../../../globalLocalization";
 
 export const call = async (context, form) => {
   if (context.state.email.trim().length === 0
@@ -25,27 +26,11 @@ export const call = async (context, form) => {
           password: "${context.state.password}"
         })
         {
-          _id
-          email
-          name
-          token
-          moneyMade
-          profileImage
-          payoutHistory {
-            payoutBatchId
-            emailAddressReceiver
-            amount
-          }
-          paidCourses {
-            _id
-          }
-          courseProgress {
-            courseId
-            exercisesPlayed
-          }
+         token
         }
       }
     `);
+    form.resetFields();
     if (registrationResponse.data.errors) {
       form.resetFields();
       return context.setState({
@@ -53,21 +38,11 @@ export const call = async (context, form) => {
         registerSubmissionInProgress: false,
       });
     }
-    form.resetFields();
     const userCookie = new Cookies();
-    userCookie.set('auth', registrationResponse.data.data.createUser, { path: '/' });
-    context.setState({
-      registerErrorMessage: '',
-      registerSubmissionInProgress: false,
-      registerFormVisibility: false,
-      authenticated: true,
-      authorizationToken: registrationResponse.data.data.createUser.token
-    });
+    userCookie.set('token', registrationResponse.data.data.createUser.token, { path: '/' });
     window.location.reload();
   } catch(e) {
-    context.setState({
-      registerErrorMessage: Localization.NavbarContainer.UnexpectedError,
-      registerSubmissionInProgress: false,
-    });
+    context.setState({ registerSubmissionInProgress: false });
+    message.error(GlobalLocalization.UnexpectedError);
   }
 };

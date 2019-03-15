@@ -2,6 +2,8 @@ import Localization from '../localization';
 import { IsTheEmailAddressValid } from '../../../../../globalHelpers/validations';
 import { GraphQlDevURI, GraphQlMutate } from '../../../../../globalHelpers/axiosCalls';
 import Cookies from 'universal-cookie';
+import GlobalLocalization from "../../../../../globalLocalization";
+import { message } from "antd";
 
 export const call = async (context, form) => {
   if (context.state.email.trim().length === 0 || context.state.password.trim().length === 0) {
@@ -15,43 +17,17 @@ export const call = async (context, form) => {
     const loginResponse = await GraphQlMutate(GraphQlDevURI, `
       query {
         login(email: "${context.state.email}", password: "${context.state.password}") {
-          _id
-          email
-          name
           token
-          moneyMade
-          profileImage
-          payoutHistory {
-            payoutBatchId
-            emailAddressReceiver
-            amount
-          }
-          paidCourses {
-            _id
-          }
-          courseProgress {
-            courseId
-            exercisesPlayed
-          }
         }
       }
     `);
-    form.resetFields();
     const userCookie = new Cookies();
-    userCookie.set('auth', loginResponse.data.data.login, { path: '/' });
-    await context.setState({
-      loginErrorMessage: '',
-      loginSubmissionInProgress: false,
-      loginFormVisibility: false,
-      authenticated: true,
-      auth: loginResponse.data.data.login,
-      authorizationToken: loginResponse.data.data.login.token
-    });
+    userCookie.set('token', loginResponse.data.data.login.token, { path: '/' });
     window.location.reload();
   } catch (e) {
     form.resetFields();
-    context.setState({
-      loginErrorMessage: Localization.NavbarContainer.InvalidAuthorization,
+    return context.setState({
+      loginErrorMessage: 'Authentication Failed',
       loginSubmissionInProgress: false,
     });
   }
