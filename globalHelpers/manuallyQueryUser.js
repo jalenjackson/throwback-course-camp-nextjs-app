@@ -17,6 +17,7 @@ export const manuallyQueryUser = async token => {
           title
           studentsEnrolled
           price
+          status
         }
         payoutHistory {
           payoutBatchId

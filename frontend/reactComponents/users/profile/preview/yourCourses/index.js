@@ -43,13 +43,15 @@ export default class YourCourses extends React.Component {
           dataSource={ courses }
           renderItem={ yourCourse => (<List.Item style={{ cursor: 'pointer' }}>
             <Link route={ `/courses/build/${ yourCourse._id }` }>
-              <p>
-                You are selling the course <a>{ yourCourse.title }</a> for ${ yourCourse.price } <br />
-                { yourCourse.studentsEnrolled
-                  ? <div>{ yourCourse.studentsEnrolled } people have bought your course.</div>
-                  : <div>No one has bought it yet</div>
-                }
-              </p>
+              <div><b>{ yourCourse.status }</b>
+                <p>
+                  You are selling the course <a>{ yourCourse.title }</a> for ${ yourCourse.price } <br />
+                  { yourCourse.studentsEnrolled
+                    ? <div>{ yourCourse.studentsEnrolled } people have bought your course.</div>
+                    : <div>No one has bought it yet</div>
+                  }
+                </p>
+              </div>
             </Link>
           </List.Item>)}
         />

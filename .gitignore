@@ -3,8 +3,8 @@
 tmp/
 npm-debug.log
 .DS_Store
-
-.idea/
+nodemon.json
+.idea
 .build/*
 .next
 .vscode/

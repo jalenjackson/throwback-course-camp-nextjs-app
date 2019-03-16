@@ -6,6 +6,8 @@ import { host } from "../../../../../globalHelpers/axiosCalls";
 
 export const call = async (context, auth, status) => {
   try {
+    console.log(process.env)
+    
     let headers = {
       'Content-Type': 'application/json',
       'Authorization': ` Bearer ${ auth.token }`
@@ -14,7 +16,8 @@ export const call = async (context, auth, status) => {
     let body = {
       courseId: context.state.course._id,
       status,
-      course: context.state.course
+      course: context.state.course,
+      devKey: process.env.devKey
     };
 
     await axios.post(`${ host }/api-routes/change-course-status`,
