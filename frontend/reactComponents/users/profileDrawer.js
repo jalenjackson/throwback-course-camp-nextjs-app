@@ -11,7 +11,7 @@ export default class ProfileDrawer extends React.Component {
     return (
         <div>
           <Drawer
-              title="Basic Drawer"
+              title={ this.props.auth.name }
               placement="right"
               closable={ false }
               onClose={ () => this.props.navbarContainer.setContainerState('profileDrawerVisibility', false) }
@@ -20,7 +20,7 @@ export default class ProfileDrawer extends React.Component {
                   defaultOpenKeys={['1']} onClick={ e => this.props.navbarContainer.setContainerState('activeLink', e.key) } selectedKeys={ [this.props.navbarContainer.state.activeLink] } mode="inline">
               <SubMenu key="1" title={
                 <span>
-                <Avatar src={ this.props.auth.profileImage } shape="circle" size="small"  />
+                <Avatar src={ this.props.auth.profileImage ? this.props.auth.profileImage : '/static/icons/profile-image-placeholder.png' } shape="circle" size="small"  />
               </span>}>
                 <MenuItemGroup title={ this.props.auth.name }>
                   <Menu.Item key='profile'>
@@ -28,7 +28,7 @@ export default class ProfileDrawer extends React.Component {
                       Profile
                     </Link>
                   </Menu.Item>
-                  <Menu.Item key='help'>Help</Menu.Item>
+                  <Menu.Item key='help'><Link route='/help-center'>Help</Link></Menu.Item>
                   <Menu.Item onClick={ () => this.props.navbarContainer.signUserOut(Menu, SubMenu, MenuItemGroup) } key='signout'>Sign Out</Menu.Item>
                 </MenuItemGroup>
               </SubMenu>

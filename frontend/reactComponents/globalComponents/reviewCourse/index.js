@@ -10,6 +10,10 @@ export default class ReviewCourse extends React.Component {
     textAreaValue: ''
   };
   
+  componentWillUnmount() {
+    this.props.container.updateState('showReviewModal', false);
+  }
+  
   render() {
     return (
       <div>

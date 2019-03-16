@@ -25,7 +25,7 @@ class NewCourseContainer extends Container {
   addNewLearning = (props, e) => Methods.addNewLearning.callAddNewLearning(this, props, e);
   removeNewLearning = (props, removedLearning) => Methods.removeNewLearning.callRemoveNewLearning(this, props, removedLearning);
   setGlobalState = (localCourseState, isFromBuildCourse) => Methods.setGlobalState.callSetGlobalState(this, localCourseState, isFromBuildCourse);
-  updateCourse = (course, type, value) => Methods.updateCourse.call(this, course, type, value);
+  updateCourse = (auth, course, type, value) => Methods.updateCourse.call(this, auth, course, type, value);
 }
 
 export default NewCourseContainer;

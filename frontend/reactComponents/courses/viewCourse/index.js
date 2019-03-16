@@ -22,6 +22,7 @@ export default class ViewCourseComponent extends React.Component {
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     if (this.props.isRequestFromServer) {
       setTimeout(async () => {
         await this.setState({ loaded: true });

@@ -9,9 +9,6 @@ const CommunityQuestion = ({ forumQuestion, auth, isRequestFromServer, error }) 
     <Head>
       <title>Home Page</title>
       <style>{ globalStyle() }</style>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-              crossOrigin="anonymous" />
     </Head>
     { !error
       ? <CommunityComponent auth={ auth } forumQuestion={ forumQuestion } isRequestFromServer={ isRequestFromServer } />

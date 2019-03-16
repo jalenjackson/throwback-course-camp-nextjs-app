@@ -3,7 +3,7 @@ import { GraphQlMutate, GraphQlDevURI } from '../../../../../globalHelpers/axios
 import { message } from 'antd';
 import GlobalLocalization from '../../../../../globalLocalization';
 
-export const call = async (context, course, type, value) => {
+export const call = async (context, auth, course, type, value) => {
   try {
     let valueToUpdate = value;
     if (type === 'price') {
@@ -11,11 +11,12 @@ export const call = async (context, course, type, value) => {
     } else {
       valueToUpdate = `"${ value }"`;
     }
-    if (type === 'description') valueToUpdate = `"${ btoa(unescape(encodeURIComponent(context.state.description))) }"`;
-
-    await GraphQlMutate(GraphQlDevURI, `
+    if (type === 'description') valueToUpdate = `"${ btoa(unescape(encodeURIComponent(value))) }"`;
+    
+    const test = await GraphQlMutate(GraphQlDevURI, `
     mutation {
       updateCourse(courseId: "${ course._id }", courseInput: { ${ type }: ${ valueToUpdate } }) {
+        description
         sections {
           title
           description
@@ -46,7 +47,9 @@ export const call = async (context, course, type, value) => {
         }
       }
     }
-  `);
+  `, auth.token);
+    
+    console.log(test)
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
   }

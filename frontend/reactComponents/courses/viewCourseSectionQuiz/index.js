@@ -16,6 +16,7 @@ export default class ViewCourseSectionQuiz extends React.Component {
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     SplitText = require('../../../../globalHelpers/splitText');
   
     if (this.props.isRequestFromServer) {

@@ -23,7 +23,12 @@ export default class Error extends React.Component {
           ? <div style={ styles.outerDiv }>
               <div style={ styles.outerContainer }>
                 <h1 style={ styles.h1Color }>Ooops! Something went wrong...</h1>
-                <p>This is our fault, and we are working diligently to solve this issue</p>
+                <p>
+                  { this.props.notFound
+                    ? 'Sorry the page you requested does not exist'
+                    : 'This is our fault, and we are working diligently to solve this issue'
+                  }
+                </p>
               </div>
               <img style={ styles.backgroundImage } src='/static/backgroundImages/error.svg' />
             </div>

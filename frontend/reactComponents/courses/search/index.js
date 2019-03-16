@@ -21,6 +21,7 @@ export default class Search extends React.Component {
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     await this.setState({ loaded: true });
     TweenMax.to('.search-copy h1', 0.5, { transform: 'translate3d(0, 0, 0)', opacity: '1', ease: Power3.easeOut, delay: 0.5 });
     _.times(this.props.searchResults.length,i => {

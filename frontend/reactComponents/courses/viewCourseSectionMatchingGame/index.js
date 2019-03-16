@@ -17,6 +17,7 @@ export default class ViewCourseSectionMatchingGameComponent extends React.Compon
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     window.setTimeout(function() {}, 0);
     
     if (this.props.isRequestFromServer) {

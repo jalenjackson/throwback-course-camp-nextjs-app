@@ -15,6 +15,7 @@ export default class Track extends React.Component {
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     const isFromServer = this.props.isRequestFromServer;
     setTimeout(async () => {
       await this.setState({ loaded: true });

@@ -19,7 +19,7 @@ export const call = async (context, props) => {
               _id
             }
           }
-  `);
+  `, props.auth.token);
     await context.updateState('submittedQuestionId', addNewQuestionMutation.data.data.createForumQuestion._id);
     await context.updateState('visibility', false);
     await context.updateState('title', '');

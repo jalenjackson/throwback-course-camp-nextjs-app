@@ -8,6 +8,10 @@ import NewQuestionContainer from "../../globalComponents/newQuestion/container";
 import Footer from '../../globalComponents/footer';
 
 export default class ViewCourseSectionCodingProjectComponent extends React.Component {
+  componentDidMount() {
+    $(window).scrollTop(0);
+  }
+  
   render() {
     const { course, currentSection, sectionIndex, videoIndex } = this.props;
     return (

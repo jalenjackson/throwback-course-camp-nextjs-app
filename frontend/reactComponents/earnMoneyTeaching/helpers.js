@@ -3,7 +3,7 @@ import { Router } from '../../../routes';
 
 export const animateElements = () => {
   TweenMax.to('.value-props', 0.55,
-    { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.15});
+    { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0});
   
   TweenMax.to('.value-props h1', 0.55,
     { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.2});
@@ -15,7 +15,7 @@ export const animateElements = () => {
     { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0});
   
   TweenMax.to('.course-preview-container-bg-img', 0.55,
-    { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.3});
+    { opacity: 0.2, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.3});
   
   TweenMax.to('.course-builder-preview', 0.55,
     { opacity: 1, transform: 'translate3d(0, 0, 0)', ease: Power3.easeOut, delay: 0.35});

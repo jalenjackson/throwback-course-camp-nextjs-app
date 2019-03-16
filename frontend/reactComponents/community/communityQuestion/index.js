@@ -16,6 +16,7 @@ export default class Community extends React.Component {
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     if (this.props.isRequestFromServer) {
       setTimeout(async () => {
         this.setState({ loaded: true });

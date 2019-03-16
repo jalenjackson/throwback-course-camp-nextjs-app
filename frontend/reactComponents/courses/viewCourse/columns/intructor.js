@@ -12,11 +12,7 @@ const Instructor = props => (
           author={<a>{ props.course.creator.name }</a>}
           avatar={(
             <Avatar
-              src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-              alt="Han Solo" />
-          )}
-          content={(
-            <p>Hello! I have a masters in computer science with over 30 years teaching computing.</p>
+              src={ props.course.creator.profileImage ? props.course.creator.profileImage : '/static/icons/profile-image-placeholder.png' } />
           )}
         />
       </div>

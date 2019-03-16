@@ -1,17 +1,25 @@
 import React from 'react';
 import { Drawer, Menu, Icon, AutoComplete, Input, Avatar, Badge, Button } from 'antd';
 import Localization from '../localization';
-import {Link, Router} from '../../../../../routes'
+import { Link } from '../../../../../routes'
 import { navigateToSearch } from "./navigateToSearch";
 import {MoneySVG, PaperWithBulletPointsSVG} from "../../svgs";
 import GlobalLocalization from "../../../../../globalLocalization";
 import { inlineStyling } from "./navigateToSearch";
 import _ from "lodash";
+import Router from 'next/router';
 
 export default class MobileNavbar extends React.Component {
   state = { visible: false };
 
   render() {
+  
+    Router.events.on('routeChangeStart', () => {
+      if (this.state.visible) {
+        this.setState({ visible: false });
+      }
+    });
+    
     const SubMenu = Menu.SubMenu;
     const MenuItemGroup = Menu.ItemGroup;
     return (
@@ -21,7 +29,7 @@ export default class MobileNavbar extends React.Component {
         </Link>
         <img className='hamburger' alt="mobile menu" onClick={ () => this.setState({ visible: true }) } src='/static/icons/hamburger.png' />
         <Drawer
-            title="Basic Drawer"
+            title="Menu"
             placement="right"
             closable={ false }
             onClose={ () => this.setState({ visible: false }) }
@@ -55,7 +63,7 @@ export default class MobileNavbar extends React.Component {
                       <Menu.Item key='profile'>
                         <Link route='/profile'>Profile</Link>
                       </Menu.Item>
-                      <Menu.Item key='help'>Help</Menu.Item>
+                      <Menu.Item key='help'><Link route='/help-center'>Help</Link></Menu.Item>
                       <Menu.Item onClick={ () => this.props.navbarContainer.signUserOut(Menu, SubMenu, MenuItemGroup) } key='signout'>Sign Out</Menu.Item>
                     </MenuItemGroup>
                   </SubMenu> : null

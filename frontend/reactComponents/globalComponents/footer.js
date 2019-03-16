@@ -1,5 +1,9 @@
 import React from 'react';
 import { Col, Divider, Row } from 'antd';
+import { Link } from '../../../routes';
+import GlobalLocalization from "../../../globalLocalization";
+import {Menu} from "antd/lib/menu";
+import _ from "lodash";
 
 export default class Footer extends React.Component {
   state = {
@@ -22,22 +26,35 @@ export default class Footer extends React.Component {
                 <Row gutter={16}>
                   <Col className="gutter-row" span={6}>
                     <h1>All Courses</h1>
-                    <a>Categories</a>
-                    <a>Community</a>
+                    <Link route='/courses/all-courses?page=1'>
+                      <a>Courses</a>
+                    </Link>
+                    <Link route='/community?page=1'>
+                      <a>Community</a>
+                    </Link>
                   </Col>
                   <Col className="gutter-row" span={6}>
                     <h1>Become A Teacher</h1>
-                    <a>Earn Money Teaching</a>
+                    <Link route='/teach'>
+                      <a>Earn Money Teaching</a>
+                    </Link>
                   </Col>
                   <Col className="gutter-row" span={6}>
-                    <h1>Join</h1>
-                    <a>Register</a>
-                    <a>Login</a>
+                    <h1>Categories</h1>
+                    { GlobalLocalization.coruseCategories.map((category) => (
+                       typeof window !== 'undefined' ? window.location.pathname.split('/')[2] === 'category'
+                        ? <a href={ `/courses/category/${ _.kebabCase(category) }?page=1` }>{ category }</a>
+                        : <Link to={ `/courses/category/${ _.kebabCase(category) }?page=1`}>
+                          { category }
+                        </Link>
+                        : null
+                    )) }
                   </Col>
                   <Col className="gutter-row" span={6}>
-                    <h1>Information</h1>
-                    <a>Terms And Conditions</a>
-                    <a>Privacy Policy</a>
+                    <h1>Help Center</h1>
+                    <Link route='/help-center'>
+                      <a>Help</a>
+                    </Link>
                   </Col>
                 </Row>
               </div>

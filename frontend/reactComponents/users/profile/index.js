@@ -16,6 +16,7 @@ export default class Profile extends React.Component {
   };
   
   async componentDidMount() {
+    $(window).scrollTop(0);
     window.addEventListener("resize", this.updateDimensions);
     if (this.props.isRequestFromServer) {
       setTimeout(async () => {

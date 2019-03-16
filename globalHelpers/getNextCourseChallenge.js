@@ -52,7 +52,7 @@ export const getNextChallenge = props => {
       if ((+props.sectionIndex + 1) === props.course.sections.length) {
         return {
           type: 'endCourse',
-          route: `/end-course`,
+          route: `/courses/view/${ props.course._id }/end-course`,
           text: 'Course Completion'
         }
       } else {
