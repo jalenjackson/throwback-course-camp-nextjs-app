@@ -16,6 +16,7 @@ html, body {
   -webkit-overflow-scrolling: touch;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+  overflow-x: hidden;
 }
 
 .ant-drawer-left.ant-drawer-open, .ant-drawer-right.ant-drawer-open {
@@ -28,6 +29,10 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {

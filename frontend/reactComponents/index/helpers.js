@@ -27,15 +27,18 @@ export const slickSliderOptions = {
 
 export const handleScrollSkewAnimation = () => {
   let skewedBackground = $('.skewed-background');
-  $(window).on("scroll", () => {
-    if (-3 + $(document).scrollTop() / 50 > 0) {
-      return skewedBackground.css({transform: 'skewY(0deg)'});
-    }
-    skewedBackground.css({transform: `skewY(${-3 + $(document).scrollTop() / 50}deg)`});
-  });
+  $(document.body).on('touchmove', () => scrollEvent(skewedBackground));
+  $(window).on("scroll", () => scrollEvent(skewedBackground));
   if (-3 + $(window).scrollTop() / 50 > 0) {
     return skewedBackground.css({transform: 'skewY(0deg)'});
   }
+};
+
+const scrollEvent = skewedBackground => {
+  if (-3 + $(document).scrollTop() / 50 > 0) {
+    return skewedBackground.css({transform: 'skewY(0deg)'});
+  }
+  skewedBackground.css({transform: `skewY(${-3 + $(document).scrollTop() / 50}deg)`});
 };
 
 export const animateElementsOnLoad = () => {

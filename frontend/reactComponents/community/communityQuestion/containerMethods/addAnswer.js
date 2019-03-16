@@ -39,7 +39,10 @@ export const call = async (context, auth) => {
     }
   `, auth.token);
   
-    await context.setState({forumQuestion: addAnswerResponse.data.data.addForumQuestionAnswer});
+    if (addAnswerResponse.data.errors) {
+      return message.error('Please login before you answer a question');
+    }
+    await context.setState({ forumQuestion: addAnswerResponse.data.data.addForumQuestionAnswer });
     message.success('Your answer was added successfully');
     context.setState({ newAnswerModalVisible: false });
   } catch (e) {

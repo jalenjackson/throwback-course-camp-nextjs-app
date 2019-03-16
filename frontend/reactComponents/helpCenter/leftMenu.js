@@ -6,27 +6,27 @@ export default class LeftMenu extends React.Component {
     return (
       <Menu theme="dark" onClick={ e => this.handleMenuItemClick(e) } mode="inline" defaultSelectedKeys={['about']}>
         <Menu.Item key="about">
-          <Icon type="user" />
+          <Icon type="home" />
           <span className="nav-text">About</span>
         </Menu.Item>
         <Menu.Item key="account">
-          <Icon type="video-camera" />
+          <Icon type="user" />
           <span className="nav-text">Account/Profile</span>
         </Menu.Item>
         <Menu.Item key="creatingACourse">
-          <Icon type="user" />
+          <Icon type="tool" />
           <span className="nav-text">Creating A Course</span>
         </Menu.Item>
         <Menu.Item key="purchaseAndRefunds">
-          <Icon type="user" />
+          <Icon type="dollar" />
           <span className="nav-text">Purchasing A Course</span>
         </Menu.Item>
         <Menu.Item key="termsAndConditions">
-          <Icon type="user" />
+          <Icon type="info-circle" />
           <span className="nav-text">Terms And Conditions</span>
         </Menu.Item>
         <Menu.Item key="privacyPolicy">
-          <Icon type="user" />
+          <Icon type="info" />
           <span className="nav-text">Privacy Policy</span>
         </Menu.Item>
       </Menu>

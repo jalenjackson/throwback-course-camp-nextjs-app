@@ -17,33 +17,14 @@ export default class Profile extends React.Component {
   
   async componentDidMount() {
     $(window).scrollTop(0);
-    window.addEventListener("resize", this.updateDimensions);
     if (this.props.isRequestFromServer) {
       setTimeout(async () => {
         await this.setState({ loaded: true });
-        this.setInitialCollapseDimensions();
       }, 600);
     } else {
       await this.setState({ loaded: true });
-      this.setInitialCollapseDimensions();
     }
   }
-  
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions);
-  }
-  
-  updateDimensions = () => {
-    this.setInitialCollapseDimensions();
-  };
-  
-  setInitialCollapseDimensions = () => {
-    if ($(window).width() < 992) {
-      this.setState({ collapseWidth: '90%', widthSet: true });
-    } else {
-      this.setState({ collapseWidth: 200, widthSet: false });
-    }
-  };
   
   render() {
     return (

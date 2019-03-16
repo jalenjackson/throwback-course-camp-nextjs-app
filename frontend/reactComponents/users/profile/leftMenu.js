@@ -6,23 +6,23 @@ export default class LeftMenu extends React.Component {
     return (
       <Menu theme="dark" onClick={ e => this.handleMenuItemClick(e) } defaultSelectedKeys={['profile']} mode="inline">
         <Menu.Item key="profile">
-          <Icon type="pie-chart" />
+          <Icon type="profile" />
           <span>Profile</span>
         </Menu.Item>
         <Menu.Item key="photo">
-          <Icon type="desktop" />
+          <Icon type="picture" />
           <span>Photo</span>
         </Menu.Item>
         <Menu.Item key="your-courses">
-          <Icon type="desktop" />
+          <Icon type="smile" />
           <span>Your Courses</span>
         </Menu.Item>
         <Menu.Item key="purchased-courses">
-          <Icon type="desktop" />
+          <Icon type="unlock" />
           <span>Purchased Courses</span>
         </Menu.Item>
         <Menu.Item key="payoutHistory">
-          <Icon type="desktop" />
+          <Icon type="dollar" />
           <span>Payout History</span>
         </Menu.Item>
       </Menu>
