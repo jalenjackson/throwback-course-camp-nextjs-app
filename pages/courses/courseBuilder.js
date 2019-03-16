@@ -4,6 +4,7 @@ import CourseBuilderComponent from '../../frontend/reactComponents/courses/cours
 import { handleAuthentication } from '../../globalHelpers/handleAuthentication';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import { courseResponse } from '../sharedQueryCourseResponses';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
 export default class CourseBuilder extends React.Component {
   componentDidMount() {
@@ -15,7 +16,7 @@ export default class CourseBuilder extends React.Component {
   }
   
   render() {
-    const { course, auth, firstTime, isRequestFromServer } = this.props;
+    const { course, auth, firstTime, isRequestFromServer, error } = this.props;
     return (
       <div>
         <Head>
@@ -31,7 +32,10 @@ export default class CourseBuilder extends React.Component {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
         </Head>
-        <CourseBuilderComponent isRequestFromServer={ isRequestFromServer } firstTime={ firstTime } course={ course } auth={ auth } />
+        { !error
+          ? <CourseBuilderComponent isRequestFromServer={ isRequestFromServer } firstTime={ firstTime } course={ course } auth={ auth } />
+          : <Error />
+        }
       </div>
     )
   }
@@ -49,9 +53,9 @@ CourseBuilder.getInitialProps = async (ctx) => {
       }
     }
   `);
-    return { course: course.data.data.singleCourse, isRequestFromServer }
+    return { course: course.data.data.singleCourse, isRequestFromServer, error: false }
   } catch(e) {
-    console.log('render 500')
+    return { error: true }
   }
 };
 

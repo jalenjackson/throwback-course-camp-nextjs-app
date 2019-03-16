@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import ProfileComponent from '../../frontend/reactComponents/users/profile';
 import { handleAuthentication } from '../../globalHelpers/handleAuthentication';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
-const Profile = ({ auth, isRequestFromServer }) => (
+const Profile = ({ auth, isRequestFromServer, error }) => (
   <div>
     <Head>
       <title>Home Page</title>
@@ -19,14 +20,21 @@ const Profile = ({ auth, isRequestFromServer }) => (
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
       <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
     </Head>
-    <ProfileComponent isRequestFromServer={ isRequestFromServer } auth={ auth } />
+    { !error
+      ? <ProfileComponent isRequestFromServer={ isRequestFromServer } auth={ auth } />
+      : <Error />
+    }
   </div>
 );
 
 Profile.getInitialProps = async ctx => {
-  const isRequestFromServer = typeof window === 'undefined';
-  handleAuthentication(ctx);
-  return { isRequestFromServer };
+  try {
+    const isRequestFromServer = typeof window === 'undefined';
+    handleAuthentication(ctx);
+    return { isRequestFromServer, error: false };
+  } catch(e) {
+    return { error: true }
+  }
 };
 
 export default Profile;

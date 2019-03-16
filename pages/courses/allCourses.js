@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import AllCoursesComponent from '../../frontend/reactComponents/courses/allCourses/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
 export default class AllCourses extends React.Component {
   render() {
@@ -19,10 +20,13 @@ export default class AllCourses extends React.Component {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
         </Head>
-        <AllCoursesComponent
-          searchResults={ this.props.searchResults }
-          totalPageCount={ this.props.totalPageCount }
-          defaultPageNumber={ this.props.defaultPageNumber } />
+        { !this.props.error
+          ? <AllCoursesComponent
+            searchResults={ this.props.searchResults }
+            totalPageCount={ this.props.totalPageCount }
+            defaultPageNumber={ this.props.defaultPageNumber } />
+          : <Error />
+        }
       </div>
     )
   }
@@ -32,7 +36,7 @@ AllCourses.getInitialProps = async (ctx) => {
   try {
     const searchResults = await GraphQlMutate(GraphQlDevURI, `
       query {
-        globalAutocomplete(term: "", limit: 8, skip: skip: ${ getSkipAmount(ctx.query.page) }) {
+        globalAutocomplete(term: "", limit: 8, skip: ${ getSkipAmount(ctx.query.page) }) {
           courseListLength
           courses {
             _id
@@ -59,10 +63,11 @@ AllCourses.getInitialProps = async (ctx) => {
     return {
       searchResults: results.courses,
       totalPageCount: Number(results.courseListLength),
-      defaultPageNumber: Number(ctx.query.page)
+      defaultPageNumber: Number(ctx.query.page),
+      error: false
     }
   } catch(e) {
-    return { course: false }
+    return { error: true }
   }
 };
 

@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import CommunityComponent from '../../frontend/reactComponents/community/community/index';
 import {GraphQlDevURI, GraphQlMutate} from "../../globalHelpers/axiosCalls";
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
-const Community = ({ forumQuestions, isRequestFromServer, forumQuestionsLength, defaultPageNumber }) => (
+const Community = ({ forumQuestions, isRequestFromServer, forumQuestionsLength, defaultPageNumber, error }) => (
     <div>
       <Head>
         <title>Home Page</title>
@@ -12,11 +13,14 @@ const Community = ({ forumQuestions, isRequestFromServer, forumQuestionsLength, 
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                 crossOrigin="anonymous" />
       </Head>
-      <CommunityComponent
-        forumQuestionsLength={ forumQuestionsLength }
-        defaultPageNumber={ defaultPageNumber }
-        forumQuestions={ forumQuestions }
-        isRequestFromServer={ isRequestFromServer } />
+      { !error
+        ? <CommunityComponent
+          forumQuestionsLength={ forumQuestionsLength }
+          defaultPageNumber={ defaultPageNumber }
+          forumQuestions={ forumQuestions }
+          isRequestFromServer={ isRequestFromServer } />
+        : <Error />
+      }
     </div>
 );
 
@@ -58,11 +62,11 @@ Community.getInitialProps = async (ctx) => {
       forumQuestions: forumQuestions.data.data.forumQuestions.forumQuestions,
       forumQuestionsLength: forumQuestions.data.data.forumQuestions.forumQuestionLength,
       isRequestFromServer,
-      defaultPageNumber: Number(ctx.query.page)
+      defaultPageNumber: Number(ctx.query.page),
+      error: false
     }
   } catch(e) {
-    console.log('render 500');
-    return {};
+    return { error: true };
   }
 };
 

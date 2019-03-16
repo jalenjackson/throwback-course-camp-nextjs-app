@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import SearchComponent from '../../frontend/reactComponents/courses/search/index';
 import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
 export default class Search extends React.Component {
   render() {
@@ -19,12 +20,15 @@ export default class Search extends React.Component {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
         </Head>
-        <SearchComponent
-          defaultPageNumber={ this.props.defaultPageNumber }
-          totalPageCount={ this.props.totalPageCount }
-          searchTerm={ this.props.searchTerm }
-          searchResults={ this.props.searchResults }
-          auth={ this.props.auth } />
+        { !this.props.error
+          ? <SearchComponent
+              defaultPageNumber={ this.props.defaultPageNumber }
+              totalPageCount={ this.props.totalPageCount }
+              searchTerm={ this.props.searchTerm }
+              searchResults={ this.props.searchResults }
+              auth={ this.props.auth } />
+          : <Error />
+        }
       </div>
     )
   }
@@ -64,10 +68,11 @@ Search.getInitialProps = async (ctx) => {
       searchResults: results.courses,
       searchTerm,
       totalPageCount: Number(results.courseListLength),
-      defaultPageNumber: Number(ctx.query.page)
+      defaultPageNumber: Number(ctx.query.page),
+      error: false
     }
   } catch(e) {
-    return { course: false }
+    return { error: true }
   }
 };
 

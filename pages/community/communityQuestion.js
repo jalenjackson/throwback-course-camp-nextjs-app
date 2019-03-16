@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import CommunityComponent from '../../frontend/reactComponents/community/communityQuestion/index';
 import { GraphQlDevURI, GraphQlMutate } from '../../globalHelpers/axiosCalls';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
-const CommunityQuestion = ({ forumQuestion, auth, isRequestFromServer }) => (
+const CommunityQuestion = ({ forumQuestion, auth, isRequestFromServer, error }) => (
   <div>
     <Head>
       <title>Home Page</title>
@@ -12,7 +13,10 @@ const CommunityQuestion = ({ forumQuestion, auth, isRequestFromServer }) => (
               integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
               crossOrigin="anonymous" />
     </Head>
-    <CommunityComponent auth={ auth } forumQuestion={ forumQuestion } isRequestFromServer={ isRequestFromServer } />
+    { !error
+      ? <CommunityComponent auth={ auth } forumQuestion={ forumQuestion } isRequestFromServer={ isRequestFromServer } />
+      : <Error />
+    }
   </div>
 );
 
@@ -55,11 +59,9 @@ CommunityQuestion.getInitialProps = async ctx => {
         }
       }
   `);
-    return { forumQuestion: forumQuestion.data.data.singleForumQuestion, isRequestFromServer }
+    return { forumQuestion: forumQuestion.data.data.singleForumQuestion, isRequestFromServer, error: false }
   } catch(e) {
-    return typeof document === 'undefined'
-      ? ctx.res.redirect('/')
-      : window.location.href = '/';
+    return { error: true }
   }
 };
 

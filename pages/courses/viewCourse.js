@@ -5,6 +5,7 @@ import { GraphQlMutate, GraphQlDevURI } from '../../globalHelpers/axiosCalls';
 import atob from 'atob';
 import { courseResponse } from '../sharedQueryCourseResponses';
 import { didTheUserCreateThisCourse, userPaidForCourseAlready } from "../helpers";
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
 export default class ViewCourse extends React.Component {
   render() {
@@ -38,7 +39,7 @@ export default class ViewCourse extends React.Component {
               reviews={ this.props.reviews }
               auth={ this.props.auth }
               isRequestFromServer={ this.props.isRequestFromServer } />
-          : console.log('render 500') }
+          : <Error /> }
       </div>
     )
   }

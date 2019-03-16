@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import CourseCategoriesComponent from '../../frontend/reactComponents/courses/coursesCategories/index';
 import {GraphQlDevURI, GraphQlMutate} from "../../globalHelpers/axiosCalls";
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
-const CourseCategories = ({ auth, searchResults, searchTerm, totalPageCount, defaultPageNumber }) => (
+const CourseCategories = ({ auth, searchResults, searchTerm, totalPageCount, defaultPageNumber, error }) => (
   <div>
     <Head>
       <title>Create Course</title>
@@ -17,12 +18,15 @@ const CourseCategories = ({ auth, searchResults, searchTerm, totalPageCount, def
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
       <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
     </Head>
-    <CourseCategoriesComponent
-      searchResults={ searchResults }
-      searchTerm={ searchTerm }
-      totalPageCount={ totalPageCount }
-      defaultPageNumber={ defaultPageNumber }
-      auth={ auth } />
+    { !error
+      ? <CourseCategoriesComponent
+          searchResults={ searchResults }
+          searchTerm={ searchTerm }
+          totalPageCount={ totalPageCount }
+          defaultPageNumber={ defaultPageNumber }
+          auth={ auth } />
+      : <Error />
+    }
   </div>
 );
 
@@ -62,9 +66,10 @@ CourseCategories.getInitialProps = async ctx => {
       searchTerm,
       totalPageCount: Number(results.courseListLength),
       defaultPageNumber: Number(ctx.query.page),
+      error: false
     }
   } catch (e) {
-    return { courses: false }
+    return { error: true }
   }
 };
 

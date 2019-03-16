@@ -32,7 +32,7 @@ import '../frontend/globalResources/styles/npprogress.less';
 import Router from 'next/router';
 NProgress.configure({ easing: 'linear', speed: 500, trickleSpeed: 200, trickle: true });
 
-Router.events.on('routeChangeStart', (url) => {
+Router.events.on('routeChangeStart', () => {
   NProgress.start();
 });
 
@@ -62,8 +62,8 @@ export default class MyApp extends App {
             <Navbar auth={ auth } />
             <TransitionGroup>
               <CSSTransition
-                key={this.props.router.route}
-                timeout={550}
+                key={ this.props.router.route }
+                timeout={ 550 }
                 classNames="page">
                 <Component {...pageProps} auth={ auth } />
               </CSSTransition>

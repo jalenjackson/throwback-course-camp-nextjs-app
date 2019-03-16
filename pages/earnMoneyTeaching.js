@@ -1,8 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import EarnMoneyTeachingComponent from '../frontend/reactComponents/earnMoneyTeaching/index';
+import Error from "../frontend/reactComponents/globalComponents/error";
 
-const EarnMoneyTeaching = ({ auth, isRequestFromServer }) => (
+const EarnMoneyTeaching = ({ auth, isRequestFromServer, error }) => (
     <div>
       <Head>
         <title>Home Page</title>
@@ -17,13 +18,20 @@ const EarnMoneyTeaching = ({ auth, isRequestFromServer }) => (
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
       </Head>
-      <EarnMoneyTeachingComponent auth={ auth } isRequestFromServer={ isRequestFromServer } />
+      { !error
+        ? <EarnMoneyTeachingComponent auth={ auth } isRequestFromServer={ isRequestFromServer } />
+        : <Error />
+      }
     </div>
 );
 
 EarnMoneyTeaching.getInitialProps = async () => {
-  const isRequestFromServer = typeof window === 'undefined';
-  return { isRequestFromServer };
+  try {
+    const isRequestFromServer = typeof window === 'undefined';
+    return { isRequestFromServer, error: false };
+  } catch(e) {
+    return { error: true }
+  }
 };
 
 export default EarnMoneyTeaching;

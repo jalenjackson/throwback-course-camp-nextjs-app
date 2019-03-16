@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import IndexComponent from '../frontend/reactComponents/index/index';
 import { GraphQlMutate, GraphQlDevURI } from '../globalHelpers/axiosCalls';
+import Error from "../frontend/reactComponents/globalComponents/error";
 
 const Index = ({ courses, isRequestFromServer }) => (
     <div>
@@ -18,7 +19,10 @@ const Index = ({ courses, isRequestFromServer }) => (
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
       </Head>
-      { courses ? <IndexComponent isRequestFromServer={ isRequestFromServer } courses={ courses } /> : console.log('This will render to future 500 error page') }
+      { courses
+        ? <IndexComponent isRequestFromServer={ isRequestFromServer } courses={ courses } />
+        : <Error />
+      }
     </div>
 );
 

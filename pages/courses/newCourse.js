@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import NewCourseComponent from '../../frontend/reactComponents/courses/newCourse/index';
 import { handleAuthentication } from '../../globalHelpers/handleAuthentication';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
-const NewCourse = ({ auth, isRequestFromServer }) => (
+const NewCourse = ({ auth, isRequestFromServer, error }) => (
     <div>
       <Head>
         <title>Create Course</title>
@@ -18,17 +19,24 @@ const NewCourse = ({ auth, isRequestFromServer }) => (
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
       </Head>
-      <NewCourseComponent auth={ auth } isRequestFromServer={ isRequestFromServer } />
+      { !error
+        ? <NewCourseComponent auth={ auth } isRequestFromServer={ isRequestFromServer } />
+        : <Error />
+      }
     </div>
 );
 
 NewCourse.getInitialProps = async (ctx) => {
-  const isRequestFromServer = typeof window === 'undefined';
-  handleAuthentication(ctx);
-  return { isRequestFromServer }
+  try {
+    const isRequestFromServer = typeof window === 'undefined';
+    handleAuthentication(ctx);
+    return { isRequestFromServer, error: false }
+  } catch {
+    return { error: true }
+  }
 };
 
-const globalStyle = courseColor => {
+const globalStyle = () => {
   return `
     body {
       background: #EDEFF0;

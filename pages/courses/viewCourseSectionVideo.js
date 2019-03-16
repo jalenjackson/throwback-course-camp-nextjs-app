@@ -8,6 +8,7 @@ import {handleAuthentication} from "../../globalHelpers/handleAuthentication";
 import { withRouter } from 'next/router'
 import PageLoader from "../../frontend/reactComponents/globalComponents/pageLoader";
 import { checkIfUserHasAccess } from '../helpers';
+import Error from "../../frontend/reactComponents/globalComponents/error";
 
 let start = false;
 
@@ -38,15 +39,16 @@ class ViewCourseSectionVideo extends React.Component {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css" />
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.9.1/css/themes/dark.min.css' />
         </Head>
-        { this.state.start
-          ? <ViewCourseSectionVideoComponent
-              videoIndex={ videoIndex }
-              sectionIndex={ sectionIndex }
-              currentVideo={ currentVideo }
-              currentSection={ currentSection }
-              course={ course }
-              auth={ auth } />
-          : <PageLoader />
+        { course ? this.state.start
+            ? <ViewCourseSectionVideoComponent
+                videoIndex={ videoIndex }
+                sectionIndex={ sectionIndex }
+                currentVideo={ currentVideo }
+                currentSection={ currentSection }
+                course={ course }
+                auth={ auth } />
+            : <PageLoader />
+          : <Error />
         }
       </div>
     )
