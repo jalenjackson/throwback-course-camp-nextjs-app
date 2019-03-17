@@ -15,6 +15,36 @@
   }
 }
 
+#search {
+  .course-pagination {
+    @media @phone {
+      position: fixed;
+      bottom: -10px;
+      z-index: 99999;
+      width: 100%;
+      margin: 0 !important;
+      display: block;
+      left: 0;
+      right: 0;
+      margin-top: 10px;
+      background: #9483AE;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .ant-pagination-total-text {
+        display: none;
+      }
+    }
+  }
+  #courses-container {
+    .slick-slide {
+      @media @phone {
+        margin: 0 !important;
+        margin-top: 20px !important
+      }
+    }
+  }
+}
+
 .pagination-loader {
   position: fixed;
   top: 0;

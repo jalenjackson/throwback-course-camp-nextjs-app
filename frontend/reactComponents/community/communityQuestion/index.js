@@ -27,9 +27,6 @@ export default class Community extends React.Component {
   }
   
   render() {
-    const { forumQuestion } = this.props;
-    console.log(this.props.auth._id === forumQuestion.creator._id)
-    
     return (
       <Subscribe to={[CommunityQuestionContainer]}>
         { container => (

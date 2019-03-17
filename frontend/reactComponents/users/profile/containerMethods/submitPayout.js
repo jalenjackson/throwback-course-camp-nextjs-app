@@ -6,7 +6,33 @@ export const call = async (context, auth, emailToSendTo, moneyAmount) => {
     await GraphQlMutate(GraphQlDevURI, `
       mutation {
         handlePayout(receiver: "${ emailToSendTo }", amount: ${ +moneyAmount }) {
+          _id
+          email
+          name
+          token
           moneyMade
+          token
+          profileImage
+          createdCourses {
+            _id
+            title
+            studentsEnrolled
+            price
+          }
+          payoutHistory {
+            payoutBatchId
+            emailAddressReceiver
+            amount
+          }
+          paidCourses {
+            _id
+            title
+            price
+          }
+          courseProgress {
+            courseId
+            exercisesPlayed
+          }
         }
       }
     `, auth.token);

@@ -5,7 +5,7 @@ import { getMoreCourses } from './getMoreCourses';
 export default class PagePagination extends React.Component {
   render() {
     return (
-      <div style={ styles().paginationContainer }>
+      <div className='course-pagination' style={ styles().paginationContainer }>
         <Pagination
           showQuickJumper
           pageSize={8}
@@ -27,6 +27,7 @@ const styles = () => {
   return {
     paginationContainer: {
       margin: '0 auto',
+      marginTop: 30,
       marginBottom: '50px',
       display: 'flex',
       justifyContent: 'center',

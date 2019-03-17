@@ -13,7 +13,14 @@ export const call = async (context, profileImage) => {
         name
         token
         moneyMade
+        token
         profileImage
+        createdCourses {
+          _id
+          title
+          studentsEnrolled
+          price
+        }
         payoutHistory {
           payoutBatchId
           emailAddressReceiver
@@ -33,7 +40,7 @@ export const call = async (context, profileImage) => {
   `, context.state.auth.token);
     const userCookie = new Cookies();
     userProfileImageResponse.data.data.uploadProfileImage.token = context.state.auth.token;
-    userCookie.set('auth', userProfileImageResponse.data.data.uploadProfileImage, { path: '/' });
+    userCookie.set('token', userProfileImageResponse.data.data.uploadProfileImage.token, { path: '/' });
     context.setState({ auth: userProfileImageResponse.data.data.uploadProfileImage });
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

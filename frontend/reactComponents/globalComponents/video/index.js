@@ -27,92 +27,95 @@ export default class Index extends React.Component {
               playbackRate={ this.props.container.state.playbackRate }
               height='100%' />
         </div>
-        <div className='video-controls'>
-          <div onClick={ () => this.props.container.updateState('videoPlaying', !this.props.container.state.videoPlaying) } className='video-play-button'>
-            { !this.props.container.state.videoPlaying
-              ? <img style={{ width: 55 }} src='/static/icons/video-play.svg' />
-              : <img style={{ width: 25 }} src='/static/icons/video-pause.svg' />
-            }
-          </div>
-          <div className='video-begin-time'>
-            <span style={{ transform: 'translateY(0px)' }}>{ this.props.container.state.playedSeconds }</span>
-          </div>
-          <div className="video-seek">
-            <div className="video-seek-track">
-              <div style={{ background: this.props.container.state.courseColor }} className='video-seek-inner-track' />
-              <input
+        { $(window).width() > 992
+          ? <div className='video-controls'>
+            <div onClick={ () => this.props.container.updateState('videoPlaying', !this.props.container.state.videoPlaying) } className='video-play-button'>
+              { !this.props.container.state.videoPlaying
+                ? <img style={{ width: 55 }} src='/static/icons/video-play.svg' />
+                : <img style={{ width: 25 }} src='/static/icons/video-pause.svg' />
+              }
+            </div>
+            <div className='video-begin-time'>
+              <span style={{ transform: 'translateY(0px)' }}>{ this.props.container.state.playedSeconds }</span>
+            </div>
+            <div className="video-seek">
+              <div className="video-seek-track">
+                <div style={{ background: this.props.container.state.courseColor }} className='video-seek-inner-track' />
+                <input
                   onMouseDown={ () => Methods.onSeekMouseDown.call(this.props) }
                   onChange={ e => Methods.onSeekChange.call(this.props, e) }
                   onMouseUp={ e => Methods.onSeekMouseUp.call(this.props, e, this.player) }
                   className='video-seek-track video-seek-track-range'
                   type='range' min={0} max={1} step='any' />
+              </div>
             </div>
-          </div>
-          <div className='video-end-time'>
+            <div className='video-end-time'>
             <span style={{ transform: 'translateY(-1.2px)' }}>
               { this.player
                 ? this.props.container.state.videoDuration
                 : '00:00'
               }
             </span>
-          </div>
-          <div className='video-speed'>
-            <div
+            </div>
+            <div className='video-speed'>
+              <div
                 onMouseLeave={ () => this.handleVideoDropdown('video-speed', 'hide') }
                 onMouseEnter={ () => this.handleVideoDropdown('video-speed', 'show') }
-                style={{ top: '-380px', width: 70 }} className="video-dropdown-selection">
-              { this.videoPlaybackOptions() }
-            </div>
-            <div
+                style={{ top: '-380px', width: 67 }} className="video-dropdown-selection">
+                { this.videoPlaybackOptions() }
+              </div>
+              <div
                 onMouseLeave={ () => this.handleVideoDropdown('video-speed', 'hide') }
                 onMouseEnter={ () => this.handleVideoDropdown('video-speed', 'show') }
                 style={{ height: '100%' }}>
-              <img
-                  style={{ transform: 'translateY(13.5px)' }}
+                <img
+                  style={{ transform: 'translateY(15.5px)' }}
                   src='/static/icons/video-playback-speed.svg' />
+              </div>
             </div>
-          </div>
-          <div className='video-sound'>
-            <div
+            <div className='video-sound'>
+              <div
                 onMouseLeave={ () => this.handleVideoDropdown('video-sound', 'hide') }
                 onMouseEnter={ () => this.handleVideoDropdown('video-sound', 'show') }
                 style={{ width: 70, height: 40 }} className="video-dropdown-selection">
-              <Slider
+                <Slider
                   value={ this.props.container.state.volume * 100 }
                   onChange={ value => this.props.container.updateState('volume', 0.1 * (value / 10)) }
                   defaultValue={ this.props.container.state.volume * 100 } />
-            </div>
-            <div
+              </div>
+              <div
                 onMouseLeave={ () => this.handleVideoDropdown('video-sound', 'hide') }
                 onMouseEnter={ () => this.handleVideoDropdown('video-sound', 'show') }
                 style={{ height: '100%' }}>
-              { this.props.container.state.volume * 100 === 0
-                ? <img
-                      style={{ transform: 'translateY(16px)' }}
-                      onClick={ () => this.updateVolumeClick() } src="/static/icons/no-video-sound.svg" />
-                : null
-              }
-              { this.props.container.state.volume * 100 >= 1 && this.props.container.state.volume * 100 <= 90
-                ? <img
-                      style={{ transform: 'translateY(16px)', width: 38 }}
-                      onClick={ () => this.updateVolumeClick() } src="/static/icons/video-sound-moderate.svg" />
-                : null
-              }
-              { this.props.container.state.volume * 100 >= 91
-                ? <img
-                      style={{ transform: 'translateY(16px)' }}
-                      onClick={ () => this.updateVolumeClick() } src="/static/icons/video-sound-loudest.svg" />
-                : null
-              }
+                { this.props.container.state.volume * 100 === 0
+                  ? <img
+                    style={{ transform: 'translateY(19px)' }}
+                    onClick={ () => this.updateVolumeClick() } src="/static/icons/no-video-sound.svg" />
+                  : null
+                }
+                { this.props.container.state.volume * 100 >= 1 && this.props.container.state.volume * 100 <= 90
+                  ? <img
+                    style={{ transform: 'translateY(19px)', width: 30 }}
+                    onClick={ () => this.updateVolumeClick() } src="/static/icons/video-sound-moderate.svg" />
+                  : null
+                }
+                { this.props.container.state.volume * 100 >= 91
+                  ? <img
+                    style={{ transform: 'translateY(19px)' }}
+                    onClick={ () => this.updateVolumeClick() } src="/static/icons/video-sound-loudest.svg" />
+                  : null
+                }
+              </div>
+            </div>
+            <div className='video-rewind'>
+              <img style={{ transform: 'translateY(19.5px)', width: 25 }} onClick={ () => Methods.onSeekChange.call(this.props, false, this.props.container.state.played - 0.018, this.player) } src="/static/icons/video-rewind.svg" />
+            </div>
+            <div className='video-fullscreen'>
+              <img style={{ transform: 'translateY(19px)', marginRight: 15, marginLeft: 5, display: 'block', width: 21 }} onClick={ () => this.requestFullScreen() } src="/static/icons/video-fullscreen.svg" />
             </div>
           </div>
-          <div className='video-rewind'>
-            <img style={{ transform: 'translateY(17.5px)', width: 28 }} onClick={ () => Methods.onSeekChange.call(this.props, false, this.props.container.state.played - 0.018, this.player) } src="/static/icons/video-rewind.svg" />
-          </div>
-          <div className='video-fullscreen'>
-            <img style={{ transform: 'translateY(17px)', marginRight: 15, marginLeft: 5, display: 'block', width: 24 }} onClick={ () => this.requestFullScreen() } src="/static/icons/video-fullscreen.svg" />
-          </div>
-        </div>
+          : null
+        }
       </div>
     )
   }

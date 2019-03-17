@@ -39,7 +39,7 @@ export default class Search extends React.Component {
               ?
                 <div>
                   { container.state.searchResults.length > 0
-                    ? <div>
+                    ? <div id='search'>
                         <div className='pagination-loader'>
                         </div>
                         <div className='search-copy'>
@@ -73,7 +73,6 @@ export default class Search extends React.Component {
                             defaultPageNumber={ this.props.defaultPageNumber } />
                         </div>
                         <VideoPreviewModal container={ indexContainer } />
-                        <Footer />
                       </div>
                     : <div style={{ marginTop: 50 }}>
                         <Empty

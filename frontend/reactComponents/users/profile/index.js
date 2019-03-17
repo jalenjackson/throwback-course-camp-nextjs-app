@@ -41,7 +41,6 @@ export default class Profile extends React.Component {
                           theme='dark'
                           collapsible
                           breakpoint="lg"
-                          collapsedWidth="0"
                           width={ this.state.collapseWidth }
                           collapsed={ container.state.menuCollapsed }
                           onCollapse={ collapsed => container.updateState('menuCollapsed', collapsed) }>

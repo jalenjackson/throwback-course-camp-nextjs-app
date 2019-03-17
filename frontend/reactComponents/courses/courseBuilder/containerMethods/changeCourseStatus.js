@@ -6,8 +6,6 @@ import { host } from "../../../../../globalHelpers/axiosCalls";
 
 export const call = async (context, auth, status) => {
   try {
-    console.log(process.env)
-    
     let headers = {
       'Content-Type': 'application/json',
       'Authorization': ` Bearer ${ auth.token }`

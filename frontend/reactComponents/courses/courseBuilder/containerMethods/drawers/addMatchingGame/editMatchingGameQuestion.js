@@ -20,7 +20,6 @@ export const call = async (context, auth, term, type, timeAllotted, matchId) => 
         }
       }
   `, auth.token);
-    console.log(editAddMatchingGameQuestionResponseMutation)
     updateSectionsAfterAPICall(context, editAddMatchingGameQuestionResponseMutation, 'editMatchingGameQuestion', true);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);
