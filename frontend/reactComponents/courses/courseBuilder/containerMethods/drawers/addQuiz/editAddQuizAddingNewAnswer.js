@@ -1,23 +1,36 @@
-import { GraphQlMutate, GraphQlDevURI } from '../../../../../../../globalHelpers/axiosCalls';
+import { GraphQlDevURI, headers } from '../../../../../../../globalHelpers/axiosCalls';
 import { updateSectionsAfterAPICall } from '../../helpers';
 import GlobalLocalization from '../../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../../sharedMutationResponse';
+import axios from "axios";
 
 export const call = async (context, auth, term, questionIterator) => {
   try {
-    const addAnotherQuizQuestionToQuizResponse = await GraphQlMutate(GraphQlDevURI, `
-    mutation {
-      addAnotherQuizQuestionToQuiz(
-        courseId: "${ context.state.course._id }", 
-        sectionIndex: ${ context.state.currentActiveSection }, 
-        videoIndex: ${ context.state.currentActiveVideoInSection }, 
-        questionIndex: ${ questionIterator }, 
-        term: "${ term }") {
-          ${ sharedMutationResponse }
+    const query = `
+      mutation($courseId: String!, $sectionIndex: Float!, $videoIndex: Float!, $questionIndex: Float!, $term: String!) {
+        addAnotherQuizQuestionToQuiz(
+          courseId: $courseId,
+          sectionIndex: $sectionIndex,
+          videoIndex: $videoIndex,
+          questionIndex: $questionIndex,
+          term: $term) {
+            ${ sharedMutationResponse }
+          }
         }
+    `;
+  
+    const addAnotherQuizQuestionToQuizResponse = await axios.post(GraphQlDevURI, JSON.stringify({
+      query,
+      variables: {
+        courseId: String(context.state.course._id),
+        sectionIndex: +context.state.currentActiveSection,
+        videoIndex: +context.state.currentActiveVideoInSection,
+        questionIndex: +questionIterator,
+        term: String(term),
       }
-  `, auth.token);
+    }), { headers: headers(auth.token) });
+    
     updateSectionsAfterAPICall(context, addAnotherQuizQuestionToQuizResponse, 'addAnotherQuizQuestionToQuiz', true);
   } catch (e) {
     message.error(GlobalLocalization.UnexpectedError);

@@ -1,25 +1,38 @@
 import btoa from 'btoa';
-import { GraphQlMutate, GraphQlDevURI } from '../../../../../../globalHelpers/axiosCalls';
+import { GraphQlDevURI, headers } from '../../../../../../globalHelpers/axiosCalls';
 import { updateSectionsAfterAPICall } from '../helpers';
 import GlobalLocalization from '../../../../../../globalLocalization';
 import { message } from 'antd';
 import { sharedMutationResponse } from '../sharedMutationResponse';
+import axios from "axios";
 
 export const call = async (context, type, i, term, auth) => {
   try {
     const state = type === 'title' ? 'videoTitleTerm' : 'videoDescriptionTerm';
     await context.setState({ [state]: term, sectionLoading: true });
-    const updateVideoDetailsResponse = await GraphQlMutate(GraphQlDevURI, `
-    mutation {
+    
+    const query = `
+      mutation($courseId: String!, $sectionIndex: Float!, $videoIndex: Float!, $videoInput: VideoInput) {
       updateVideoDetails(
-        courseId: "${ context.state.course._id }", 
-        sectionIndex: ${ context.state.currentActiveSection }, 
-        videoIndex: ${ i }, 
-          videoInput: {${ type }: "${ type === 'description' ? btoa(unescape(encodeURIComponent(term))) : term }"}) {
+        courseId: $courseId,
+        sectionIndex: $sectionIndex,
+        videoIndex: $videoIndex,
+          videoInput: $videoInput) {
             ${ sharedMutationResponse }
           }
         }
-  `, auth.token);
+    `;
+  
+    const updateVideoDetailsResponse = await axios.post(GraphQlDevURI, JSON.stringify({
+      query,
+      variables: {
+        courseId: String(context.state.course._id),
+        sectionIndex: +context.state.currentActiveSection,
+        videoIndex: +i,
+        videoInput: { [type]: type === 'description' ? btoa(unescape(encodeURIComponent(term))) : term }
+      }
+    }), { headers: headers(auth.token) });
+    
     updateSectionsAfterAPICall(context, updateVideoDetailsResponse, 'updateVideoDetails', true);
     context.setState({ sectionLoading: false });
   } catch (e) {
