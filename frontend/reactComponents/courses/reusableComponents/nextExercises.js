@@ -1,42 +1,39 @@
 import React from 'react';
-import { Steps } from "antd";
 import { Router } from '../../../../routes';
-
-const Step = Steps.Step;
 
 export default class NextExercises extends React.Component {
   render() {
     return (
       <div className="next-exercises-container">
-        <h3 className="exercises-to-complete-title">Exercises</h3>
+        <h3 className="exercises-to-complete-title">Exercises Added To This Video</h3>
   
         <div className='up-next-exercises'>
-          <Steps progressDot={ dot => <span>{dot}</span>} current={ -1 }>
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             { this.props.currentVideo.quiz
-              ? <Step onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/quiz`) } title="Quiz" />
+              ? <a onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/quiz`) }>Quiz</a>
               : null
             }
             { this.props.currentVideo.pictureQuiz
-              ? <Step onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/picture-quiz`) } title="Picture Quiz" />
+              ? <a onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/picture-quiz`) }>Picture Quiz</a>
               : null
             }
             { this.props.currentVideo.matchingGame
-              ? <Step onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/matching-game`) } title="Matching Game" />
+              ? <a onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/matching-game`) }>Matching Game</a>
               : null
             }
             { this.props.currentVideo.crunchChallenge
-              ? <Step onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/crunch-challenge`) } title="CrunchChallenge" />
+              ? <a onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/crunch-challenge`) }>Crunch Challenge</a>
               : null
             }
             { this.props.currentVideo.codingChallenge
-              ? <Step onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/coding-challenge`) } title="Coding Challenge" />
+              ? <a onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/coding-challenge`) }>Coding Challenge</a>
               : null
             }
             { this.props.currentVideo.codingProject
-              ? <Step onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/coding-project`) } title="Coding Project" />
+              ? <a onClick={ () => Router.pushRoute(`${ this.viewCourseUri }/coding-project`) }>Coding Project</a>
               : null
             }
-          </Steps>
+          </div>
         </div>
       </div>
     )

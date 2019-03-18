@@ -34,7 +34,7 @@ const CourseCarousel = props => (
                 </Link>
                 <p className='price'>
                   <img alt="Money icon" src="/static/icons/money.svg" />
-                  ${ course.publishedCourse.price }
+                  { course.publishedCourse.price === 0 ? 'FREE' : '$' + course.publishedCourse.price }
                 </p>
                 <span>
                   <Rate style={ styles.Rating } disabled defaultValue={ course.rating } />

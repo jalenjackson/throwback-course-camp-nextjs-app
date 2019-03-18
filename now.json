@@ -6,10 +6,107 @@
   ],
   "version": 2,
   "builds": [
-    { "src": "next.config.js", "use": "@now/next" },
-    { "src": "package.json", "use": "@now/node-server" }
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    },
+    {
+      "src": "package.json",
+      "use": "@now/node-server"
+    }
   ],
   "routes": [
-    { "src": "/", "dest": "/index.js" }
+    {
+      "src": "/",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/teach",
+      "dest": "/earnMoneyTeaching.js"
+    },
+    {
+      "src": "/courses/view/(.*)",
+      "dest": "/courses/viewCourse.js?courseId=$1"
+    },
+    {
+      "src": "^\\/teach(?:\\/)?$",
+      "dest": "/earnMoneyTeaching"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)(?:\\/)?$",
+      "dest": "/courses/viewCourse"
+    },
+    {
+      "src": "^\\/courses\\/new(?:\\/)?$",
+      "dest": "/courses/newCourse"
+    },
+    {
+      "src": "^\\/courses\\/build\\/([^\\/]+?)(?:\\/)?$",
+      "dest": "/courses/courseBuilder"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionVideo"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)\\/quiz(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionQuiz"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)\\/picture-quiz(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionPictureQuiz"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)\\/matching-game(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionMatchingGame"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)\\/crunch-challenge(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionCrunchChallenge"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)\\/coding-project(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionCodingProject"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/([^\\/]+?)\\/([^\\/]+?)\\/coding-challenge(?:\\/)?$",
+      "dest": "/courses/viewCourseSectionCodingChallenge"
+    },
+    {
+      "src": "^\\/community(?:\\/)?$",
+      "dest": "/community/community"
+    },
+    {
+      "src": "^\\/community\\/([^\\/]+?)(?:\\/)?$",
+      "dest": "/community/communityQuestion"
+    },
+    {
+      "src": "^\\/profile(?:\\/)?$",
+      "dest": "/user/profile"
+    },
+    {
+      "src": "^\\/courses\\/category\\/([^\\/]+?)(?:\\/)?$",
+      "dest": "/courses/courseCategories"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/track(?:\\/)?$",
+      "dest": "/courses/track"
+    },
+    {
+      "src": "^\\/courses\\/search\\/([^\\/]+?)(?:\\/)?$",
+      "dest": "/courses/search"
+    },
+    {
+      "src": "^\\/courses\\/all-courses(?:\\/)?$",
+      "dest": "/courses/allCourses"
+    },
+    {
+      "src": "^\\/courses\\/view\\/([^\\/]+?)\\/end-course(?:\\/)?$",
+      "dest": "/courses/endCourse"
+    },
+    {
+      "src": "^\\/help-center(?:\\/)?$",
+      "dest": "/helpCenter"
+    }
   ]
 }

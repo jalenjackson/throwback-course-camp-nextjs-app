@@ -22,7 +22,7 @@ export default class Course extends React.Component {
             <a href={`/courses/category/${ _.kebabCase(course.category) }?page=1`} className="course-category">{ course.category }</a>
             <p className='price'>
               <img alt="Money icon" src="/static/icons/money.svg" />
-              $20
+              { course.price === 0 ? 'FREE' : '$' + course.price }
             </p>
             <span>
               <Rate style={ this.styles.Rating } disabled defaultValue={ 5 } />

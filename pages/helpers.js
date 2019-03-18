@@ -9,6 +9,7 @@ export const didTheUserCreateThisCourse = (userIdFromCourse, userId) => {
 };
 
 export const checkIfUserHasAccess = (auth, course, router) => {
+  if (course.price === 0) return true;
   if (course) {
     if (didTheUserCreateThisCourse(course.creator._id, auth._id) || userPaidForCourseAlready(auth, course)) {
       return true;

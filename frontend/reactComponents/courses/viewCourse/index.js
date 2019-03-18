@@ -43,7 +43,7 @@ export default class ViewCourseComponent extends React.Component {
               ? <div>
                 <div className="course-sections-container">
                   <div id='course-sections'>
-                    { this.props.userPaidForCourseAlready && this.props.auth.authenticated
+                    { this.props.course.price === 0 || (this.props.userPaidForCourseAlready && this.props.auth.authenticated)
                       ? <ContinueLearningButton { ...this.props } />
                       : this.props.auth.authenticated && this.props.didTheUserCreateThisCourse
                         ? <EditCourseButton { ...this.props } />
