@@ -11,6 +11,26 @@
   ],
   "routes": [
     { "src": "/", "dest": "/index.js" },
-    { "src": "/courses/view/(?<courseId>[^/]+)", "dest": "/courses/viewCourse?courseId=$courseId" }
+    { "src": "/courses/view/(?<courseId>[^/]+)", "dest": "/courses/viewCourse?courseId=$courseId" },
+    { "src": "/teach", "dest": "/earnMoneyTeaching" },
+    { "src": "/courses/new", "dest": "/courses/newCourse" },
+    { "src": "/courses/build/(?<courseId>[^/]+)", "dest": "/courses/courseBuilder?courseId=$courseId" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)", "dest": "/courses/viewCourseSectionVideo?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)/quiz", "dest": "/courses/viewCourseSectionQuiz?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)/picture-quiz", "dest": "/courses/viewCourseSectionPictureQuiz?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)/matching-game", "dest": "/courses/viewCourseSectionMatchingGame?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)/crunch-challenge", "dest": "/courses/viewCourseSectionCrunchChallenge?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)/coding-project", "dest": "/courses/viewCourseSectionCodingProject?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/(?<sectionIndex>[^/]+)/(?<videoIndex>[^/]+)/coding-challenge", "dest": "/courses/viewCourseSectionCodingChallenge?courseId=$courseId&sectionIndex=$sectionIndex&videoIndex=$videoIndex" },
+    { "src": "/community", "dest": "/community/community" },
+    { "src": "/community/(?<questionId>[^/]+)", "dest": "/community/communityQuestion?questionId=$questionId" },
+    { "src": "/profile", "dest": "/user/profile" },
+    { "src": "/courses/category/(?<category>[^/]+)", "dest": "/courses/courseCategories?category=$category" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/track", "dest": "/courses/track?courseId=$courseId" },
+    { "src": "/courses/search/(?<query>[^/]+)", "dest": "/courses/search?query=$query" },
+    { "src": "/courses/all-courses", "dest": "/courses/allCourses" },
+    { "src": "/courses/view/(?<courseId>[^/]+)/end-course", "dest": "/courses/endCourse?courseId=$courseId" },
+    { "src": "/help-center", "dest": "/helpCenter" }
   ]
 }
+
