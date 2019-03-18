@@ -9,6 +9,12 @@ export default class Index extends React.Component {
     this.player = player
   };
   
+  
+  componentDidMount() {
+    let video = document.getElementById("video-test");
+    video.play();
+  }
+  
   render() {
     return (
       <div className='minimal-video'>
@@ -27,7 +33,7 @@ export default class Index extends React.Component {
               loop={false}
               playbackRate={this.props.container.state.playbackRate}
               height='100%' />
-            : <video style={{ width: '100%' }} src={ this.props.container.state.currentVideoLocation } />
+            : <video id='video-test' style={{ width: '100%' }} src={ this.props.container.state.currentVideoLocation } />
           }
         </div>
         { $(window).width() > 992
