@@ -11,7 +11,6 @@
   ],
   "routes": [
     { "src": "/", "dest": "/index.js" },
-    { "src": "/teach", "dest": "/earnMoneyTeaching.js" },
-    { "src": "/courses/view/(.*)", "dest": "/courses/viewCourse.js?courseId=$1" }
+    { "src": "/courses/view/(?<courseId>[^/]+)", "dest": "/courses/viewCourse?courseId=$courseId" }
   ]
 }
