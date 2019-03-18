@@ -35,9 +35,6 @@ export default class ViewCourse extends React.Component {
 ViewCourse.getInitialProps = async (ctx) => {
   try {
     const isRequestFromServer = typeof window === 'undefined';
-    
-    console.log(ctx)
-    
     const courseId = ctx.query.courseId;
     const course = await GraphQlMutate(GraphQlDevURI, `
     query {
