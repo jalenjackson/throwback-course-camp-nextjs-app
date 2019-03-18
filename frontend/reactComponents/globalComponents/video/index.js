@@ -8,33 +8,24 @@ export default class Index extends React.Component {
   ref = player => {
     this.player = player
   };
-  
-  
-  componentDidMount() {
-    let video = document.getElementById("video-test");
-    video.play();
-  }
-  
+
   render() {
     return (
       <div className='minimal-video'>
         { this.props.withTransition ? <div className="video-transition" /> : null }
         <div style={{ width: '100%', height: '95%', position: 'relative', overflow: 'hidden' }}>
-          {$(window).width() > 992 ?
-            <ReactPlayer
-              ref={this.ref}
-              playing={this.props.container.state.videoPlaying}
-              onReady={() => Methods.setTime.call(this.props, this.player)}
-              url={this.props.container.state.currentVideoLocation}
-              onProgress={state => Methods.onProgress.call(this.props, state)}
-              muted={this.props.muted}
+          <ReactPlayer
+              ref={ this.ref }
+              playing={ this.props.container.state.videoPlaying }
+              onReady={ () => Methods.setTime.call(this.props, this.player) }
+              url={ this.props.container.state.currentVideoLocation }
+              onProgress={ state => Methods.onProgress.call(this.props, state) }
+              muted={ this.props.muted }
               width='100%'
-              volume={this.props.container.state.volume}
-              loop={false}
-              playbackRate={this.props.container.state.playbackRate}
+              volume={ this.props.container.state.volume }
+              loop={ false }
+              playbackRate={ this.props.container.state.playbackRate }
               height='100%' />
-            : <video id='video-test' style={{ width: '100%' }} src={ this.props.container.state.currentVideoLocation } />
-          }
         </div>
         { $(window).width() > 992
           ? <div className='video-controls'>
