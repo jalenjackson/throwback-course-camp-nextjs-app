@@ -1,6 +1,7 @@
 import axios from 'axios';
 import GlobalLocalization from '../../../../../../globalLocalization';
 import { message } from 'antd';
+import { host } from "../../../../../../globalHelpers/axiosCalls";
 
 export const call = async (context, auth, newSections) => {
   try {
@@ -14,7 +15,7 @@ export const call = async (context, auth, newSections) => {
       newSections
     };
 
-    const reorderSectionsResponse = await axios.post('http://localhost:5000/api-routes/reorder-sections',
+    await axios.post(`${ host }/api-routes/reorder-sections`,
         JSON.stringify(body),
         { headers });
   } catch (e) {
