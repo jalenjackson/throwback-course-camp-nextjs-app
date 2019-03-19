@@ -18,7 +18,7 @@ class LoginModal extends React.Component {
     return (
       <div id='login-modal'>
         <Drawer
-          title="Basic Drawer"
+          title="Login"
           placement="right"
           closable={ false }
           onClose={ () => this.props.navbarContainer.setContainerState('loginFormVisibility', false) }
