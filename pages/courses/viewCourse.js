@@ -12,7 +12,30 @@ export default class ViewCourse extends React.Component {
     return (
       <div>
         <Head>
-          <title>View Course</title>
+          <title>{ this.props.course.title } | Course Camp</title>
+          <meta name="description" content={ `${ this.props.course.title } only on Course Camp! ${ this.props.course.price === 0 ? 'Take this course for FREE only at Course Camp!' : 'Buy this interactive course now for only $' + this.props.course.price }!` }  />
+  
+          <meta itemProp="name" content={ `${ this.props.course.title } | Course Camp` } />
+          <meta itemProp="description" content={ `${ this.props.course.title } only on Course Camp! ${ this.props.course.price === 0 ? 'Take this course for FREE only at Course Camp!' : 'Buy this interactive course now for only $' + this.props.course.price }!` } />
+  
+          <meta itemProp="image" content='https://s3.amazonaws.com/course-camp-misc/logo.png' />
+  
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@CourseCamp1" />
+          <meta name="robots" content="noodp, noydir" />
+          <meta name="twitter:title" content={ `${ this.props.course.title } | Course Camp` } />
+          <meta name="twitter:description" content={ `${ this.props.course.title } only on Course Camp! ${ this.props.course.price === 0 ? 'Take this course for FREE only at Course Camp!' : 'Buy this interactive course now for only $' + this.props.course.price }!` } />
+          <meta name="twitter:creator" content="@CourseCamp1" />
+          <meta name="twitter:image:src" content='https://s3.amazonaws.com/course-camp-misc/logo.png' />
+  
+          <meta property="og:site_name" content="Course Camp" />
+          <meta property="fb:admins" content="100014621536916" />
+          <meta property="og:url" content={ `https://teamcoursecamp.com/courses/view/${ this.props.course._id }` } />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={ `${ this.props.course.title } | Course Camp` } />
+          <meta property="og:description" content={ `${ this.props.course.title } only on Course Camp! ${ this.props.course.price === 0 ? 'Take this course for FREE only at Course Camp!' : 'Buy this interactive course now for only $' + this.props.course.price }!` } />
+          <meta property="og:image" content='https://s3.amazonaws.com/course-camp-misc/logo.png' />
+          <link href={ `https://teamcoursecamp.com/courses/view/${ this.props.course._id }` } rel="canonical" />
         </Head>
         { this.props.course
           ? <ViewCourseComponent

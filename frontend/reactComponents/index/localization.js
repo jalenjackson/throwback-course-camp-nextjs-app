@@ -7,7 +7,7 @@ let localization = new LocalizedStrings({
     GetStarted: 'Get Started',
     ValueProps: {
       Header: 'Innovate For The Future',
-      Paragraph: 'Proven fun interactive affordable online courses',
+      Paragraph: 'Interactive affordable online courses',
       SearchPlaceholder: 'Search Courses...'
     },
     CourseCarousel: {

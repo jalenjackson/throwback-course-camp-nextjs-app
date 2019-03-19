@@ -24,7 +24,8 @@ class ViewCourseSectionPictureQuiz extends React.Component {
     return (
       <div>
         <Head>
-          <title>View Course</title>
+          <title>{ course.title } Picture Quiz | Course Camp</title>
+          <meta name="robots" content="noindex, nofollow" />
           <style>{ globalStyle(course.color) }</style>
         </Head>
         { this.state.start ? <ViewCourseSectionPictureQuizComponent

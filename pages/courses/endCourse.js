@@ -22,7 +22,8 @@ class EndCourse extends React.Component {
     return (
       <div>
         <Head>
-          <title>View Course</title>
+          <title>End Course | Course Camp</title>
+          <meta name="robots" content="noindex, nofollow" />
           <style>{ globalStyle }</style>
         </Head>
         { this.state.start

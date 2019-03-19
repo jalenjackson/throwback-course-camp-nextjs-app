@@ -7,7 +7,8 @@ import Error from "../../frontend/reactComponents/globalComponents/error";
 const Profile = ({ auth, isRequestFromServer, error }) => (
   <div>
     <Head>
-      <title>Home Page</title>
+      <title>Course Camp | Profile</title>
+      <meta name="robots" content="noindex, nofollow" />
     </Head>
     { !error
       ? <ProfileComponent isRequestFromServer={ isRequestFromServer } auth={ auth } />

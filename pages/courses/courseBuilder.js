@@ -20,7 +20,8 @@ export default class CourseBuilder extends React.Component {
     return (
       <div>
         <Head>
-          <title>Create Course</title>
+          <title>Course Builder | Course Camp</title>
+          <meta name="robots" content="noindex, nofollow" />
         </Head>
         { !error
           ? <CourseBuilderComponent isRequestFromServer={ isRequestFromServer } firstTime={ firstTime } course={ course } auth={ auth } />

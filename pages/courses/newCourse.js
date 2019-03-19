@@ -7,7 +7,8 @@ import Error from "../../frontend/reactComponents/globalComponents/error";
 const NewCourse = ({ auth, isRequestFromServer, error }) => (
     <div>
       <Head>
-        <title>Create Course</title>
+        <title>New Course | Course Camp</title>
+        <meta name="robots" content="noindex, nofollow" />
         <style>{ globalStyle() }</style>
       </Head>
       { !error

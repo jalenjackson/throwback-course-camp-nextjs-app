@@ -22,7 +22,8 @@ class ViewCourseSectionCrunchChallenge extends React.Component {
     return (
       <div>
         <Head>
-          <title>View Course</title>
+          <title>{ course.title } Crunch Challenge | Course Camp</title>
+          <meta name="robots" content="noindex, nofollow" />
           <style>{ globalStyle }</style>
         </Head>
         { this.state.start

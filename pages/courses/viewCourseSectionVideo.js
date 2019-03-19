@@ -26,7 +26,8 @@ class ViewCourseSectionVideo extends React.Component {
     return (
       <div>
         <Head>
-          <title>View Course</title>
+          <title>{ course.title } | Course Camp</title>
+          <meta name="robots" content="noindex, nofollow" />
           <style>{ globalStyle }</style>
         </Head>
         { course ? this.state.start

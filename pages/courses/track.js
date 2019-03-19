@@ -22,7 +22,8 @@ class Track extends React.Component {
     return (
       <div>
         <Head>
-          <title>View Course</title>
+          <title>{ this.props.course.title } Track | Course Camp</title>
+          <meta name="robots" content="noindex, nofollow" />
           <style>{ globalStyle }</style>
         </Head>
         { this.state.start

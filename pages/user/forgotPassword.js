@@ -7,7 +7,8 @@ import { GraphQlDevURI, GraphQlMutate } from "../../globalHelpers/axiosCalls";
 const ForgotPassword = ({ token, error, isRequestFromServer, userId }) => (
   <div>
     <Head>
-      <title>Home Page</title>
+      <title>Course Camp | Forgot Password</title>
+      <meta name="robots" content="noindex, nofollow" />
     </Head>
     { !error
       ? <ForgotPasswordComponent userId={ userId } isRequestFromServer={ isRequestFromServer } />
