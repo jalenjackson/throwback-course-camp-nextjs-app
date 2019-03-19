@@ -21,5 +21,5 @@ routes
   .add('courses/search', '/courses/search/:query')
   .add('courses/allCourses', '/courses/all-courses')
   .add('courses/endCourse', '/courses/view/:courseId/end-course')
-  .add('helpCenter', '/help-center');
-
+  .add('helpCenter', '/help-center')
+  .add('user/forgotPassword', '/reset-password/:token');

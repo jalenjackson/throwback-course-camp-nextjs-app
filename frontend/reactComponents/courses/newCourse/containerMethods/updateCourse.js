@@ -59,7 +59,6 @@ export const call = async (context, auth, course, type, value) => {
     }), { headers: headers(auth.token) });
     
   } catch (e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };

@@ -24,6 +24,7 @@ export default class Index extends React.Component {
               width='100%'
               volume={ this.props.container.state.volume }
               loop={ false }
+              controls={ $(window).width() < 992 }
               playbackRate={ this.props.container.state.playbackRate }
               height='100%' />
         </div>

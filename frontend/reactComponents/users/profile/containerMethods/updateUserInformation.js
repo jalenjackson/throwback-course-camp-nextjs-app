@@ -64,7 +64,6 @@ export const call = async (context, name, email) => {
     message.success('Your user information was updated successfully');
     context.setState({ isSaving: false });
   } catch(e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };

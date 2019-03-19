@@ -51,7 +51,6 @@ export const call = async (context, form) => {
     userCookie.set('token', registrationResponse.data.data.createUser.token, { path: '/' });
     window.location.reload();
   } catch(e) {
-    console.log(e)
     context.setState({ registerSubmissionInProgress: false });
     message.error(GlobalLocalization.UnexpectedError);
   }

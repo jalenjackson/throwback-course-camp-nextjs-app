@@ -57,10 +57,10 @@ export default class HelpCenter extends React.Component {
             { this.state.loaded
               ? <Layout style={{ minHeight: '100vh' }}>
                 <Sider
+                  theme='dark'
+                  collapsible
                   breakpoint="lg"
-                  collapsedWidth="0"
                   width={ this.state.collapseWidth }
-                  onBreakpoint={(broken) => { console.log(broken); }}
                   collapsed={ container.state.menuCollapsed }
                   onCollapse={ collapsed => container.updateState('menuCollapsed', collapsed) }>
                   <div className="logo" />

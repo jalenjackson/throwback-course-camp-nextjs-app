@@ -20,11 +20,9 @@ export default class EarnMoneyTeachingComponent extends React.Component {
     if (this.props.isRequestFromServer) {
       setTimeout(async () => {
         await this.setState({loaded: true});
-        animateElements()
       }, 600);
     } else {
       await this.setState({loaded: true});
-      animateElements()
     }
   }
   

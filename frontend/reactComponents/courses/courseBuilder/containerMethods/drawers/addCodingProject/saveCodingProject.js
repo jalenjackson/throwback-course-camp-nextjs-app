@@ -33,7 +33,6 @@ export const call = async (context, auth, summary) => {
     updateSectionsAfterAPICall(context, addCodingProjectResponseMutation, 'addCodingProject', true);
     message.success('Successfully saved coding project!')
   } catch (e) {
-    console.log(e)
     message.error(GlobalLocalization.UnexpectedError);
   }
 };
