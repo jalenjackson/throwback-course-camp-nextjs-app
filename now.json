@@ -30,7 +30,8 @@
     { "src": "/courses/search/(?<query>[^/]+)", "dest": "/courses/search?query=$query" },
     { "src": "/courses/all-courses", "dest": "/courses/allCourses" },
     { "src": "/courses/view/(?<courseId>[^/]+)/end-course", "dest": "/courses/endCourse?courseId=$courseId" },
-    { "src": "/help-center", "dest": "/helpCenter" }
+    { "src": "/help-center", "dest": "/helpCenter" },
+    { "src": "/reset-password/(?<token>[^/]+)", "dest": "/user/forgotPassword?token=$token" }
   ]
 }
 
