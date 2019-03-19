@@ -5,6 +5,7 @@ export default class Body extends React.Component {
   componentDidMount() {
     const textArea = $('#add-new-question-body');
     textArea.froalaEditor({
+      key: process.env.froalaKey,
       fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
       codeMirror: true,
       pluginsEnabled

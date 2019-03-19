@@ -37,6 +37,7 @@ export default class AddCodingChallenge extends React.Component {
     if (this.props.container.state.addCodingChallengeVisibility) {
       setTimeout(() => {
         $('#add-coding-challenge-description').froalaEditor({
+          key: process.env.froalaKey,
           placeholderText: 'Create a description for this coding challenge!',
           fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
           codeMirror: true,

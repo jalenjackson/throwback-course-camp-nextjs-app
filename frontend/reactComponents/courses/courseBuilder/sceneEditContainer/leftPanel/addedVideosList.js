@@ -24,6 +24,7 @@ export default class AddedVideoList extends React.Component {
     const textArea = $(`.video-description-${ key }`);
     if (this.props.container.state.course.sections.length !== 0) {
       textArea.froalaEditor({
+        key: process.env.froalaKey,
         placeholderText: 'Create a description for this section!',
         fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
         codeMirror: true,

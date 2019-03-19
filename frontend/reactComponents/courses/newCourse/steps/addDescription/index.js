@@ -10,6 +10,7 @@ export default class AddDescription extends React.Component {
   componentDidMount() {
     const textArea = $('#new-course-description-text-area');
     textArea.froalaEditor({
+      key: process.env.froalaKey,
       placeholderText: 'Create your summary here!',
       fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
       codeMirror: true,

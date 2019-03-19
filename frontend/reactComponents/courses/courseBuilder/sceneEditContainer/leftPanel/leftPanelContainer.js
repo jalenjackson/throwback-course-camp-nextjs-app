@@ -38,6 +38,7 @@ export default class LeftPanelContainer extends React.Component {
     const textArea = $('#build-course-section-description-text-area');
     if (this.props.container.state.course.sections.length !== 0 && textArea.froalaEditor) {
       textArea.froalaEditor({
+        key: process.env.froalaKey,
         placeholderText: 'Create a description for this section!',
         fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
         codeMirror: true,

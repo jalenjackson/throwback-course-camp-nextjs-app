@@ -32,6 +32,7 @@ ForgotPassword.getInitialProps = async ctx => {
     
     return { isRequestFromServer, error: false, userId };
   } catch(e) {
+    console.log(e)
     return typeof document === 'undefined'
       ? ctx.res.redirect('/')
       : window.location.href = '/';

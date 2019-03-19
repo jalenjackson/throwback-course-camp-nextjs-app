@@ -24,6 +24,7 @@ export default class AddCodingProjectDrawer extends React.Component {
     if (this.props.container.state.addCodingProjectVisibility) {
       setTimeout(() => {
         $('#coding-project-text-area').froalaEditor({
+          key: process.env.froalaKey,
           placeholderText: 'Create a description for this coding challenge!',
           fontFamily: { 'GothamMedium, sans-serif': 'GothamMedium' },
           codeMirror: true,
