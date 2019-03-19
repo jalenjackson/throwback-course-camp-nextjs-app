@@ -25,12 +25,12 @@ const sections = props => {
             <Panel header="Description" key="1">
               <div style={{ width: '90%', display: 'block', margin: '0 auto' }} dangerouslySetInnerHTML={{ __html: atob(section.description) }} />
             </Panel>
-            <Panel header="10 Videos" key="2">
+            <Panel header="Videos" key="2">
               { section.videos && section.videos.length > 0 ? section.videos.map((video, i) => (
                 <Collapse style={{ marginTop: 5 }}>
                   <Panel header={ video.title ? video.title : `Video ${ i + 1 }` } key={ i }>
                     <Timeline>
-                      <Timeline.Item>15min Instructional Video</Timeline.Item>
+                      <Timeline.Item>Instructional Video</Timeline.Item>
                       { video.quiz ? <Timeline.Item>Multiple Choice Quiz</Timeline.Item> : null }
                       { video.pictureQuiz ? <Timeline.Item>Picture Quiz</Timeline.Item> : null }
                       { video.matchingGame ? <Timeline.Item>Matching Game</Timeline.Item> : null }
