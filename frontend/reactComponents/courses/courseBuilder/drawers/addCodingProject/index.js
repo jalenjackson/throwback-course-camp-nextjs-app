@@ -9,7 +9,8 @@ export default class AddCodingProjectDrawer extends React.Component {
   state = {
     summary: '',
     saving: false,
-    deleting: false
+    deleting: false,
+    froalaSet: false
   };
 
   componentDidMount() {
@@ -21,8 +22,9 @@ export default class AddCodingProjectDrawer extends React.Component {
   }
 
   componentWillUpdate() {
-    if (this.props.container.state.addCodingProjectVisibility) {
+    if (this.props.container.state.addCodingProjectVisibility && !this.state.froalaSet) {
       setTimeout(() => {
+        this.setState({ froalaSet: true });
         $('#coding-project-text-area').froalaEditor({
           key: process.env.froalaKey,
           placeholderText: 'Create a description for this coding challenge!',

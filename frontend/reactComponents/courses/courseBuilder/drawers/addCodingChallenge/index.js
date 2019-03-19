@@ -14,7 +14,8 @@ export default class AddCodingChallenge extends React.Component {
     returnValue: '',
     addedFunctionParams: '',
     saving: false,
-    deleting: false
+    deleting: false,
+    froalaSet: false
   };
 
   componentWillMount() {
@@ -34,8 +35,9 @@ export default class AddCodingChallenge extends React.Component {
   }
 
   componentWillUpdate() {
-    if (this.props.container.state.addCodingChallengeVisibility) {
+    if (this.props.container.state.addCodingChallengeVisibility && !this.state.froalaSet) {
       setTimeout(() => {
+        this.setState({ froalaSet: true });
         $('#add-coding-challenge-description').froalaEditor({
           key: process.env.froalaKey,
           placeholderText: 'Create a description for this coding challenge!',
