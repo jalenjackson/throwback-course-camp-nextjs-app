@@ -1,3 +1,5 @@
+@import '../../../globalResources/styles/variables';
+
 #html-sandbox {
   position: relative;
   .quiz-section {
@@ -7,6 +9,17 @@
       width: 100%;
       padding-bottom: 20px;
       border-bottom: 1px solid rgb(230, 230, 230);
+      .coding-challenge-description {
+        margin-left: 51px;
+        margin-top: 8px;
+        margin-right: 140px;
+        font-size: 16px;
+        @media @desktop {
+          width: 90%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
       h1 {
         font-size: 22px;
         width: 93%;

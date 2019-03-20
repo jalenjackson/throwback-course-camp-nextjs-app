@@ -40,7 +40,7 @@ export default class ViewCourseSectionCodingChallengeComponent extends React.Com
                           <TopProgress { ...this.props } courseColor={ this.props.course.color } currentSection={ this.props.currentSection } />
                           { !container.state.endGame
                             ? <div className='quiz-section'>
-                                <Question />
+                                <Question { ...this.props } />
                                 <CheckWork container={ container } { ...this.props } />
                                 <Editor container={ container } { ...this.props } />
                                 <Output afterExerciseModalContainer={ afterExerciseModalContainer } container={ container } { ...this.props } />
