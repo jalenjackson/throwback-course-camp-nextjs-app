@@ -52,9 +52,11 @@ const CourseCarousel = props => (
           ))}
         </Carousel>
         <VideoPreviewModal { ...props } />
-        <a className='see-all-link'>
-          <span>{ Localization.SeeAll }</span>
-        </a>
+        <Link route="/courses/all-courses?page=1">
+          <a className="see-all-link">
+            <span>{ Localization.SeeAll }</span>
+          </a>
+        </Link>
       </div>
     </div>
     <div className="skewed-background" />
