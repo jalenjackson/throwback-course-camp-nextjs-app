@@ -19,5 +19,5 @@ export const formatNumber = value => {
 export const steps = Localization.Steps.Titles;
 
 export const handleEnterNavigation = (props, state, e) => {
-  if (e.key === 'Enter' && state.trim() !== '') props.container.nextStep();
+  if (e.key === 'Enter' && state.trim() !== '') props.container.nextStep(props);
 };

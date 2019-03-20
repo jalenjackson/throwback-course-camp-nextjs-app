@@ -45,7 +45,7 @@ export default class AddPrice extends React.Component {
               className='new-course-next-and-back-button'
               type="primary"
               disabled={ String(this.props.container.state.price).trim() === '' }
-              onClick={ () => this.props.container.nextStep() }>
+              onClick={ () => this.props.container.nextStep(this.props) }>
             <Icon type='arrow-right' />
             { Localization.Next }
           </Button>

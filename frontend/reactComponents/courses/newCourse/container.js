@@ -17,7 +17,7 @@ class NewCourseContainer extends Container {
   };
 
   updateState = (state, value) => Methods.updateState.call(this, state, value);
-  nextStep = () => Methods.moveStep.callNextStep(this);
+  nextStep = (props) => Methods.moveStep.callNextStep(this, props);
   prevStep = () => Methods.moveStep.callPrevStep(this);
   onNumberFieldBlur = props => Methods.numberFieldFunctions.callNumberFieldBlur(this, props);
   onNumberFieldChange = (e, props) => Methods.numberFieldFunctions.callNumberFieldChange(this, e, props);

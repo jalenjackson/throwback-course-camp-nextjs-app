@@ -43,7 +43,7 @@ export default class AddDescription extends React.Component {
                 className='new-course-next-and-back-button'
                 type='primary'
                 disabled={ this.props.container.state.description.trim() === '' }
-                onClick={ () => this.props.container.nextStep() }>
+                onClick={ () => this.props.container.nextStep(this.props) }>
               <Icon type='arrow-right' />
               { Localization.Next }
             </Button>

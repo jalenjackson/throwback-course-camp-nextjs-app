@@ -26,7 +26,7 @@ const AddColor = props => (
               className='new-course-next-and-back-button'
               type="primary"
               disabled={ props.container.state.color.trim() === '' }
-              onClick={ () => props.container.nextStep() }>
+              onClick={ () => props.container.nextStep(props) }>
             <Icon type='arrow-right' />
             { Localization.Next }
           </Button>

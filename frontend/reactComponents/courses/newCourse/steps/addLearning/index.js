@@ -42,7 +42,7 @@ const AddLearning = props => (
             className='new-course-next-and-back-button'
             type='primary'
             disabled={ props.container.state.learning.length === 0 }
-            onClick={ () => props.container.nextStep() }>
+            onClick={ () => props.container.nextStep(props) }>
           <Icon type='arrow-right' />
           { Localization.Next }
         </Button>
