@@ -33,6 +33,8 @@ The Official Course Camp Web Front End 👨‍🏫 (Next.js ∙ React.js)
 
 ![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.25.11+AM.png)
 
+![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.46.29+AM.png)
+
 ![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.34.25+AM.png)
 
 ![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.30.07+AM.png)
