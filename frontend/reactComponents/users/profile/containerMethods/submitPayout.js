@@ -1,7 +1,7 @@
 import { GraphQlDevURI, GraphQlMutate } from '../../../../../globalHelpers/axiosCalls';
 
 export const call = async (context, auth, emailToSendTo, moneyAmount) => {
-  if (+moneyAmount <= +auth.moneyMade && moneyAmount.trim() !== '') {
+  if (+moneyAmount <= +auth.moneyMade && moneyAmount.trim() !== '' && +moneyAmount !== 0) {
     context.setState({ isPayingOut: true, payoutSuccess: false });
     await GraphQlMutate(GraphQlDevURI, `
       mutation {
