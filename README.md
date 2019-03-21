@@ -21,6 +21,10 @@ The Official Course Camp Web Front End 👨‍🏫 (Next.js ∙ React.js)
 
 ![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.20.21+AM.png)
 
+![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.44.51+AM.png)
+
+![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.43.37+AM.png)
+
 ![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.21.29+AM.png)
 
 ![alt text](https://s3.amazonaws.com/course-camp-misc/Screen+Shot+2019-03-21+at+1.22.55+AM.png)
