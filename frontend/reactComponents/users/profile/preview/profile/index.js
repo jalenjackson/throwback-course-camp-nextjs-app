@@ -28,7 +28,7 @@ export default class Profile extends React.Component {
           <p style={{ color: 'crimson' }}>{ this.props.container.state.errorMessage }</p>
           <Button loading={ this.props.container.state.isSaving } onClick={ () => this.props.container.updateUserInformation(this.state.name, this.state.email) } style={{ display: 'block', marginTop: 20 }} type="primary">Save changes</Button>
         <Modal
-          title="Vertically centered modal dialog"
+          title="Payout"
           visible={ this.state.showModalToTransferFunds }
           onOk={ () => this.handleModalClose() }
           onCancel={ () => this.handleModalClose() }>

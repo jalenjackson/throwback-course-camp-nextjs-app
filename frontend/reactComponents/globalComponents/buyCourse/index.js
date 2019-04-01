@@ -35,13 +35,13 @@ export default class BuyCourse extends React.Component {
       message.error(GlobalLocalization.UnexpectedError);
     };
     
-    let env = 'sandbox';
+    let env = 'production';
     let currency = 'USD';
     let total = this.props.course.price;
     
     const client = {
-      sandbox:    'AUrNeHL0ufYL56Ymq1Bcuun1KzKRA1HfE6HOZ-3ID-bVxMoofQ4-y0Yg9G-lY8shrtCVCuSM9smWIGxs',
-      production: 'AS2X1LMDsUU49tZ2Y_jmE4OmaWLmLGI9JJyoBqLto_YrHKiXSKdwF2T7r7fDtEXp4EvCOtkCAwgbzOlj',
+      sandbox:    process.env.payPalSandboxClientId,
+      production: process.env.payPalLiveClientId
     };
     
     return (

@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <meta name="google-site-verification" content="f0AQDh5RqI5iJwMeOpwIWFcx3njDwBN7msbWn31xfEc" />
         <link rel="icon" href="/static/logo.png" />
       </Head>
       <body>
