@@ -16,7 +16,7 @@
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "antd": "^3.13.0",
     "atob": "^2.1.2",
-    "aws-sdk": "^2.395.0",
+    "aws-sdk": "^2.814.0",
     "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-plugin-import": "^1.11.0",
